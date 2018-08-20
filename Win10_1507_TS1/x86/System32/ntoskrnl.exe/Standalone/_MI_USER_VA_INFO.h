@@ -1,0 +1,39 @@
+typedef struct _MI_CFG_BITMAP_INFO
+{
+  /* 0x0000 */ void* BaseAddress;
+  /* 0x0004 */ unsigned long RegionSize;
+  /* 0x0008 */ struct _MMVAD* BitmapVad;
+} MI_CFG_BITMAP_INFO, *PMI_CFG_BITMAP_INFO; /* size: 0x000c */
+
+typedef struct _RTL_BITMAP
+{
+  /* 0x0000 */ unsigned long SizeOfBitMap;
+  /* 0x0004 */ unsigned long* Buffer;
+} RTL_BITMAP, *PRTL_BITMAP; /* size: 0x0008 */
+
+typedef struct _MI_USER_VA_INFO
+{
+  /* 0x0000 */ unsigned long NumberOfCommittedPageTables;
+  /* 0x0004 */ unsigned long VadBitMapHint;
+  /* 0x0008 */ unsigned long LastAllocationSizeHint;
+  /* 0x000c */ unsigned long LastAllocationSize;
+  /* 0x0010 */ unsigned long LowestBottomUpVadBit;
+  /* 0x0014 */ unsigned long VadBitMapSize;
+  /* 0x0018 */ unsigned long VadBitMapCommitment;
+  /* 0x001c */ unsigned long MaximumLastVadBit;
+  /* 0x0020 */ long VadsBeingDeleted;
+  /* 0x0024 */ unsigned long PhysicalMappingCount;
+  /* 0x0028 */ struct _KEVENT* LastVadDeletionEvent;
+  /* 0x002c */ unsigned long* VadBitBuffer;
+  /* 0x0030 */ void* LowestBottomUpAllocationAddress;
+  /* 0x0034 */ void* HighestTopDownAllocationAddress;
+  /* 0x0038 */ void* FreeTebHint;
+  /* 0x003c */ unsigned char NumaAware;
+  /* 0x0040 */ unsigned __int64 CloneNestingLevel;
+  /* 0x0048 */ unsigned long PrivateFixupVadCount;
+  /* 0x004c */ struct _MI_CFG_BITMAP_INFO CfgBitMap[1];
+  /* 0x0058 */ unsigned long CommittedPageTableBufferForTopLevel[48];
+  /* 0x0118 */ struct _RTL_BITMAP CommittedPageTableBitmaps[1];
+  /* 0x0120 */ unsigned short UsedPageTableEntries[1536];
+} MI_USER_VA_INFO, *PMI_USER_VA_INFO; /* size: 0x0d20 */
+

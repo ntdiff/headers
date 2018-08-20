@@ -1,0 +1,2 @@
+struct _TP_CALLBACK_INSTANCE;
+

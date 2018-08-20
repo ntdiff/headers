@@ -1,0 +1,5 @@
+typedef struct _HVIEW_MAP_DIRECTORY
+{
+  /* 0x0000 */ struct _HVIEW_MAP_TABLE* Tables[128];
+} HVIEW_MAP_DIRECTORY, *PHVIEW_MAP_DIRECTORY; /* size: 0x0400 */
+

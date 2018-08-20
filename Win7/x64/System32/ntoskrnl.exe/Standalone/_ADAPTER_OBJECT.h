@@ -1,0 +1,2 @@
+struct _ADAPTER_OBJECT;
+

@@ -1,0 +1,28 @@
+typedef enum _HAL_INIT_PHASE
+{
+  HalInitPhaseBspProcEarly = 0,
+  HalInitPhaseBspProcEarlyMmReady = 1,
+  HalInitPhaseBspProcEarlyTimerReady = 2,
+  HalInitPhaseBspProcEarlyEnd = 3,
+  HalInitPhasePnProcEarly = 4,
+  HalInitPhasePnProcEarlyEnd = 5,
+  HalInitPhaseBspSystemEarly = 6,
+  HalInitPhaseBspSystemEarlyAcpiReady = 7,
+  HalInitPhaseBspSystemEarlyHalExtensionsReady = 8,
+  HalInitPhaseBspSystemEarlyInterruptsReady = 9,
+  HalInitPhaseBspSystemEarlyDmaReady = 9,
+  HalInitPhaseBspSystemEarlyProcReady = 10,
+  HalInitPhaseBspSystemEarlyHwPerfCntReady = 11,
+  HalInitPhaseBspSystemEarlyEnd = 12,
+  HalInitPhaseBspSystemLate = 13,
+  HalInitPhaseBspSystemLateEnd = 14,
+  HalInitPhasePnSystemLate = 15,
+  HalInitPhasePnSystemLateEnd = 16,
+  HalInitPhaseAllProcStartComplete = 17,
+  HalInitPhaseAllProcStartCompleteEnd = 18,
+  HalInitPhaseReportResources = 19,
+  HalInitPhaseReportResourcesEnd = 20,
+  HalInitPhaseReportCoreSystemResources = 21,
+  HalInitPhaseReportCoreSystemResourcesEnd = 22,
+} HAL_INIT_PHASE, *PHAL_INIT_PHASE;
+

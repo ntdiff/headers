@@ -1,0 +1,5 @@
+typedef enum _HV_HYPERVISOR_INTERFACE
+{
+  HvMicrosoftHypervisorInterface = 0x31237648,
+} HV_HYPERVISOR_INTERFACE, *PHV_HYPERVISOR_INTERFACE;
+
