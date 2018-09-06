@@ -8633,6 +8633,221 @@
             "value": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION"
         },
         {
+            "key": "Standalone/wil_details_ServiceReportingKind",
+            "text": "wil_details_ServiceReportingKind",
+            "value": "Standalone/wil_details_ServiceReportingKind"
+        },
+        {
+            "key": "Standalone/wil_details_CachedFeatureEnabledState",
+            "text": "wil_details_CachedFeatureEnabledState",
+            "value": "Standalone/wil_details_CachedFeatureEnabledState"
+        },
+        {
+            "key": "Standalone/wil_details_CachedHasNotificationState",
+            "text": "wil_details_CachedHasNotificationState",
+            "value": "Standalone/wil_details_CachedHasNotificationState"
+        },
+        {
+            "key": "Standalone/wil_ReportingKind",
+            "text": "wil_ReportingKind",
+            "value": "Standalone/wil_ReportingKind"
+        },
+        {
+            "key": "Standalone/wil_VariantReportingKind",
+            "text": "wil_VariantReportingKind",
+            "value": "Standalone/wil_VariantReportingKind"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledStateOptions",
+            "text": "wil_FeatureEnabledStateOptions",
+            "value": "Standalone/wil_FeatureEnabledStateOptions"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledStateKind",
+            "text": "wil_FeatureEnabledStateKind",
+            "value": "Standalone/wil_FeatureEnabledStateKind"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledState",
+            "text": "wil_FeatureEnabledState",
+            "value": "Standalone/wil_FeatureEnabledState"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigFeatureFields",
+            "text": "wil_details_StagingConfigFeatureFields",
+            "value": "Standalone/wil_details_StagingConfigFeatureFields"
+        },
+        {
+            "key": "Standalone/wil_FeatureStore",
+            "text": "wil_FeatureStore",
+            "value": "Standalone/wil_FeatureStore"
+        },
+        {
+            "key": "Standalone/wil_FeatureChangeTime",
+            "text": "wil_FeatureChangeTime",
+            "value": "Standalone/wil_FeatureChangeTime"
+        },
+        {
+            "key": "Standalone/wil_FeatureVariantPayloadKind",
+            "text": "wil_FeatureVariantPayloadKind",
+            "value": "Standalone/wil_FeatureVariantPayloadKind"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureTestStateKind",
+            "text": "wil_details_FeatureTestStateKind",
+            "value": "Standalone/wil_details_FeatureTestStateKind"
+        },
+        {
+            "key": "Standalone/wil_details_ServiceReportingOptions",
+            "text": "wil_details_ServiceReportingOptions",
+            "value": "Standalone/wil_details_ServiceReportingOptions"
+        },
+        {
+            "key": "Standalone/wil_UsageReportingMode",
+            "text": "wil_UsageReportingMode",
+            "value": "Standalone/wil_UsageReportingMode"
+        },
+        {
+            "key": "Standalone/FEATURE_CHANGE_TIME",
+            "text": "FEATURE_CHANGE_TIME",
+            "value": "Standalone/FEATURE_CHANGE_TIME"
+        },
+        {
+            "key": "Standalone/wil_FeatureStage",
+            "text": "wil_FeatureStage",
+            "value": "Standalone/wil_FeatureStage"
+        },
+        {
+            "key": "Standalone/FEATURE_ENABLED_STATE",
+            "text": "FEATURE_ENABLED_STATE",
+            "value": "Standalone/FEATURE_ENABLED_STATE"
+        },
+        {
+            "key": "Standalone/_WNF_TYPE_ID",
+            "text": "_WNF_TYPE_ID",
+            "value": "Standalone/_WNF_TYPE_ID"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigFeature",
+            "text": "wil_details_StagingConfigFeature",
+            "value": "Standalone/wil_details_StagingConfigFeature"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigWnfStateName",
+            "text": "wil_details_StagingConfigWnfStateName",
+            "value": "Standalone/wil_details_StagingConfigWnfStateName"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigUsageTrigger",
+            "text": "wil_details_StagingConfigUsageTrigger",
+            "value": "Standalone/wil_details_StagingConfigUsageTrigger"
+        },
+        {
+            "key": "Standalone/wil_details_RecordUsageResult",
+            "text": "wil_details_RecordUsageResult",
+            "value": "Standalone/wil_details_RecordUsageResult"
+        },
+        {
+            "key": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__",
+            "text": "FEATURE_STATE_CHANGE_SUBSCRIPTION__",
+            "value": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__"
+        },
+        {
+            "key": "Standalone/wil_StagingConfig",
+            "text": "wil_StagingConfig",
+            "value": "Standalone/wil_StagingConfig"
+        },
+        {
+            "key": "Standalone/__WIL__WNF_TYPE_ID",
+            "text": "__WIL__WNF_TYPE_ID",
+            "value": "Standalone/__WIL__WNF_TYPE_ID"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigHeaderProperties",
+            "text": "wil_details_StagingConfigHeaderProperties",
+            "value": "Standalone/wil_details_StagingConfigHeaderProperties"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureProperties",
+            "text": "wil_details_FeatureProperties",
+            "value": "Standalone/wil_details_FeatureProperties"
+        },
+        {
+            "key": "Standalone/wil_details_VariantProperties",
+            "text": "wil_details_VariantProperties",
+            "value": "Standalone/wil_details_VariantProperties"
+        },
+        {
+            "key": "Standalone/wil_details_FeaturePropertyCache",
+            "text": "wil_details_FeaturePropertyCache",
+            "value": "Standalone/wil_details_FeaturePropertyCache"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureVariantPropertyCache",
+            "text": "wil_details_FeatureVariantPropertyCache",
+            "value": "Standalone/wil_details_FeatureVariantPropertyCache"
+        },
+        {
+            "key": "Standalone/FEATURE_ERROR",
+            "text": "FEATURE_ERROR",
+            "value": "Standalone/FEATURE_ERROR"
+        },
+        {
+            "key": "Standalone/__WIL__WNF_STATE_NAME",
+            "text": "__WIL__WNF_STATE_NAME",
+            "value": "Standalone/__WIL__WNF_STATE_NAME"
+        },
+        {
+            "key": "Standalone/_wil_details_UsageSubscriptionData",
+            "text": "_wil_details_UsageSubscriptionData",
+            "value": "Standalone/_wil_details_UsageSubscriptionData"
+        },
+        {
+            "key": "Standalone/FEATURE_LOGGED_TRAITS",
+            "text": "FEATURE_LOGGED_TRAITS",
+            "value": "Standalone/FEATURE_LOGGED_TRAITS"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfig",
+            "text": "wil_details_StagingConfig",
+            "value": "Standalone/wil_details_StagingConfig"
+        },
+        {
+            "key": "Standalone/wil_details_SetPropertyFlagContext",
+            "text": "wil_details_SetPropertyFlagContext",
+            "value": "Standalone/wil_details_SetPropertyFlagContext"
+        },
+        {
+            "key": "Standalone/wil_details_SetPropertyCacheUsageContext",
+            "text": "wil_details_SetPropertyCacheUsageContext",
+            "value": "Standalone/wil_details_SetPropertyCacheUsageContext"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigHeader",
+            "text": "wil_details_StagingConfigHeader",
+            "value": "Standalone/wil_details_StagingConfigHeader"
+        },
+        {
+            "key": "Standalone/wil_FeatureState",
+            "text": "wil_FeatureState",
+            "value": "Standalone/wil_FeatureState"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureTestState",
+            "text": "wil_details_FeatureTestState",
+            "value": "Standalone/wil_details_FeatureTestState"
+        },
+        {
+            "key": "Standalone/__WIL__WNF_USER_SUBSCRIPTION",
+            "text": "__WIL__WNF_USER_SUBSCRIPTION",
+            "value": "Standalone/__WIL__WNF_USER_SUBSCRIPTION"
+        },
+        {
+            "key": "Standalone/_VRF_RULE_CLASS_ID",
+            "text": "_VRF_RULE_CLASS_ID",
+            "value": "Standalone/_VRF_RULE_CLASS_ID"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -9585,6 +9800,16 @@
             "value": "Win10_1809_RS5/x86/System32"
         },
         {
+            "key": "Win10_1809_RS5_17754/x64/System32",
+            "text": "Win10_1809_RS5_17754-x64 (10.0.17754.1)",
+            "value": "Win10_1809_RS5_17754/x64/System32"
+        },
+        {
+            "key": "Win10_1809_RS5_17754/x86/System32",
+            "text": "Win10_1809_RS5_17754-x86 (10.0.17754.1)",
+            "value": "Win10_1809_RS5_17754/x86/System32"
+        },
+        {
             "key": "Win10_1903_19H1/x64/System32",
             "text": "Win10_1903_19H1-x64 (10.0.18219.1000)",
             "value": "Win10_1903_19H1/x64/System32"
@@ -9593,6 +9818,16 @@
             "key": "Win10_1903_19H1/x86/System32",
             "text": "Win10_1903_19H1-x86 (10.0.18219.1000)",
             "value": "Win10_1903_19H1/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18234/x64/System32",
+            "text": "Win10_1903_19H1_18234-x64 (10.0.18234.1000)",
+            "value": "Win10_1903_19H1_18234/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18234/x86/System32",
+            "text": "Win10_1903_19H1_18234-x86 (10.0.18234.1000)",
+            "value": "Win10_1903_19H1_18234/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
