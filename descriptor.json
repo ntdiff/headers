@@ -8848,6 +8848,11 @@
             "value": "Standalone/_VRF_RULE_CLASS_ID"
         },
         {
+            "key": "Standalone/_POP_PEP_NOTIFY_DEVICE_DSTATE_REASON",
+            "text": "_POP_PEP_NOTIFY_DEVICE_DSTATE_REASON",
+            "value": "Standalone/_POP_PEP_NOTIFY_DEVICE_DSTATE_REASON"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -9828,6 +9833,16 @@
             "key": "Win10_1903_19H1_18234/x86/System32",
             "text": "Win10_1903_19H1_18234-x86 (10.0.18234.1000)",
             "value": "Win10_1903_19H1_18234/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18242/x64/System32",
+            "text": "Win10_1903_19H1_18242-x64 (10.0.18242.1000)",
+            "value": "Win10_1903_19H1_18242/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18242/x86/System32",
+            "text": "Win10_1903_19H1_18242-x86 (10.0.18242.1000)",
+            "value": "Win10_1903_19H1_18242/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
