@@ -8853,6 +8853,91 @@
             "value": "Standalone/_POP_PEP_NOTIFY_DEVICE_DSTATE_REASON"
         },
         {
+            "key": "Standalone/_tag_ARM64INTR_BARRIER_TYPE",
+            "text": "_tag_ARM64INTR_BARRIER_TYPE",
+            "value": "Standalone/_tag_ARM64INTR_BARRIER_TYPE"
+        },
+        {
+            "key": "Standalone/__n64",
+            "text": "__n64",
+            "value": "Standalone/__n64"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_BITS_COMMON",
+            "text": "_MCI_STATUS_BITS_COMMON",
+            "value": "Standalone/_MCI_STATUS_BITS_COMMON"
+        },
+        {
+            "key": "Standalone/_KARM64_ARCH_STATE",
+            "text": "_KARM64_ARCH_STATE",
+            "value": "Standalone/_KARM64_ARCH_STATE"
+        },
+        {
+            "key": "Standalone/_ARM64_NT_NEON128",
+            "text": "_ARM64_NT_NEON128",
+            "value": "Standalone/_ARM64_NT_NEON128"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_AMD_BITS",
+            "text": "_MCI_STATUS_AMD_BITS",
+            "value": "Standalone/_MCI_STATUS_AMD_BITS"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_INTEL_BITS",
+            "text": "_MCI_STATUS_INTEL_BITS",
+            "value": "Standalone/_MCI_STATUS_INTEL_BITS"
+        },
+        {
+            "key": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG",
+            "text": "_HAL_HV_DMA_DOMAIN_CONFIG",
+            "value": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG"
+        },
+        {
+            "key": "Standalone/_HAL_ARM_ENLIGHTENMENT_INFORMATION",
+            "text": "_HAL_ARM_ENLIGHTENMENT_INFORMATION",
+            "value": "Standalone/_HAL_ARM_ENLIGHTENMENT_INFORMATION"
+        },
+        {
+            "key": "Standalone/_VRF_TRIAGE_CONTEXT",
+            "text": "_VRF_TRIAGE_CONTEXT",
+            "value": "Standalone/_VRF_TRIAGE_CONTEXT"
+        },
+        {
+            "key": "Standalone/_KSWITCH_FRAME",
+            "text": "_KSWITCH_FRAME",
+            "value": "Standalone/_KSWITCH_FRAME"
+        },
+        {
+            "key": "Standalone/_HEAP_VS_DELAY_FREE_CONTEXT",
+            "text": "_HEAP_VS_DELAY_FREE_CONTEXT",
+            "value": "Standalone/_HEAP_VS_DELAY_FREE_CONTEXT"
+        },
+        {
+            "key": "Standalone/_RTLP_HP_QUEUE_LOCK_HANDLE",
+            "text": "_RTLP_HP_QUEUE_LOCK_HANDLE",
+            "value": "Standalone/_RTLP_HP_QUEUE_LOCK_HANDLE"
+        },
+        {
+            "key": "Standalone/_KARM64_VFP_STATE",
+            "text": "_KARM64_VFP_STATE",
+            "value": "Standalone/_KARM64_VFP_STATE"
+        },
+        {
+            "key": "Standalone/_IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY",
+            "text": "_IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY",
+            "value": "Standalone/_IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY"
+        },
+        {
+            "key": "Standalone/_HV_ARM64_HYPERVISOR_FEATURES",
+            "text": "_HV_ARM64_HYPERVISOR_FEATURES",
+            "value": "Standalone/_HV_ARM64_HYPERVISOR_FEATURES"
+        },
+        {
+            "key": "Standalone/_TRAPFRAME_LOG_ENTRY",
+            "text": "_TRAPFRAME_LOG_ENTRY",
+            "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -9863,6 +9948,21 @@
             "key": "Win10_1903_19H1_18247/x86/System32",
             "text": "Win10_1903_19H1_18247-x86 (10.0.18247.1001)",
             "value": "Win10_1903_19H1_18247/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18267/ARM64/System32",
+            "text": "Win10_1903_19H1_18267-ARM64 (10.0.18267.1001)",
+            "value": "Win10_1903_19H1_18267/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18267/x64/System32",
+            "text": "Win10_1903_19H1_18267-x64 (10.0.18267.1001)",
+            "value": "Win10_1903_19H1_18267/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18267/x86/System32",
+            "text": "Win10_1903_19H1_18267-x86 (10.0.18267.1001)",
+            "value": "Win10_1903_19H1_18267/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
