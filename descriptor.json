@@ -8938,6 +8938,11 @@
             "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
         },
         {
+            "key": "Standalone/_VI_VERIFIER_POOL_HEADER",
+            "text": "_VI_VERIFIER_POOL_HEADER",
+            "value": "Standalone/_VI_VERIFIER_POOL_HEADER"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -9963,6 +9968,21 @@
             "key": "Win10_1903_19H1_18267/x86/System32",
             "text": "Win10_1903_19H1_18267-x86 (10.0.18267.1001)",
             "value": "Win10_1903_19H1_18267/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18272/ARM64/System32",
+            "text": "Win10_1903_19H1_18272-ARM64 (10.0.18272.1000)",
+            "value": "Win10_1903_19H1_18272/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18272/x64/System32",
+            "text": "Win10_1903_19H1_18272-x64 (10.0.18272.1000)",
+            "value": "Win10_1903_19H1_18272/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18272/x86/System32",
+            "text": "Win10_1903_19H1_18272-x86 (10.0.18272.1000)",
+            "value": "Win10_1903_19H1_18272/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
