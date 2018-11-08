@@ -3543,6 +3543,11 @@
             "value": "Standalone/_PRIVATE_CACHE_MAP"
         },
         {
+            "key": "Standalone/_TAG_UNNAMED_1",
+            "text": "_TAG_UNNAMED_1",
+            "value": "Standalone/_TAG_UNNAMED_1"
+        },
+        {
             "key": "Standalone/_HVIEW_MAP_ENTRY",
             "text": "_HVIEW_MAP_ENTRY",
             "value": "Standalone/_HVIEW_MAP_ENTRY"
@@ -8943,6 +8948,126 @@
             "value": "Standalone/_VI_VERIFIER_POOL_HEADER"
         },
         {
+            "key": "Standalone/_TAG_UNNAMED_2",
+            "text": "_TAG_UNNAMED_2",
+            "value": "Standalone/_TAG_UNNAMED_2"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_3",
+            "text": "_TAG_UNNAMED_3",
+            "value": "Standalone/_TAG_UNNAMED_3"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_4",
+            "text": "_TAG_UNNAMED_4",
+            "value": "Standalone/_TAG_UNNAMED_4"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_5",
+            "text": "_TAG_UNNAMED_5",
+            "value": "Standalone/_TAG_UNNAMED_5"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_6",
+            "text": "_TAG_UNNAMED_6",
+            "value": "Standalone/_TAG_UNNAMED_6"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_7",
+            "text": "_TAG_UNNAMED_7",
+            "value": "Standalone/_TAG_UNNAMED_7"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_8",
+            "text": "_TAG_UNNAMED_8",
+            "value": "Standalone/_TAG_UNNAMED_8"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_9",
+            "text": "_TAG_UNNAMED_9",
+            "value": "Standalone/_TAG_UNNAMED_9"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_10",
+            "text": "_TAG_UNNAMED_10",
+            "value": "Standalone/_TAG_UNNAMED_10"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_11",
+            "text": "_TAG_UNNAMED_11",
+            "value": "Standalone/_TAG_UNNAMED_11"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_12",
+            "text": "_TAG_UNNAMED_12",
+            "value": "Standalone/_TAG_UNNAMED_12"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_13",
+            "text": "_TAG_UNNAMED_13",
+            "value": "Standalone/_TAG_UNNAMED_13"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_14",
+            "text": "_TAG_UNNAMED_14",
+            "value": "Standalone/_TAG_UNNAMED_14"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_15",
+            "text": "_TAG_UNNAMED_15",
+            "value": "Standalone/_TAG_UNNAMED_15"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_16",
+            "text": "_TAG_UNNAMED_16",
+            "value": "Standalone/_TAG_UNNAMED_16"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_17",
+            "text": "_TAG_UNNAMED_17",
+            "value": "Standalone/_TAG_UNNAMED_17"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_18",
+            "text": "_TAG_UNNAMED_18",
+            "value": "Standalone/_TAG_UNNAMED_18"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_19",
+            "text": "_TAG_UNNAMED_19",
+            "value": "Standalone/_TAG_UNNAMED_19"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_20",
+            "text": "_TAG_UNNAMED_20",
+            "value": "Standalone/_TAG_UNNAMED_20"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_21",
+            "text": "_TAG_UNNAMED_21",
+            "value": "Standalone/_TAG_UNNAMED_21"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_22",
+            "text": "_TAG_UNNAMED_22",
+            "value": "Standalone/_TAG_UNNAMED_22"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_23",
+            "text": "_TAG_UNNAMED_23",
+            "value": "Standalone/_TAG_UNNAMED_23"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_24",
+            "text": "_TAG_UNNAMED_24",
+            "value": "Standalone/_TAG_UNNAMED_24"
+        },
+        {
+            "key": "Standalone/_TAG_UNNAMED_25",
+            "text": "_TAG_UNNAMED_25",
+            "value": "Standalone/_TAG_UNNAMED_25"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -9983,6 +10108,21 @@
             "key": "Win10_1903_19H1_18272/x86/System32",
             "text": "Win10_1903_19H1_18272-x86 (10.0.18272.1000)",
             "value": "Win10_1903_19H1_18272/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18277/ARM64/System32",
+            "text": "Win10_1903_19H1_18277-ARM64 (10.0.18277.1000)",
+            "value": "Win10_1903_19H1_18277/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18277/x64/System32",
+            "text": "Win10_1903_19H1_18277-x64 (10.0.18277.1000)",
+            "value": "Win10_1903_19H1_18277/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18277/x86/System32",
+            "text": "Win10_1903_19H1_18277-x86 (10.0.18277.1000)",
+            "value": "Win10_1903_19H1_18277/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
