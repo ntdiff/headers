@@ -9068,6 +9068,31 @@
             "value": "Standalone/_TAG_UNNAMED_25"
         },
         {
+            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE",
+            "text": "_HALP_EMERGENCY_LA_QUEUE_TYPE",
+            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE"
+        },
+        {
+            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY",
+            "text": "_HALP_EMERGENCY_LA_QUEUE_ENTRY",
+            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY"
+        },
+        {
+            "key": "Standalone/_POP_SYSTEM_IDLE_EVENT_TYPE",
+            "text": "_POP_SYSTEM_IDLE_EVENT_TYPE",
+            "value": "Standalone/_POP_SYSTEM_IDLE_EVENT_TYPE"
+        },
+        {
+            "key": "Standalone/_MI_LARGEPAGE_VAD_INFO",
+            "text": "_MI_LARGEPAGE_VAD_INFO",
+            "value": "Standalone/_MI_LARGEPAGE_VAD_INFO"
+        },
+        {
+            "key": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE",
+            "text": "_HIDDEN_PROCESSOR_POWER_INTERFACE",
+            "value": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10123,6 +10148,21 @@
             "key": "Win10_1903_19H1_18277/x86/System32",
             "text": "Win10_1903_19H1_18277-x86 (10.0.18277.1000)",
             "value": "Win10_1903_19H1_18277/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18282/ARM64/System32",
+            "text": "Win10_1903_19H1_18282-ARM64 (10.0.18282.1000)",
+            "value": "Win10_1903_19H1_18282/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18282/x64/System32",
+            "text": "Win10_1903_19H1_18282-x64 (10.0.18282.1000)",
+            "value": "Win10_1903_19H1_18282/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18282/x86/System32",
+            "text": "Win10_1903_19H1_18282-x86 (10.0.18282.1000)",
+            "value": "Win10_1903_19H1_18282/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
