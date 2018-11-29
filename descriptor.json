@@ -9093,6 +9093,36 @@
             "value": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE"
         },
         {
+            "key": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
+            "text": "_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
+            "value": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE"
+        },
+        {
+            "key": "Standalone/_MCG_CAP",
+            "text": "_MCG_CAP",
+            "value": "Standalone/_MCG_CAP"
+        },
+        {
+            "key": "Standalone/_MM_PRIVATE_VAD_FLAGS",
+            "text": "_MM_PRIVATE_VAD_FLAGS",
+            "value": "Standalone/_MM_PRIVATE_VAD_FLAGS"
+        },
+        {
+            "key": "Standalone/_MM_GRAPHICS_VAD_FLAGS",
+            "text": "_MM_GRAPHICS_VAD_FLAGS",
+            "value": "Standalone/_MM_GRAPHICS_VAD_FLAGS"
+        },
+        {
+            "key": "Standalone/_MM_SHARED_VAD_FLAGS",
+            "text": "_MM_SHARED_VAD_FLAGS",
+            "value": "Standalone/_MM_SHARED_VAD_FLAGS"
+        },
+        {
+            "key": "Standalone/_MI_SECTION_WOW_STATE",
+            "text": "_MI_SECTION_WOW_STATE",
+            "value": "Standalone/_MI_SECTION_WOW_STATE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10163,6 +10193,21 @@
             "key": "Win10_1903_19H1_18282/x86/System32",
             "text": "Win10_1903_19H1_18282-x86 (10.0.18282.1000)",
             "value": "Win10_1903_19H1_18282/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18290/ARM64/System32",
+            "text": "Win10_1903_19H1_18290-ARM64 (10.0.18290.1000)",
+            "value": "Win10_1903_19H1_18290/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18290/x64/System32",
+            "text": "Win10_1903_19H1_18290-x64 (10.0.18290.1000)",
+            "value": "Win10_1903_19H1_18290/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18290/x86/System32",
+            "text": "Win10_1903_19H1_18290-x86 (10.0.18290.1000)",
+            "value": "Win10_1903_19H1_18290/x86/System32"
         },
         {
             "key": "Win7/x64/System32",

@@ -1,0 +1,2 @@
+struct _UMS_CONTROL_BLOCK;
+
