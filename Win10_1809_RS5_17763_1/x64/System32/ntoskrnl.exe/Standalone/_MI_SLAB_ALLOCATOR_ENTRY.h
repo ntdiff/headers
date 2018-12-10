@@ -1,0 +1,2 @@
+struct _MI_SLAB_ALLOCATOR_ENTRY;
+
