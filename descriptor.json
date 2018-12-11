@@ -9123,6 +9123,11 @@
             "value": "Standalone/_MI_SECTION_WOW_STATE"
         },
         {
+            "key": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS",
+            "text": "_WHEA_AMD_EXTENDED_REGISTERS",
+            "value": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10228,6 +10233,21 @@
             "key": "Win10_1903_19H1_18290/x86/System32",
             "text": "Win10_1903_19H1_18290-x86 (10.0.18290.1000)",
             "value": "Win10_1903_19H1_18290/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18298/ARM64/System32",
+            "text": "Win10_1903_19H1_18298-ARM64 (10.0.18298.1000)",
+            "value": "Win10_1903_19H1_18298/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18298/x64/System32",
+            "text": "Win10_1903_19H1_18298-x64 (10.0.18298.1000)",
+            "value": "Win10_1903_19H1_18298/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18298/x86/System32",
+            "text": "Win10_1903_19H1_18298-x86 (10.0.18298.1000)",
+            "value": "Win10_1903_19H1_18298/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
