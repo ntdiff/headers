@@ -9128,6 +9128,86 @@
             "value": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS"
         },
         {
+            "key": "Standalone/_DMA_COMMON_BUFFER_VECTOR",
+            "text": "_DMA_COMMON_BUFFER_VECTOR",
+            "value": "Standalone/_DMA_COMMON_BUFFER_VECTOR"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_ENTRY",
+            "text": "_DMA_COMMON_BUFFER_ENTRY",
+            "value": "Standalone/_DMA_COMMON_BUFFER_ENTRY"
+        },
+        {
+            "key": "Standalone/_EXP_LICENSE_STATE",
+            "text": "_EXP_LICENSE_STATE",
+            "value": "Standalone/_EXP_LICENSE_STATE"
+        },
+        {
+            "key": "Standalone/_RTL_LOOKASIDE",
+            "text": "_RTL_LOOKASIDE",
+            "value": "Standalone/_RTL_LOOKASIDE"
+        },
+        {
+            "key": "Standalone/_RTL_DYNAMIC_LOOKASIDE",
+            "text": "_RTL_DYNAMIC_LOOKASIDE",
+            "value": "Standalone/_RTL_DYNAMIC_LOOKASIDE"
+        },
+        {
+            "key": "Standalone/_OPENCOUNT_REASON",
+            "text": "_OPENCOUNT_REASON",
+            "value": "Standalone/_OPENCOUNT_REASON"
+        },
+        {
+            "key": "Standalone/_EX_HEAP_TYPE",
+            "text": "_EX_HEAP_TYPE",
+            "value": "Standalone/_EX_HEAP_TYPE"
+        },
+        {
+            "key": "Standalone/_MI_SLAB_ALLOCATOR_TYPE",
+            "text": "_MI_SLAB_ALLOCATOR_TYPE",
+            "value": "Standalone/_MI_SLAB_ALLOCATOR_TYPE"
+        },
+        {
+            "key": "Standalone/_PO_POWER_PLANE_PROFILE",
+            "text": "_PO_POWER_PLANE_PROFILE",
+            "value": "Standalone/_PO_POWER_PLANE_PROFILE"
+        },
+        {
+            "key": "Standalone/_MI_EXTENT_DELETION_WAIT_BLOCK",
+            "text": "_MI_EXTENT_DELETION_WAIT_BLOCK",
+            "value": "Standalone/_MI_EXTENT_DELETION_WAIT_BLOCK"
+        },
+        {
+            "key": "Standalone/_POP_POWER_PLANE",
+            "text": "_POP_POWER_PLANE",
+            "value": "Standalone/_POP_POWER_PLANE"
+        },
+        {
+            "key": "Standalone/_EX_HEAP_SESSION_STATE",
+            "text": "_EX_HEAP_SESSION_STATE",
+            "value": "Standalone/_EX_HEAP_SESSION_STATE"
+        },
+        {
+            "key": "Standalone/_POP_COMPONENT_POWER_PROFILE",
+            "text": "_POP_COMPONENT_POWER_PROFILE",
+            "value": "Standalone/_POP_COMPONENT_POWER_PROFILE"
+        },
+        {
+            "key": "Standalone/_POP_DEVICE_POWER_PROFILE",
+            "text": "_POP_DEVICE_POWER_PROFILE",
+            "value": "Standalone/_POP_DEVICE_POWER_PROFILE"
+        },
+        {
+            "key": "Standalone/_EX_HEAP_POOL_NODE",
+            "text": "_EX_HEAP_POOL_NODE",
+            "value": "Standalone/_EX_HEAP_POOL_NODE"
+        },
+        {
+            "key": "Standalone/_EX_POOL_HEAP_MANAGER_STATE",
+            "text": "_EX_POOL_HEAP_MANAGER_STATE",
+            "value": "Standalone/_EX_POOL_HEAP_MANAGER_STATE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10100,26 +10180,6 @@
             "value": "Win10_1809_RS5_17763/x86/System32"
         },
         {
-            "key": "Win10_1809_RS5_17763_1/x64/System32",
-            "text": "Win10_1809_RS5_17763_1-x64 (10.0.17763.1)",
-            "value": "Win10_1809_RS5_17763_1/x64/System32"
-        },
-        {
-            "key": "Win10_1809_RS5_17763_1/x64/System32",
-            "text": "Win10_1809_RS5_17763_1-x64 (10.0.17763.107)",
-            "value": "Win10_1809_RS5_17763_1/x64/System32"
-        },
-        {
-            "key": "Win10_1809_RS5_17763_1/x86/System32",
-            "text": "Win10_1809_RS5_17763_1-x86 (10.0.17763.1)",
-            "value": "Win10_1809_RS5_17763_1/x86/System32"
-        },
-        {
-            "key": "Win10_1809_RS5_17763_1/x86/System32",
-            "text": "Win10_1809_RS5_17763_1-x86 (10.0.17763.107)",
-            "value": "Win10_1809_RS5_17763_1/x86/System32"
-        },
-        {
             "key": "Win10_1903_19H1/x64/System32",
             "text": "Win10_1903_19H1-x64 (10.0.18219.1000)",
             "value": "Win10_1903_19H1/x64/System32"
@@ -10248,6 +10308,21 @@
             "key": "Win10_1903_19H1_18298/x86/System32",
             "text": "Win10_1903_19H1_18298-x86 (10.0.18298.1000)",
             "value": "Win10_1903_19H1_18298/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18305/ARM64/System32",
+            "text": "Win10_1903_19H1_18305-ARM64 (10.0.18305.1000)",
+            "value": "Win10_1903_19H1_18305/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18305/x64/System32",
+            "text": "Win10_1903_19H1_18305-x64 (10.0.18305.1000)",
+            "value": "Win10_1903_19H1_18305/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18305/x86/System32",
+            "text": "Win10_1903_19H1_18305-x86 (10.0.18305.1000)",
+            "value": "Win10_1903_19H1_18305/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
