@@ -9208,6 +9208,86 @@
             "value": "Standalone/_EX_POOL_HEAP_MANAGER_STATE"
         },
         {
+            "key": "Standalone/_WHEA_ERROR_SOURCE_CONFIGURATION_DD",
+            "text": "_WHEA_ERROR_SOURCE_CONFIGURATION_DD",
+            "value": "Standalone/_WHEA_ERROR_SOURCE_CONFIGURATION_DD"
+        },
+        {
+            "key": "Standalone/_WHEA_DEVICE_DRIVER_DESCRIPTOR",
+            "text": "_WHEA_DEVICE_DRIVER_DESCRIPTOR",
+            "value": "Standalone/_WHEA_DEVICE_DRIVER_DESCRIPTOR"
+        },
+        {
+            "key": "Standalone/_WNF_STATE_NAME_LIFETIME",
+            "text": "_WNF_STATE_NAME_LIFETIME",
+            "value": "Standalone/_WNF_STATE_NAME_LIFETIME"
+        },
+        {
+            "key": "Standalone/_WNF_DATA_SCOPE",
+            "text": "_WNF_DATA_SCOPE",
+            "value": "Standalone/_WNF_DATA_SCOPE"
+        },
+        {
+            "key": "Standalone/_WNF_SUBSCRIPTION_STATE",
+            "text": "_WNF_SUBSCRIPTION_STATE",
+            "value": "Standalone/_WNF_SUBSCRIPTION_STATE"
+        },
+        {
+            "key": "Standalone/_WNF_NODE_HEADER",
+            "text": "_WNF_NODE_HEADER",
+            "value": "Standalone/_WNF_NODE_HEADER"
+        },
+        {
+            "key": "Standalone/_WNF_SCOPE_INSTANCE",
+            "text": "_WNF_SCOPE_INSTANCE",
+            "value": "Standalone/_WNF_SCOPE_INSTANCE"
+        },
+        {
+            "key": "Standalone/_WNF_SCOPE_MAP_ENTRY",
+            "text": "_WNF_SCOPE_MAP_ENTRY",
+            "value": "Standalone/_WNF_SCOPE_MAP_ENTRY"
+        },
+        {
+            "key": "Standalone/_WNF_DELIVERY_DESCRIPTOR",
+            "text": "_WNF_DELIVERY_DESCRIPTOR",
+            "value": "Standalone/_WNF_DELIVERY_DESCRIPTOR"
+        },
+        {
+            "key": "Standalone/_WNF_PROCESS_CONTEXT",
+            "text": "_WNF_PROCESS_CONTEXT",
+            "value": "Standalone/_WNF_PROCESS_CONTEXT"
+        },
+        {
+            "key": "Standalone/_WNF_STATE_NAME_STRUCT",
+            "text": "_WNF_STATE_NAME_STRUCT",
+            "value": "Standalone/_WNF_STATE_NAME_STRUCT"
+        },
+        {
+            "key": "Standalone/_WNF_SUBSCRIPTION",
+            "text": "_WNF_SUBSCRIPTION",
+            "value": "Standalone/_WNF_SUBSCRIPTION"
+        },
+        {
+            "key": "Standalone/_WNF_STATE_NAME_REGISTRATION",
+            "text": "_WNF_STATE_NAME_REGISTRATION",
+            "value": "Standalone/_WNF_STATE_NAME_REGISTRATION"
+        },
+        {
+            "key": "Standalone/_WNF_NAME_INSTANCE",
+            "text": "_WNF_NAME_INSTANCE",
+            "value": "Standalone/_WNF_NAME_INSTANCE"
+        },
+        {
+            "key": "Standalone/_WNF_STATE_DATA",
+            "text": "_WNF_STATE_DATA",
+            "value": "Standalone/_WNF_STATE_DATA"
+        },
+        {
+            "key": "Standalone/_WNF_DISPATCHER",
+            "text": "_WNF_DISPATCHER",
+            "value": "Standalone/_WNF_DISPATCHER"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10323,6 +10403,21 @@
             "key": "Win10_1903_19H1_18305/x86/System32",
             "text": "Win10_1903_19H1_18305-x86 (10.0.18305.1000)",
             "value": "Win10_1903_19H1_18305/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18309/ARM64/System32",
+            "text": "Win10_1903_19H1_18309-ARM64 (10.0.18309.1000)",
+            "value": "Win10_1903_19H1_18309/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18309/x64/System32",
+            "text": "Win10_1903_19H1_18309-x64 (10.0.18309.1000)",
+            "value": "Win10_1903_19H1_18309/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18309/x86/System32",
+            "text": "Win10_1903_19H1_18309-x86 (10.0.18309.1000)",
+            "value": "Win10_1903_19H1_18309/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
