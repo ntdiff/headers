@@ -9288,6 +9288,21 @@
             "value": "Standalone/_WNF_DISPATCHER"
         },
         {
+            "key": "Standalone/_MI_HUGE_PFN",
+            "text": "_MI_HUGE_PFN",
+            "value": "Standalone/_MI_HUGE_PFN"
+        },
+        {
+            "key": "Standalone/_MI_DLL_OVERFLOW_AREA",
+            "text": "_MI_DLL_OVERFLOW_AREA",
+            "value": "Standalone/_MI_DLL_OVERFLOW_AREA"
+        },
+        {
+            "key": "Standalone/_MI_NODE_NUMBER_ZERO_BASED",
+            "text": "_MI_NODE_NUMBER_ZERO_BASED",
+            "value": "Standalone/_MI_NODE_NUMBER_ZERO_BASED"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10418,6 +10433,21 @@
             "key": "Win10_1903_19H1_18309/x86/System32",
             "text": "Win10_1903_19H1_18309-x86 (10.0.18309.1000)",
             "value": "Win10_1903_19H1_18309/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18312/ARM64/System32",
+            "text": "Win10_1903_19H1_18312-ARM64 (10.0.18312.1001)",
+            "value": "Win10_1903_19H1_18312/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18312/x64/System32",
+            "text": "Win10_1903_19H1_18312-x64 (10.0.18312.1001)",
+            "value": "Win10_1903_19H1_18312/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18312/x86/System32",
+            "text": "Win10_1903_19H1_18312-x86 (10.0.18312.1001)",
+            "value": "Win10_1903_19H1_18312/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
