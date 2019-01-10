@@ -80,7 +80,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_7
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -131,11 +131,11 @@ typedef struct _POP_ACTION_TRIGGER
   /* 0x0008 */ struct _POP_TRIGGER_WAIT* Wait;
   union
   {
-    struct // _TAG_UNNAMED_137
+    struct
     {
       /* 0x000c */ unsigned long Level;
     } /* size: 0x0004 */ Battery;
-    struct // _TAG_UNNAMED_138
+    struct
     {
       /* 0x000c */ unsigned long Type;
     } /* size: 0x0004 */ Button;
@@ -174,7 +174,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_4
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;

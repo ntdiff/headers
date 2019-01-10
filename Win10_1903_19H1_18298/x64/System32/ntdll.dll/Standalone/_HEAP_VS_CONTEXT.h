@@ -30,7 +30,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_16
+    struct
     {
       struct /* bitfield */
       {
@@ -62,7 +62,7 @@ typedef struct _HEAP_SUBALLOCATOR_CALLBACKS
 
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_35
+  struct
   {
     struct /* bitfield */
     {

@@ -31,7 +31,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long FirmwareStartedInEL2 : 1; /* bit position: 3 */
     /* 0x0000 */ unsigned long Reserved : 27; /* bit position: 4 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_185
+  union
   {
     union
     {

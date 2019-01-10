@@ -2,7 +2,7 @@ typedef struct _MI_ACTIVE_PFN
 {
   union
   {
-    struct // _TAG_UNNAMED_3
+    struct
     {
       struct /* bitfield */
       {
@@ -10,7 +10,7 @@ typedef struct _MI_ACTIVE_PFN
         /* 0x0000 */ unsigned __int64 NonPagedBuddy : 43; /* bit position: 1 */
       }; /* bitfield */
     } /* size: 0x0008 */ Leaf;
-    struct // _TAG_UNNAMED_4
+    struct
     {
       struct /* bitfield */
       {

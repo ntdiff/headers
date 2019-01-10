@@ -1,6 +1,6 @@
 typedef struct _MM_AVL_NODE
 {
-  union // _TAG_UNNAMED_72
+  union
   {
     union
     {
@@ -60,7 +60,7 @@ typedef struct _MMVAD_SHORT
   /* 0x000c */ unsigned long StartingVpn;
   /* 0x0010 */ unsigned long EndingVpn;
   /* 0x0014 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_176
+  union
   {
     union
     {
@@ -68,7 +68,7 @@ typedef struct _MMVAD_SHORT
       /* 0x0018 */ struct _MMVAD_FLAGS VadFlags;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_177
+  union
   {
     union
     {
@@ -112,7 +112,7 @@ typedef struct _MI_VAD_SEQUENTIAL_INFO
 typedef struct _MMVAD
 {
   /* 0x0000 */ struct _MMVAD_SHORT Core;
-  union // _TAG_UNNAMED_186
+  union
   {
     union
     {
@@ -129,7 +129,7 @@ typedef struct _MMVAD
   /* 0x0034 */ struct _MMPTE* LastContiguousPte;
   /* 0x0038 */ struct _LIST_ENTRY ViewLinks;
   /* 0x0040 */ struct _EPROCESS* VadsProcess;
-  union // _TAG_UNNAMED_187
+  union
   {
     union
     {

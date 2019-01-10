@@ -51,7 +51,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -89,11 +89,11 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0010 */ unsigned __int64 IdleTimeAccumulated;
   union
   {
-    struct // _TAG_UNNAMED_8
+    struct
     {
       /* 0x0018 */ unsigned __int64 IdleTransitionTime;
     } /* size: 0x0008 */ Native;
-    struct // _TAG_UNNAMED_9
+    struct
     {
       /* 0x0018 */ unsigned __int64 LastIdleCheck;
     } /* size: 0x0008 */ Hv;
@@ -106,7 +106,7 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0038 */ unsigned __int64 LastProcessorTimeHv;
   /* 0x0040 */ unsigned char ThermalConstraint;
   /* 0x0041 */ unsigned char LastBusyPercentage;
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {

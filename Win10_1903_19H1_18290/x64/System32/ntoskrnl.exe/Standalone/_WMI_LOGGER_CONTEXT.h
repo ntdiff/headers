@@ -41,7 +41,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -245,7 +245,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_22
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -369,7 +369,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_16
+    struct
     {
       struct /* bitfield */
       {
@@ -430,7 +430,7 @@ typedef struct _WORK_QUEUE_ITEM
   /* 0x0018 */ void* Parameter;
 } WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM; /* size: 0x0020 */
 
-typedef enum _TAG_UNNAMED_163
+typedef enum
 {
   EtwCompressionModeRestart = 0,
   EtwCompressionModeNoDisable = 1,

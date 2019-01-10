@@ -1,6 +1,6 @@
 typedef struct _MMADDRESS_NODE
 {
-  union // _TAG_UNNAMED_3
+  union
   {
     union
     {

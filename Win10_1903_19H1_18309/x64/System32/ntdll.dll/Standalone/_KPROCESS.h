@@ -233,12 +233,12 @@ typedef struct _KPROCESS
   /* 0x0288 */ unsigned char AddressPolicy;
   /* 0x0289 */ unsigned char Spare2[71];
   /* 0x02d0 */ void* InstrumentationCallback;
-  union // _TAG_UNNAMED_40
+  union
   {
     union
     {
       /* 0x02d8 */ unsigned __int64 SecureHandle;
-      struct // _TAG_UNNAMED_41
+      struct
       {
         struct /* bitfield */
         {

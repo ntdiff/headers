@@ -3,12 +3,12 @@ typedef struct _HALP_DMA_TRANSLATION_ENTRY
   /* 0x0000 */ unsigned __int64 PhysicalAddress;
   /* 0x0008 */ struct _HALP_DMA_TRANSLATION_ENTRY* Next;
   /* 0x000c */ unsigned long MappedLength;
-  union // _TAG_UNNAMED_2
+  union
   {
     union
     {
       /* 0x0010 */ void* VirtualAddress;
-      struct // _TAG_UNNAMED_3
+      struct
       {
         struct /* bitfield */
         {

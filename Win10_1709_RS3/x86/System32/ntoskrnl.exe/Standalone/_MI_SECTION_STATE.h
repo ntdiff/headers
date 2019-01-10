@@ -58,7 +58,7 @@ typedef struct _SUBSECTION
     /* 0x000c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* CreationWaitList;
     /* 0x000c */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_99
+  union
   {
     union
     {
@@ -69,7 +69,7 @@ typedef struct _SUBSECTION
   /* 0x0014 */ unsigned long StartingSector;
   /* 0x0018 */ unsigned long NumberOfFullSectors;
   /* 0x001c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_100
+  union
   {
     union
     {
@@ -85,7 +85,7 @@ typedef struct _SUBSECTION
       /* 0x0024 */ unsigned long ExtentQueryNeeded : 1; /* bit position: 30 */
       /* 0x0024 */ unsigned long DirtyPages : 1; /* bit position: 31 */
     }; /* bitfield */
-    struct // _TAG_UNNAMED_101
+    struct
     {
       struct /* bitfield */
       {
@@ -182,7 +182,7 @@ typedef struct _CONTROL_AREA
   /* 0x0010 */ unsigned long NumberOfPfnReferences;
   /* 0x0014 */ unsigned long NumberOfMappedViews;
   /* 0x0018 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_42
+  union
   {
     union
     {
@@ -194,9 +194,9 @@ typedef struct _CONTROL_AREA
   /* 0x0024 */ volatile long ControlAreaLock;
   /* 0x0028 */ unsigned long ModifiedWriteCount;
   /* 0x002c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_165
+  union
   {
-    struct // _TAG_UNNAMED_166
+    struct
     {
       union
       {
@@ -227,7 +227,7 @@ typedef struct _CONTROL_AREA
   } /* size: 0x000c */ u2;
   /* 0x003c */ struct _EX_PUSH_LOCK FileObjectLock;
   /* 0x0040 */ volatile unsigned __int64 LockedPages;
-  union // _TAG_UNNAMED_167
+  union
   {
     union
     {

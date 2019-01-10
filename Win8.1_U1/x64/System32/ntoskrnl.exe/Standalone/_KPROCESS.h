@@ -188,7 +188,7 @@ typedef union _KGDTENTRY64
       /* 0x0002 */ unsigned short BaseLow;
       union
       {
-        struct // _TAG_UNNAMED_55
+        struct
         {
           /* 0x0004 */ unsigned char BaseMiddle;
           /* 0x0005 */ unsigned char Flags1;
@@ -197,7 +197,7 @@ typedef union _KGDTENTRY64
         } /* size: 0x0004 */ Bytes;
         struct
         {
-          struct // _TAG_UNNAMED_56
+          struct
           {
             struct /* bitfield */
             {

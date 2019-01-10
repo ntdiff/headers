@@ -6,11 +6,11 @@ typedef struct _CLIENT_ID32
 
 typedef struct _PORT_MESSAGE32
 {
-  union // _TAG_UNNAMED_61
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_62
+      struct
       {
         /* 0x0000 */ short DataLength;
         /* 0x0002 */ short TotalLength;
@@ -18,11 +18,11 @@ typedef struct _PORT_MESSAGE32
       /* 0x0000 */ unsigned long Length;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u1;
-  union // _TAG_UNNAMED_63
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_64
+      struct
       {
         /* 0x0004 */ short Type;
         /* 0x0006 */ short DataInfoOffset;

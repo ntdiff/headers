@@ -103,7 +103,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_8
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -156,11 +156,11 @@ typedef struct _LOADER_HIVE_RECOVERY_INFO
 typedef struct _LOADER_RESET_REASON
 {
   /* 0x0000 */ unsigned char Supplied;
-  union // _TAG_UNNAMED_198
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_199
+      struct
       {
         /* 0x0008 */ unsigned char Pch;
         /* 0x0009 */ unsigned char EmbeddedController;

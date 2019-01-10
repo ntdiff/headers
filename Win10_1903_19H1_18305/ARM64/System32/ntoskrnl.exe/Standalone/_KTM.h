@@ -145,7 +145,7 @@ typedef struct _KMUTANT
   /* 0x0032 */ char __PADDING__[6];
 } KMUTANT, *PKMUTANT; /* size: 0x0038 */
 
-typedef enum _TAG_UNNAMED_174
+typedef enum
 {
   KKtmUninitialized = 0,
   KKtmInitialized = 1,
@@ -221,7 +221,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -249,7 +249,7 @@ typedef union _CLS_LSN
 {
   union
   {
-    struct // _TAG_UNNAMED_173
+    struct
     {
       /* 0x0000 */ unsigned int idxRecord;
       /* 0x0004 */ unsigned long cidContainer;

@@ -21,12 +21,12 @@ typedef struct _VF_TARGET_ALL_SHARED_EXPORT_THUNKS
 typedef struct _VF_TARGET_DRIVER
 {
   /* 0x0000 */ struct _VF_AVL_TREE_NODE_EX TreeNode;
-  union // _TAG_UNNAMED_224
+  union
   {
     union
     {
       /* 0x000c */ struct _VF_TARGET_ALL_SHARED_EXPORT_THUNKS AllSharedExportThunks;
-      struct // _TAG_UNNAMED_225
+      struct
       {
         struct /* bitfield */
         {

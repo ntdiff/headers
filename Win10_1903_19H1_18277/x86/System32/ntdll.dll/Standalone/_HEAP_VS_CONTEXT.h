@@ -56,7 +56,7 @@ typedef struct _HEAP_SUBALLOCATOR_CALLBACKS
 
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_99
+  struct
   {
     struct /* bitfield */
     {

@@ -1,14 +1,14 @@
 typedef struct _MI_HUGE_PFN
 {
-  union // _TAG_UNNAMED_241
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_242
+      struct
       {
         /* 0x0000 */ unsigned __int64 EntireField;
       } /* size: 0x0008 */ e1;
-      struct // _TAG_UNNAMED_243
+      struct
       {
         struct /* bitfield */
         {

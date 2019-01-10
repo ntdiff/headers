@@ -28,7 +28,7 @@ typedef struct _PPM_PERF_STATES
   /* 0x0026 */ unsigned char ThrottleStatesOnly;
   /* 0x0027 */ unsigned char PolicyType;
   /* 0x0028 */ unsigned long TimerInterval;
-  union // _TAG_UNNAMED_60
+  union
   {
     union
     {

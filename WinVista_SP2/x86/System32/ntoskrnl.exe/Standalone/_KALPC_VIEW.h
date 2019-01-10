@@ -7,9 +7,9 @@ typedef struct _LIST_ENTRY
 typedef struct _KALPC_VIEW
 {
   /* 0x0000 */ struct _LIST_ENTRY ViewListEntry;
-  union // _TAG_UNNAMED_174
+  union
   {
-    struct // _TAG_UNNAMED_175
+    struct
     {
       struct /* bitfield */
       {

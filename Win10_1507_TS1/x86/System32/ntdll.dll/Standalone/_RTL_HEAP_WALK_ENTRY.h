@@ -7,14 +7,14 @@ typedef struct _RTL_HEAP_WALK_ENTRY
   /* 0x000a */ unsigned short Flags;
   union
   {
-    struct // _TAG_UNNAMED_32
+    struct
     {
       /* 0x000c */ unsigned long Settable;
       /* 0x0010 */ unsigned short TagIndex;
       /* 0x0012 */ unsigned short AllocatorBackTraceIndex;
       /* 0x0014 */ unsigned long Reserved[2];
     } /* size: 0x0010 */ Block;
-    struct // _TAG_UNNAMED_33
+    struct
     {
       /* 0x000c */ unsigned long CommittedSize;
       /* 0x0010 */ unsigned long UnCommittedSize;

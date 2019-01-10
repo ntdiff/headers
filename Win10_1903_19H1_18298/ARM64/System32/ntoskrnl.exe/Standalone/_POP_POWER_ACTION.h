@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_126
+typedef enum
 {
   PowerActionNone = 0,
   PowerActionReserved = 1,
@@ -23,7 +23,7 @@ typedef enum _SYSTEM_POWER_STATE
   PowerSystemMaximum = 7,
 } SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE;
 
-typedef enum _TAG_UNNAMED_29
+typedef enum
 {
   PolicyDeviceSystemButton = 0,
   PolicyDeviceThermalZone = 1,
@@ -44,7 +44,7 @@ typedef enum _TAG_UNNAMED_29
   PolicyDeviceMax = 16,
 } TAG_UNNAMED_29, *PTAG_UNNAMED_29;
 
-typedef enum _TAG_UNNAMED_249
+typedef enum
 {
   PoAc = 0,
   PoDc = 1,
@@ -267,7 +267,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_5
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -310,7 +310,7 @@ typedef struct _POP_POWER_ACTION
   /* 0x0050 */ unsigned __int64 SleepTime;
   /* 0x0058 */ unsigned __int64 WakeFirstUnattendedTime;
   /* 0x0060 */ enum _TAG_UNNAMED_249 WakeAlarmSignaled;
-  /* 0x0068 */ struct // _TAG_UNNAMED_250
+  /* 0x0068 */ struct
   {
     /* 0x0068 */ unsigned __int64 RequestedTime;
     /* 0x0070 */ unsigned __int64 ProgrammedTime;

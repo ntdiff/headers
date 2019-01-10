@@ -155,7 +155,7 @@ typedef struct _MMSECURE_FLAGS
 
 typedef struct _MMADDRESS_LIST
 {
-  union // _TAG_UNNAMED_141
+  union
   {
     union
     {

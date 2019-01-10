@@ -5,7 +5,7 @@ typedef struct _VF_AVL_TREE
   /* 0x0008 */ struct _VF_AVL_TABLE* Tables;
   /* 0x000c */ unsigned long TablesNo;
   /* 0x0010 */ unsigned char UseSessionId;
-  union // _TAG_UNNAMED_114
+  union
   {
     union
     {

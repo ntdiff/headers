@@ -2,18 +2,18 @@ typedef struct _KGDTENTRY
 {
   /* 0x0000 */ unsigned short LimitLow;
   /* 0x0002 */ unsigned short BaseLow;
-  union // _TAG_UNNAMED_17
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_18
+      struct
       {
         /* 0x0004 */ unsigned char BaseMid;
         /* 0x0005 */ unsigned char Flags1;
         /* 0x0006 */ unsigned char Flags2;
         /* 0x0007 */ unsigned char BaseHi;
       } /* size: 0x0004 */ Bytes;
-      struct // _TAG_UNNAMED_19
+      struct
       {
         struct /* bitfield */
         {

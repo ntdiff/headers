@@ -18,7 +18,7 @@ struct PPM_IDLE_STATES
 {
   /* 0x0000 */ unsigned long Type;
   /* 0x0004 */ unsigned long Count;
-  union // _TAG_UNNAMED_17
+  union
   {
     union
     {

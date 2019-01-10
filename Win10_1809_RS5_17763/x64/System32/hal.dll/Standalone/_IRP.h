@@ -23,7 +23,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_3
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -65,7 +65,7 @@ typedef struct _IRP
   /* 0x0002 */ unsigned short Size;
   /* 0x0008 */ struct _MDL* MdlAddress;
   /* 0x0010 */ unsigned long Flags;
-  union // _TAG_UNNAMED_31
+  union
   {
     union
     {
@@ -86,11 +86,11 @@ typedef struct _IRP
   /* 0x0047 */ unsigned char AllocationFlags;
   /* 0x0048 */ struct _IO_STATUS_BLOCK* UserIosb;
   /* 0x0050 */ struct _KEVENT* UserEvent;
-  union // _TAG_UNNAMED_32
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_33
+      struct
       {
         union
         {
@@ -104,11 +104,11 @@ typedef struct _IRP
   } /* size: 0x0010 */ Overlay;
   /* 0x0068 */ void* CancelRoutine /* function */;
   /* 0x0070 */ void* UserBuffer;
-  union // _TAG_UNNAMED_34
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_35
+      struct
       {
         union
         {

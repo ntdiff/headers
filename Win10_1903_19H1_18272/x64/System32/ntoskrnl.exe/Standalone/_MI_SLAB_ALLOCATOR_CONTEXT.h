@@ -45,7 +45,7 @@ typedef struct _MI_SLAB_ALLOCATOR_CONTEXT
   /* 0x0020 */ unsigned __int64 FreePageCount;
   /* 0x0028 */ unsigned __int64 SlabEntryCount;
   /* 0x0030 */ enum _MI_SLAB_ALLOCATOR_PROTECTION Protection;
-  union // _TAG_UNNAMED_59
+  union
   {
     union
     {

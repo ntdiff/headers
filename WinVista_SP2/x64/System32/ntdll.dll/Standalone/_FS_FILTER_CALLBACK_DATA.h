@@ -14,27 +14,27 @@ typedef union _FS_FILTER_PARAMETERS
 {
   union
   {
-    struct // _TAG_UNNAMED_17
+    struct
     {
       /* 0x0000 */ union _LARGE_INTEGER* EndingOffset;
       /* 0x0008 */ struct _ERESOURCE** ResourceToRelease;
     } /* size: 0x0010 */ AcquireForModifiedPageWriter;
-    struct // _TAG_UNNAMED_18
+    struct
     {
       /* 0x0000 */ struct _ERESOURCE* ResourceToRelease;
     } /* size: 0x0008 */ ReleaseForModifiedPageWriter;
-    struct // _TAG_UNNAMED_19
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_SECTION_SYNC_TYPE SyncType;
       /* 0x0004 */ unsigned long PageProtection;
     } /* size: 0x0008 */ AcquireForSectionSynchronization;
-    struct // _TAG_UNNAMED_20
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_STREAM_FO_NOTIFICATION_TYPE NotificationType;
       /* 0x0008 */ unsigned char SafeToRecurse;
       /* 0x0009 */ char __PADDING__[7];
     } /* size: 0x0010 */ NotifyStreamFileObject;
-    struct // _TAG_UNNAMED_21
+    struct
     {
       /* 0x0000 */ void* Argument1;
       /* 0x0008 */ void* Argument2;

@@ -117,7 +117,7 @@ typedef struct _RTL_HP_LFH_CONFIG
 
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_164
+  struct
   {
     struct /* bitfield */
     {
@@ -152,7 +152,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_3
+    struct
     {
       struct /* bitfield */
       {

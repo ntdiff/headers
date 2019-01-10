@@ -1,11 +1,11 @@
 typedef struct _LOADER_RESET_REASON
 {
   /* 0x0000 */ unsigned char Supplied;
-  union // _TAG_UNNAMED_174
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_175
+      struct
       {
         /* 0x0008 */ unsigned char Pch;
         /* 0x0009 */ unsigned char EmbeddedController;

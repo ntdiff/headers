@@ -83,7 +83,7 @@ typedef struct _MMVAD_SHORT
   /* 0x0023 */ unsigned char SpareNT64VadUChar;
   /* 0x0024 */ long ReferenceCount;
   /* 0x0028 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_63
+  union
   {
     union
     {
@@ -92,7 +92,7 @@ typedef struct _MMVAD_SHORT
       /* 0x0030 */ volatile unsigned long VolatileVadLong;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_64
+  union
   {
     union
     {
@@ -135,7 +135,7 @@ typedef struct _MI_VAD_SEQUENTIAL_INFO
 typedef struct _MMVAD
 {
   /* 0x0000 */ struct _MMVAD_SHORT Core;
-  union // _TAG_UNNAMED_244
+  union
   {
     union
     {
@@ -148,7 +148,7 @@ typedef struct _MMVAD
   /* 0x0058 */ struct _MMPTE* LastContiguousPte;
   /* 0x0060 */ struct _LIST_ENTRY ViewLinks;
   /* 0x0070 */ struct _EPROCESS* VadsProcess;
-  union // _TAG_UNNAMED_245
+  union
   {
     union
     {

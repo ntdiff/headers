@@ -1,6 +1,6 @@
 typedef struct _MM_AVL_NODE
 {
-  union // _TAG_UNNAMED_72
+  union
   {
     union
     {
@@ -60,7 +60,7 @@ typedef struct _MMVAD_SHORT
   /* 0x000c */ unsigned long StartingVpn;
   /* 0x0010 */ unsigned long EndingVpn;
   /* 0x0014 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_176
+  union
   {
     union
     {
@@ -68,7 +68,7 @@ typedef struct _MMVAD_SHORT
       /* 0x0018 */ struct _MMVAD_FLAGS VadFlags;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_177
+  union
   {
     union
     {

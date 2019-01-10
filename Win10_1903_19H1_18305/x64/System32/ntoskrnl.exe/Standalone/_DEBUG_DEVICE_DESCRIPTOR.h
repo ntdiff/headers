@@ -25,7 +25,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_3
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -45,7 +45,7 @@ struct DEBUG_MEMORY_REQUIREMENTS
   /* 0x001e */ char __PADDING__[2];
 }; /* size: 0x0020 */
 
-typedef enum _TAG_UNNAMED_165
+typedef enum
 {
   KdNameSpacePCI = 0,
   KdNameSpaceACPI = 1,

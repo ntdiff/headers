@@ -4,7 +4,7 @@ typedef struct _LIST_ENTRY
   /* 0x0004 */ struct _LIST_ENTRY* Blink;
 } LIST_ENTRY, *PLIST_ENTRY; /* size: 0x0008 */
 
-typedef enum _TAG_UNNAMED_11
+typedef enum
 {
   PolicyDeviceSystemButton = 0,
   PolicyDeviceThermalZone = 1,

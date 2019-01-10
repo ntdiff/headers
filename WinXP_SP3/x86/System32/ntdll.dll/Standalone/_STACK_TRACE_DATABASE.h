@@ -46,7 +46,7 @@ typedef struct _ERESOURCE
 
 typedef struct _STACK_TRACE_DATABASE
 {
-  union // _TAG_UNNAMED_19
+  union
   {
     union
     {

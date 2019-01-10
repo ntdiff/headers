@@ -18,7 +18,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long FirmwareTypeEfi : 1; /* bit position: 0 */
     /* 0x0000 */ unsigned long Reserved : 31; /* bit position: 1 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_114
+  union
   {
     union
     {

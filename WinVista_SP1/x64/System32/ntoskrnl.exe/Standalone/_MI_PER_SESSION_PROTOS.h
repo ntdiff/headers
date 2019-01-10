@@ -1,6 +1,6 @@
 typedef struct _MI_PER_SESSION_PROTOS
 {
-  union // _TAG_UNNAMED_134
+  union
   {
     union
     {
@@ -19,7 +19,7 @@ typedef struct _MI_PER_SESSION_PROTOS
   }; /* size: 0x0008 */
   /* 0x0020 */ unsigned __int64 EndingVpn;
   /* 0x0028 */ struct _MMPTE* SubsectionBase;
-  union // _TAG_UNNAMED_135
+  union
   {
     union
     {

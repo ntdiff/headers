@@ -457,7 +457,7 @@ typedef struct _ACCESS_STATE
   /* 0x001c */ struct _SECURITY_SUBJECT_CONTEXT SubjectSecurityContext;
   /* 0x002c */ void* SecurityDescriptor;
   /* 0x0030 */ void* AuxData;
-  union // _TAG_UNNAMED_1
+  union
   {
     union
     {
@@ -544,38 +544,38 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR
   /* 0x0000 */ unsigned char Type;
   /* 0x0001 */ unsigned char ShareDisposition;
   /* 0x0002 */ unsigned short Flags;
-  union // _TAG_UNNAMED_2
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_3
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Generic;
-      struct // _TAG_UNNAMED_3
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Port;
-      struct // _TAG_UNNAMED_4
+      struct
       {
         /* 0x0004 */ unsigned long Level;
         /* 0x0008 */ unsigned long Vector;
         /* 0x000c */ unsigned long Affinity;
       } /* size: 0x000c */ Interrupt;
-      struct // _TAG_UNNAMED_5
+      struct
       {
         union
         {
-          struct // _TAG_UNNAMED_6
+          struct
           {
             /* 0x0004 */ unsigned short Reserved;
             /* 0x0006 */ unsigned short MessageCount;
             /* 0x0008 */ unsigned long Vector;
             /* 0x000c */ unsigned long Affinity;
           } /* size: 0x000c */ Raw;
-          struct // _TAG_UNNAMED_4
+          struct
           {
             /* 0x0004 */ unsigned long Level;
             /* 0x0008 */ unsigned long Vector;
@@ -583,44 +583,44 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR
           } /* size: 0x000c */ Translated;
         }; /* size: 0x000c */
       } /* size: 0x000c */ MessageInterrupt;
-      struct // _TAG_UNNAMED_3
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Memory;
-      struct // _TAG_UNNAMED_7
+      struct
       {
         /* 0x0004 */ unsigned long Channel;
         /* 0x0008 */ unsigned long Port;
         /* 0x000c */ unsigned long Reserved1;
       } /* size: 0x000c */ Dma;
-      struct // _TAG_UNNAMED_8
+      struct
       {
         /* 0x0004 */ unsigned long Data[3];
       } /* size: 0x000c */ DevicePrivate;
-      struct // _TAG_UNNAMED_9
+      struct
       {
         /* 0x0004 */ unsigned long Start;
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long Reserved;
       } /* size: 0x000c */ BusNumber;
-      struct // _TAG_UNNAMED_10
+      struct
       {
         /* 0x0004 */ unsigned long DataSize;
         /* 0x0008 */ unsigned long Reserved1;
         /* 0x000c */ unsigned long Reserved2;
       } /* size: 0x000c */ DeviceSpecificData;
-      struct // _TAG_UNNAMED_11
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length40;
       } /* size: 0x000c */ Memory40;
-      struct // _TAG_UNNAMED_12
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length48;
       } /* size: 0x000c */ Memory48;
-      struct // _TAG_UNNAMED_13
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length64;
@@ -757,7 +757,7 @@ typedef struct _DEVICE_OBJECT
   /* 0x0028 */ void* DeviceExtension;
   /* 0x002c */ unsigned long DeviceType;
   /* 0x0030 */ char StackSize;
-  union // _TAG_UNNAMED_14
+  union
   {
     union
     {
@@ -1676,27 +1676,27 @@ typedef union _FS_FILTER_PARAMETERS
 {
   union
   {
-    struct // _TAG_UNNAMED_15
+    struct
     {
       /* 0x0000 */ union _LARGE_INTEGER* EndingOffset;
       /* 0x0004 */ struct _ERESOURCE** ResourceToRelease;
     } /* size: 0x0008 */ AcquireForModifiedPageWriter;
-    struct // _TAG_UNNAMED_16
+    struct
     {
       /* 0x0000 */ struct _ERESOURCE* ResourceToRelease;
     } /* size: 0x0004 */ ReleaseForModifiedPageWriter;
-    struct // _TAG_UNNAMED_17
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_SECTION_SYNC_TYPE SyncType;
       /* 0x0004 */ unsigned long PageProtection;
     } /* size: 0x0008 */ AcquireForSectionSynchronization;
-    struct // _TAG_UNNAMED_18
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_STREAM_FO_NOTIFICATION_TYPE NotificationType;
       /* 0x0004 */ unsigned char SafeToRecurse;
       /* 0x0005 */ char __PADDING__[3];
     } /* size: 0x0008 */ NotifyStreamFileObject;
-    struct // _TAG_UNNAMED_19
+    struct
     {
       /* 0x0000 */ void* Argument1;
       /* 0x0004 */ void* Argument2;
@@ -1739,7 +1739,7 @@ typedef struct _FXSAVE_FORMAT
 
 typedef struct _FX_SAVE_AREA
 {
-  union // _TAG_UNNAMED_20
+  union
   {
     union
     {
@@ -2245,7 +2245,7 @@ typedef struct _HEAP_LOCAL_SEGMENT_INFO
 
 typedef struct _HEAP_LOCK
 {
-  union // _TAG_UNNAMED_21
+  union
   {
     /* 0x0000 */ struct _RTL_CRITICAL_SECTION CriticalSection;
   } /* size: 0x0018 */ Lock;
@@ -2502,25 +2502,25 @@ typedef struct _IO_RESOURCE_DESCRIPTOR
   /* 0x0003 */ unsigned char Spare1;
   /* 0x0004 */ unsigned short Flags;
   /* 0x0006 */ unsigned short Spare2;
-  union // _TAG_UNNAMED_22
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_23
+      struct
       {
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long Alignment;
         /* 0x0010 */ union _LARGE_INTEGER MinimumAddress;
         /* 0x0018 */ union _LARGE_INTEGER MaximumAddress;
       } /* size: 0x0018 */ Port;
-      struct // _TAG_UNNAMED_23
+      struct
       {
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long Alignment;
         /* 0x0010 */ union _LARGE_INTEGER MinimumAddress;
         /* 0x0018 */ union _LARGE_INTEGER MaximumAddress;
       } /* size: 0x0018 */ Memory;
-      struct // _TAG_UNNAMED_24
+      struct
       {
         /* 0x0008 */ unsigned long MinimumVector;
         /* 0x000c */ unsigned long MaximumVector;
@@ -2528,50 +2528,50 @@ typedef struct _IO_RESOURCE_DESCRIPTOR
         /* 0x0014 */ enum _IRQ_PRIORITY PriorityPolicy;
         /* 0x0018 */ unsigned long TargetedProcessors;
       } /* size: 0x0014 */ Interrupt;
-      struct // _TAG_UNNAMED_25
+      struct
       {
         /* 0x0008 */ unsigned long MinimumChannel;
         /* 0x000c */ unsigned long MaximumChannel;
       } /* size: 0x0008 */ Dma;
-      struct // _TAG_UNNAMED_23
+      struct
       {
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long Alignment;
         /* 0x0010 */ union _LARGE_INTEGER MinimumAddress;
         /* 0x0018 */ union _LARGE_INTEGER MaximumAddress;
       } /* size: 0x0018 */ Generic;
-      struct // _TAG_UNNAMED_8
+      struct
       {
         /* 0x0008 */ unsigned long Data[3];
       } /* size: 0x000c */ DevicePrivate;
-      struct // _TAG_UNNAMED_26
+      struct
       {
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long MinBusNumber;
         /* 0x0010 */ unsigned long MaxBusNumber;
         /* 0x0014 */ unsigned long Reserved;
       } /* size: 0x0010 */ BusNumber;
-      struct // _TAG_UNNAMED_27
+      struct
       {
         /* 0x0008 */ unsigned long Priority;
         /* 0x000c */ unsigned long Reserved1;
         /* 0x0010 */ unsigned long Reserved2;
       } /* size: 0x000c */ ConfigData;
-      struct // _TAG_UNNAMED_28
+      struct
       {
         /* 0x0008 */ unsigned long Length40;
         /* 0x000c */ unsigned long Alignment40;
         /* 0x0010 */ union _LARGE_INTEGER MinimumAddress;
         /* 0x0018 */ union _LARGE_INTEGER MaximumAddress;
       } /* size: 0x0018 */ Memory40;
-      struct // _TAG_UNNAMED_29
+      struct
       {
         /* 0x0008 */ unsigned long Length48;
         /* 0x000c */ unsigned long Alignment48;
         /* 0x0010 */ union _LARGE_INTEGER MinimumAddress;
         /* 0x0018 */ union _LARGE_INTEGER MaximumAddress;
       } /* size: 0x0018 */ Memory48;
-      struct // _TAG_UNNAMED_30
+      struct
       {
         /* 0x0008 */ unsigned long Length64;
         /* 0x000c */ unsigned long Alignment64;
@@ -2615,11 +2615,11 @@ typedef struct _IO_STACK_LOCATION
   /* 0x0001 */ unsigned char MinorFunction;
   /* 0x0002 */ unsigned char Flags;
   /* 0x0003 */ unsigned char Control;
-  union // _TAG_UNNAMED_31
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_32
+      struct
       {
         /* 0x0004 */ struct _IO_SECURITY_CONTEXT* SecurityContext;
         /* 0x0008 */ unsigned long Options;
@@ -2627,7 +2627,7 @@ typedef struct _IO_STACK_LOCATION
         /* 0x000e */ unsigned short ShareAccess;
         /* 0x0010 */ unsigned long EaLength;
       } /* size: 0x0010 */ Create;
-      struct // _TAG_UNNAMED_33
+      struct
       {
         /* 0x0004 */ struct _IO_SECURITY_CONTEXT* SecurityContext;
         /* 0x0008 */ unsigned long Options;
@@ -2635,7 +2635,7 @@ typedef struct _IO_STACK_LOCATION
         /* 0x000e */ unsigned short ShareAccess;
         /* 0x0010 */ struct _NAMED_PIPE_CREATE_PARAMETERS* Parameters;
       } /* size: 0x0010 */ CreatePipe;
-      struct // _TAG_UNNAMED_34
+      struct
       {
         /* 0x0004 */ struct _IO_SECURITY_CONTEXT* SecurityContext;
         /* 0x0008 */ unsigned long Options;
@@ -2643,36 +2643,36 @@ typedef struct _IO_STACK_LOCATION
         /* 0x000e */ unsigned short ShareAccess;
         /* 0x0010 */ struct _MAILSLOT_CREATE_PARAMETERS* Parameters;
       } /* size: 0x0010 */ CreateMailslot;
-      struct // _TAG_UNNAMED_35
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ unsigned long Key;
         /* 0x000c */ union _LARGE_INTEGER ByteOffset;
       } /* size: 0x0010 */ Read;
-      struct // _TAG_UNNAMED_35
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ unsigned long Key;
         /* 0x000c */ union _LARGE_INTEGER ByteOffset;
       } /* size: 0x0010 */ Write;
-      struct // _TAG_UNNAMED_36
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ struct _UNICODE_STRING* FileName;
         /* 0x000c */ enum _FILE_INFORMATION_CLASS FileInformationClass;
         /* 0x0010 */ unsigned long FileIndex;
       } /* size: 0x0010 */ QueryDirectory;
-      struct // _TAG_UNNAMED_37
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ unsigned long CompletionFilter;
       } /* size: 0x0008 */ NotifyDirectory;
-      struct // _TAG_UNNAMED_38
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ enum _FILE_INFORMATION_CLASS FileInformationClass;
       } /* size: 0x0008 */ QueryFile;
-      struct // _TAG_UNNAMED_39
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ enum _FILE_INFORMATION_CLASS FileInformationClass;
@@ -2688,87 +2688,87 @@ typedef struct _IO_STACK_LOCATION
           /* 0x0010 */ void* DeleteHandle;
         }; /* size: 0x0004 */
       } /* size: 0x0010 */ SetFile;
-      struct // _TAG_UNNAMED_40
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ void* EaList;
         /* 0x000c */ unsigned long EaListLength;
         /* 0x0010 */ unsigned long EaIndex;
       } /* size: 0x0010 */ QueryEa;
-      struct // _TAG_UNNAMED_41
+      struct
       {
         /* 0x0004 */ unsigned long Length;
       } /* size: 0x0004 */ SetEa;
-      struct // _TAG_UNNAMED_42
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ enum _FSINFOCLASS FsInformationClass;
       } /* size: 0x0008 */ QueryVolume;
-      struct // _TAG_UNNAMED_42
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ enum _FSINFOCLASS FsInformationClass;
       } /* size: 0x0008 */ SetVolume;
-      struct // _TAG_UNNAMED_43
+      struct
       {
         /* 0x0004 */ unsigned long OutputBufferLength;
         /* 0x0008 */ unsigned long InputBufferLength;
         /* 0x000c */ unsigned long FsControlCode;
         /* 0x0010 */ void* Type3InputBuffer;
       } /* size: 0x0010 */ FileSystemControl;
-      struct // _TAG_UNNAMED_44
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER* Length;
         /* 0x0008 */ unsigned long Key;
         /* 0x000c */ union _LARGE_INTEGER ByteOffset;
       } /* size: 0x0010 */ LockControl;
-      struct // _TAG_UNNAMED_45
+      struct
       {
         /* 0x0004 */ unsigned long OutputBufferLength;
         /* 0x0008 */ unsigned long InputBufferLength;
         /* 0x000c */ unsigned long IoControlCode;
         /* 0x0010 */ void* Type3InputBuffer;
       } /* size: 0x0010 */ DeviceIoControl;
-      struct // _TAG_UNNAMED_46
+      struct
       {
         /* 0x0004 */ unsigned long SecurityInformation;
         /* 0x0008 */ unsigned long Length;
       } /* size: 0x0008 */ QuerySecurity;
-      struct // _TAG_UNNAMED_47
+      struct
       {
         /* 0x0004 */ unsigned long SecurityInformation;
         /* 0x0008 */ void* SecurityDescriptor;
       } /* size: 0x0008 */ SetSecurity;
-      struct // _TAG_UNNAMED_48
+      struct
       {
         /* 0x0004 */ struct _VPB* Vpb;
         /* 0x0008 */ struct _DEVICE_OBJECT* DeviceObject;
       } /* size: 0x0008 */ MountVolume;
-      struct // _TAG_UNNAMED_48
+      struct
       {
         /* 0x0004 */ struct _VPB* Vpb;
         /* 0x0008 */ struct _DEVICE_OBJECT* DeviceObject;
       } /* size: 0x0008 */ VerifyVolume;
-      struct // _TAG_UNNAMED_49
+      struct
       {
         /* 0x0004 */ struct _SCSI_REQUEST_BLOCK* Srb;
       } /* size: 0x0004 */ Scsi;
-      struct // _TAG_UNNAMED_50
+      struct
       {
         /* 0x0004 */ unsigned long Length;
         /* 0x0008 */ void* StartSid;
         /* 0x000c */ struct _FILE_GET_QUOTA_INFORMATION* SidList;
         /* 0x0010 */ unsigned long SidListLength;
       } /* size: 0x0010 */ QueryQuota;
-      struct // _TAG_UNNAMED_41
+      struct
       {
         /* 0x0004 */ unsigned long Length;
       } /* size: 0x0004 */ SetQuota;
-      struct // _TAG_UNNAMED_51
+      struct
       {
         /* 0x0004 */ enum _DEVICE_RELATION_TYPE Type;
       } /* size: 0x0004 */ QueryDeviceRelations;
-      struct // _TAG_UNNAMED_52
+      struct
       {
         /* 0x0004 */ const struct _GUID* InterfaceType;
         /* 0x0008 */ unsigned short Size;
@@ -2776,49 +2776,49 @@ typedef struct _IO_STACK_LOCATION
         /* 0x000c */ struct _INTERFACE* Interface;
         /* 0x0010 */ void* InterfaceSpecificData;
       } /* size: 0x0010 */ QueryInterface;
-      struct // _TAG_UNNAMED_53
+      struct
       {
         /* 0x0004 */ struct _DEVICE_CAPABILITIES* Capabilities;
       } /* size: 0x0004 */ DeviceCapabilities;
-      struct // _TAG_UNNAMED_54
+      struct
       {
         /* 0x0004 */ struct _IO_RESOURCE_REQUIREMENTS_LIST* IoResourceRequirementList;
       } /* size: 0x0004 */ FilterResourceRequirements;
-      struct // _TAG_UNNAMED_55
+      struct
       {
         /* 0x0004 */ unsigned long WhichSpace;
         /* 0x0008 */ void* Buffer;
         /* 0x000c */ unsigned long Offset;
         /* 0x0010 */ unsigned long Length;
       } /* size: 0x0010 */ ReadWriteConfig;
-      struct // _TAG_UNNAMED_56
+      struct
       {
         /* 0x0004 */ unsigned char Lock;
       } /* size: 0x0001 */ SetLock;
-      struct // _TAG_UNNAMED_57
+      struct
       {
         /* 0x0004 */ enum BUS_QUERY_ID_TYPE IdType;
       } /* size: 0x0004 */ QueryId;
-      struct // _TAG_UNNAMED_58
+      struct
       {
         /* 0x0004 */ enum DEVICE_TEXT_TYPE DeviceTextType;
         /* 0x0008 */ unsigned long LocaleId;
       } /* size: 0x0008 */ QueryDeviceText;
-      struct // _TAG_UNNAMED_59
+      struct
       {
         /* 0x0004 */ unsigned char InPath;
         /* 0x0005 */ unsigned char Reserved[3];
         /* 0x0008 */ enum _DEVICE_USAGE_NOTIFICATION_TYPE Type;
       } /* size: 0x0008 */ UsageNotification;
-      struct // _TAG_UNNAMED_60
+      struct
       {
         /* 0x0004 */ enum _SYSTEM_POWER_STATE PowerState;
       } /* size: 0x0004 */ WaitWake;
-      struct // _TAG_UNNAMED_61
+      struct
       {
         /* 0x0004 */ struct _POWER_SEQUENCE* PowerSequence;
       } /* size: 0x0004 */ PowerSequence;
-      struct // _TAG_UNNAMED_62
+      struct
       {
         union
         {
@@ -2829,19 +2829,19 @@ typedef struct _IO_STACK_LOCATION
         /* 0x000c */ union _POWER_STATE State;
         /* 0x0010 */ enum POWER_ACTION ShutdownType;
       } /* size: 0x0010 */ Power;
-      struct // _TAG_UNNAMED_63
+      struct
       {
         /* 0x0004 */ struct _CM_RESOURCE_LIST* AllocatedResources;
         /* 0x0008 */ struct _CM_RESOURCE_LIST* AllocatedResourcesTranslated;
       } /* size: 0x0008 */ StartDevice;
-      struct // _TAG_UNNAMED_64
+      struct
       {
         /* 0x0004 */ unsigned long ProviderId;
         /* 0x0008 */ void* DataPath;
         /* 0x000c */ unsigned long BufferSize;
         /* 0x0010 */ void* Buffer;
       } /* size: 0x0010 */ WMI;
-      struct // _TAG_UNNAMED_65
+      struct
       {
         /* 0x0004 */ void* Argument1;
         /* 0x0008 */ void* Argument2;
@@ -2882,7 +2882,7 @@ typedef struct _IRP
   /* 0x0002 */ unsigned short Size;
   /* 0x0004 */ struct _MDL* MdlAddress;
   /* 0x0008 */ unsigned long Flags;
-  union // _TAG_UNNAMED_66
+  union
   {
     union
     {
@@ -2903,11 +2903,11 @@ typedef struct _IRP
   /* 0x0027 */ unsigned char AllocationFlags;
   /* 0x0028 */ struct _IO_STATUS_BLOCK* UserIosb;
   /* 0x002c */ struct _KEVENT* UserEvent;
-  union // _TAG_UNNAMED_67
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_68
+      struct
       {
         union
         {
@@ -2921,11 +2921,11 @@ typedef struct _IRP
   } /* size: 0x0008 */ Overlay;
   /* 0x0038 */ void* CancelRoutine /* function */;
   /* 0x003c */ void* UserBuffer;
-  union // _TAG_UNNAMED_69
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_70
+      struct
       {
         union
         {
@@ -3067,18 +3067,18 @@ typedef struct _KGDTENTRY
 {
   /* 0x0000 */ unsigned short LimitLow;
   /* 0x0002 */ unsigned short BaseLow;
-  union // _TAG_UNNAMED_71
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_72
+      struct
       {
         /* 0x0004 */ unsigned char BaseMid;
         /* 0x0005 */ unsigned char Flags1;
         /* 0x0006 */ unsigned char Flags2;
         /* 0x0007 */ unsigned char BaseHi;
       } /* size: 0x0004 */ Bytes;
-      struct // _TAG_UNNAMED_73
+      struct
       {
         struct /* bitfield */
         {
@@ -3912,7 +3912,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_74
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -4018,11 +4018,11 @@ typedef struct _MCA_EXCEPTION
   /* 0x0008 */ union _LARGE_INTEGER TimeStamp;
   /* 0x0010 */ unsigned long ProcessorNumber;
   /* 0x0014 */ unsigned long Reserved1;
-  union // _TAG_UNNAMED_75
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_76
+      struct
       {
         /* 0x0018 */ unsigned char BankNumber;
         /* 0x0019 */ unsigned char Reserved2[7];
@@ -4030,7 +4030,7 @@ typedef struct _MCA_EXCEPTION
         /* 0x0028 */ union _MCI_ADDR Address;
         /* 0x0030 */ unsigned __int64 Misc;
       } /* size: 0x0020 */ Mca;
-      struct // _TAG_UNNAMED_77
+      struct
       {
         /* 0x0018 */ unsigned __int64 Address;
         /* 0x0020 */ unsigned __int64 Type;
@@ -4059,7 +4059,7 @@ typedef union _MCI_STATS
 {
   union
   {
-    struct // _TAG_UNNAMED_78
+    struct
     {
       /* 0x0000 */ unsigned short McaCod;
       /* 0x0002 */ unsigned short MsCod;
@@ -4098,7 +4098,7 @@ typedef enum _MEMORY_CACHING_TYPE_ORIG
 
 typedef struct _MMADDRESS_NODE
 {
-  union // _TAG_UNNAMED_79
+  union
   {
     union
     {
@@ -4201,7 +4201,7 @@ typedef union _MM_PAGE_ACCESS_INFO_FLAGS
 {
   union
   {
-    struct // _TAG_UNNAMED_80
+    struct
     {
       struct /* bitfield */
       {
@@ -4211,7 +4211,7 @@ typedef union _MM_PAGE_ACCESS_INFO_FLAGS
         /* 0x0000 */ unsigned long Spare0 : 1; /* bit position: 11 */
       }; /* bitfield */
     } /* size: 0x0004 */ File;
-    struct // _TAG_UNNAMED_81
+    struct
     {
       struct /* bitfield */
       {
@@ -4748,7 +4748,7 @@ typedef struct _PPM_IDLE_STATES
 {
   /* 0x0000 */ unsigned long Type;
   /* 0x0004 */ unsigned long Count;
-  union // _TAG_UNNAMED_82
+  union
   {
     union
     {
@@ -4800,7 +4800,7 @@ typedef struct _PPM_PERF_STATES
   /* 0x0026 */ unsigned char ThrottleStatesOnly;
   /* 0x0027 */ unsigned char PolicyType;
   /* 0x0028 */ unsigned long TimerInterval;
-  union // _TAG_UNNAMED_83
+  union
   {
     union
     {
@@ -4867,11 +4867,11 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0010 */ unsigned __int64 IdleTimeAccumulated;
   union
   {
-    struct // _TAG_UNNAMED_84
+    struct
     {
       /* 0x0018 */ unsigned __int64 IdleTransitionTime;
     } /* size: 0x0008 */ Native;
-    struct // _TAG_UNNAMED_85
+    struct
     {
       /* 0x0018 */ unsigned __int64 LastIdleCheck;
     } /* size: 0x0008 */ Hv;
@@ -4884,7 +4884,7 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0038 */ unsigned __int64 LastProcessorTimeHv;
   /* 0x0040 */ unsigned char ThermalConstraint;
   /* 0x0041 */ unsigned char LastBusyPercentage;
-  union // _TAG_UNNAMED_86
+  union
   {
     union
     {
@@ -5461,12 +5461,12 @@ typedef struct _TP_CALLBACK_ENVIRON
   /* 0x0010 */ void* RaceDll;
   /* 0x0014 */ struct _ACTIVATION_CONTEXT* ActivationContext;
   /* 0x0018 */ void* FinalizationCallback /* function */;
-  union // _TAG_UNNAMED_87
+  union
   {
     union
     {
       /* 0x001c */ unsigned long Flags;
-      struct // _TAG_UNNAMED_88
+      struct
       {
         struct /* bitfield */
         {
@@ -5516,7 +5516,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_89
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -5608,7 +5608,7 @@ typedef struct _WHEA_ERROR_PACKET
   /* 0x0030 */ unsigned long Reserved2;
   /* 0x0034 */ unsigned long Version;
   /* 0x0038 */ unsigned __int64 Cpu;
-  union // _TAG_UNNAMED_90
+  union
   {
     union
     {

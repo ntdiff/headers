@@ -1,6 +1,6 @@
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_99
+  struct
   {
     struct /* bitfield */
     {

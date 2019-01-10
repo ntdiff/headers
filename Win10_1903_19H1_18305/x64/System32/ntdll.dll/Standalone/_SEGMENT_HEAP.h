@@ -74,7 +74,7 @@ typedef struct _HEAP_SEG_CONTEXT
   /* 0x000a */ unsigned char FirstDescriptorIndex;
   /* 0x000b */ unsigned char CachedCommitSoftShift;
   /* 0x000c */ unsigned char CachedCommitHighShift;
-  union // _TAG_UNNAMED_97
+  union
   {
     union
     {
@@ -119,7 +119,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       struct /* bitfield */
       {
@@ -151,7 +151,7 @@ typedef struct _HEAP_SUBALLOCATOR_CALLBACKS
 
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_33
+  struct
   {
     struct /* bitfield */
     {

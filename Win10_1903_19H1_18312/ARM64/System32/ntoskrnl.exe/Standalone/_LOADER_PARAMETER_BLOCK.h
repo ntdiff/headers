@@ -42,7 +42,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long FirmwareStartedInEL2 : 1; /* bit position: 3 */
     /* 0x0000 */ unsigned long Reserved : 27; /* bit position: 4 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_185
+  union
   {
     union
     {
@@ -81,7 +81,7 @@ typedef struct _LOADER_PARAMETER_BLOCK
   /* 0x00e0 */ struct _NLS_DATA_BLOCK* NlsData;
   /* 0x00e8 */ struct _ARC_DISK_INFORMATION* ArcDiskInformation;
   /* 0x00f0 */ struct _LOADER_PARAMETER_EXTENSION* Extension;
-  union // _TAG_UNNAMED_186
+  union
   {
     union
     {

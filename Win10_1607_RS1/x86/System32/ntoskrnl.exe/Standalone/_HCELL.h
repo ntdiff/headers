@@ -1,11 +1,11 @@
 typedef struct _HCELL
 {
   /* 0x0000 */ long Size;
-  union // _TAG_UNNAMED_81
+  union
   {
-    struct // _TAG_UNNAMED_82
+    struct
     {
-      union // _TAG_UNNAMED_83
+      union
       {
         union
         {

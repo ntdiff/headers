@@ -56,7 +56,7 @@ typedef struct _HEAP_SEG_CONTEXT
   /* 0x0006 */ unsigned char FirstDescriptorIndex;
   /* 0x0007 */ unsigned char CachedCommitSoftShift;
   /* 0x0008 */ unsigned char CachedCommitHighShift;
-  union // _TAG_UNNAMED_32
+  union
   {
     union
     {
@@ -121,7 +121,7 @@ typedef struct _HEAP_SUBALLOCATOR_CALLBACKS
 
 typedef struct _RTL_HP_VS_CONFIG
 {
-  struct // _TAG_UNNAMED_96
+  struct
   {
     struct /* bitfield */
     {
@@ -149,7 +149,7 @@ typedef struct _RTL_HP_LFH_CONFIG
 {
   /* 0x0000 */ unsigned long MaxBlockSize;
   /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct // _TAG_UNNAMED_95
+  struct
   {
     /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
   } /* size: 0x0004 */ Flags;

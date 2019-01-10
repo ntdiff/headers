@@ -56,7 +56,7 @@ typedef struct _SECTION
   /* 0x0000 */ struct _RTL_BALANCED_NODE SectionNode;
   /* 0x0018 */ unsigned __int64 StartingVpn;
   /* 0x0020 */ unsigned __int64 EndingVpn;
-  union // _TAG_UNNAMED_234
+  union
   {
     union
     {
@@ -70,7 +70,7 @@ typedef struct _SECTION
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u1;
   /* 0x0030 */ unsigned __int64 SizeOfSection;
-  union // _TAG_UNNAMED_171
+  union
   {
     union
     {

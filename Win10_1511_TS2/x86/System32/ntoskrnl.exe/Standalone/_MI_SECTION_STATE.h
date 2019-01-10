@@ -49,7 +49,7 @@ typedef struct _SUBSECTION
     /* 0x000c */ struct _MI_SUBSECTION_WAIT_BLOCK* CreationWaitList;
     /* 0x000c */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_93
+  union
   {
     union
     {
@@ -60,7 +60,7 @@ typedef struct _SUBSECTION
   /* 0x0014 */ unsigned long StartingSector;
   /* 0x0018 */ unsigned long NumberOfFullSectors;
   /* 0x001c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_94
+  union
   {
     /* 0x0020 */ unsigned long NumberOfChildViews;
   } /* size: 0x0004 */ u1;
@@ -71,7 +71,7 @@ typedef struct _SUBSECTION
       /* 0x0024 */ unsigned long UnusedPtes : 31; /* bit position: 0 */
       /* 0x0024 */ unsigned long DirtyPages : 1; /* bit position: 31 */
     }; /* bitfield */
-    struct // _TAG_UNNAMED_95
+    struct
     {
       struct /* bitfield */
       {
@@ -168,7 +168,7 @@ typedef struct _CONTROL_AREA
   /* 0x0010 */ unsigned long NumberOfPfnReferences;
   /* 0x0014 */ unsigned long NumberOfMappedViews;
   /* 0x0018 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_103
+  union
   {
     union
     {
@@ -180,9 +180,9 @@ typedef struct _CONTROL_AREA
   /* 0x0024 */ volatile long ControlAreaLock;
   /* 0x0028 */ unsigned long ModifiedWriteCount;
   /* 0x002c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_104
+  union
   {
-    struct // _TAG_UNNAMED_105
+    struct
     {
       union
       {

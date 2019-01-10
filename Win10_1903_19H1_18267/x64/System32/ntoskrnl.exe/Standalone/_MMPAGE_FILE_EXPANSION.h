@@ -165,7 +165,7 @@ typedef struct _MMPAGE_FILE_EXPANSION
   /* 0x0028 */ unsigned __int64 ActualExpansion;
   /* 0x0030 */ struct _KEVENT Event;
   /* 0x0048 */ volatile long InProgress;
-  union // _TAG_UNNAMED_22
+  union
   {
     union
     {

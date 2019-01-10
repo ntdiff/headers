@@ -1,7 +1,7 @@
 typedef struct _IMAGE_SECTION_HEADER
 {
   /* 0x0000 */ unsigned char Name[8];
-  union // _TAG_UNNAMED_207
+  union
   {
     union
     {

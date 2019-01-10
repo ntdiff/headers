@@ -20,11 +20,11 @@ typedef struct _RTL_BALANCED_NODE
 typedef struct _MI_PROTOTYPE_PTES_NODE
 {
   /* 0x0000 */ struct _RTL_BALANCED_NODE Node;
-  union // _TAG_UNNAMED_36
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_37
+      struct
       {
         struct /* bitfield */
         {
@@ -32,7 +32,7 @@ typedef struct _MI_PROTOTYPE_PTES_NODE
           /* 0x000c */ unsigned long Inserted : 1; /* bit position: 3 */
         }; /* bitfield */
       } /* size: 0x0004 */ e1;
-      struct // _TAG_UNNAMED_38
+      struct
       {
         /* 0x000c */ unsigned long PrototypePtesFlags;
       } /* size: 0x0004 */ e2;

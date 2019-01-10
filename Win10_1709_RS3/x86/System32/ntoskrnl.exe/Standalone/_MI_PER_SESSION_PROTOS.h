@@ -36,7 +36,7 @@ typedef struct _MI_PER_SESSION_PROTOS
     /* 0x000c */ struct _SUBSECTION* Subsection;
   }; /* size: 0x0004 */
   /* 0x0010 */ struct _MMPTE* SubsectionBase;
-  union // _TAG_UNNAMED_114
+  union
   {
     union
     {

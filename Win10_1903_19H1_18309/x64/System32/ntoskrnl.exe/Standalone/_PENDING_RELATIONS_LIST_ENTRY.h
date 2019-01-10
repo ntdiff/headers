@@ -11,7 +11,7 @@ typedef struct _WORK_QUEUE_ITEM
   /* 0x0018 */ void* Parameter;
 } WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM; /* size: 0x0020 */
 
-typedef enum _TAG_UNNAMED_177
+typedef enum
 {
   IRPLOCK_CANCELABLE = 0,
   IRPLOCK_CANCEL_STARTED = 1,

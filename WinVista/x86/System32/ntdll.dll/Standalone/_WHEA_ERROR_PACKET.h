@@ -221,7 +221,7 @@ typedef struct _WHEA_ERROR_PACKET
   /* 0x0030 */ unsigned long Reserved1;
   /* 0x0034 */ unsigned long Version;
   /* 0x0038 */ unsigned __int64 Cpu;
-  union // _TAG_UNNAMED_85
+  union
   {
     union
     {

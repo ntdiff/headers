@@ -167,7 +167,7 @@ typedef struct _EX_PUSH_LOCK
 typedef struct _MI_PARTITION_CORE
 {
   /* 0x0000 */ unsigned short PartitionId;
-  union // _TAG_UNNAMED_2
+  union
   {
     union
     {
@@ -349,7 +349,7 @@ typedef union _SLIST_HEADER
 
 typedef struct _MI_PARTITION_STORES
 {
-  union // _TAG_UNNAMED_16
+  union
   {
     union
     {
@@ -396,7 +396,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_17
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -467,7 +467,7 @@ typedef struct _MI_DECAY_TIMER_LINKAGE
 
 typedef struct _MI_DECAY_TIMER_LINK
 {
-  union // _TAG_UNNAMED_38
+  union
   {
     union
     {
@@ -617,7 +617,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -651,7 +651,7 @@ typedef struct _MI_PAGEFILE_TRACES
   /* 0x0020 */ unsigned long ModifiedPagefilePages;
   /* 0x0024 */ unsigned long ModifiedNoWritePages;
   /* 0x0028 */ unsigned long ModifiedPagefileNoReservationPages;
-  struct // _TAG_UNNAMED_13
+  struct
   {
     /* 0x002c */ struct _MDL Mdl;
     /* 0x0048 */ unsigned long Page[1];

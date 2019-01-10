@@ -10,7 +10,7 @@ typedef struct _RTL_CRITICAL_SECTION
 
 typedef struct _HEAP_LOCK
 {
-  union // _TAG_UNNAMED_168
+  union
   {
     /* 0x0000 */ struct _RTL_CRITICAL_SECTION CriticalSection;
   } /* size: 0x0018 */ Lock;

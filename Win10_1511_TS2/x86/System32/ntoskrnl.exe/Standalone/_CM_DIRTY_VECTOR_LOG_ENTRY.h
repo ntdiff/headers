@@ -9,21 +9,21 @@ typedef struct _CM_DIRTY_VECTOR_LOG_ENTRY
 {
   /* 0x0000 */ struct _ETHREAD* Thread;
   /* 0x0004 */ enum _CM_DIRTY_VECTOR_OPERATION Operation;
-  union // _TAG_UNNAMED_171
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_172
+      struct
       {
         /* 0x0008 */ unsigned long Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x0008 */ DirtyVectorModifiedContext;
-      struct // _TAG_UNNAMED_173
+      struct
       {
         /* 0x0008 */ unsigned long RangeCount;
         /* 0x000c */ unsigned long SetBitCount;
       } /* size: 0x0008 */ DirtyDataCaptureContext;
-      struct // _TAG_UNNAMED_174
+      struct
       {
         /* 0x0008 */ unsigned long Context1;
         /* 0x000c */ unsigned long Context2;

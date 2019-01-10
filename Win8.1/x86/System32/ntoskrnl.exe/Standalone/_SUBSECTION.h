@@ -32,7 +32,7 @@ typedef struct _SUBSECTION
     /* 0x0010 */ unsigned long UnusedPtes;
     /* 0x0010 */ struct _RTL_AVL_TREE GlobalPerSessionHead;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_122
+  union
   {
     union
     {

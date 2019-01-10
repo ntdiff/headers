@@ -7,7 +7,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -47,16 +47,16 @@ typedef struct _DUMP_INITIALIZATION_CONTEXT
   /* 0x0050 */ void* TargetAddress;
   /* 0x0054 */ void* WritePendingRoutine /* function */;
   /* 0x0058 */ unsigned long PartitionStyle;
-  union // _TAG_UNNAMED_238
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_239
+      struct
       {
         /* 0x005c */ unsigned long Signature;
         /* 0x0060 */ unsigned long CheckSum;
       } /* size: 0x0008 */ Mbr;
-      struct // _TAG_UNNAMED_240
+      struct
       {
         /* 0x005c */ struct _GUID DiskId;
       } /* size: 0x0010 */ Gpt;

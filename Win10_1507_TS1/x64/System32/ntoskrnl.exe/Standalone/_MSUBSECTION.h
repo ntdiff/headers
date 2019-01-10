@@ -32,7 +32,7 @@ typedef struct _SUBSECTION
     /* 0x0018 */ struct _RTL_AVL_TREE GlobalPerSessionHead;
     /* 0x0018 */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_131
+  union
   {
     union
     {
@@ -43,7 +43,7 @@ typedef struct _SUBSECTION
   /* 0x0024 */ unsigned long StartingSector;
   /* 0x0028 */ unsigned long NumberOfFullSectors;
   /* 0x002c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_132
+  union
   {
     /* 0x0030 */ unsigned long NumberOfChildViews;
   } /* size: 0x0004 */ u1;

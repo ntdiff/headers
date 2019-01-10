@@ -67,7 +67,7 @@ typedef struct _SEGMENT
     /* 0x0020 */ void* BasedAddress;
   }; /* size: 0x0008 */
   /* 0x0028 */ struct _EX_PUSH_LOCK SegmentLock;
-  union // _TAG_UNNAMED_101
+  union
   {
     union
     {
@@ -75,7 +75,7 @@ typedef struct _SEGMENT
       /* 0x0030 */ struct _EPROCESS* CreatingProcess;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u1;
-  union // _TAG_UNNAMED_102
+  union
   {
     union
     {

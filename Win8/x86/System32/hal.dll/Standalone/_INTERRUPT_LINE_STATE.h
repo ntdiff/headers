@@ -46,7 +46,7 @@ typedef struct _INTERRUPT_TARGET
       /* 0x0004 */ unsigned long ClusterId;
       /* 0x0008 */ unsigned long ClusterMask;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_73
+    struct
     {
       /* 0x0004 */ unsigned long Low32;
       /* 0x0008 */ unsigned long High32;

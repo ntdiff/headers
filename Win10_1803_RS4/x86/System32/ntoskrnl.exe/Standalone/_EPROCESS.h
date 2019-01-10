@@ -140,18 +140,18 @@ typedef struct _KGDTENTRY
 {
   /* 0x0000 */ unsigned short LimitLow;
   /* 0x0002 */ unsigned short BaseLow;
-  union // _TAG_UNNAMED_4
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_5
+      struct
       {
         /* 0x0004 */ unsigned char BaseMid;
         /* 0x0005 */ unsigned char Flags1;
         /* 0x0006 */ unsigned char Flags2;
         /* 0x0007 */ unsigned char BaseHi;
       } /* size: 0x0004 */ Bytes;
-      struct // _TAG_UNNAMED_6
+      struct
       {
         struct /* bitfield */
         {
@@ -314,7 +314,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -735,7 +735,7 @@ typedef struct _EPROCESS
   union
   {
     /* 0x03e0 */ unsigned long MitigationFlags;
-    struct // _TAG_UNNAMED_126
+    struct
     {
       struct /* bitfield */
       {
@@ -776,7 +776,7 @@ typedef struct _EPROCESS
   union
   {
     /* 0x03e4 */ unsigned long MitigationFlags2;
-    struct // _TAG_UNNAMED_127
+    struct
     {
       struct /* bitfield */
       {

@@ -456,7 +456,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_25
+  union
   {
     union
     {
@@ -541,7 +541,7 @@ typedef struct _KEVENT
 typedef struct _MM_SESSION_SPACE
 {
   /* 0x0000 */ volatile long ReferenceCount;
-  union // _TAG_UNNAMED_26
+  union
   {
     union
     {

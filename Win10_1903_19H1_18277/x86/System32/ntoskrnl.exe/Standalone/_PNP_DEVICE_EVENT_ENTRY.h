@@ -55,54 +55,54 @@ typedef struct _PLUGPLAY_EVENT_BLOCK
   /* 0x0018 */ unsigned long Flags;
   /* 0x001c */ unsigned long TotalSize;
   /* 0x0020 */ void* DeviceObject;
-  union // _TAG_UNNAMED_68
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_69
+      struct
       {
         /* 0x0024 */ struct _GUID ClassGuid;
         /* 0x0034 */ wchar_t SymbolicLinkName[1];
         /* 0x0036 */ char __PADDING__[2];
       } /* size: 0x0014 */ DeviceClass;
-      struct // _TAG_UNNAMED_70
+      struct
       {
         /* 0x0024 */ wchar_t DeviceId[1];
       } /* size: 0x0002 */ TargetDevice;
-      struct // _TAG_UNNAMED_70
+      struct
       {
         /* 0x0024 */ wchar_t DeviceId[1];
       } /* size: 0x0002 */ InstallDevice;
-      struct // _TAG_UNNAMED_71
+      struct
       {
         /* 0x0024 */ void* NotificationStructure;
         /* 0x0028 */ wchar_t DeviceId[1];
         /* 0x002a */ char __PADDING__[2];
       } /* size: 0x0008 */ CustomNotification;
-      struct // _TAG_UNNAMED_72
+      struct
       {
         /* 0x0024 */ void* Notification;
       } /* size: 0x0004 */ ProfileNotification;
-      struct // _TAG_UNNAMED_73
+      struct
       {
         /* 0x0024 */ unsigned long NotificationCode;
         /* 0x0028 */ unsigned long NotificationData;
       } /* size: 0x0008 */ PowerNotification;
-      struct // _TAG_UNNAMED_74
+      struct
       {
         /* 0x0024 */ enum _PNP_VETO_TYPE VetoType;
         /* 0x0028 */ wchar_t DeviceIdVetoNameBuffer[1];
         /* 0x002a */ char __PADDING__[2];
       } /* size: 0x0008 */ VetoNotification;
-      struct // _TAG_UNNAMED_75
+      struct
       {
         /* 0x0024 */ struct _GUID BlockedDriverGuid;
       } /* size: 0x0010 */ BlockedDriverNotification;
-      struct // _TAG_UNNAMED_76
+      struct
       {
         /* 0x0024 */ wchar_t ParentId[1];
       } /* size: 0x0002 */ InvalidIDNotification;
-      struct // _TAG_UNNAMED_77
+      struct
       {
         /* 0x0024 */ struct _GUID PowerSettingGuid;
         /* 0x0034 */ unsigned long Flags;
@@ -111,11 +111,11 @@ typedef struct _PLUGPLAY_EVENT_BLOCK
         /* 0x0040 */ unsigned char Data[1];
         /* 0x0041 */ char __PADDING__[3];
       } /* size: 0x0020 */ PowerSettingNotification;
-      struct // _TAG_UNNAMED_70
+      struct
       {
         /* 0x0024 */ wchar_t DeviceId[1];
       } /* size: 0x0002 */ PropertyChangeNotification;
-      struct // _TAG_UNNAMED_70
+      struct
       {
         /* 0x0024 */ wchar_t DeviceId[1];
       } /* size: 0x0002 */ DeviceInstanceNotification;

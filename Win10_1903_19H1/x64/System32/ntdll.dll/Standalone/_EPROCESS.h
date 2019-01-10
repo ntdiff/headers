@@ -233,12 +233,12 @@ typedef struct _KPROCESS
   /* 0x0280 */ unsigned char AddressPolicy;
   /* 0x0281 */ unsigned char Spare2[71];
   /* 0x02c8 */ void* InstrumentationCallback;
-  union // _TAG_UNNAMED_34
+  union
   {
     union
     {
       /* 0x02d0 */ unsigned __int64 SecureHandle;
-      struct // _TAG_UNNAMED_35
+      struct
       {
         struct /* bitfield */
         {
@@ -285,7 +285,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -717,7 +717,7 @@ typedef struct _EPROCESS
   union
   {
     /* 0x0820 */ unsigned long MitigationFlags;
-    struct // _TAG_UNNAMED_49
+    struct
     {
       struct /* bitfield */
       {
@@ -759,7 +759,7 @@ typedef struct _EPROCESS
   union
   {
     /* 0x0824 */ unsigned long MitigationFlags2;
-    struct // _TAG_UNNAMED_50
+    struct
     {
       struct /* bitfield */
       {

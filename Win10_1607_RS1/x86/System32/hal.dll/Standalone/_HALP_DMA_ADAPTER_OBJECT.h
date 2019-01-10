@@ -20,7 +20,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -39,7 +39,7 @@ typedef struct _HALP_DMA_ADAPTER_OBJECT
   /* 0x0018 */ struct _HALP_DMA_TRANSLATION_BUFFER* ScatterTranslations;
   /* 0x001c */ struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ContiguousTranslationEnd;
   /* 0x0024 */ struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ScatterTranslationEnd;
-  struct // _TAG_UNNAMED_34
+  struct
   {
     /* 0x002c */ struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ContiguousHint;
     /* 0x0034 */ struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ScatterHint;

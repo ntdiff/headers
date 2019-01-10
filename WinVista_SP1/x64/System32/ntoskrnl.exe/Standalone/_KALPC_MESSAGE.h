@@ -23,11 +23,11 @@ typedef struct _CLIENT_ID
 
 typedef struct _PORT_MESSAGE
 {
-  union // _TAG_UNNAMED_109
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_110
+      struct
       {
         /* 0x0000 */ short DataLength;
         /* 0x0002 */ short TotalLength;
@@ -35,11 +35,11 @@ typedef struct _PORT_MESSAGE
       /* 0x0000 */ unsigned long Length;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u1;
-  union // _TAG_UNNAMED_111
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_112
+      struct
       {
         /* 0x0004 */ short Type;
         /* 0x0006 */ short DataInfoOffset;
@@ -75,11 +75,11 @@ typedef struct _KALPC_MESSAGE
     /* 0x0020 */ void* QuotaBlock;
   }; /* size: 0x0008 */
   /* 0x0028 */ long SequenceNo;
-  union // _TAG_UNNAMED_154
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_155
+      struct
       {
         struct /* bitfield */
         {

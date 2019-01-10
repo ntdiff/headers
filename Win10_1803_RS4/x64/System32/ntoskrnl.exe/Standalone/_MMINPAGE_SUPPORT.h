@@ -171,7 +171,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -364,7 +364,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_6
+  union
   {
     union
     {
@@ -470,7 +470,7 @@ typedef struct _MMINPAGE_SUPPORT
   /* 0x0038 */ struct _KEVENT CollidedEvent;
   /* 0x0050 */ struct _IO_STATUS_BLOCK IoStatus;
   /* 0x0060 */ union _LARGE_INTEGER ReadOffset;
-  union // _TAG_UNNAMED_34
+  union
   {
     union
     {
@@ -483,7 +483,7 @@ typedef struct _MMINPAGE_SUPPORT
   /* 0x00a8 */ struct _MMPTE PteContents;
   /* 0x00b0 */ volatile long WaitCount;
   /* 0x00b4 */ unsigned long ByteCount;
-  union // _TAG_UNNAMED_35
+  union
   {
     union
     {
@@ -491,7 +491,7 @@ typedef struct _MMINPAGE_SUPPORT
       /* 0x00b8 */ unsigned long TossPage;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u3;
-  union // _TAG_UNNAMED_36
+  union
   {
     union
     {

@@ -30,7 +30,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long EfiRuntimePageProtectionSupported : 1; /* bit position: 2 */
     /* 0x0000 */ unsigned long Reserved : 29; /* bit position: 3 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_228
+  union
   {
     union
     {

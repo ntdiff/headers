@@ -173,7 +173,7 @@ typedef struct _MI_DECAY_TIMER_LINKAGE
 
 typedef struct _MI_DECAY_TIMER_LINK
 {
-  union // _TAG_UNNAMED_27
+  union
   {
     union
     {

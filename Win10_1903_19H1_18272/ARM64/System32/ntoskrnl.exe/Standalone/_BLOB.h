@@ -34,11 +34,11 @@ typedef struct _BLOB
     /* 0x0000 */ struct _LIST_ENTRY ResourceList;
     /* 0x0000 */ struct _SLIST_ENTRY FreeListEntry;
   }; /* size: 0x0010 */
-  union // _TAG_UNNAMED_202
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_203
+      struct
       {
         struct /* bitfield */
         {

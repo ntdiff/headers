@@ -61,7 +61,7 @@ typedef struct _ACCESS_STATE
   /* 0x001c */ struct _SECURITY_SUBJECT_CONTEXT SubjectSecurityContext;
   /* 0x002c */ void* SecurityDescriptor;
   /* 0x0030 */ void* AuxData;
-  union // _TAG_UNNAMED_151
+  union
   {
     union
     {

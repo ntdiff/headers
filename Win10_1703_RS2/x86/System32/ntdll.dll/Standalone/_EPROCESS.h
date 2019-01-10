@@ -128,18 +128,18 @@ typedef struct _KGDTENTRY
 {
   /* 0x0000 */ unsigned short LimitLow;
   /* 0x0002 */ unsigned short BaseLow;
-  union // _TAG_UNNAMED_33
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_34
+      struct
       {
         /* 0x0004 */ unsigned char BaseMid;
         /* 0x0005 */ unsigned char Flags1;
         /* 0x0006 */ unsigned char Flags2;
         /* 0x0007 */ unsigned char BaseHi;
       } /* size: 0x0004 */ Bytes;
-      struct // _TAG_UNNAMED_35
+      struct
       {
         struct /* bitfield */
         {
@@ -300,7 +300,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -387,7 +387,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x0050 */ unsigned long MaximumWorkingSetSize;
   /* 0x0054 */ unsigned long PeakWorkingSetSize;
   /* 0x0058 */ unsigned long HardFaultCount;
-  union // _TAG_UNNAMED_27
+  union
   {
     /* 0x005c */ void* InstancedWorkingSet;
   } /* size: 0x0004 */ u1;

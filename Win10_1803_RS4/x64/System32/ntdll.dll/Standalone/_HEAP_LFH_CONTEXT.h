@@ -11,7 +11,7 @@ typedef struct _RTL_HP_LFH_CONFIG
 {
   /* 0x0000 */ unsigned long MaxBlockSize;
   /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct // _TAG_UNNAMED_35
+  struct
   {
     /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
   } /* size: 0x0004 */ Flags;
@@ -41,7 +41,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       struct /* bitfield */
       {

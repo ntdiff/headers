@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_40
+typedef enum
 {
   PpmIdleBucketTimeInQpc = 0,
   PpmIdleBucketTimeIn100ns = 1,

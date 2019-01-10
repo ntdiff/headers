@@ -58,7 +58,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_18
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -105,7 +105,7 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0060 */ unsigned __int64 LastProcessorTimeHv;
   /* 0x0068 */ unsigned char ThermalConstraint;
   /* 0x0069 */ unsigned char LastBusyPercentage;
-  union // _TAG_UNNAMED_21
+  union
   {
     union
     {

@@ -10,12 +10,12 @@ typedef struct _RTLP_RANGE_LIST_ENTRY
   /* 0x0008 */ unsigned __int64 End;
   union
   {
-    struct // _TAG_UNNAMED_197
+    struct
     {
       /* 0x0010 */ void* UserData;
       /* 0x0014 */ void* Owner;
     } /* size: 0x0008 */ Allocated;
-    struct // _TAG_UNNAMED_198
+    struct
     {
       /* 0x0010 */ struct _LIST_ENTRY ListHead;
     } /* size: 0x0008 */ Merged;

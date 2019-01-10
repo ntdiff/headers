@@ -230,12 +230,12 @@ typedef struct _KPROCESS
   /* 0x0278 */ unsigned long UserTime;
   /* 0x027c */ unsigned long ReadyTime;
   /* 0x0280 */ void* InstrumentationCallback;
-  union // _TAG_UNNAMED_33
+  union
   {
     union
     {
       /* 0x0288 */ unsigned __int64 SecureHandle;
-      struct // _TAG_UNNAMED_34
+      struct
       {
         struct /* bitfield */
         {

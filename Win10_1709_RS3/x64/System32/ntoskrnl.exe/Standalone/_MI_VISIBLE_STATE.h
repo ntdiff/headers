@@ -140,7 +140,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_4
+  union
   {
     union
     {
@@ -313,7 +313,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x00a8 */ unsigned long HardFaultCount;
   /* 0x00ac */ unsigned short PartitionId;
   /* 0x00ae */ unsigned short Pad0;
-  union // _TAG_UNNAMED_61
+  union
   {
     /* 0x00b0 */ void* InstancedWorkingSet;
   } /* size: 0x0008 */ u1;

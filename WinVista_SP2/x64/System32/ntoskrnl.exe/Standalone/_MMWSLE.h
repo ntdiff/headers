@@ -25,7 +25,7 @@ typedef struct _MMWSLE_FREE_ENTRY
 
 typedef struct _MMWSLE
 {
-  union // _TAG_UNNAMED_67
+  union
   {
     union
     {

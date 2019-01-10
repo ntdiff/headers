@@ -42,7 +42,7 @@ typedef struct _ARBITER_ADD_RESERVED_PARAMETERS
 
 typedef struct _ARBITER_PARAMETERS
 {
-  union // _TAG_UNNAMED_193
+  union
   {
     union
     {

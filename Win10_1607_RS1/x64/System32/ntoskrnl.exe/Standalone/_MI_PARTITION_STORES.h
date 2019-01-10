@@ -148,7 +148,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_16
+    struct
     {
       struct /* bitfield */
       {
@@ -166,7 +166,7 @@ typedef union _SLIST_HEADER
 
 typedef struct _MI_PARTITION_STORES
 {
-  union // _TAG_UNNAMED_25
+  union
   {
     union
     {

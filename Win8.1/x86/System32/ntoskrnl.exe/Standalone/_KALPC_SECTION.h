@@ -12,9 +12,9 @@ typedef struct _KALPC_SECTION
   /* 0x000c */ void* SectionHandle;
   /* 0x0010 */ struct _EPROCESS* OwnerProcess;
   /* 0x0014 */ struct _ALPC_PORT* OwnerPort;
-  union // _TAG_UNNAMED_99
+  union
   {
-    struct // _TAG_UNNAMED_100
+    struct
     {
       struct /* bitfield */
       {

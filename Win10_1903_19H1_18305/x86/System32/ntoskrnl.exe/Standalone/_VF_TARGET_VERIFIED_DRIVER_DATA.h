@@ -28,11 +28,11 @@ typedef struct _VF_TARGET_VERIFIED_DRIVER_DATA
   /* 0x0000 */ struct _VF_SUSPECT_DRIVER_ENTRY* SuspectDriverEntry;
   /* 0x0004 */ void* WMICallback;
   /* 0x0008 */ struct _LIST_ENTRY EtwHandlesListHead;
-  union // _TAG_UNNAMED_240
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_241
+      struct
       {
         struct /* bitfield */
         {

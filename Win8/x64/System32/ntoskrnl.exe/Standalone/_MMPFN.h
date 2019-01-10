@@ -165,7 +165,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_2
+  union
   {
     union
     {
@@ -185,7 +185,7 @@ typedef struct _MMPTE
 
 typedef struct _MMPFN
 {
-  union // _TAG_UNNAMED_129
+  union
   {
     union
     {
@@ -202,7 +202,7 @@ typedef struct _MMPFN
       /* 0x0000 */ struct _SINGLE_LIST_ENTRY NextStackPfn;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u1;
-  union // _TAG_UNNAMED_130
+  union
   {
     union
     {
@@ -224,7 +224,7 @@ typedef struct _MMPFN
     /* 0x0010 */ volatile long Lock;
     /* 0x0010 */ unsigned __int64 PteLong;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_131
+  union
   {
     union
     {
@@ -233,7 +233,7 @@ typedef struct _MMPFN
         /* 0x0018 */ unsigned short ReferenceCount;
         /* 0x001a */ struct _MMPFNENTRY e1;
       }; /* size: 0x0004 */
-      struct // _TAG_UNNAMED_132
+      struct
       {
         union
         {
@@ -260,7 +260,7 @@ typedef struct _MMPFN
     /* 0x001f */ unsigned char NodeFlinkLow;
   }; /* size: 0x0001 */
   /* 0x0020 */ struct _MMPTE OriginalPte;
-  union // _TAG_UNNAMED_133
+  union
   {
     union
     {

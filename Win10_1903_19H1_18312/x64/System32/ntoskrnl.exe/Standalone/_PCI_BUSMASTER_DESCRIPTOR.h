@@ -11,14 +11,14 @@ typedef struct _PCI_BUSMASTER_DESCRIPTOR
   /* 0x0004 */ unsigned long Segment;
   union
   {
-    struct // _TAG_UNNAMED_200
+    struct
     {
       /* 0x0008 */ unsigned char Bus;
       /* 0x0009 */ unsigned char Device;
       /* 0x000a */ unsigned char Function;
       /* 0x000b */ unsigned char Reserved;
     } /* size: 0x0004 */ DeviceRid;
-    struct // _TAG_UNNAMED_200
+    struct
     {
       /* 0x0008 */ unsigned char Bus;
       /* 0x0009 */ unsigned char Device;
@@ -27,7 +27,7 @@ typedef struct _PCI_BUSMASTER_DESCRIPTOR
     } /* size: 0x0004 */ BridgeRid;
     struct
     {
-      struct // _TAG_UNNAMED_201
+      struct
       {
         /* 0x0008 */ unsigned char SecondaryBus;
         /* 0x0009 */ unsigned char SubordinateBus;

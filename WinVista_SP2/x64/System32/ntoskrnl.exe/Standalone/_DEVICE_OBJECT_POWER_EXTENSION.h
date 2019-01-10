@@ -38,9 +38,9 @@ typedef struct _DEVICE_OBJECT_POWER_EXTENSION
   /* 0x0050 */ struct _LIST_ENTRY NotifyTargetList;
   /* 0x0060 */ struct _POWER_CHANNEL_SUMMARY PowerChannelSummary;
   /* 0x0080 */ struct _LIST_ENTRY Volume;
-  union // _TAG_UNNAMED_139
+  union
   {
-    struct // _TAG_UNNAMED_140
+    struct
     {
       /* 0x0090 */ unsigned long IdleTime;
       /* 0x0094 */ unsigned long NonIdleTime;

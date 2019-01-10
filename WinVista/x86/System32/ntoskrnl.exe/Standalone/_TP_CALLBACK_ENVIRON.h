@@ -7,12 +7,12 @@ typedef struct _TP_CALLBACK_ENVIRON
   /* 0x0010 */ void* RaceDll;
   /* 0x0014 */ struct _ACTIVATION_CONTEXT* ActivationContext;
   /* 0x0018 */ void* FinalizationCallback /* function */;
-  union // _TAG_UNNAMED_17
+  union
   {
     union
     {
       /* 0x001c */ unsigned long Flags;
-      struct // _TAG_UNNAMED_18
+      struct
       {
         struct /* bitfield */
         {

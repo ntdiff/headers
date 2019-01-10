@@ -105,7 +105,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_134
+  union
   {
     union
     {

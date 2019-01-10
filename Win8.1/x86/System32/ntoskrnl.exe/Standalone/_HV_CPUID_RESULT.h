@@ -156,7 +156,7 @@ typedef union _HV_CPUID_RESULT
       /* 0x000c */ unsigned int Edx;
     }; /* size: 0x0010 */
     /* 0x0000 */ unsigned int AsUINT32[4];
-    struct // _TAG_UNNAMED_52
+    struct
     {
       /* 0x0000 */ unsigned int ReservedEax;
       struct /* bitfield */

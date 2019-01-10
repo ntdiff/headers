@@ -78,7 +78,7 @@ typedef struct _MI_NODE_INFORMATION
   /* 0x0730 */ unsigned long MmShiftedColor;
   /* 0x0734 */ unsigned long Color;
   /* 0x0738 */ volatile unsigned __int64 ChannelFreeCount[2][4];
-  struct // _TAG_UNNAMED_24
+  struct
   {
     struct /* bitfield */
     {

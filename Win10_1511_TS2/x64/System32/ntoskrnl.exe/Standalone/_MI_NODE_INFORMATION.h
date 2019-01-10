@@ -40,7 +40,7 @@ typedef struct _MI_NODE_INFORMATION
   /* 0x04c8 */ unsigned long MmShiftedColor;
   /* 0x04cc */ unsigned long Color;
   /* 0x04d0 */ volatile unsigned __int64 ChannelFreeCount[2][4];
-  struct // _TAG_UNNAMED_148
+  struct
   {
     struct /* bitfield */
     {

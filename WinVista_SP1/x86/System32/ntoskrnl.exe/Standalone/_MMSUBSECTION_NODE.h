@@ -18,7 +18,7 @@ typedef struct _MMSUBSECTION_FLAGS
 
 typedef struct _MMSUBSECTION_NODE
 {
-  union // _TAG_UNNAMED_153
+  union
   {
     union
     {
@@ -28,7 +28,7 @@ typedef struct _MMSUBSECTION_NODE
   } /* size: 0x0004 */ u;
   /* 0x0004 */ unsigned long StartingSector;
   /* 0x0008 */ unsigned long NumberOfFullSectors;
-  union // _TAG_UNNAMED_154
+  union
   {
     union
     {

@@ -32,7 +32,7 @@ typedef struct _MI_ACTIVE_PFN
 {
   union
   {
-    struct // _TAG_UNNAMED_75
+    struct
     {
       struct /* bitfield */
       {
@@ -40,7 +40,7 @@ typedef struct _MI_ACTIVE_PFN
         /* 0x0000 */ unsigned __int64 NonPagedBuddy : 43; /* bit position: 1 */
       }; /* bitfield */
     } /* size: 0x0008 */ Leaf;
-    struct // _TAG_UNNAMED_76
+    struct
     {
       struct /* bitfield */
       {
@@ -197,7 +197,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_4
+  union
   {
     union
     {
@@ -278,7 +278,7 @@ typedef struct _MMPFN
     /* 0x0000 */ struct _RTL_BALANCED_NODE TreeNode;
     struct
     {
-      union // _TAG_UNNAMED_165
+      union
       {
         union
         {
@@ -302,7 +302,7 @@ typedef struct _MMPFN
     }; /* size: 0x0018 */
   }; /* size: 0x0018 */
   /* 0x0018 */ struct _MIPFNBLINK u2;
-  union // _TAG_UNNAMED_166
+  union
   {
     union
     {
@@ -312,11 +312,11 @@ typedef struct _MMPFN
         /* 0x0022 */ struct _MMPFNENTRY1 e1;
         /* 0x0023 */ struct _MMPFNENTRY3 e3;
       }; /* size: 0x0004 */
-      struct // _TAG_UNNAMED_167
+      struct
       {
         /* 0x0020 */ unsigned short ReferenceCount;
       } /* size: 0x0002 */ e2;
-      struct // _TAG_UNNAMED_168
+      struct
       {
         /* 0x0020 */ unsigned long EntireField;
       } /* size: 0x0004 */ e4;
@@ -333,7 +333,7 @@ typedef struct _MMPFN
     /* 0x0027 */ unsigned char ViewCount;
     /* 0x0027 */ unsigned char NodeFlinkLow;
   }; /* size: 0x0001 */
-  union // _TAG_UNNAMED_169
+  union
   {
     union
     {

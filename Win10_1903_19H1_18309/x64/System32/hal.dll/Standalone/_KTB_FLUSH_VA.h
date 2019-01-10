@@ -1,6 +1,6 @@
 typedef struct _KTB_FLUSH_VA
 {
-  union // _TAG_UNNAMED_82
+  union
   {
     union
     {

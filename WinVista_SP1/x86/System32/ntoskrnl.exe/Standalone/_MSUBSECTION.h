@@ -37,7 +37,7 @@ typedef struct _MSUBSECTION
     /* 0x0010 */ unsigned long UnusedPtes;
     /* 0x0010 */ struct _MM_AVL_TABLE* GlobalPerSessionHead;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_153
+  union
   {
     union
     {
@@ -47,7 +47,7 @@ typedef struct _MSUBSECTION
   } /* size: 0x0004 */ u;
   /* 0x0018 */ unsigned long StartingSector;
   /* 0x001c */ unsigned long NumberOfFullSectors;
-  union // _TAG_UNNAMED_154
+  union
   {
     union
     {

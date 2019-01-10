@@ -1,10 +1,10 @@
 typedef struct _WHEA_PCI_SLOT_NUMBER
 {
-  union // _TAG_UNNAMED_131
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_132
+      struct
       {
         struct /* bitfield */
         {

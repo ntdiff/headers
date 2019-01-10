@@ -108,11 +108,11 @@ typedef struct _ALPC_PORT
   /* 0x00c0 */ struct _ALPC_COMPLETION_LIST* CompletionList;
   /* 0x00c4 */ struct _ALPC_MESSAGE_ZONE* MessageZone;
   /* 0x00c8 */ struct _LIST_ENTRY CanceledQueue;
-  union // _TAG_UNNAMED_172
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_173
+      struct
       {
         struct /* bitfield */
         {

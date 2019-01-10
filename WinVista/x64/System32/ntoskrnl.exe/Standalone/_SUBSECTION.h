@@ -27,7 +27,7 @@ typedef struct _SUBSECTION
     /* 0x0020 */ unsigned long UnusedPtes;
     /* 0x0020 */ struct _MM_AVL_TABLE* GlobalPerSessionHead;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_119
+  union
   {
     union
     {

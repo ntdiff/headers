@@ -4,7 +4,7 @@ typedef struct _LIST_ENTRY
   /* 0x0008 */ struct _LIST_ENTRY* Blink;
 } LIST_ENTRY, *PLIST_ENTRY; /* size: 0x0010 */
 
-typedef enum _TAG_UNNAMED_194
+typedef enum
 {
   UoWAddThisKey = 0,
   UoWAddChildKey = 1,
@@ -23,7 +23,7 @@ typedef enum _TAG_UNNAMED_194
   UoWInvalid = 14,
 } TAG_UNNAMED_194, *PTAG_UNNAMED_194;
 
-typedef enum _TAG_UNNAMED_195
+typedef enum
 {
   Stable = 0,
   Volatile = 1,
@@ -39,7 +39,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;

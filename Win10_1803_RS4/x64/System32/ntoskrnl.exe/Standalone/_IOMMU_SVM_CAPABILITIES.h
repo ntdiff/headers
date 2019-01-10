@@ -10,7 +10,7 @@ typedef union _IOMMU_SVM_CAPABILITIES
         /* 0x0000 */ unsigned long PriCapability : 1; /* bit position: 1 */
         /* 0x0000 */ unsigned long PasidCapability : 1; /* bit position: 2 */
       }; /* bitfield */
-      struct // _TAG_UNNAMED_86
+      struct
       {
         struct /* bitfield */
         {

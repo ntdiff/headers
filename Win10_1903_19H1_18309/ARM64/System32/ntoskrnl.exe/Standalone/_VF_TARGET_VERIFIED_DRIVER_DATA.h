@@ -13,7 +13,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_17
+    struct
     {
       struct /* bitfield */
       {
@@ -34,11 +34,11 @@ typedef struct _VF_TARGET_VERIFIED_DRIVER_DATA
   /* 0x0000 */ struct _VF_SUSPECT_DRIVER_ENTRY* SuspectDriverEntry;
   /* 0x0008 */ void* WMICallback;
   /* 0x0010 */ struct _LIST_ENTRY EtwHandlesListHead;
-  union // _TAG_UNNAMED_29
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_30
+      struct
       {
         struct /* bitfield */
         {

@@ -77,7 +77,7 @@ typedef struct _CONTROL_AREA
   /* 0x0010 */ unsigned long NumberOfPfnReferences;
   /* 0x0014 */ unsigned long NumberOfMappedViews;
   /* 0x0018 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_124
+  union
   {
     union
     {
@@ -89,9 +89,9 @@ typedef struct _CONTROL_AREA
   /* 0x0024 */ volatile long ControlAreaLock;
   /* 0x0028 */ unsigned long ModifiedWriteCount;
   /* 0x002c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_125
+  union
   {
-    struct // _TAG_UNNAMED_126
+    struct
     {
       union
       {
@@ -124,7 +124,7 @@ typedef struct _CONTROL_AREA
   } /* size: 0x000c */ u2;
   /* 0x003c */ struct _EX_PUSH_LOCK FileObjectLock;
   /* 0x0040 */ volatile unsigned __int64 LockedPages;
-  union // _TAG_UNNAMED_127
+  union
   {
     union
     {

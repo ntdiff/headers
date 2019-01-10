@@ -25,11 +25,11 @@ typedef struct _SINGLE_LIST_ENTRY
 typedef struct _MI_PROTOTYPE_PTES_NODE
 {
   /* 0x0000 */ struct _RTL_BALANCED_NODE Node;
-  union // _TAG_UNNAMED_28
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_29
+      struct
       {
         struct /* bitfield */
         {
@@ -37,7 +37,7 @@ typedef struct _MI_PROTOTYPE_PTES_NODE
           /* 0x0018 */ unsigned __int64 Inserted : 1; /* bit position: 3 */
         }; /* bitfield */
       } /* size: 0x0008 */ e1;
-      struct // _TAG_UNNAMED_30
+      struct
       {
         /* 0x0018 */ unsigned __int64 PrototypePtesFlags;
       } /* size: 0x0008 */ e2;
@@ -61,7 +61,7 @@ typedef struct _MI_PER_SESSION_PROTOS
     /* 0x0040 */ struct _SUBSECTION* Subsection;
   }; /* size: 0x0008 */
   /* 0x0048 */ struct _MMPTE* SubsectionBase;
-  union // _TAG_UNNAMED_66
+  union
   {
     union
     {

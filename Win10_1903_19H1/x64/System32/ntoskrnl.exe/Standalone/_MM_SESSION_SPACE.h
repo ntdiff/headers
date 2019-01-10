@@ -205,7 +205,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_82
+    struct
     {
       struct /* bitfield */
       {
@@ -586,7 +586,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_2
+  union
   {
     union
     {
@@ -675,7 +675,7 @@ typedef enum _IO_SESSION_STATE
 typedef struct _MM_SESSION_SPACE
 {
   /* 0x0000 */ volatile long ReferenceCount;
-  union // _TAG_UNNAMED_143
+  union
   {
     union
     {

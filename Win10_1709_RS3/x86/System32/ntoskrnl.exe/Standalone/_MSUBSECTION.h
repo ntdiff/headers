@@ -41,7 +41,7 @@ typedef struct _SUBSECTION
     /* 0x000c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* CreationWaitList;
     /* 0x000c */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_99
+  union
   {
     union
     {
@@ -52,7 +52,7 @@ typedef struct _SUBSECTION
   /* 0x0014 */ unsigned long StartingSector;
   /* 0x0018 */ unsigned long NumberOfFullSectors;
   /* 0x001c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_100
+  union
   {
     union
     {
@@ -68,7 +68,7 @@ typedef struct _SUBSECTION
       /* 0x0024 */ unsigned long ExtentQueryNeeded : 1; /* bit position: 30 */
       /* 0x0024 */ unsigned long DirtyPages : 1; /* bit position: 31 */
     }; /* bitfield */
-    struct // _TAG_UNNAMED_101
+    struct
     {
       struct /* bitfield */
       {

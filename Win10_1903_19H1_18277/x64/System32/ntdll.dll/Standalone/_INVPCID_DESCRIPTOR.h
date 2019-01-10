@@ -2,7 +2,7 @@ typedef union _INVPCID_DESCRIPTOR
 {
   union
   {
-    struct // _TAG_UNNAMED_36
+    struct
     {
       union
       {
@@ -15,7 +15,7 @@ typedef union _INVPCID_DESCRIPTOR
       }; /* size: 0x0008 */
       /* 0x0008 */ unsigned __int64 Virtual;
     } /* size: 0x0010 */ IndividualAddress;
-    struct // _TAG_UNNAMED_37
+    struct
     {
       union
       {
@@ -28,11 +28,11 @@ typedef union _INVPCID_DESCRIPTOR
       }; /* size: 0x0008 */
       /* 0x0008 */ unsigned __int64 Reserved2;
     } /* size: 0x0010 */ SingleContext;
-    struct // _TAG_UNNAMED_38
+    struct
     {
       /* 0x0000 */ unsigned __int64 Reserved[2];
     } /* size: 0x0010 */ AllContextAndGlobals;
-    struct // _TAG_UNNAMED_38
+    struct
     {
       /* 0x0000 */ unsigned __int64 Reserved[2];
     } /* size: 0x0010 */ AllContext;

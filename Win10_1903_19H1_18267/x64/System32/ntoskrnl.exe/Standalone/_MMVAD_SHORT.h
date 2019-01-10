@@ -87,7 +87,7 @@ typedef struct _MMVAD_SHORT
   /* 0x0023 */ unsigned char SpareNT64VadUChar;
   /* 0x0024 */ long ReferenceCount;
   /* 0x0028 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_61
+  union
   {
     union
     {
@@ -96,7 +96,7 @@ typedef struct _MMVAD_SHORT
       /* 0x0030 */ volatile unsigned long VolatileVadLong;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_62
+  union
   {
     union
     {

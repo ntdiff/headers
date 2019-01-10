@@ -4,7 +4,7 @@ typedef struct _VF_AVL_TREE
   /* 0x0004 */ volatile unsigned long NodeCount;
   /* 0x0008 */ struct _VF_AVL_TABLE* Tables;
   /* 0x000c */ unsigned long TablesNo;
-  union // _TAG_UNNAMED_199
+  union
   {
     union
     {

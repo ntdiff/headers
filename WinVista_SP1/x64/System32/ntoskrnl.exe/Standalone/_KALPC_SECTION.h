@@ -6,9 +6,9 @@ typedef struct _LIST_ENTRY
 
 typedef struct _KALPC_SECTION
 {
-  union // _TAG_UNNAMED_150
+  union
   {
-    struct // _TAG_UNNAMED_151
+    struct
     {
       struct /* bitfield */
       {

@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_116
+typedef enum
 {
   PowerActionNone = 0,
   PowerActionReserved = 1,
@@ -71,7 +71,7 @@ typedef struct _SYSTEM_POWER_POLICY
   /* 0x00dc */ struct POWER_ACTION_POLICY OverThrottled;
 } SYSTEM_POWER_POLICY, *PSYSTEM_POWER_POLICY; /* size: 0x00e8 */
 
-typedef enum _TAG_UNNAMED_252
+typedef enum
 {
   PoAc = 0,
   PoDc = 1,

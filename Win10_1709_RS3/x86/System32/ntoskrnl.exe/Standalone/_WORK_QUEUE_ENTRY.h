@@ -138,7 +138,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_4
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -150,28 +150,28 @@ typedef union _LARGE_INTEGER
 typedef struct _WORK_QUEUE_ENTRY
 {
   /* 0x0000 */ struct _LIST_ENTRY WorkQueueLinks;
-  union // _TAG_UNNAMED_192
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_193
+      struct
       {
         /* 0x0008 */ struct _FILE_OBJECT* FileObject;
         /* 0x000c */ void* DiskIoAttribution;
       } /* size: 0x0008 */ Read;
-      struct // _TAG_UNNAMED_194
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
       } /* size: 0x0004 */ Write;
-      struct // _TAG_UNNAMED_195
+      struct
       {
         /* 0x0008 */ struct _KEVENT* Event;
       } /* size: 0x0004 */ Event;
-      struct // _TAG_UNNAMED_196
+      struct
       {
         /* 0x0008 */ unsigned long Reason;
       } /* size: 0x0004 */ Notification;
-      struct // _TAG_UNNAMED_197
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
         /* 0x000c */ struct _IO_STATUS_BLOCK* IoStatus;
@@ -179,7 +179,7 @@ typedef struct _WORK_QUEUE_ENTRY
         /* 0x0020 */ unsigned char IsLowPriWriteBehind;
         /* 0x0021 */ char __PADDING__[3];
       } /* size: 0x001c */ LowPriWrite;
-      struct // _TAG_UNNAMED_198
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
         /* 0x0010 */ union _LARGE_INTEGER FileOffset;

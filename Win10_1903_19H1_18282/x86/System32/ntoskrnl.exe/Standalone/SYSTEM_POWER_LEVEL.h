@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_47
+typedef enum
 {
   PowerActionNone = 0,
   PowerActionReserved = 1,

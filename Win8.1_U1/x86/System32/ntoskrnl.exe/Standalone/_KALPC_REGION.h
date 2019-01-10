@@ -11,9 +11,9 @@ typedef struct _KALPC_REGION
   /* 0x000c */ unsigned long Offset;
   /* 0x0010 */ unsigned long Size;
   /* 0x0014 */ unsigned long ViewSize;
-  union // _TAG_UNNAMED_159
+  union
   {
-    struct // _TAG_UNNAMED_160
+    struct
     {
       /* 0x0018 */ unsigned long Secure : 1; /* bit position: 0 */
     } /* size: 0x0004 */ s1;

@@ -18,7 +18,7 @@ typedef struct _SYSTEM_POWER_STATE_CONTEXT
   }; /* size: 0x0004 */
 } SYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT; /* size: 0x0004 */
 
-typedef enum _TAG_UNNAMED_124
+typedef enum
 {
   PowerActionNone = 0,
   PowerActionReserved = 1,

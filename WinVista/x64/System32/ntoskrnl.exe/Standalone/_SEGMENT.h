@@ -179,7 +179,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_14
+  union
   {
     union
     {
@@ -211,7 +211,7 @@ typedef struct _SEGMENT
   }; /* size: 0x0008 */
   /* 0x0028 */ struct _EX_PUSH_LOCK SegmentLock;
   /* 0x0030 */ struct _SEGMENT_FLAGS SegmentFlags;
-  union // _TAG_UNNAMED_141
+  union
   {
     union
     {
@@ -219,7 +219,7 @@ typedef struct _SEGMENT
       /* 0x0038 */ struct _EPROCESS* CreatingProcess;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u1;
-  union // _TAG_UNNAMED_142
+  union
   {
     union
     {

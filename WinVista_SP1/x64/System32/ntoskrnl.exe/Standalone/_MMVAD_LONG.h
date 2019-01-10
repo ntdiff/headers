@@ -78,7 +78,7 @@ typedef struct _MMSECURE_FLAGS
 
 typedef struct _MMADDRESS_LIST
 {
-  union // _TAG_UNNAMED_48
+  union
   {
     union
     {
@@ -91,7 +91,7 @@ typedef struct _MMADDRESS_LIST
 
 typedef struct _MMVAD_LONG
 {
-  union // _TAG_UNNAMED_18
+  union
   {
     union
     {
@@ -103,7 +103,7 @@ typedef struct _MMVAD_LONG
   /* 0x0010 */ struct _MMVAD* RightChild;
   /* 0x0018 */ unsigned __int64 StartingVpn;
   /* 0x0020 */ unsigned __int64 EndingVpn;
-  union // _TAG_UNNAMED_19
+  union
   {
     union
     {
@@ -112,7 +112,7 @@ typedef struct _MMVAD_LONG
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u;
   /* 0x0030 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_20
+  union
   {
     union
     {
@@ -120,7 +120,7 @@ typedef struct _MMVAD_LONG
       /* 0x0038 */ struct _MMVAD_FLAGS3 VadFlags3;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u5;
-  union // _TAG_UNNAMED_133
+  union
   {
     union
     {
@@ -131,7 +131,7 @@ typedef struct _MMVAD_LONG
   /* 0x0048 */ struct _SUBSECTION* Subsection;
   /* 0x0050 */ struct _MMPTE* FirstPrototypePte;
   /* 0x0058 */ struct _MMPTE* LastContiguousPte;
-  union // _TAG_UNNAMED_162
+  union
   {
     union
     {
@@ -139,7 +139,7 @@ typedef struct _MMVAD_LONG
       /* 0x0060 */ struct _MMADDRESS_LIST Secured;
     }; /* size: 0x0010 */
   } /* size: 0x0010 */ u3;
-  union // _TAG_UNNAMED_163
+  union
   {
     union
     {

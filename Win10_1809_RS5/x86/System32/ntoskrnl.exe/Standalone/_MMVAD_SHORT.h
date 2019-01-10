@@ -81,7 +81,7 @@ typedef struct _MMVAD_SHORT
   /* 0x0010 */ unsigned long EndingVpn;
   /* 0x0014 */ long ReferenceCount;
   /* 0x0018 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_133
+  union
   {
     union
     {
@@ -90,7 +90,7 @@ typedef struct _MMVAD_SHORT
       /* 0x001c */ volatile unsigned long VolatileVadLong;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_134
+  union
   {
     union
     {

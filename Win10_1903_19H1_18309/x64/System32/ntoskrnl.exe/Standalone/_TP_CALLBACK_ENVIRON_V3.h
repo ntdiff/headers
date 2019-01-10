@@ -16,12 +16,12 @@ typedef struct _TP_CALLBACK_ENVIRON_V3
   /* 0x0020 */ void* RaceDll;
   /* 0x0028 */ struct _ACTIVATION_CONTEXT* ActivationContext;
   /* 0x0030 */ void* FinalizationCallback /* function */;
-  union // _TAG_UNNAMED_41
+  union
   {
     union
     {
       /* 0x0038 */ unsigned long Flags;
-      struct // _TAG_UNNAMED_42
+      struct
       {
         struct /* bitfield */
         {

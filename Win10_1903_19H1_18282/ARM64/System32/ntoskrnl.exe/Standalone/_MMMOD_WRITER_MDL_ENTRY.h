@@ -62,7 +62,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_5
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -88,7 +88,7 @@ typedef struct _MDL
 typedef struct _MMMOD_WRITER_MDL_ENTRY
 {
   /* 0x0000 */ struct _LIST_ENTRY Links;
-  union // _TAG_UNNAMED_176
+  union
   {
     /* 0x0010 */ struct _IO_STATUS_BLOCK IoStatus;
   } /* size: 0x0010 */ u;

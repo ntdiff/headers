@@ -150,7 +150,7 @@ typedef union _SLIST_HEADER
 
 typedef struct _MI_PARTITION_STORES
 {
-  union // _TAG_UNNAMED_168
+  union
   {
     union
     {

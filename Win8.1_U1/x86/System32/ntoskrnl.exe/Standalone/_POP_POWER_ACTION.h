@@ -110,7 +110,7 @@ typedef struct _POP_POWER_ACTION
   /* 0x0040 */ unsigned __int64 WakeTime;
   /* 0x0048 */ unsigned __int64 SleepTime;
   /* 0x0050 */ enum SYSTEM_POWER_CONDITION WakeAlarmSignaled;
-  /* 0x0058 */ struct // _TAG_UNNAMED_177
+  /* 0x0058 */ struct
   {
     /* 0x0058 */ unsigned __int64 ProgrammedTime;
     /* 0x0060 */ struct _DIAGNOSTIC_BUFFER* TimerInfo;

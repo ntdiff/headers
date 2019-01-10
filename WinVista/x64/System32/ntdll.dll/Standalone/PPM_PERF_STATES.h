@@ -26,7 +26,7 @@ struct PPM_PERF_STATES
   /* 0x001e */ unsigned char ThrottleStatesOnly;
   /* 0x001f */ unsigned char PolicyType;
   /* 0x0020 */ unsigned long TimerInterval;
-  union // _TAG_UNNAMED_11
+  union
   {
     union
     {

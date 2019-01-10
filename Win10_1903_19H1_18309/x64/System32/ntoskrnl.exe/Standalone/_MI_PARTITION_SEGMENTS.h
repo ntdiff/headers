@@ -166,7 +166,7 @@ typedef struct _MMPAGE_FILE_EXPANSION
   /* 0x0028 */ unsigned __int64 ActualExpansion;
   /* 0x0030 */ struct _KEVENT Event;
   /* 0x0048 */ volatile long InProgress;
-  union // _TAG_UNNAMED_113
+  union
   {
     union
     {
@@ -201,7 +201,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_13
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -354,7 +354,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_15
+  union
   {
     union
     {
@@ -387,7 +387,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_12
+    struct
     {
       struct /* bitfield */
       {

@@ -7,7 +7,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -21,39 +21,39 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR
   /* 0x0000 */ unsigned char Type;
   /* 0x0001 */ unsigned char ShareDisposition;
   /* 0x0002 */ unsigned short Flags;
-  union // _TAG_UNNAMED_21
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_22
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Generic;
-      struct // _TAG_UNNAMED_22
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Port;
-      struct // _TAG_UNNAMED_23
+      struct
       {
         /* 0x0004 */ unsigned short Level;
         /* 0x0006 */ unsigned short Group;
         /* 0x0008 */ unsigned long Vector;
         /* 0x000c */ unsigned __int64 Affinity;
       } /* size: 0x0010 */ Interrupt;
-      struct // _TAG_UNNAMED_24
+      struct
       {
         union
         {
-          struct // _TAG_UNNAMED_25
+          struct
           {
             /* 0x0004 */ unsigned short Group;
             /* 0x0006 */ unsigned short MessageCount;
             /* 0x0008 */ unsigned long Vector;
             /* 0x000c */ unsigned __int64 Affinity;
           } /* size: 0x0010 */ Raw;
-          struct // _TAG_UNNAMED_23
+          struct
           {
             /* 0x0004 */ unsigned short Level;
             /* 0x0006 */ unsigned short Group;
@@ -62,44 +62,44 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR
           } /* size: 0x0010 */ Translated;
         }; /* size: 0x0010 */
       } /* size: 0x0010 */ MessageInterrupt;
-      struct // _TAG_UNNAMED_22
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length;
       } /* size: 0x000c */ Memory;
-      struct // _TAG_UNNAMED_26
+      struct
       {
         /* 0x0004 */ unsigned long Channel;
         /* 0x0008 */ unsigned long Port;
         /* 0x000c */ unsigned long Reserved1;
       } /* size: 0x000c */ Dma;
-      struct // _TAG_UNNAMED_11
+      struct
       {
         /* 0x0004 */ unsigned long Data[3];
       } /* size: 0x000c */ DevicePrivate;
-      struct // _TAG_UNNAMED_27
+      struct
       {
         /* 0x0004 */ unsigned long Start;
         /* 0x0008 */ unsigned long Length;
         /* 0x000c */ unsigned long Reserved;
       } /* size: 0x000c */ BusNumber;
-      struct // _TAG_UNNAMED_28
+      struct
       {
         /* 0x0004 */ unsigned long DataSize;
         /* 0x0008 */ unsigned long Reserved1;
         /* 0x000c */ unsigned long Reserved2;
       } /* size: 0x000c */ DeviceSpecificData;
-      struct // _TAG_UNNAMED_29
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length40;
       } /* size: 0x000c */ Memory40;
-      struct // _TAG_UNNAMED_30
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length48;
       } /* size: 0x000c */ Memory48;
-      struct // _TAG_UNNAMED_31
+      struct
       {
         /* 0x0004 */ union _LARGE_INTEGER Start;
         /* 0x000c */ unsigned long Length64;

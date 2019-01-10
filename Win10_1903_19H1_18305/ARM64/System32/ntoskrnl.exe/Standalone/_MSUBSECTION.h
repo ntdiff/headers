@@ -41,7 +41,7 @@ typedef struct _SUBSECTION
     /* 0x0018 */ struct _MI_CONTROL_AREA_WAIT_BLOCK* CreationWaitList;
     /* 0x0018 */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_63
+  union
   {
     union
     {
@@ -52,7 +52,7 @@ typedef struct _SUBSECTION
   /* 0x0024 */ unsigned long StartingSector;
   /* 0x0028 */ unsigned long NumberOfFullSectors;
   /* 0x002c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_64
+  union
   {
     union
     {
@@ -96,11 +96,11 @@ typedef struct _LIST_ENTRY
 typedef struct _MI_PROTOTYPE_PTES_NODE
 {
   /* 0x0000 */ struct _RTL_BALANCED_NODE Node;
-  union // _TAG_UNNAMED_23
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_24
+      struct
       {
         struct /* bitfield */
         {
@@ -108,7 +108,7 @@ typedef struct _MI_PROTOTYPE_PTES_NODE
           /* 0x0018 */ unsigned __int64 Inserted : 1; /* bit position: 3 */
         }; /* bitfield */
       } /* size: 0x0008 */ e1;
-      struct // _TAG_UNNAMED_25
+      struct
       {
         /* 0x0018 */ unsigned __int64 PrototypePtesFlags;
       } /* size: 0x0008 */ e2;

@@ -25,7 +25,7 @@ typedef struct _KLDR_DATA_TABLE_ENTRY
   /* 0x0058 */ struct _UNICODE_STRING BaseDllName;
   /* 0x0068 */ unsigned long Flags;
   /* 0x006c */ unsigned short LoadCount;
-  union // _TAG_UNNAMED_240
+  union
   {
     union
     {

@@ -145,7 +145,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_3
+  union
   {
     union
     {
@@ -321,7 +321,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x004c */ unsigned long MaximumWorkingSetSize;
   /* 0x0050 */ unsigned long PeakWorkingSetSize;
   /* 0x0054 */ unsigned long HardFaultCount;
-  union // _TAG_UNNAMED_16
+  union
   {
     /* 0x0058 */ void* InstancedWorkingSet;
   } /* size: 0x0004 */ u1;

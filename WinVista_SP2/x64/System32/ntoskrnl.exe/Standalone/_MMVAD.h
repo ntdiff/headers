@@ -62,7 +62,7 @@ typedef struct _MMVAD_FLAGS2
 
 typedef struct _MMVAD
 {
-  union // _TAG_UNNAMED_60
+  union
   {
     union
     {
@@ -74,7 +74,7 @@ typedef struct _MMVAD
   /* 0x0010 */ struct _MMVAD* RightChild;
   /* 0x0018 */ unsigned __int64 StartingVpn;
   /* 0x0020 */ unsigned __int64 EndingVpn;
-  union // _TAG_UNNAMED_61
+  union
   {
     union
     {
@@ -83,7 +83,7 @@ typedef struct _MMVAD
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u;
   /* 0x0030 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_62
+  union
   {
     union
     {
@@ -91,7 +91,7 @@ typedef struct _MMVAD
       /* 0x0038 */ struct _MMVAD_FLAGS3 VadFlags3;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u5;
-  union // _TAG_UNNAMED_63
+  union
   {
     union
     {

@@ -53,9 +53,9 @@ typedef struct _KALPC_SECURITY_DATA
   /* 0x0010 */ struct _EPROCESS* OwningProcess;
   /* 0x0018 */ struct _ALPC_PORT* OwnerPort;
   /* 0x0020 */ struct _SECURITY_CLIENT_CONTEXT DynamicSecurity;
-  union // _TAG_UNNAMED_35
+  union
   {
-    struct // _TAG_UNNAMED_36
+    struct
     {
       struct /* bitfield */
       {

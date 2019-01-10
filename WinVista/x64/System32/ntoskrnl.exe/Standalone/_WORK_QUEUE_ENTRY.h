@@ -8,23 +8,23 @@ typedef struct _WORK_QUEUE_ENTRY
 {
   /* 0x0000 */ struct _LIST_ENTRY WorkQueueLinks;
   /* 0x0010 */ struct _LIST_ENTRY CoalescedWorkQueueLinks;
-  union // _TAG_UNNAMED_22
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_23
+      struct
       {
         /* 0x0020 */ struct _FILE_OBJECT* FileObject;
       } /* size: 0x0008 */ Read;
-      struct // _TAG_UNNAMED_24
+      struct
       {
         /* 0x0020 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
       } /* size: 0x0008 */ Write;
-      struct // _TAG_UNNAMED_25
+      struct
       {
         /* 0x0020 */ struct _KEVENT* Event;
       } /* size: 0x0008 */ Event;
-      struct // _TAG_UNNAMED_26
+      struct
       {
         /* 0x0020 */ unsigned long Reason;
       } /* size: 0x0004 */ Notification;

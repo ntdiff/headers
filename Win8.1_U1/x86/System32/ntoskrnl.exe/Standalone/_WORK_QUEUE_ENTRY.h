@@ -129,27 +129,27 @@ typedef struct _KEVENT
 typedef struct _WORK_QUEUE_ENTRY
 {
   /* 0x0000 */ struct _LIST_ENTRY WorkQueueLinks;
-  union // _TAG_UNNAMED_103
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_104
+      struct
       {
         /* 0x0008 */ struct _FILE_OBJECT* FileObject;
       } /* size: 0x0004 */ Read;
-      struct // _TAG_UNNAMED_105
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
       } /* size: 0x0004 */ Write;
-      struct // _TAG_UNNAMED_106
+      struct
       {
         /* 0x0008 */ struct _KEVENT* Event;
       } /* size: 0x0004 */ Event;
-      struct // _TAG_UNNAMED_107
+      struct
       {
         /* 0x0008 */ unsigned long Reason;
       } /* size: 0x0004 */ Notification;
-      struct // _TAG_UNNAMED_108
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
         /* 0x000c */ struct _IO_STATUS_BLOCK* IoStatus;

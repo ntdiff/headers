@@ -99,7 +99,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_16
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -200,7 +200,7 @@ typedef struct _POP_IRP_DATA
   /* 0x00d1 */ unsigned char NotifyPEP;
   union
   {
-    struct // _TAG_UNNAMED_169
+    struct
     {
       /* 0x00d8 */ void* CallerCompletion /* function */;
       /* 0x00e0 */ void* CallerContext;
@@ -210,7 +210,7 @@ typedef struct _POP_IRP_DATA
     } /* size: 0x0020 */ Device;
     struct
     {
-      struct // _TAG_UNNAMED_170
+      struct
       {
         /* 0x00d8 */ struct _PO_DEVICE_NOTIFY* NotifyDevice;
         /* 0x00e0 */ unsigned char FxDeviceActivated;

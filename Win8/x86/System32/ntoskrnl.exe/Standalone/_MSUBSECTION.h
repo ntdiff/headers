@@ -18,7 +18,7 @@ typedef struct _MMSUBSECTION_FLAGS
 
 typedef struct _MM_AVL_NODE
 {
-  union // _TAG_UNNAMED_72
+  union
   {
     union
     {
@@ -51,7 +51,7 @@ typedef struct _MSUBSECTION
     /* 0x0010 */ unsigned long UnusedPtes;
     /* 0x0010 */ struct _MM_AVL_TABLE* GlobalPerSessionHead;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_135
+  union
   {
     union
     {

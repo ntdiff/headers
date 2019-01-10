@@ -56,7 +56,7 @@ typedef struct _CONTROL_AREA
   /* 0x001c */ unsigned long NumberOfPfnReferences;
   /* 0x0020 */ unsigned long NumberOfMappedViews;
   /* 0x0024 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_136
+  union
   {
     union
     {
@@ -64,9 +64,9 @@ typedef struct _CONTROL_AREA
       /* 0x0028 */ struct _MMSECTION_FLAGS Flags;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_137
+  union
   {
-    struct // _TAG_UNNAMED_138
+    struct
     {
       /* 0x002c */ unsigned short ModifiedWriteCount;
       /* 0x002e */ unsigned short FlushInProgressCount;
@@ -76,9 +76,9 @@ typedef struct _CONTROL_AREA
   /* 0x0038 */ volatile long ControlAreaLock;
   /* 0x003c */ unsigned long StartingFrame;
   /* 0x0040 */ struct _MI_SECTION_CREATION_EVENT* WaitingForDeletion;
-  union // _TAG_UNNAMED_139
+  union
   {
-    struct // _TAG_UNNAMED_140
+    struct
     {
       union
       {

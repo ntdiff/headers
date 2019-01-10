@@ -9,7 +9,7 @@ typedef struct _WHEA_RECOVERY_CONTEXT
 {
   union
   {
-    struct // _TAG_UNNAMED_244
+    struct
     {
       /* 0x0000 */ unsigned long Address;
       /* 0x0004 */ unsigned char Consumed;
@@ -19,7 +19,7 @@ typedef struct _WHEA_RECOVERY_CONTEXT
       /* 0x000a */ unsigned char ClearPoison;
       /* 0x000b */ char __PADDING__[1];
     } /* size: 0x000c */ MemoryError;
-    struct // _TAG_UNNAMED_245
+    struct
     {
       /* 0x0000 */ unsigned long PmemErrInfo;
     } /* size: 0x0004 */ PmemError;

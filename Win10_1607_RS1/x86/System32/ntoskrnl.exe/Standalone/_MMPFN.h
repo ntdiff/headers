@@ -175,7 +175,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_3
+  union
   {
     union
     {
@@ -256,7 +256,7 @@ typedef struct _MMPFN
     /* 0x0000 */ struct _RTL_BALANCED_NODE TreeNode;
     struct
     {
-      union // _TAG_UNNAMED_61
+      union
       {
         union
         {
@@ -277,7 +277,7 @@ typedef struct _MMPFN
       }; /* size: 0x0004 */
       /* 0x0008 */ struct _MMPTE OriginalPte;
       /* 0x0010 */ struct _MIPFNBLINK u2;
-      union // _TAG_UNNAMED_62
+      union
       {
         union
         {
@@ -287,17 +287,17 @@ typedef struct _MMPFN
             /* 0x0016 */ struct _MMPFNENTRY1 e1;
             /* 0x0017 */ struct _MMPFNENTRY3 e3;
           }; /* size: 0x0004 */
-          struct // _TAG_UNNAMED_63
+          struct
           {
             /* 0x0014 */ unsigned short ReferenceCount;
           } /* size: 0x0002 */ e2;
-          struct // _TAG_UNNAMED_64
+          struct
           {
             /* 0x0014 */ unsigned long EntireField;
           } /* size: 0x0004 */ e4;
         }; /* size: 0x0004 */
       } /* size: 0x0004 */ u3;
-      union // _TAG_UNNAMED_65
+      union
       {
         union
         {

@@ -13,7 +13,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_3
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -26,7 +26,7 @@ typedef union _MCI_STATS
 {
   union
   {
-    struct // _TAG_UNNAMED_24
+    struct
     {
       /* 0x0000 */ unsigned short McaErrorCode;
       /* 0x0002 */ unsigned short ModelErrorCode;
@@ -66,11 +66,11 @@ typedef struct _MCA_EXCEPTION
   /* 0x0008 */ union _LARGE_INTEGER TimeStamp;
   /* 0x0010 */ unsigned long ProcessorNumber;
   /* 0x0014 */ unsigned long Reserved1;
-  union // _TAG_UNNAMED_88
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_89
+      struct
       {
         /* 0x0018 */ unsigned char BankNumber;
         /* 0x0019 */ unsigned char Reserved2[7];
@@ -78,7 +78,7 @@ typedef struct _MCA_EXCEPTION
         /* 0x0028 */ union _MCI_ADDR Address;
         /* 0x0030 */ unsigned __int64 Misc;
       } /* size: 0x0020 */ Mca;
-      struct // _TAG_UNNAMED_90
+      struct
       {
         /* 0x0018 */ unsigned __int64 Address;
         /* 0x0020 */ unsigned __int64 Type;

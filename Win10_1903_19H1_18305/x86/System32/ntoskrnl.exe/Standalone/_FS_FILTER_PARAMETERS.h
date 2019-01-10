@@ -88,22 +88,22 @@ typedef union _FS_FILTER_PARAMETERS
 {
   union
   {
-    struct // _TAG_UNNAMED_139
+    struct
     {
       /* 0x0000 */ union _LARGE_INTEGER* EndingOffset;
       /* 0x0004 */ struct _ERESOURCE** ResourceToRelease;
     } /* size: 0x0008 */ AcquireForModifiedPageWriter;
-    struct // _TAG_UNNAMED_140
+    struct
     {
       /* 0x0000 */ struct _ERESOURCE* ResourceToRelease;
     } /* size: 0x0004 */ ReleaseForModifiedPageWriter;
-    struct // _TAG_UNNAMED_141
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_SECTION_SYNC_TYPE SyncType;
       /* 0x0004 */ unsigned long PageProtection;
       /* 0x0008 */ struct _FS_FILTER_SECTION_SYNC_OUTPUT* OutputInformation;
     } /* size: 0x000c */ AcquireForSectionSynchronization;
-    struct // _TAG_UNNAMED_142
+    struct
     {
       /* 0x0000 */ struct _IRP* Irp;
       /* 0x0004 */ void* FileInformation;
@@ -111,7 +111,7 @@ typedef union _FS_FILTER_PARAMETERS
       /* 0x000c */ enum _FILE_INFORMATION_CLASS FileInformationClass;
       /* 0x0010 */ long CompletionStatus;
     } /* size: 0x0014 */ QueryOpen;
-    struct // _TAG_UNNAMED_143
+    struct
     {
       /* 0x0000 */ void* Argument1;
       /* 0x0004 */ void* Argument2;

@@ -171,7 +171,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {
@@ -202,7 +202,7 @@ typedef struct _SEGMENT
     /* 0x0020 */ void* BasedAddress;
   }; /* size: 0x0008 */
   /* 0x0028 */ struct _EX_PUSH_LOCK SegmentLock;
-  union // _TAG_UNNAMED_148
+  union
   {
     union
     {
@@ -210,7 +210,7 @@ typedef struct _SEGMENT
       /* 0x0030 */ struct _EPROCESS* CreatingProcess;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ u1;
-  union // _TAG_UNNAMED_149
+  union
   {
     union
     {

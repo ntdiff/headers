@@ -8,21 +8,21 @@ typedef union _FS_FILTER_PARAMETERS
 {
   union
   {
-    struct // _TAG_UNNAMED_15
+    struct
     {
       /* 0x0000 */ union _LARGE_INTEGER* EndingOffset;
       /* 0x0004 */ struct _ERESOURCE** ResourceToRelease;
     } /* size: 0x0008 */ AcquireForModifiedPageWriter;
-    struct // _TAG_UNNAMED_16
+    struct
     {
       /* 0x0000 */ struct _ERESOURCE* ResourceToRelease;
     } /* size: 0x0004 */ ReleaseForModifiedPageWriter;
-    struct // _TAG_UNNAMED_17
+    struct
     {
       /* 0x0000 */ enum _FS_FILTER_SECTION_SYNC_TYPE SyncType;
       /* 0x0004 */ unsigned long PageProtection;
     } /* size: 0x0008 */ AcquireForSectionSynchronization;
-    struct // _TAG_UNNAMED_18
+    struct
     {
       /* 0x0000 */ void* Argument1;
       /* 0x0004 */ void* Argument2;

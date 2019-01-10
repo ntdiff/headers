@@ -9,7 +9,7 @@ typedef struct _MI_SYSTEM_REGION_ANCHOR
 
 typedef struct _MI_SYSTEM_REGION_REFERENCE
 {
-  struct // _TAG_UNNAMED_46
+  struct
   {
     union
     {

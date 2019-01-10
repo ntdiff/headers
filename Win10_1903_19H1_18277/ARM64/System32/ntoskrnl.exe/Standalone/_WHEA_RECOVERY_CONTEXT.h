@@ -1,6 +1,6 @@
 typedef struct _WHEA_RECOVERY_CONTEXT
 {
-  struct // _TAG_UNNAMED_223
+  struct
   {
     /* 0x0000 */ unsigned __int64 Address;
     /* 0x0008 */ unsigned char Consumed;

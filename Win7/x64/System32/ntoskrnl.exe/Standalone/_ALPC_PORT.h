@@ -112,11 +112,11 @@ typedef struct _ALPC_PORT
   /* 0x0150 */ void* CallbackContext;
   /* 0x0158 */ struct _LIST_ENTRY CanceledQueue;
   /* 0x0168 */ volatile long SequenceNo;
-  union // _TAG_UNNAMED_180
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_181
+      struct
       {
         struct /* bitfield */
         {

@@ -2,7 +2,7 @@ typedef union _MCI_STATS
 {
   union
   {
-    struct // _TAG_UNNAMED_4
+    struct
     {
       /* 0x0000 */ unsigned short McaErrorCode;
       /* 0x0002 */ unsigned short ModelErrorCode;

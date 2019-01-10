@@ -13,7 +13,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -186,21 +186,21 @@ typedef struct _CM_DIRTY_VECTOR_LOG_ENTRY
 {
   /* 0x0000 */ struct _ETHREAD* Thread;
   /* 0x0008 */ enum _CM_DIRTY_VECTOR_OPERATION Operation;
-  union // _TAG_UNNAMED_19
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_20
+      struct
       {
         /* 0x000c */ unsigned long Start;
         /* 0x0010 */ unsigned long Length;
       } /* size: 0x0008 */ DirtyVectorModifiedContext;
-      struct // _TAG_UNNAMED_21
+      struct
       {
         /* 0x000c */ unsigned long RangeCount;
         /* 0x0010 */ unsigned long SetBitCount;
       } /* size: 0x0008 */ DirtyDataCaptureContext;
-      struct // _TAG_UNNAMED_22
+      struct
       {
         /* 0x000c */ unsigned long Context1;
         /* 0x0010 */ unsigned long Context2;

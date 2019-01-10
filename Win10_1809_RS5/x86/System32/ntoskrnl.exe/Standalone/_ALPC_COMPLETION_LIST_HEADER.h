@@ -1,10 +1,10 @@
 typedef struct _ALPC_COMPLETION_LIST_STATE
 {
-  union // _TAG_UNNAMED_162
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_163
+      struct
       {
         struct /* bitfield */
         {

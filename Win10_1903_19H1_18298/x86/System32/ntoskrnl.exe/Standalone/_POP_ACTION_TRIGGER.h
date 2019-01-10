@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_11
+typedef enum
 {
   PolicyDeviceSystemButton = 0,
   PolicyDeviceThermalZone = 1,
@@ -26,11 +26,11 @@ typedef struct _POP_ACTION_TRIGGER
   /* 0x0008 */ struct _POP_TRIGGER_WAIT* Wait;
   union
   {
-    struct // _TAG_UNNAMED_246
+    struct
     {
       /* 0x000c */ unsigned long PercentLevel;
     } /* size: 0x0004 */ Battery;
-    struct // _TAG_UNNAMED_247
+    struct
     {
       /* 0x000c */ unsigned long Type;
     } /* size: 0x0004 */ Button;

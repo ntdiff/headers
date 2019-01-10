@@ -94,7 +94,7 @@ typedef struct _SUBSECTION
     /* 0x000c */ struct _RTL_AVL_TREE GlobalPerSessionHead;
     /* 0x000c */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0004 */
-  union // _TAG_UNNAMED_91
+  union
   {
     union
     {
@@ -105,7 +105,7 @@ typedef struct _SUBSECTION
   /* 0x0014 */ unsigned long StartingSector;
   /* 0x0018 */ unsigned long NumberOfFullSectors;
   /* 0x001c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_92
+  union
   {
     /* 0x0020 */ unsigned long NumberOfChildViews;
   } /* size: 0x0004 */ u1;
@@ -202,7 +202,7 @@ typedef struct _CONTROL_AREA
   /* 0x0010 */ unsigned long NumberOfPfnReferences;
   /* 0x0014 */ unsigned long NumberOfMappedViews;
   /* 0x0018 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_41
+  union
   {
     union
     {
@@ -214,9 +214,9 @@ typedef struct _CONTROL_AREA
   /* 0x0024 */ volatile long ControlAreaLock;
   /* 0x0028 */ unsigned long ModifiedWriteCount;
   /* 0x002c */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_42
+  union
   {
-    struct // _TAG_UNNAMED_43
+    struct
     {
       union
       {
@@ -489,7 +489,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_5
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -646,7 +646,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_6
+  union
   {
     union
     {

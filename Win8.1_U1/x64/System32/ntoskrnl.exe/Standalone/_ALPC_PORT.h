@@ -116,11 +116,11 @@ typedef struct _ALPC_PORT
   /* 0x0178 */ long SequenceNo;
   /* 0x017c */ long ReferenceNo;
   /* 0x0180 */ struct _PALPC_PORT_REFERENCE_WAIT_BLOCK* ReferenceNoWait;
-  union // _TAG_UNNAMED_179
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_180
+      struct
       {
         struct /* bitfield */
         {

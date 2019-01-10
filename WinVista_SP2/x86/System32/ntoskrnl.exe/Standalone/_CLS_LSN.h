@@ -2,7 +2,7 @@ typedef union _CLS_LSN
 {
   union
   {
-    struct // _TAG_UNNAMED_140
+    struct
     {
       /* 0x0000 */ unsigned int idxRecord;
       /* 0x0004 */ unsigned long cidContainer;

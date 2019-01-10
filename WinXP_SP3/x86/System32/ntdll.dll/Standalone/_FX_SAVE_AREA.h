@@ -30,7 +30,7 @@ typedef struct _FXSAVE_FORMAT
 
 typedef struct _FX_SAVE_AREA
 {
-  union // _TAG_UNNAMED_6
+  union
   {
     union
     {

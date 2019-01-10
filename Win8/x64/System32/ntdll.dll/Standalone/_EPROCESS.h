@@ -127,7 +127,7 @@ typedef union _KGDTENTRY64
       /* 0x0002 */ unsigned short BaseLow;
       union
       {
-        struct // _TAG_UNNAMED_34
+        struct
         {
           /* 0x0004 */ unsigned char BaseMiddle;
           /* 0x0005 */ unsigned char Flags1;
@@ -136,7 +136,7 @@ typedef union _KGDTENTRY64
         } /* size: 0x0004 */ Bytes;
         struct
         {
-          struct // _TAG_UNNAMED_35
+          struct
           {
             struct /* bitfield */
             {
@@ -257,7 +257,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -345,7 +345,7 @@ typedef struct _MMSUPPORT
 
 typedef struct _MM_AVL_NODE
 {
-  union // _TAG_UNNAMED_44
+  union
   {
     union
     {

@@ -64,7 +64,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x00a0 */ unsigned long HardFaultCount;
   /* 0x00a4 */ unsigned short PartitionId;
   /* 0x00a6 */ unsigned short Pad0;
-  union // _TAG_UNNAMED_17
+  union
   {
     /* 0x00a8 */ void* InstancedWorkingSet;
   } /* size: 0x0008 */ u1;
@@ -120,7 +120,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_3
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -156,7 +156,7 @@ typedef struct _MI_PAGEFILE_TRACES
   /* 0x0028 */ unsigned __int64 ModifiedPagefilePages;
   /* 0x0030 */ unsigned __int64 ModifiedNoWritePages;
   /* 0x0038 */ unsigned __int64 ModifiedPagefileNoReservationPages;
-  struct // _TAG_UNNAMED_27
+  struct
   {
     /* 0x0040 */ struct _MDL Mdl;
     /* 0x0070 */ unsigned __int64 Page[1];

@@ -30,7 +30,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -119,15 +119,15 @@ typedef struct _WHEA_NOTIFICATION_DESCRIPTOR
   /* 0x0000 */ unsigned char Type;
   /* 0x0001 */ unsigned char Length;
   /* 0x0002 */ union _WHEA_NOTIFICATION_FLAGS Flags;
-  union // _TAG_UNNAMED_166
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_167
+      struct
       {
         /* 0x0004 */ unsigned long PollInterval;
       } /* size: 0x0004 */ Polled;
-      struct // _TAG_UNNAMED_168
+      struct
       {
         /* 0x0004 */ unsigned long PollInterval;
         /* 0x0008 */ unsigned long Vector;
@@ -136,7 +136,7 @@ typedef struct _WHEA_NOTIFICATION_DESCRIPTOR
         /* 0x0014 */ unsigned long ErrorThreshold;
         /* 0x0018 */ unsigned long ErrorThresholdWindow;
       } /* size: 0x0018 */ Interrupt;
-      struct // _TAG_UNNAMED_168
+      struct
       {
         /* 0x0004 */ unsigned long PollInterval;
         /* 0x0008 */ unsigned long Vector;
@@ -145,7 +145,7 @@ typedef struct _WHEA_NOTIFICATION_DESCRIPTOR
         /* 0x0014 */ unsigned long ErrorThreshold;
         /* 0x0018 */ unsigned long ErrorThresholdWindow;
       } /* size: 0x0018 */ LocalInterrupt;
-      struct // _TAG_UNNAMED_168
+      struct
       {
         /* 0x0004 */ unsigned long PollInterval;
         /* 0x0008 */ unsigned long Vector;
@@ -154,7 +154,7 @@ typedef struct _WHEA_NOTIFICATION_DESCRIPTOR
         /* 0x0014 */ unsigned long ErrorThreshold;
         /* 0x0018 */ unsigned long ErrorThresholdWindow;
       } /* size: 0x0018 */ Sci;
-      struct // _TAG_UNNAMED_168
+      struct
       {
         /* 0x0004 */ unsigned long PollInterval;
         /* 0x0008 */ unsigned long Vector;
@@ -206,11 +206,11 @@ typedef struct _WHEA_IPF_CPE_DESCRIPTOR
 
 typedef struct _WHEA_PCI_SLOT_NUMBER
 {
-  union // _TAG_UNNAMED_163
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_164
+      struct
       {
         struct /* bitfield */
         {
@@ -352,7 +352,7 @@ typedef struct _WHEA_ERROR_SOURCE_DESCRIPTOR
   /* 0x001c */ unsigned long ErrorSourceId;
   /* 0x0020 */ unsigned long PlatformErrorSourceId;
   /* 0x0024 */ unsigned long Flags;
-  union // _TAG_UNNAMED_191
+  union
   {
     union
     {

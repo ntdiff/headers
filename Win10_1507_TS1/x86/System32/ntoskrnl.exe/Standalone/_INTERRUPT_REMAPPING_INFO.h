@@ -7,7 +7,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -24,12 +24,12 @@ typedef struct _INTERRUPT_REMAPPING_INFO
     /* 0x0000 */ unsigned long FlagHalInternal : 1; /* bit position: 30 */
     /* 0x0000 */ unsigned long FlagTranslated : 1; /* bit position: 31 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_48
+  union
   {
     union
     {
       /* 0x0008 */ union _ULARGE_INTEGER RemappedFormat;
-      struct // _TAG_UNNAMED_49
+      struct
       {
         /* 0x0008 */ unsigned long MessageAddressLow;
         /* 0x000c */ unsigned short MessageData;

@@ -266,7 +266,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -355,7 +355,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x00a8 */ unsigned long HardFaultCount;
   /* 0x00ac */ unsigned short PartitionId;
   /* 0x00ae */ unsigned short Pad0;
-  union // _TAG_UNNAMED_33
+  union
   {
     /* 0x00b0 */ void* InstancedWorkingSet;
   } /* size: 0x0008 */ u1;

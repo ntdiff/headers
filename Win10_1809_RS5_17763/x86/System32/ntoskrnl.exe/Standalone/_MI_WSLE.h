@@ -1,10 +1,10 @@
 typedef struct _MI_WSLE
 {
-  union // _TAG_UNNAMED_238
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_239
+      struct
       {
         struct /* bitfield */
         {
@@ -13,7 +13,7 @@ typedef struct _MI_WSLE
           /* 0x0000 */ unsigned char Reserved : 1; /* bit position: 7 */
         }; /* bitfield */
       } /* size: 0x0001 */ e1;
-      struct // _TAG_UNNAMED_240
+      struct
       {
         /* 0x0000 */ unsigned char EntireWsle;
       } /* size: 0x0001 */ e2;

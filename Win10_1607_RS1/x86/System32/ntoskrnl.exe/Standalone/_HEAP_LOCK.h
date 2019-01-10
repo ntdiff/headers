@@ -71,7 +71,7 @@ typedef struct _ERESOURCE
 
 typedef struct _HEAP_LOCK
 {
-  union // _TAG_UNNAMED_160
+  union
   {
     union
     {

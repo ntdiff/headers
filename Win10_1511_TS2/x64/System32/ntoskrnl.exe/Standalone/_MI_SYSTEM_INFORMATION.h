@@ -92,7 +92,7 @@ typedef struct _SUBSECTION
     /* 0x0018 */ struct _MI_SUBSECTION_WAIT_BLOCK* CreationWaitList;
     /* 0x0018 */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_88
+  union
   {
     union
     {
@@ -103,7 +103,7 @@ typedef struct _SUBSECTION
   /* 0x0024 */ unsigned long StartingSector;
   /* 0x0028 */ unsigned long NumberOfFullSectors;
   /* 0x002c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_89
+  union
   {
     /* 0x0030 */ unsigned long NumberOfChildViews;
   } /* size: 0x0004 */ u1;
@@ -114,7 +114,7 @@ typedef struct _SUBSECTION
       /* 0x0034 */ unsigned long UnusedPtes : 31; /* bit position: 0 */
       /* 0x0034 */ unsigned long DirtyPages : 1; /* bit position: 31 */
     }; /* bitfield */
-    struct // _TAG_UNNAMED_90
+    struct
     {
       struct /* bitfield */
       {
@@ -221,7 +221,7 @@ typedef struct _CONTROL_AREA
   /* 0x0020 */ unsigned __int64 NumberOfPfnReferences;
   /* 0x0028 */ unsigned __int64 NumberOfMappedViews;
   /* 0x0030 */ unsigned __int64 NumberOfUserReferences;
-  union // _TAG_UNNAMED_81
+  union
   {
     union
     {
@@ -229,7 +229,7 @@ typedef struct _CONTROL_AREA
       /* 0x0038 */ struct _MMSECTION_FLAGS Flags;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_82
+  union
   {
     union
     {
@@ -241,9 +241,9 @@ typedef struct _CONTROL_AREA
   /* 0x0048 */ volatile long ControlAreaLock;
   /* 0x004c */ unsigned long ModifiedWriteCount;
   /* 0x0050 */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_83
+  union
   {
-    struct // _TAG_UNNAMED_84
+    struct
     {
       union
       {
@@ -551,7 +551,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_6
+    struct
     {
       struct /* bitfield */
       {
@@ -576,7 +576,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -792,7 +792,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_12
+  union
   {
     union
     {

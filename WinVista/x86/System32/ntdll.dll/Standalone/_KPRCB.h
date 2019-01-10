@@ -87,7 +87,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -286,7 +286,7 @@ typedef struct _FXSAVE_FORMAT
 
 typedef struct _FX_SAVE_AREA
 {
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {
@@ -314,7 +314,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -347,7 +347,7 @@ typedef struct _PROCESSOR_POWER_STATE
   /* 0x0050 */ unsigned __int64 LastProcessorTimeHv;
   /* 0x0058 */ unsigned char ThermalConstraint;
   /* 0x0059 */ unsigned char LastBusyPercentage;
-  union // _TAG_UNNAMED_11
+  union
   {
     union
     {

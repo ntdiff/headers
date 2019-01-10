@@ -40,7 +40,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_16
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -57,12 +57,12 @@ typedef struct _INTERRUPT_REMAPPING_INFO
     /* 0x0000 */ unsigned long FlagHalInternal : 1; /* bit position: 30 */
     /* 0x0000 */ unsigned long FlagTranslated : 1; /* bit position: 31 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_34
+  union
   {
     union
     {
       /* 0x0008 */ union _ULARGE_INTEGER RemappedFormat;
-      struct // _TAG_UNNAMED_35
+      struct
       {
         /* 0x0008 */ unsigned long MessageAddressLow;
         /* 0x000c */ unsigned short MessageData;
@@ -81,7 +81,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -92,11 +92,11 @@ typedef union _LARGE_INTEGER
 
 typedef struct _INTERRUPT_HT_INTR_INFO
 {
-  union // _TAG_UNNAMED_36
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_37
+      struct
       {
         struct /* bitfield */
         {
@@ -114,11 +114,11 @@ typedef struct _INTERRUPT_HT_INTR_INFO
       /* 0x0000 */ unsigned long AsULONG;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ LowPart;
-  union // _TAG_UNNAMED_38
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_39
+      struct
       {
         struct /* bitfield */
         {
@@ -150,7 +150,7 @@ typedef struct _INTERRUPT_VECTOR_DATA
   /* 0x0010 */ enum _KINTERRUPT_MODE Mode;
   /* 0x0014 */ struct _GROUP_AFFINITY TargetProcessors;
   /* 0x0020 */ struct _INTERRUPT_REMAPPING_INFO IntRemapInfo;
-  struct // _TAG_UNNAMED_40
+  struct
   {
     /* 0x0030 */ unsigned long Gsiv;
     struct /* bitfield */
@@ -161,17 +161,17 @@ typedef struct _INTERRUPT_VECTOR_DATA
   } /* size: 0x0008 */ ControllerInput;
   union
   {
-    struct // _TAG_UNNAMED_41
+    struct
     {
       /* 0x0038 */ union _LARGE_INTEGER Address;
       /* 0x0040 */ unsigned long DataPayload;
       /* 0x0044 */ long __PADDING__[1];
     } /* size: 0x0010 */ XapicMessage;
-    struct // _TAG_UNNAMED_42
+    struct
     {
       /* 0x0038 */ struct _INTERRUPT_HT_INTR_INFO IntrInfo;
     } /* size: 0x0008 */ Hypertransport;
-    struct // _TAG_UNNAMED_41
+    struct
     {
       /* 0x0038 */ union _LARGE_INTEGER Address;
       /* 0x0040 */ unsigned long DataPayload;
@@ -179,7 +179,7 @@ typedef struct _INTERRUPT_VECTOR_DATA
     } /* size: 0x0010 */ GenericMessage;
     struct
     {
-      struct // _TAG_UNNAMED_43
+      struct
       {
         /* 0x0038 */ enum HAL_APIC_DESTINATION_MODE DestinationMode;
       } /* size: 0x0004 */ MessageRequest;

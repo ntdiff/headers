@@ -7,23 +7,23 @@ typedef struct _LIST_ENTRY
 typedef struct _WORK_QUEUE_ENTRY
 {
   /* 0x0000 */ struct _LIST_ENTRY WorkQueueLinks;
-  union // _TAG_UNNAMED_124
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_125
+      struct
       {
         /* 0x0008 */ struct _FILE_OBJECT* FileObject;
       } /* size: 0x0004 */ Read;
-      struct // _TAG_UNNAMED_126
+      struct
       {
         /* 0x0008 */ struct _SHARED_CACHE_MAP* SharedCacheMap;
       } /* size: 0x0004 */ Write;
-      struct // _TAG_UNNAMED_127
+      struct
       {
         /* 0x0008 */ struct _KEVENT* Event;
       } /* size: 0x0004 */ Event;
-      struct // _TAG_UNNAMED_128
+      struct
       {
         /* 0x0008 */ unsigned long Reason;
       } /* size: 0x0004 */ Notification;

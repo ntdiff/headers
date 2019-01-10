@@ -28,7 +28,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_5
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -89,7 +89,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_7
+    struct
     {
       struct /* bitfield */
       {
@@ -105,7 +105,7 @@ typedef union _SLIST_HEADER
         /* 0x0008 */ unsigned __int64 Region : 3; /* bit position: 61 */
       }; /* bitfield */
     } /* size: 0x0010 */ Header8;
-    struct // _TAG_UNNAMED_8
+    struct
     {
       struct /* bitfield */
       {
@@ -471,7 +471,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_14
+  union
   {
     union
     {
@@ -510,7 +510,7 @@ typedef struct _MI_SYSTEM_PTE_TYPE
 typedef struct _MM_SESSION_SPACE
 {
   /* 0x0000 */ volatile long ReferenceCount;
-  union // _TAG_UNNAMED_154
+  union
   {
     union
     {

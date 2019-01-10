@@ -35,7 +35,7 @@ typedef struct _RTL_RETPOLINE_RELOCATION_INDEX
   /* 0x0002 */ unsigned short IndirectRelocationSize;
   /* 0x0004 */ unsigned short SwitchJumpRelocationSize;
   /* 0x0006 */ unsigned short StraddleType;
-  union // _TAG_UNNAMED_186
+  union
   {
     union
     {

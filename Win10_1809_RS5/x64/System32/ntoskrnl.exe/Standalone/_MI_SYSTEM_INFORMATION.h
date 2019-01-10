@@ -130,7 +130,7 @@ typedef struct _SUBSECTION
     /* 0x0018 */ struct _MI_CONTROL_AREA_WAIT_BLOCK* CreationWaitList;
     /* 0x0018 */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_143
+  union
   {
     union
     {
@@ -141,7 +141,7 @@ typedef struct _SUBSECTION
   /* 0x0024 */ unsigned long StartingSector;
   /* 0x0028 */ unsigned long NumberOfFullSectors;
   /* 0x002c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_144
+  union
   {
     union
     {
@@ -166,11 +166,11 @@ typedef struct _LIST_ENTRY
 typedef struct _MI_PROTOTYPE_PTES_NODE
 {
   /* 0x0000 */ struct _RTL_BALANCED_NODE Node;
-  union // _TAG_UNNAMED_115
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_116
+      struct
       {
         struct /* bitfield */
         {
@@ -178,7 +178,7 @@ typedef struct _MI_PROTOTYPE_PTES_NODE
           /* 0x0018 */ unsigned __int64 Inserted : 1; /* bit position: 3 */
         }; /* bitfield */
       } /* size: 0x0008 */ e1;
-      struct // _TAG_UNNAMED_117
+      struct
       {
         /* 0x0018 */ unsigned __int64 PrototypePtesFlags;
       } /* size: 0x0008 */ e2;
@@ -264,7 +264,7 @@ typedef struct _CONTROL_AREA
   /* 0x0020 */ unsigned __int64 NumberOfPfnReferences;
   /* 0x0028 */ unsigned __int64 NumberOfMappedViews;
   /* 0x0030 */ unsigned __int64 NumberOfUserReferences;
-  union // _TAG_UNNAMED_171
+  union
   {
     union
     {
@@ -272,7 +272,7 @@ typedef struct _CONTROL_AREA
       /* 0x0038 */ struct _MMSECTION_FLAGS Flags;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
-  union // _TAG_UNNAMED_172
+  union
   {
     union
     {
@@ -284,9 +284,9 @@ typedef struct _CONTROL_AREA
   /* 0x0048 */ volatile long ControlAreaLock;
   /* 0x004c */ unsigned long ModifiedWriteCount;
   /* 0x0050 */ struct _MI_CONTROL_AREA_WAIT_BLOCK* WaitList;
-  union // _TAG_UNNAMED_173
+  union
   {
-    struct // _TAG_UNNAMED_174
+    struct
     {
       union
       {
@@ -319,7 +319,7 @@ typedef struct _CONTROL_AREA
   } /* size: 0x0010 */ u2;
   /* 0x0068 */ struct _EX_PUSH_LOCK FileObjectLock;
   /* 0x0070 */ volatile unsigned __int64 LockedPages;
-  union // _TAG_UNNAMED_175
+  union
   {
     union
     {
@@ -650,7 +650,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -920,7 +920,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_11
+    struct
     {
       struct /* bitfield */
       {
@@ -1287,7 +1287,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {

@@ -105,7 +105,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -139,7 +139,7 @@ typedef struct _MI_PAGEFILE_TRACES
   /* 0x0020 */ unsigned long ModifiedPagefilePages;
   /* 0x0024 */ unsigned long ModifiedNoWritePages;
   /* 0x0028 */ unsigned long ModifiedPagefileNoReservationPages;
-  struct // _TAG_UNNAMED_147
+  struct
   {
     /* 0x002c */ struct _MDL Mdl;
     /* 0x0048 */ unsigned long Page[1];

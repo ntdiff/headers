@@ -7,7 +7,7 @@ struct PROCESSOR_PERFSTATE_POLICY
   union
   {
     /* 0x0007 */ unsigned char Spare;
-    union // _TAG_UNNAMED_203
+    union
     {
       union
       {

@@ -61,7 +61,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x0050 */ unsigned long MaximumWorkingSetSize;
   /* 0x0054 */ unsigned long PeakWorkingSetSize;
   /* 0x0058 */ unsigned long HardFaultCount;
-  union // _TAG_UNNAMED_89
+  union
   {
     /* 0x005c */ void* InstancedWorkingSet;
   } /* size: 0x0004 */ u1;

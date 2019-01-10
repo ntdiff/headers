@@ -9,7 +9,7 @@ struct PROCESSOR_IDLESTATE_INFO
 struct PROCESSOR_IDLESTATE_POLICY
 {
   /* 0x0000 */ unsigned short Revision;
-  union // _TAG_UNNAMED_154
+  union
   {
     union
     {

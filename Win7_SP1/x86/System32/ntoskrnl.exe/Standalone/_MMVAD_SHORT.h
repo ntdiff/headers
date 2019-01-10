@@ -44,7 +44,7 @@ typedef struct _MMVAD_FLAGS3
 
 typedef struct _MMVAD_SHORT
 {
-  union // _TAG_UNNAMED_9
+  union
   {
     union
     {
@@ -56,7 +56,7 @@ typedef struct _MMVAD_SHORT
   /* 0x0008 */ struct _MMVAD* RightChild;
   /* 0x000c */ unsigned long StartingVpn;
   /* 0x0010 */ unsigned long EndingVpn;
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {
@@ -65,7 +65,7 @@ typedef struct _MMVAD_SHORT
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ u;
   /* 0x0018 */ struct _EX_PUSH_LOCK PushLock;
-  union // _TAG_UNNAMED_11
+  union
   {
     union
     {

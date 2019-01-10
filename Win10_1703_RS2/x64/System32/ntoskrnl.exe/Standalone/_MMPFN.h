@@ -170,7 +170,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_1
+  union
   {
     union
     {
@@ -251,7 +251,7 @@ typedef struct _MMPFN
     /* 0x0000 */ struct _RTL_BALANCED_NODE TreeNode;
     struct
     {
-      union // _TAG_UNNAMED_128
+      union
       {
         union
         {
@@ -260,7 +260,7 @@ typedef struct _MMPFN
             /* 0x0000 */ unsigned __int64 Flink : 36; /* bit position: 0 */
             /* 0x0000 */ unsigned __int64 NodeFlinkHigh : 28; /* bit position: 36 */
           }; /* bitfield */
-          struct // _TAG_UNNAMED_129
+          struct
           {
             struct /* bitfield */
             {
@@ -286,7 +286,7 @@ typedef struct _MMPFN
     }; /* size: 0x0018 */
   }; /* size: 0x0018 */
   /* 0x0018 */ struct _MIPFNBLINK u2;
-  union // _TAG_UNNAMED_130
+  union
   {
     union
     {
@@ -296,11 +296,11 @@ typedef struct _MMPFN
         /* 0x0022 */ struct _MMPFNENTRY1 e1;
         /* 0x0023 */ struct _MMPFNENTRY3 e3;
       }; /* size: 0x0004 */
-      struct // _TAG_UNNAMED_131
+      struct
       {
         /* 0x0020 */ unsigned short ReferenceCount;
       } /* size: 0x0002 */ e2;
-      struct // _TAG_UNNAMED_132
+      struct
       {
         /* 0x0020 */ unsigned long EntireField;
       } /* size: 0x0004 */ e4;
@@ -317,7 +317,7 @@ typedef struct _MMPFN
     /* 0x0027 */ unsigned char ViewCount;
     /* 0x0027 */ unsigned char NodeFlinkLow;
   }; /* size: 0x0001 */
-  union // _TAG_UNNAMED_133
+  union
   {
     union
     {

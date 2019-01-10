@@ -28,7 +28,7 @@ typedef struct _PPM_IDLE_STATE
 typedef struct _PPM_IDLE_STATES
 {
   /* 0x0000 */ unsigned long Count;
-  union // _TAG_UNNAMED_76
+  union
   {
     union
     {

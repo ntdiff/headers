@@ -28,12 +28,12 @@ typedef struct _PO_FX_COMPONENT_PERF_SET
   /* 0x001c */ enum _PO_FX_PERF_STATE_TYPE Type;
   union
   {
-    struct // _TAG_UNNAMED_161
+    struct
     {
       /* 0x0020 */ unsigned long Count;
       /* 0x0028 */ struct _PO_FX_PERF_STATE* States;
     } /* size: 0x0010 */ Discrete;
-    struct // _TAG_UNNAMED_162
+    struct
     {
       /* 0x0020 */ unsigned __int64 Minimum;
       /* 0x0028 */ unsigned __int64 Maximum;

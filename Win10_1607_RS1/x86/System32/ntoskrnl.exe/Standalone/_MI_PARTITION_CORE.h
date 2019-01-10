@@ -173,7 +173,7 @@ typedef struct _EX_PUSH_LOCK
 typedef struct _MI_PARTITION_CORE
 {
   /* 0x0000 */ unsigned short PartitionId;
-  union // _TAG_UNNAMED_25
+  union
   {
     union
     {

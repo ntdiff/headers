@@ -233,7 +233,7 @@ typedef struct _DBGKD_MANIPULATE_STATE32
   /* 0x0004 */ unsigned short ProcessorLevel;
   /* 0x0006 */ unsigned short Processor;
   /* 0x0008 */ long ReturnStatus;
-  union // _TAG_UNNAMED_215
+  union
   {
     union
     {

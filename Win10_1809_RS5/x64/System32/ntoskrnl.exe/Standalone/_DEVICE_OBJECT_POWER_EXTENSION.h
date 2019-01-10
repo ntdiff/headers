@@ -35,9 +35,9 @@ typedef struct _DEVICE_OBJECT_POWER_EXTENSION
   /* 0x0038 */ enum _DEVICE_POWER_STATE CurrentState;
   /* 0x0040 */ struct _POP_COOLING_EXTENSION* CoolingExtension;
   /* 0x0048 */ struct _LIST_ENTRY Volume;
-  union // _TAG_UNNAMED_146
+  union
   {
-    struct // _TAG_UNNAMED_147
+    struct
     {
       /* 0x0058 */ unsigned long IdleTime;
       /* 0x005c */ unsigned long NonIdleTime;

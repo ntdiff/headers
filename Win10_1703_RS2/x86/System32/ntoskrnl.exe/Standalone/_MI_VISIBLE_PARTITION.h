@@ -62,7 +62,7 @@ typedef struct _MMSUPPORT_INSTANCE
   /* 0x0050 */ unsigned long MaximumWorkingSetSize;
   /* 0x0054 */ unsigned long PeakWorkingSetSize;
   /* 0x0058 */ unsigned long HardFaultCount;
-  union // _TAG_UNNAMED_23
+  union
   {
     /* 0x005c */ void* InstancedWorkingSet;
   } /* size: 0x0004 */ u1;
@@ -110,7 +110,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -144,7 +144,7 @@ typedef struct _MI_PAGEFILE_TRACES
   /* 0x0020 */ unsigned long ModifiedPagefilePages;
   /* 0x0024 */ unsigned long ModifiedNoWritePages;
   /* 0x0028 */ unsigned long ModifiedPagefileNoReservationPages;
-  struct // _TAG_UNNAMED_24
+  struct
   {
     /* 0x002c */ struct _MDL Mdl;
     /* 0x0048 */ unsigned long Page[1];

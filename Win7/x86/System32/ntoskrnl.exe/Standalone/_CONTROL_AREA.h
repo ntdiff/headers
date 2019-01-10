@@ -56,7 +56,7 @@ typedef struct _CONTROL_AREA
   /* 0x0010 */ unsigned long NumberOfPfnReferences;
   /* 0x0014 */ unsigned long NumberOfMappedViews;
   /* 0x0018 */ unsigned long NumberOfUserReferences;
-  union // _TAG_UNNAMED_139
+  union
   {
     union
     {
@@ -73,9 +73,9 @@ typedef struct _CONTROL_AREA
     /* 0x002c */ unsigned long StartingFrame;
   }; /* size: 0x0004 */
   /* 0x0030 */ struct _MI_SECTION_CREATION_GATE* WaitingForDeletion;
-  union // _TAG_UNNAMED_140
+  union
   {
-    struct // _TAG_UNNAMED_141
+    struct
     {
       union
       {

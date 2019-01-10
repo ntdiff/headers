@@ -195,7 +195,7 @@ typedef struct _EX_PUSH_LOCK
 typedef struct _MI_PARTITION_CORE
 {
   /* 0x0000 */ unsigned short PartitionId;
-  union // _TAG_UNNAMED_153
+  union
   {
     union
     {
@@ -253,7 +253,7 @@ typedef struct _MMPAGE_FILE_EXPANSION
   /* 0x0028 */ unsigned __int64 ActualExpansion;
   /* 0x0030 */ struct _KEVENT Event;
   /* 0x0048 */ volatile long InProgress;
-  union // _TAG_UNNAMED_108
+  union
   {
     union
     {
@@ -384,7 +384,7 @@ typedef union _SLIST_HEADER
       /* 0x0000 */ unsigned __int64 Alignment;
       /* 0x0008 */ unsigned __int64 Region;
     }; /* size: 0x0010 */
-    struct // _TAG_UNNAMED_5
+    struct
     {
       struct /* bitfield */
       {
@@ -402,7 +402,7 @@ typedef union _SLIST_HEADER
 
 typedef struct _MI_PARTITION_STORES
 {
-  union // _TAG_UNNAMED_192
+  union
   {
     union
     {
@@ -456,7 +456,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -624,7 +624,7 @@ typedef struct _MMPTE_LIST
 
 typedef struct _MMPTE
 {
-  union // _TAG_UNNAMED_6
+  union
   {
     union
     {
@@ -728,7 +728,7 @@ typedef struct _MI_DECAY_TIMER_LINKAGE
 
 typedef struct _MI_DECAY_TIMER_LINK
 {
-  union // _TAG_UNNAMED_10
+  union
   {
     union
     {
@@ -957,7 +957,7 @@ typedef union _LARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_2
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ long HighPart;
@@ -993,7 +993,7 @@ typedef struct _MI_PAGEFILE_TRACES
   /* 0x0028 */ unsigned __int64 ModifiedPagefilePages;
   /* 0x0030 */ unsigned __int64 ModifiedNoWritePages;
   /* 0x0038 */ unsigned __int64 ModifiedPagefileNoReservationPages;
-  struct // _TAG_UNNAMED_107
+  struct
   {
     /* 0x0040 */ struct _MDL Mdl;
     /* 0x0070 */ unsigned __int64 Page[1];

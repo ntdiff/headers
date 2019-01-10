@@ -32,7 +32,7 @@ typedef struct _SUBSECTION
     /* 0x0018 */ struct _MI_CONTROL_AREA_WAIT_BLOCK* CreationWaitList;
     /* 0x0018 */ struct _MI_PER_SESSION_PROTOS* SessionDriverProtos;
   }; /* size: 0x0008 */
-  union // _TAG_UNNAMED_158
+  union
   {
     union
     {
@@ -43,7 +43,7 @@ typedef struct _SUBSECTION
   /* 0x0024 */ unsigned long StartingSector;
   /* 0x0028 */ unsigned long NumberOfFullSectors;
   /* 0x002c */ unsigned long PtesInSubsection;
-  union // _TAG_UNNAMED_159
+  union
   {
     /* 0x0030 */ unsigned long NumberOfChildViews;
   } /* size: 0x0004 */ u1;
@@ -54,7 +54,7 @@ typedef struct _SUBSECTION
       /* 0x0034 */ unsigned long UnusedPtes : 31; /* bit position: 0 */
       /* 0x0034 */ unsigned long DirtyPages : 1; /* bit position: 31 */
     }; /* bitfield */
-    struct // _TAG_UNNAMED_160
+    struct
     {
       struct /* bitfield */
       {

@@ -1,6 +1,6 @@
 typedef struct _MM_AVL_NODE
 {
-  union // _TAG_UNNAMED_34
+  union
   {
     union
     {

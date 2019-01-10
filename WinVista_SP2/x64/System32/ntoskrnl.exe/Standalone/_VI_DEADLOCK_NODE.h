@@ -16,7 +16,7 @@ typedef struct _VI_DEADLOCK_NODE
   }; /* size: 0x0010 */
   /* 0x0038 */ struct _VI_DEADLOCK_RESOURCE* Root;
   /* 0x0040 */ struct _VI_DEADLOCK_THREAD* ThreadEntry;
-  union // _TAG_UNNAMED_138
+  union
   {
     union
     {

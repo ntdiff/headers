@@ -6,7 +6,7 @@ typedef struct _VF_AVL_TREE
   /* 0x0018 */ unsigned __int64 NodeCount;
   /* 0x0020 */ struct _VF_AVL_TABLE* Tables;
   /* 0x0028 */ unsigned long TablesNo;
-  union // _TAG_UNNAMED_186
+  union
   {
     union
     {

@@ -10,7 +10,7 @@ typedef struct _PNP_PROVIDER_INFO
   /* 0x0010 */ unsigned char ProviderType;
   /* 0x0011 */ unsigned char Satisfied;
   /* 0x0012 */ unsigned short Flags;
-  union // _TAG_UNNAMED_174
+  union
   {
     union
     {

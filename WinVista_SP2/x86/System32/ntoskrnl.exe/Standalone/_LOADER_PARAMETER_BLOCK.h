@@ -41,7 +41,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long FirmwareTypeEfi : 1; /* bit position: 0 */
     /* 0x0000 */ unsigned long Reserved : 31; /* bit position: 1 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_145
+  union
   {
     union
     {
@@ -73,7 +73,7 @@ typedef struct _LOADER_PARAMETER_BLOCK
   /* 0x0050 */ void* OemFontFile;
   /* 0x0054 */ struct _SETUP_LOADER_BLOCK* SetupLoaderBlock;
   /* 0x0058 */ struct _LOADER_PARAMETER_EXTENSION* Extension;
-  union // _TAG_UNNAMED_146
+  union
   {
     union
     {

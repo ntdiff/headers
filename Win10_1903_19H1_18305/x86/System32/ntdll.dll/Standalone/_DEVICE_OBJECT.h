@@ -216,7 +216,7 @@ typedef struct _DEVICE_OBJECT
   /* 0x0028 */ void* DeviceExtension;
   /* 0x002c */ unsigned long DeviceType;
   /* 0x0030 */ char StackSize;
-  union // _TAG_UNNAMED_55
+  union
   {
     union
     {

@@ -27,7 +27,7 @@ typedef struct _HEAP_SEG_CONTEXT
   /* 0x000a */ unsigned char FirstDescriptorIndex;
   /* 0x000b */ unsigned char CachedCommitSoftShift;
   /* 0x000c */ unsigned char CachedCommitHighShift;
-  struct // _TAG_UNNAMED_40
+  struct
   {
     struct /* bitfield */
     {

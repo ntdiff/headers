@@ -6,9 +6,9 @@ typedef struct _LIST_ENTRY
 
 typedef struct _KALPC_REGION
 {
-  union // _TAG_UNNAMED_35
+  union
   {
-    struct // _TAG_UNNAMED_36
+    struct
     {
       /* 0x0000 */ unsigned long Secure : 1; /* bit position: 0 */
     } /* size: 0x0004 */ s1;

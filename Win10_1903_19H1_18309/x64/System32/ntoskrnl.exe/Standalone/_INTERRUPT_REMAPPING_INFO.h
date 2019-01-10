@@ -6,9 +6,9 @@ typedef struct _INTERRUPT_REMAPPING_INFO
     /* 0x0000 */ unsigned long FlagHalInternal : 1; /* bit position: 30 */
     /* 0x0000 */ unsigned long FlagTranslated : 1; /* bit position: 31 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_207
+  union
   {
-    struct // _TAG_UNNAMED_208
+    struct
     {
       /* 0x0004 */ unsigned long MessageAddressHigh;
       /* 0x0008 */ unsigned long MessageAddressLow;

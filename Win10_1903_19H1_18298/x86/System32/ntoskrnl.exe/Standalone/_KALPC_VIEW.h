@@ -14,9 +14,9 @@ typedef struct _KALPC_VIEW
   /* 0x0018 */ unsigned long Size;
   /* 0x001c */ void* SecureViewHandle;
   /* 0x0020 */ void* WriteAccessHandle;
-  union // _TAG_UNNAMED_234
+  union
   {
-    struct // _TAG_UNNAMED_235
+    struct
     {
       struct /* bitfield */
       {

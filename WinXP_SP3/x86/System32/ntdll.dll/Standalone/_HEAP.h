@@ -46,7 +46,7 @@ typedef struct _HEAP
   /* 0x004c */ unsigned long AlignMask;
   /* 0x0050 */ struct _LIST_ENTRY VirtualAllocdBlocks;
   /* 0x0058 */ struct _HEAP_SEGMENT* Segments[64];
-  union // _TAG_UNNAMED_67
+  union
   {
     union
     {
@@ -54,7 +54,7 @@ typedef struct _HEAP
       /* 0x0158 */ unsigned char FreeListsInUseBytes[16];
     }; /* size: 0x0010 */
   } /* size: 0x0010 */ u;
-  union // _TAG_UNNAMED_68
+  union
   {
     union
     {

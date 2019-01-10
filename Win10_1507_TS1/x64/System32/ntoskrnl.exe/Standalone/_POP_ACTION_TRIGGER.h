@@ -21,11 +21,11 @@ typedef struct _POP_ACTION_TRIGGER
   /* 0x0008 */ struct _POP_TRIGGER_WAIT* Wait;
   union
   {
-    struct // _TAG_UNNAMED_210
+    struct
     {
       /* 0x0010 */ unsigned long PercentLevel;
     } /* size: 0x0004 */ Battery;
-    struct // _TAG_UNNAMED_211
+    struct
     {
       /* 0x0010 */ unsigned long Type;
     } /* size: 0x0004 */ Button;

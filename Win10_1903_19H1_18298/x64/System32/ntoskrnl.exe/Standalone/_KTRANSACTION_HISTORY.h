@@ -1,4 +1,4 @@
-typedef enum _TAG_UNNAMED_199
+typedef enum
 {
   KTMOH_CommitTransaction_Result = 1,
   KTMOH_RollbackTransaction_Result = 2,

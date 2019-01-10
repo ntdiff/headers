@@ -54,7 +54,7 @@ typedef struct _MI_SLAB_ALLOCATOR_CONTEXT
   /* 0x0014 */ unsigned long SlabEntryCount;
   /* 0x0018 */ enum _MI_SLAB_ALLOCATOR_TYPE Type;
   /* 0x001c */ enum _MI_SLAB_ALLOCATOR_PROTECTION Protection;
-  union // _TAG_UNNAMED_121
+  union
   {
     union
     {

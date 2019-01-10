@@ -267,7 +267,7 @@ typedef union _ULARGE_INTEGER
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
     }; /* size: 0x0008 */
-    struct // _TAG_UNNAMED_1
+    struct
     {
       /* 0x0000 */ unsigned long LowPart;
       /* 0x0004 */ unsigned long HighPart;
@@ -310,7 +310,7 @@ typedef struct _POP_POWER_ACTION
   /* 0x0050 */ unsigned __int64 SleepTime;
   /* 0x0058 */ unsigned __int64 WakeFirstUnattendedTime;
   /* 0x0060 */ enum SYSTEM_POWER_CONDITION WakeAlarmSignaled;
-  /* 0x0068 */ struct // _TAG_UNNAMED_107
+  /* 0x0068 */ struct
   {
     /* 0x0068 */ unsigned __int64 RequestedTime;
     /* 0x0070 */ unsigned __int64 ProgrammedTime;

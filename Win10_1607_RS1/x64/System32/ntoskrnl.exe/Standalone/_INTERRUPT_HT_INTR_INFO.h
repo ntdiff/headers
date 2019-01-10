@@ -1,10 +1,10 @@
 typedef struct _INTERRUPT_HT_INTR_INFO
 {
-  union // _TAG_UNNAMED_143
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_144
+      struct
       {
         struct /* bitfield */
         {
@@ -22,11 +22,11 @@ typedef struct _INTERRUPT_HT_INTR_INFO
       /* 0x0000 */ unsigned long AsULONG;
     }; /* size: 0x0004 */
   } /* size: 0x0004 */ LowPart;
-  union // _TAG_UNNAMED_145
+  union
   {
     union
     {
-      struct // _TAG_UNNAMED_146
+      struct
       {
         struct /* bitfield */
         {

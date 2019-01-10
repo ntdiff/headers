@@ -42,7 +42,7 @@ typedef struct _FIRMWARE_INFORMATION_LOADER_BLOCK
     /* 0x0000 */ unsigned long EfiRuntimePageProtectionSupported : 1; /* bit position: 2 */
     /* 0x0000 */ unsigned long Reserved : 29; /* bit position: 3 */
   }; /* bitfield */
-  union // _TAG_UNNAMED_193
+  union
   {
     union
     {
@@ -81,7 +81,7 @@ typedef struct _LOADER_PARAMETER_BLOCK
   /* 0x007c */ struct _NLS_DATA_BLOCK* NlsData;
   /* 0x0080 */ struct _ARC_DISK_INFORMATION* ArcDiskInformation;
   /* 0x0084 */ struct _LOADER_PARAMETER_EXTENSION* Extension;
-  union // _TAG_UNNAMED_194
+  union
   {
     union
     {

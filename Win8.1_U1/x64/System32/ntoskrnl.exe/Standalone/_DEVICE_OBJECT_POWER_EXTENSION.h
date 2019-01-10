@@ -34,9 +34,9 @@ typedef struct _DEVICE_OBJECT_POWER_EXTENSION
   /* 0x0034 */ enum _DEVICE_POWER_STATE IdleState;
   /* 0x0038 */ enum _DEVICE_POWER_STATE CurrentState;
   /* 0x0040 */ struct _LIST_ENTRY Volume;
-  union // _TAG_UNNAMED_151
+  union
   {
-    struct // _TAG_UNNAMED_152
+    struct
     {
       /* 0x0050 */ unsigned long IdleTime;
       /* 0x0054 */ unsigned long NonIdleTime;

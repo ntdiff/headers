@@ -321,7 +321,7 @@ typedef struct _DEVICE_NODE
   /* 0x020a */ unsigned short QueryTranslatorMask;
   /* 0x020c */ unsigned short NoArbiterMask;
   /* 0x020e */ unsigned short QueryArbiterMask;
-  union // _TAG_UNNAMED_80
+  union
   {
     union
     {
@@ -330,14 +330,14 @@ typedef struct _DEVICE_NODE
       /* 0x0210 */ void* Information;
     }; /* size: 0x0008 */
   } /* size: 0x0008 */ OverUsed1;
-  union // _TAG_UNNAMED_81
+  union
   {
     /* 0x0218 */ struct _DEVICE_NODE* NextResourceDeviceNode;
   } /* size: 0x0008 */ OverUsed2;
   /* 0x0220 */ struct _CM_RESOURCE_LIST* BootResources;
   /* 0x0228 */ struct _CM_RESOURCE_LIST* BootResourcesTranslated;
   /* 0x0230 */ unsigned long CapabilityFlags;
-  struct // _TAG_UNNAMED_82
+  struct
   {
     /* 0x0238 */ enum PROFILE_STATUS DockStatus;
     /* 0x0240 */ struct _LIST_ENTRY ListEntry;
