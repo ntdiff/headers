@@ -9303,6 +9303,26 @@
             "value": "Standalone/_MI_NODE_NUMBER_ZERO_BASED"
         },
         {
+            "key": "Standalone/_PEBS_DS_SAVE_AREA32",
+            "text": "_PEBS_DS_SAVE_AREA32",
+            "value": "Standalone/_PEBS_DS_SAVE_AREA32"
+        },
+        {
+            "key": "Standalone/_PEBS_DS_SAVE_AREA64",
+            "text": "_PEBS_DS_SAVE_AREA64",
+            "value": "Standalone/_PEBS_DS_SAVE_AREA64"
+        },
+        {
+            "key": "Standalone/_POP_POWER_ACTION_WATCHDOG_STATE",
+            "text": "_POP_POWER_ACTION_WATCHDOG_STATE",
+            "value": "Standalone/_POP_POWER_ACTION_WATCHDOG_STATE"
+        },
+        {
+            "key": "Standalone/_VSM_PERFORMANCE_DATA",
+            "text": "_VSM_PERFORMANCE_DATA",
+            "value": "Standalone/_VSM_PERFORMANCE_DATA"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10448,6 +10468,16 @@
             "key": "Win10_1903_19H1_18312/x86/System32",
             "text": "Win10_1903_19H1_18312-x86 (10.0.18312.1001)",
             "value": "Win10_1903_19H1_18312/x86/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18323/x64/System32",
+            "text": "Win10_1903_19H1_18323-x64 (10.0.18323.1000)",
+            "value": "Win10_1903_19H1_18323/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18323/x86/System32",
+            "text": "Win10_1903_19H1_18323-x86 (10.0.18323.1000)",
+            "value": "Win10_1903_19H1_18323/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
