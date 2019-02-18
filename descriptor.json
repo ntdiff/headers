@@ -9323,6 +9323,11 @@
             "value": "Standalone/_VSM_PERFORMANCE_DATA"
         },
         {
+            "key": "Standalone/_POP_FX_DEVICE_DIRECTED_TRANSITION_STATE",
+            "text": "_POP_FX_DEVICE_DIRECTED_TRANSITION_STATE",
+            "value": "Standalone/_POP_FX_DEVICE_DIRECTED_TRANSITION_STATE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10478,6 +10483,21 @@
             "key": "Win10_1903_19H1_18323/x86/System32",
             "text": "Win10_1903_19H1_18323-x86 (10.0.18323.1000)",
             "value": "Win10_1903_19H1_18323/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18836/ARM64/System32",
+            "text": "Win10_20H1_18836-ARM64 (10.0.18836.1000)",
+            "value": "Win10_20H1_18836/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_18836/x64/System32",
+            "text": "Win10_20H1_18836-x64 (10.0.18836.1000)",
+            "value": "Win10_20H1_18836/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18836/x86/System32",
+            "text": "Win10_20H1_18836-x86 (10.0.18836.1000)",
+            "value": "Win10_20H1_18836/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
