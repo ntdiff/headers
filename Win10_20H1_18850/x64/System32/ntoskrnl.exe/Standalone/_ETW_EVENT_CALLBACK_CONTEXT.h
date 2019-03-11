@@ -1,0 +1,2 @@
+struct _ETW_EVENT_CALLBACK_CONTEXT;
+

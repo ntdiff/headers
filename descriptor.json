@@ -9328,6 +9328,16 @@
             "value": "Standalone/_POP_FX_DEVICE_DIRECTED_TRANSITION_STATE"
         },
         {
+            "key": "Standalone/_tlgProviderMetadata_t",
+            "text": "_tlgProviderMetadata_t",
+            "value": "Standalone/_tlgProviderMetadata_t"
+        },
+        {
+            "key": "Standalone/_tlgProvider_t",
+            "text": "_tlgProvider_t",
+            "value": "Standalone/_tlgProvider_t"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10485,6 +10495,21 @@
             "value": "Win10_1903_19H1_18323/x86/System32"
         },
         {
+            "key": "Win10_1903_19H1_18353/ARM64/System32",
+            "text": "Win10_1903_19H1_18353-ARM64 (10.0.18353.1)",
+            "value": "Win10_1903_19H1_18353/ARM64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18353/x64/System32",
+            "text": "Win10_1903_19H1_18353-x64 (10.0.18353.1)",
+            "value": "Win10_1903_19H1_18353/x64/System32"
+        },
+        {
+            "key": "Win10_1903_19H1_18353/x86/System32",
+            "text": "Win10_1903_19H1_18353-x86 (10.0.18353.1)",
+            "value": "Win10_1903_19H1_18353/x86/System32"
+        },
+        {
             "key": "Win10_20H1_18836/ARM64/System32",
             "text": "Win10_20H1_18836-ARM64 (10.0.18836.1000)",
             "value": "Win10_20H1_18836/ARM64/System32"
@@ -10498,6 +10523,16 @@
             "key": "Win10_20H1_18836/x86/System32",
             "text": "Win10_20H1_18836-x86 (10.0.18836.1000)",
             "value": "Win10_20H1_18836/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18850/x64/System32",
+            "text": "Win10_20H1_18850-x64 (10.0.18850.1000)",
+            "value": "Win10_20H1_18850/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18850/x86/System32",
+            "text": "Win10_20H1_18850-x86 (10.0.18850.1000)",
+            "value": "Win10_20H1_18850/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
