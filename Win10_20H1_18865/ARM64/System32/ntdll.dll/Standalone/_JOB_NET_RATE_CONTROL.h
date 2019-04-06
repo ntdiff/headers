@@ -1,0 +1,2 @@
+struct _JOB_NET_RATE_CONTROL;
+
