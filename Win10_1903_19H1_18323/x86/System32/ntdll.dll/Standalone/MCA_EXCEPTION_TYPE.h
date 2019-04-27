@@ -1,6 +1,0 @@
-enum MCA_EXCEPTION_TYPE
-{
-  HAL_MCE_RECORD = 0,
-  HAL_MCA_RECORD = 1,
-};
-

@@ -1,2 +1,0 @@
-struct _PO_PROCESS_ENERGY_CONTEXT;
-

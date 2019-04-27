@@ -1,2 +1,0 @@
-struct wil_StagingConfig;
-

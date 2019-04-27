@@ -1,6 +1,0 @@
-typedef struct _PP_LOOKASIDE_LIST
-{
-  /* 0x0000 */ struct _GENERAL_LOOKASIDE* P;
-  /* 0x0004 */ struct _GENERAL_LOOKASIDE* L;
-} PP_LOOKASIDE_LIST, *PPP_LOOKASIDE_LIST; /* size: 0x0008 */
-

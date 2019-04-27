@@ -1,6 +1,0 @@
-typedef enum _FS_FILTER_SECTION_SYNC_TYPE
-{
-  SyncTypeOther = 0,
-  SyncTypeCreateSection = 1,
-} FS_FILTER_SECTION_SYNC_TYPE, *PFS_FILTER_SECTION_SYNC_TYPE;
-

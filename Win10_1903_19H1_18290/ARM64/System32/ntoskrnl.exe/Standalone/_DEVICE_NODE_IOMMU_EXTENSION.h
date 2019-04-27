@@ -1,2 +1,0 @@
-struct _DEVICE_NODE_IOMMU_EXTENSION;
-

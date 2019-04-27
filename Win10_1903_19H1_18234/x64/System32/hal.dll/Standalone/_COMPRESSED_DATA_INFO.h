@@ -1,2 +1,0 @@
-struct _COMPRESSED_DATA_INFO;
-

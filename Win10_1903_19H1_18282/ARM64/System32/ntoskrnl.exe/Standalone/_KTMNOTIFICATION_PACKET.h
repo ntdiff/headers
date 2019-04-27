@@ -1,2 +1,0 @@
-struct _KTMNOTIFICATION_PACKET;
-

@@ -1,2 +1,0 @@
-struct _ASSEMBLY_STORAGE_MAP;
-
