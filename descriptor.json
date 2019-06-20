@@ -9223,6 +9223,76 @@
             "value": "Standalone/_KSTATIC_AFFINITY_BLOCK"
         },
         {
+            "key": "Standalone/_KQOS_GROUPING_SETS",
+            "text": "_KQOS_GROUPING_SETS",
+            "value": "Standalone/_KQOS_GROUPING_SETS"
+        },
+        {
+            "key": "Standalone/_EXP_LICENSE_STATE",
+            "text": "_EXP_LICENSE_STATE",
+            "value": "Standalone/_EXP_LICENSE_STATE"
+        },
+        {
+            "key": "Standalone/_ETW_PARTITION_CONTEXT",
+            "text": "_ETW_PARTITION_CONTEXT",
+            "value": "Standalone/_ETW_PARTITION_CONTEXT"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_TYPES",
+            "text": "_MI_WRITE_TYPES",
+            "value": "Standalone/_MI_WRITE_TYPES"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_CALIBRATION",
+            "text": "_MI_WRITE_CALIBRATION",
+            "value": "Standalone/_MI_WRITE_CALIBRATION"
+        },
+        {
+            "key": "Standalone/_WDT_HANDLE",
+            "text": "_WDT_HANDLE",
+            "value": "Standalone/_WDT_HANDLE"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL_QUEUE",
+            "text": "_POP_FX_WORK_POOL_QUEUE",
+            "value": "Standalone/_POP_FX_WORK_POOL_QUEUE"
+        },
+        {
+            "key": "Standalone/_MI_INPAGE_SUPPORT_TYPES",
+            "text": "_MI_INPAGE_SUPPORT_TYPES",
+            "value": "Standalone/_MI_INPAGE_SUPPORT_TYPES"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_MODES",
+            "text": "_MI_WRITE_MODES",
+            "value": "Standalone/_MI_WRITE_MODES"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL_ITEM",
+            "text": "_POP_FX_WORK_POOL_ITEM",
+            "value": "Standalone/_POP_FX_WORK_POOL_ITEM"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL",
+            "text": "_POP_FX_WORK_POOL",
+            "value": "Standalone/_POP_FX_WORK_POOL"
+        },
+        {
+            "key": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING",
+            "text": "_MI_LARGE_PAGE_LISTS_CHANGING",
+            "value": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING"
+        },
+        {
+            "key": "Standalone/_ISRDPCSTATS_SEQUENCE",
+            "text": "_ISRDPCSTATS_SEQUENCE",
+            "value": "Standalone/_ISRDPCSTATS_SEQUENCE"
+        },
+        {
+            "key": "Standalone/_NUMA_MEMORY_RANGE",
+            "text": "_NUMA_MEMORY_RANGE",
+            "value": "Standalone/_NUMA_MEMORY_RANGE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10233,6 +10303,21 @@
             "key": "Win10_20H1_18885/x86/System32",
             "text": "Win10_20H1_18885-x86 (10.0.18885.1001)",
             "value": "Win10_20H1_18885/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18922/ARM64/System32",
+            "text": "Win10_20H1_18922-ARM64 (10.0.18922.1000)",
+            "value": "Win10_20H1_18922/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_18922/x64/System32",
+            "text": "Win10_20H1_18922-x64 (10.0.18922.1000)",
+            "value": "Win10_20H1_18922/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18922/x86/System32",
+            "text": "Win10_20H1_18922-x86 (10.0.18922.1000)",
+            "value": "Win10_20H1_18922/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
