@@ -8408,34 +8408,19 @@
             "value": "Standalone/_WHEA_EVENT_LOG_ENTRY_ID"
         },
         {
+            "key": "Standalone/_EXT_IOMMU_DEVICE_ID_GIC",
+            "text": "_EXT_IOMMU_DEVICE_ID_GIC",
+            "value": "Standalone/_EXT_IOMMU_DEVICE_ID_GIC"
+        },
+        {
             "key": "Standalone/_HALP_DMA_ADAPTER_ALLOCATION_STATE",
             "text": "_HALP_DMA_ADAPTER_ALLOCATION_STATE",
             "value": "Standalone/_HALP_DMA_ADAPTER_ALLOCATION_STATE"
         },
         {
-            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE",
-            "text": "_HALP_EMERGENCY_LA_QUEUE_TYPE",
-            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE"
-        },
-        {
-            "key": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
-            "text": "_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
-            "value": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE"
-        },
-        {
-            "key": "Standalone/_MCI_STATUS_BITS_COMMON",
-            "text": "_MCI_STATUS_BITS_COMMON",
-            "value": "Standalone/_MCI_STATUS_BITS_COMMON"
-        },
-        {
-            "key": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS",
-            "text": "_WHEA_AMD_EXTENDED_REGISTERS",
-            "value": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS"
-        },
-        {
-            "key": "Standalone/_EXT_IOMMU_DEVICE_ID_GIC",
-            "text": "_EXT_IOMMU_DEVICE_ID_GIC",
-            "value": "Standalone/_EXT_IOMMU_DEVICE_ID_GIC"
+            "key": "Standalone/_DMA_TRANSFER_INFO_V2",
+            "text": "_DMA_TRANSFER_INFO_V2",
+            "value": "Standalone/_DMA_TRANSFER_INFO_V2"
         },
         {
             "key": "Standalone/_WHEA_EVENT_LOG_ENTRY_FLAGS",
@@ -8458,41 +8443,6 @@
             "value": "Standalone/_MCUPDATE_INFO"
         },
         {
-            "key": "Standalone/_MCI_STATUS_AMD_BITS",
-            "text": "_MCI_STATUS_AMD_BITS",
-            "value": "Standalone/_MCI_STATUS_AMD_BITS"
-        },
-        {
-            "key": "Standalone/_MCI_STATUS_INTEL_BITS",
-            "text": "_MCI_STATUS_INTEL_BITS",
-            "value": "Standalone/_MCI_STATUS_INTEL_BITS"
-        },
-        {
-            "key": "Standalone/_MCG_CAP",
-            "text": "_MCG_CAP",
-            "value": "Standalone/_MCG_CAP"
-        },
-        {
-            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY",
-            "text": "_HALP_EMERGENCY_LA_QUEUE_ENTRY",
-            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY"
-        },
-        {
-            "key": "Standalone/_DMA_TRANSFER_INFO_V2",
-            "text": "_DMA_TRANSFER_INFO_V2",
-            "value": "Standalone/_DMA_TRANSFER_INFO_V2"
-        },
-        {
-            "key": "Standalone/_DMA_COMMON_BUFFER_VECTOR",
-            "text": "_DMA_COMMON_BUFFER_VECTOR",
-            "value": "Standalone/_DMA_COMMON_BUFFER_VECTOR"
-        },
-        {
-            "key": "Standalone/_DMA_COMMON_BUFFER_ENTRY",
-            "text": "_DMA_COMMON_BUFFER_ENTRY",
-            "value": "Standalone/_DMA_COMMON_BUFFER_ENTRY"
-        },
-        {
             "key": "Standalone/_HEAP_SEGMGR_LARGE_PAGE_POLICY",
             "text": "_HEAP_SEGMGR_LARGE_PAGE_POLICY",
             "value": "Standalone/_HEAP_SEGMGR_LARGE_PAGE_POLICY"
@@ -8503,9 +8453,9 @@
             "value": "Standalone/_KE_WAKE_SOURCE_TYPE"
         },
         {
-            "key": "Standalone/_VRF_RULE_CLASS_ID",
-            "text": "_VRF_RULE_CLASS_ID",
-            "value": "Standalone/_VRF_RULE_CLASS_ID"
+            "key": "Standalone/_VERIFIER_RULE_CLASS_ID",
+            "text": "_VERIFIER_RULE_CLASS_ID",
+            "value": "Standalone/_VERIFIER_RULE_CLASS_ID"
         },
         {
             "key": "Standalone/_THREAD_WORKLOAD_CLASS",
@@ -8513,19 +8463,14 @@
             "value": "Standalone/_THREAD_WORKLOAD_CLASS"
         },
         {
-            "key": "Standalone/_VRF_TRIAGE_CONTEXT",
-            "text": "_VRF_TRIAGE_CONTEXT",
-            "value": "Standalone/_VRF_TRIAGE_CONTEXT"
-        },
-        {
             "key": "Standalone/_MACHINE_CHECK_NESTING_LEVEL",
             "text": "_MACHINE_CHECK_NESTING_LEVEL",
             "value": "Standalone/_MACHINE_CHECK_NESTING_LEVEL"
         },
         {
-            "key": "Standalone/_RTL_HEAP_MEMORY_LIMIT_DATA",
-            "text": "_RTL_HEAP_MEMORY_LIMIT_DATA",
-            "value": "Standalone/_RTL_HEAP_MEMORY_LIMIT_DATA"
+            "key": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE",
+            "text": "_HEAP_SEGMENT_MGR_COMMIT_STATE",
+            "value": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE"
         },
         {
             "key": "Standalone/_MACHINE_FRAME",
@@ -8548,6 +8493,211 @@
             "value": "Standalone/_LEAP_SECOND_DATA"
         },
         {
+            "key": "Standalone/_RTL_HEAP_MEMORY_LIMIT_DATA",
+            "text": "_RTL_HEAP_MEMORY_LIMIT_DATA",
+            "value": "Standalone/_RTL_HEAP_MEMORY_LIMIT_DATA"
+        },
+        {
+            "key": "Standalone/_RTL_HP_SEG_ALLOC_POLICY",
+            "text": "_RTL_HP_SEG_ALLOC_POLICY",
+            "value": "Standalone/_RTL_HP_SEG_ALLOC_POLICY"
+        },
+        {
+            "key": "Standalone/_MI_SLAB_ALLOCATOR_PROTECTION",
+            "text": "_MI_SLAB_ALLOCATOR_PROTECTION",
+            "value": "Standalone/_MI_SLAB_ALLOCATOR_PROTECTION"
+        },
+        {
+            "key": "Standalone/_MI_SLAB_ALLOCATOR_CONTEXT",
+            "text": "_MI_SLAB_ALLOCATOR_CONTEXT",
+            "value": "Standalone/_MI_SLAB_ALLOCATOR_CONTEXT"
+        },
+        {
+            "key": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
+            "text": "_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
+            "value": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON"
+        },
+        {
+            "key": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
+            "text": "_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
+            "value": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI"
+        },
+        {
+            "key": "Standalone/_PO_DIRECTED_DRIPS_STATE",
+            "text": "_PO_DIRECTED_DRIPS_STATE",
+            "value": "Standalone/_PO_DIRECTED_DRIPS_STATE"
+        },
+        {
+            "key": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON",
+            "text": "_POP_DEEP_SLEEP_DISENGAGE_REASON",
+            "value": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_ARCH",
+            "text": "_FAULT_INFORMATION_ARCH",
+            "value": "Standalone/_FAULT_INFORMATION_ARCH"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_ARM64_TYPE",
+            "text": "_FAULT_INFORMATION_ARM64_TYPE",
+            "value": "Standalone/_FAULT_INFORMATION_ARM64_TYPE"
+        },
+        {
+            "key": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING",
+            "text": "_POP_FX_ACTIVE_TIME_ACCOUNTING",
+            "value": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING"
+        },
+        {
+            "key": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD",
+            "text": "_MI_HUGE_SYSTEM_VIEW_HEAD",
+            "value": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD"
+        },
+        {
+            "key": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT",
+            "text": "_ETW_EVENT_CALLBACK_CONTEXT",
+            "value": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT"
+        },
+        {
+            "key": "Standalone/_KIST_LINK_FRAME",
+            "text": "_KIST_LINK_FRAME",
+            "value": "Standalone/_KIST_LINK_FRAME"
+        },
+        {
+            "key": "Standalone/_KIST_BASE_FRAME",
+            "text": "_KIST_BASE_FRAME",
+            "value": "Standalone/_KIST_BASE_FRAME"
+        },
+        {
+            "key": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY",
+            "text": "_MI_SLAB_ALLOCATOR_ENTRY",
+            "value": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS",
+            "text": "_FAULT_INFORMATION_ARM64_FLAGS",
+            "value": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_ARM64",
+            "text": "_FAULT_INFORMATION_ARM64",
+            "value": "Standalone/_FAULT_INFORMATION_ARM64"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION",
+            "text": "_FAULT_INFORMATION",
+            "value": "Standalone/_FAULT_INFORMATION"
+        },
+        {
+            "key": "Standalone/_DEVICE_FAULT_CONFIGURATION",
+            "text": "_DEVICE_FAULT_CONFIGURATION",
+            "value": "Standalone/_DEVICE_FAULT_CONFIGURATION"
+        },
+        {
+            "key": "Standalone/_RTL_RETPOLINE_ROUTINES",
+            "text": "_RTL_RETPOLINE_ROUTINES",
+            "value": "Standalone/_RTL_RETPOLINE_ROUTINES"
+        },
+        {
+            "key": "Standalone/_MI_IMAGE_LOAD_CONFIG",
+            "text": "_MI_IMAGE_LOAD_CONFIG",
+            "value": "Standalone/_MI_IMAGE_LOAD_CONFIG"
+        },
+        {
+            "key": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "text": "_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "value": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
+        },
+        {
+            "key": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "text": "_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "value": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
+        },
+        {
+            "key": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION",
+            "text": "_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION",
+            "value": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION"
+        },
+        {
+            "key": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX",
+            "text": "_RTL_RETPOLINE_RELOCATION_INDEX",
+            "value": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX"
+        },
+        {
+            "key": "Standalone/_RTL_RVA_LIST",
+            "text": "_RTL_RVA_LIST",
+            "value": "Standalone/_RTL_RVA_LIST"
+        },
+        {
+            "key": "Standalone/_RTL_RETPOLINE_BINARY_INFO",
+            "text": "_RTL_RETPOLINE_BINARY_INFO",
+            "value": "Standalone/_RTL_RETPOLINE_BINARY_INFO"
+        },
+        {
+            "key": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION",
+            "text": "_MI_RETPOLINE_RELOCATION_INFORMATION",
+            "value": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION"
+        },
+        {
+            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE",
+            "text": "_HALP_EMERGENCY_LA_QUEUE_TYPE",
+            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE"
+        },
+        {
+            "key": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
+            "text": "_WHEA_RECOVERY_CONTEXT_ERROR_TYPE",
+            "value": "Standalone/_WHEA_RECOVERY_CONTEXT_ERROR_TYPE"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_BITS_COMMON",
+            "text": "_MCI_STATUS_BITS_COMMON",
+            "value": "Standalone/_MCI_STATUS_BITS_COMMON"
+        },
+        {
+            "key": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS",
+            "text": "_WHEA_AMD_EXTENDED_REGISTERS",
+            "value": "Standalone/_WHEA_AMD_EXTENDED_REGISTERS"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_AMD_BITS",
+            "text": "_MCI_STATUS_AMD_BITS",
+            "value": "Standalone/_MCI_STATUS_AMD_BITS"
+        },
+        {
+            "key": "Standalone/_MCI_STATUS_INTEL_BITS",
+            "text": "_MCI_STATUS_INTEL_BITS",
+            "value": "Standalone/_MCI_STATUS_INTEL_BITS"
+        },
+        {
+            "key": "Standalone/_MCG_CAP",
+            "text": "_MCG_CAP",
+            "value": "Standalone/_MCG_CAP"
+        },
+        {
+            "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY",
+            "text": "_HALP_EMERGENCY_LA_QUEUE_ENTRY",
+            "value": "Standalone/_HALP_EMERGENCY_LA_QUEUE_ENTRY"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_VECTOR",
+            "text": "_DMA_COMMON_BUFFER_VECTOR",
+            "value": "Standalone/_DMA_COMMON_BUFFER_VECTOR"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_ENTRY",
+            "text": "_DMA_COMMON_BUFFER_ENTRY",
+            "value": "Standalone/_DMA_COMMON_BUFFER_ENTRY"
+        },
+        {
+            "key": "Standalone/_VRF_RULE_CLASS_ID",
+            "text": "_VRF_RULE_CLASS_ID",
+            "value": "Standalone/_VRF_RULE_CLASS_ID"
+        },
+        {
+            "key": "Standalone/_VRF_TRIAGE_CONTEXT",
+            "text": "_VRF_TRIAGE_CONTEXT",
+            "value": "Standalone/_VRF_TRIAGE_CONTEXT"
+        },
+        {
             "key": "Standalone/_PEBS_DS_SAVE_AREA32",
             "text": "_PEBS_DS_SAVE_AREA32",
             "value": "Standalone/_PEBS_DS_SAVE_AREA32"
@@ -8558,11 +8708,6 @@
             "value": "Standalone/_PEBS_DS_SAVE_AREA64"
         },
         {
-            "key": "Standalone/_RTL_HP_SEG_ALLOC_POLICY",
-            "text": "_RTL_HP_SEG_ALLOC_POLICY",
-            "value": "Standalone/_RTL_HP_SEG_ALLOC_POLICY"
-        },
-        {
             "key": "Standalone/_HEAP_VS_DELAY_FREE_CONTEXT",
             "text": "_HEAP_VS_DELAY_FREE_CONTEXT",
             "value": "Standalone/_HEAP_VS_DELAY_FREE_CONTEXT"
@@ -8571,16 +8716,6 @@
             "key": "Standalone/_RTLP_HP_QUEUE_LOCK_HANDLE",
             "text": "_RTLP_HP_QUEUE_LOCK_HANDLE",
             "value": "Standalone/_RTLP_HP_QUEUE_LOCK_HANDLE"
-        },
-        {
-            "key": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE",
-            "text": "_HEAP_SEGMENT_MGR_COMMIT_STATE",
-            "value": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE"
-        },
-        {
-            "key": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD",
-            "text": "_MI_HUGE_SYSTEM_VIEW_HEAD",
-            "value": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD"
         },
         {
             "key": "Standalone/wil_details_ServiceReportingKind",
@@ -8688,11 +8823,6 @@
             "value": "Standalone/_WNF_SUBSCRIPTION_STATE"
         },
         {
-            "key": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
-            "text": "_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
-            "value": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON"
-        },
-        {
             "key": "Standalone/FEATURE_CHANGE_TIME",
             "text": "FEATURE_CHANGE_TIME",
             "value": "Standalone/FEATURE_CHANGE_TIME"
@@ -8728,11 +8858,6 @@
             "value": "Standalone/wil_details_FeatureTestState"
         },
         {
-            "key": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
-            "text": "_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
-            "value": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI"
-        },
-        {
             "key": "Standalone/wil_FeatureStage",
             "text": "wil_FeatureStage",
             "value": "Standalone/wil_FeatureStage"
@@ -8741,21 +8866,6 @@
             "key": "Standalone/wil_StagingConfig",
             "text": "wil_StagingConfig",
             "value": "Standalone/wil_StagingConfig"
-        },
-        {
-            "key": "Standalone/_MI_SLAB_ALLOCATOR_PROTECTION",
-            "text": "_MI_SLAB_ALLOCATOR_PROTECTION",
-            "value": "Standalone/_MI_SLAB_ALLOCATOR_PROTECTION"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_ARM64_TYPE",
-            "text": "_FAULT_INFORMATION_ARM64_TYPE",
-            "value": "Standalone/_FAULT_INFORMATION_ARM64_TYPE"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_ARCH",
-            "text": "_FAULT_INFORMATION_ARCH",
-            "value": "Standalone/_FAULT_INFORMATION_ARCH"
         },
         {
             "key": "Standalone/FEATURE_ENABLED_STATE",
@@ -8781,16 +8891,6 @@
             "key": "Standalone/wil_details_StagingConfigHeader",
             "text": "wil_details_StagingConfigHeader",
             "value": "Standalone/wil_details_StagingConfigHeader"
-        },
-        {
-            "key": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT",
-            "text": "_ETW_EVENT_CALLBACK_CONTEXT",
-            "value": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT"
-        },
-        {
-            "key": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON",
-            "text": "_POP_DEEP_SLEEP_DISENGAGE_REASON",
-            "value": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON"
         },
         {
             "key": "Standalone/_WNF_NODE_HEADER",
@@ -8848,34 +8948,14 @@
             "value": "Standalone/_WNF_SCOPE_MAP_ENTRY"
         },
         {
-            "key": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING",
-            "text": "_POP_FX_ACTIVE_TIME_ACCOUNTING",
-            "value": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING"
-        },
-        {
             "key": "Standalone/_POP_POWER_PLANE",
             "text": "_POP_POWER_PLANE",
             "value": "Standalone/_POP_POWER_PLANE"
         },
         {
-            "key": "Standalone/_DEVICE_FAULT_CONFIGURATION",
-            "text": "_DEVICE_FAULT_CONFIGURATION",
-            "value": "Standalone/_DEVICE_FAULT_CONFIGURATION"
-        },
-        {
             "key": "Standalone/_MM_GRAPHICS_VAD_FLAGS",
             "text": "_MM_GRAPHICS_VAD_FLAGS",
             "value": "Standalone/_MM_GRAPHICS_VAD_FLAGS"
-        },
-        {
-            "key": "Standalone/_MI_SLAB_ALLOCATOR_CONTEXT",
-            "text": "_MI_SLAB_ALLOCATOR_CONTEXT",
-            "value": "Standalone/_MI_SLAB_ALLOCATOR_CONTEXT"
-        },
-        {
-            "key": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY",
-            "text": "_MI_SLAB_ALLOCATOR_ENTRY",
-            "value": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY"
         },
         {
             "key": "Standalone/__WIL__WNF_STATE_NAME",
@@ -8913,19 +8993,9 @@
             "value": "Standalone/wil_details_RecordUsageResult"
         },
         {
-            "key": "Standalone/_PO_DIRECTED_DRIPS_STATE",
-            "text": "_PO_DIRECTED_DRIPS_STATE",
-            "value": "Standalone/_PO_DIRECTED_DRIPS_STATE"
-        },
-        {
             "key": "Standalone/_MM_PRIVATE_VAD_FLAGS",
             "text": "_MM_PRIVATE_VAD_FLAGS",
             "value": "Standalone/_MM_PRIVATE_VAD_FLAGS"
-        },
-        {
-            "key": "Standalone/_RTL_RETPOLINE_ROUTINES",
-            "text": "_RTL_RETPOLINE_ROUTINES",
-            "value": "Standalone/_RTL_RETPOLINE_ROUTINES"
         },
         {
             "key": "Standalone/_WNF_TYPE_ID",
@@ -9013,16 +9083,6 @@
             "value": "Standalone/_WNF_SUBSCRIPTION"
         },
         {
-            "key": "Standalone/_KIST_BASE_FRAME",
-            "text": "_KIST_BASE_FRAME",
-            "value": "Standalone/_KIST_BASE_FRAME"
-        },
-        {
-            "key": "Standalone/_KIST_LINK_FRAME",
-            "text": "_KIST_LINK_FRAME",
-            "value": "Standalone/_KIST_LINK_FRAME"
-        },
-        {
             "key": "Standalone/__WIL__WNF_USER_SUBSCRIPTION",
             "text": "__WIL__WNF_USER_SUBSCRIPTION",
             "value": "Standalone/__WIL__WNF_USER_SUBSCRIPTION"
@@ -9068,24 +9128,9 @@
             "value": "Standalone/_VSM_PERFORMANCE_DATA"
         },
         {
-            "key": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS",
-            "text": "_FAULT_INFORMATION_ARM64_FLAGS",
-            "value": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_ARM64",
-            "text": "_FAULT_INFORMATION_ARM64",
-            "value": "Standalone/_FAULT_INFORMATION_ARM64"
-        },
-        {
             "key": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE",
             "text": "_HIDDEN_PROCESSOR_POWER_INTERFACE",
             "value": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION",
-            "text": "_FAULT_INFORMATION",
-            "value": "Standalone/_FAULT_INFORMATION"
         },
         {
             "key": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__",
@@ -9101,46 +9146,6 @@
             "key": "Standalone/_EX_POOL_HEAP_MANAGER_STATE",
             "text": "_EX_POOL_HEAP_MANAGER_STATE",
             "value": "Standalone/_EX_POOL_HEAP_MANAGER_STATE"
-        },
-        {
-            "key": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "text": "_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "value": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
-        },
-        {
-            "key": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "text": "_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "value": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
-        },
-        {
-            "key": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION",
-            "text": "_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION",
-            "value": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION"
-        },
-        {
-            "key": "Standalone/_MI_IMAGE_LOAD_CONFIG",
-            "text": "_MI_IMAGE_LOAD_CONFIG",
-            "value": "Standalone/_MI_IMAGE_LOAD_CONFIG"
-        },
-        {
-            "key": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX",
-            "text": "_RTL_RETPOLINE_RELOCATION_INDEX",
-            "value": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX"
-        },
-        {
-            "key": "Standalone/_RTL_RVA_LIST",
-            "text": "_RTL_RVA_LIST",
-            "value": "Standalone/_RTL_RVA_LIST"
-        },
-        {
-            "key": "Standalone/_RTL_RETPOLINE_BINARY_INFO",
-            "text": "_RTL_RETPOLINE_BINARY_INFO",
-            "value": "Standalone/_RTL_RETPOLINE_BINARY_INFO"
-        },
-        {
-            "key": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION",
-            "text": "_MI_RETPOLINE_RELOCATION_INFORMATION",
-            "value": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION"
         },
         {
             "key": "Standalone/_tag_ARM64INTR_BARRIER_TYPE",
@@ -10235,6 +10240,16 @@
             "value": "Win10_1803_RS4/x86/System32"
         },
         {
+            "key": "Win10_1809_RS5/x64/System32",
+            "text": "Win10_1809_RS5-x64 (10.0.17741.1000)",
+            "value": "Win10_1809_RS5/x64/System32"
+        },
+        {
+            "key": "Win10_1809_RS5/x86/System32",
+            "text": "Win10_1809_RS5-x86 (10.0.17741.1000)",
+            "value": "Win10_1809_RS5/x86/System32"
+        },
+        {
             "key": "Win10_1903_RS6/x64/System32",
             "text": "Win10_1903_RS6-x64 (10.0.18362.1)",
             "value": "Win10_1903_RS6/x64/System32"
@@ -10318,6 +10333,21 @@
             "key": "Win10_20H1_18922/x86/System32",
             "text": "Win10_20H1_18922-x86 (10.0.18922.1000)",
             "value": "Win10_20H1_18922/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18941/ARM64/System32",
+            "text": "Win10_20H1_18941-ARM64 (10.0.18941.1001)",
+            "value": "Win10_20H1_18941/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_18941/x64/System32",
+            "text": "Win10_20H1_18941-x64 (10.0.18941.1001)",
+            "value": "Win10_20H1_18941/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18941/x86/System32",
+            "text": "Win10_20H1_18941-x86 (10.0.18941.1001)",
+            "value": "Win10_20H1_18941/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
