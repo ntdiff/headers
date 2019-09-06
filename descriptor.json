@@ -9298,6 +9298,76 @@
             "value": "Standalone/_NUMA_MEMORY_RANGE"
         },
         {
+            "key": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
+            "text": "_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
+            "value": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE"
+        },
+        {
+            "key": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
+            "text": "_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
+            "value": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE"
+        },
+        {
+            "key": "Standalone/_KTIMER_TABLE_STATE",
+            "text": "_KTIMER_TABLE_STATE",
+            "value": "Standalone/_KTIMER_TABLE_STATE"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE",
+            "text": "_RTL_FEATURE_CONFIGURATION_TYPE",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY",
+            "text": "_RTL_FEATURE_CONFIGURATION_PRIORITY",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS",
+            "text": "_RTL_FEATURE_ENABLED_STATE_OPTIONS",
+            "value": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_USAGE_REPORT",
+            "text": "_RTL_FEATURE_USAGE_REPORT",
+            "value": "Standalone/_RTL_FEATURE_USAGE_REPORT"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureStateCache",
+            "text": "wil_details_FeatureStateCache",
+            "value": "Standalone/wil_details_FeatureStateCache"
+        },
+        {
+            "key": "Standalone/wil_details_ReportedState",
+            "text": "wil_details_ReportedState",
+            "value": "Standalone/wil_details_ReportedState"
+        },
+        {
+            "key": "Standalone/wil_details_RecordedState",
+            "text": "wil_details_RecordedState",
+            "value": "Standalone/wil_details_RecordedState"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureReportingCache",
+            "text": "wil_details_FeatureReportingCache",
+            "value": "Standalone/wil_details_FeatureReportingCache"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION",
+            "text": "_RTL_FEATURE_CONFIGURATION",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION"
+        },
+        {
+            "key": "Standalone/__m64",
+            "text": "__m64",
+            "value": "Standalone/__m64"
+        },
+        {
+            "key": "Standalone/__m128",
+            "text": "__m128",
+            "value": "Standalone/__m128"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10348,6 +10418,21 @@
             "key": "Win10_20H1_18941/x86/System32",
             "text": "Win10_20H1_18941-x86 (10.0.18941.1001)",
             "value": "Win10_20H1_18941/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18975/ARM64/System32",
+            "text": "Win10_20H1_18975-ARM64 (10.0.18975.1000)",
+            "value": "Win10_20H1_18975/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_18975/x64/System32",
+            "text": "Win10_20H1_18975-x64 (10.0.18975.1000)",
+            "value": "Win10_20H1_18975/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18975/x86/System32",
+            "text": "Win10_20H1_18975-x86 (10.0.18975.1000)",
+            "value": "Win10_20H1_18975/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
