@@ -9368,6 +9368,16 @@
             "value": "Standalone/__m128"
         },
         {
+            "key": "Standalone/_FAULT_INFORMATION_X64_FLAGS",
+            "text": "_FAULT_INFORMATION_X64_FLAGS",
+            "value": "Standalone/_FAULT_INFORMATION_X64_FLAGS"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_X64",
+            "text": "_FAULT_INFORMATION_X64",
+            "value": "Standalone/_FAULT_INFORMATION_X64"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10433,6 +10443,21 @@
             "key": "Win10_20H1_18975/x86/System32",
             "text": "Win10_20H1_18975-x86 (10.0.18975.1000)",
             "value": "Win10_20H1_18975/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_18990/ARM64/System32",
+            "text": "Win10_20H1_18990-ARM64 (10.0.18990.1)",
+            "value": "Win10_20H1_18990/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_18990/x64/System32",
+            "text": "Win10_20H1_18990-x64 (10.0.18990.1)",
+            "value": "Win10_20H1_18990/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_18990/x86/System32",
+            "text": "Win10_20H1_18990-x86 (10.0.18990.1)",
+            "value": "Win10_20H1_18990/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
