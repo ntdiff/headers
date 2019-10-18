@@ -9378,6 +9378,11 @@
             "value": "Standalone/_FAULT_INFORMATION_X64"
         },
         {
+            "key": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT",
+            "text": "_BUGCHECK_RECOVERY_LOG_EVENT",
+            "value": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10458,6 +10463,21 @@
             "key": "Win10_20H1_18990/x86/System32",
             "text": "Win10_20H1_18990-x86 (10.0.18990.1)",
             "value": "Win10_20H1_18990/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_19002/ARM64/System32",
+            "text": "Win10_20H1_19002-ARM64 (10.0.19002.1)",
+            "value": "Win10_20H1_19002/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_19002/x64/System32",
+            "text": "Win10_20H1_19002-x64 (10.0.19002.1)",
+            "value": "Win10_20H1_19002/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_19002/x86/System32",
+            "text": "Win10_20H1_19002-x86 (10.0.19002.1)",
+            "value": "Win10_20H1_19002/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
