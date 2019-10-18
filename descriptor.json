@@ -10335,19 +10335,19 @@
             "value": "Win10_1809_RS5/x86/System32"
         },
         {
-            "key": "Win10_1903_RS6/x64/System32",
-            "text": "Win10_1903_RS6-x64 (10.0.18362.1)",
-            "value": "Win10_1903_RS6/x64/System32"
+            "key": "Win10_1903_19H1/x64/System32",
+            "text": "Win10_1903_19H1-x64 (10.0.18362.1)",
+            "value": "Win10_1903_19H1/x64/System32"
         },
         {
-            "key": "Win10_1903_RS6/x64/System32",
-            "text": "Win10_1903_RS6-x64 (10.0.18362.30)",
-            "value": "Win10_1903_RS6/x64/System32"
+            "key": "Win10_1903_19H1/x64/System32",
+            "text": "Win10_1903_19H1-x64 (10.0.18362.30)",
+            "value": "Win10_1903_19H1/x64/System32"
         },
         {
-            "key": "Win10_1903_RS6/x86/System32",
-            "text": "Win10_1903_RS6-x86 (10.0.18362.1)",
-            "value": "Win10_1903_RS6/x86/System32"
+            "key": "Win10_1903_19H1/x86/System32",
+            "text": "Win10_1903_19H1-x86 (10.0.18362.1)",
+            "value": "Win10_1903_19H1/x86/System32"
         },
         {
             "key": "Win10_20H1_18836/ARM64/System32",
