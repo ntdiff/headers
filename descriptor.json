@@ -9148,6 +9148,11 @@
             "value": "Standalone/_EX_POOL_HEAP_MANAGER_STATE"
         },
         {
+            "key": "Standalone/_KQOS_GROUPING_SETS",
+            "text": "_KQOS_GROUPING_SETS",
+            "value": "Standalone/_KQOS_GROUPING_SETS"
+        },
+        {
             "key": "Standalone/_tag_ARM64INTR_BARRIER_TYPE",
             "text": "_tag_ARM64INTR_BARRIER_TYPE",
             "value": "Standalone/_tag_ARM64INTR_BARRIER_TYPE"
@@ -9226,11 +9231,6 @@
             "key": "Standalone/_KSTATIC_AFFINITY_BLOCK",
             "text": "_KSTATIC_AFFINITY_BLOCK",
             "value": "Standalone/_KSTATIC_AFFINITY_BLOCK"
-        },
-        {
-            "key": "Standalone/_KQOS_GROUPING_SETS",
-            "text": "_KQOS_GROUPING_SETS",
-            "value": "Standalone/_KQOS_GROUPING_SETS"
         },
         {
             "key": "Standalone/_EXP_LICENSE_STATE",
@@ -10348,6 +10348,26 @@
             "key": "Win10_1903_19H1/x86/System32",
             "text": "Win10_1903_19H1-x86 (10.0.18362.1)",
             "value": "Win10_1903_19H1/x86/System32"
+        },
+        {
+            "key": "Win10_1909_19H2/x64/System32",
+            "text": "Win10_1909_19H2-x64 (10.0.18362.387)",
+            "value": "Win10_1909_19H2/x64/System32"
+        },
+        {
+            "key": "Win10_1909_19H2/x64/System32",
+            "text": "Win10_1909_19H2-x64 (10.0.18362.418)",
+            "value": "Win10_1909_19H2/x64/System32"
+        },
+        {
+            "key": "Win10_1909_19H2/x86/System32",
+            "text": "Win10_1909_19H2-x86 (10.0.18362.387)",
+            "value": "Win10_1909_19H2/x86/System32"
+        },
+        {
+            "key": "Win10_1909_19H2/x86/System32",
+            "text": "Win10_1909_19H2-x86 (10.0.18362.418)",
+            "value": "Win10_1909_19H2/x86/System32"
         },
         {
             "key": "Win10_20H1_18836/ARM64/System32",
