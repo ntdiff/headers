@@ -9208,16 +9208,6 @@
             "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
         },
         {
-            "key": "Standalone/_tlgProviderMetadata_t",
-            "text": "_tlgProviderMetadata_t",
-            "value": "Standalone/_tlgProviderMetadata_t"
-        },
-        {
-            "key": "Standalone/_tlgProvider_t",
-            "text": "_tlgProvider_t",
-            "value": "Standalone/_tlgProvider_t"
-        },
-        {
             "key": "Standalone/_AWEINFO",
             "text": "_AWEINFO",
             "value": "Standalone/_AWEINFO"
@@ -9226,6 +9216,16 @@
             "key": "Standalone/_MI_PHYSICAL_VIEW",
             "text": "_MI_PHYSICAL_VIEW",
             "value": "Standalone/_MI_PHYSICAL_VIEW"
+        },
+        {
+            "key": "Standalone/_tlgProviderMetadata_t",
+            "text": "_tlgProviderMetadata_t",
+            "value": "Standalone/_tlgProviderMetadata_t"
+        },
+        {
+            "key": "Standalone/_tlgProvider_t",
+            "text": "_tlgProvider_t",
+            "value": "Standalone/_tlgProvider_t"
         },
         {
             "key": "Standalone/_KSTATIC_AFFINITY_BLOCK",
@@ -9358,16 +9358,6 @@
             "value": "Standalone/_RTL_FEATURE_CONFIGURATION"
         },
         {
-            "key": "Standalone/__m64",
-            "text": "__m64",
-            "value": "Standalone/__m64"
-        },
-        {
-            "key": "Standalone/__m128",
-            "text": "__m128",
-            "value": "Standalone/__m128"
-        },
-        {
             "key": "Standalone/_FAULT_INFORMATION_X64_FLAGS",
             "text": "_FAULT_INFORMATION_X64_FLAGS",
             "value": "Standalone/_FAULT_INFORMATION_X64_FLAGS"
@@ -9376,6 +9366,16 @@
             "key": "Standalone/_FAULT_INFORMATION_X64",
             "text": "_FAULT_INFORMATION_X64",
             "value": "Standalone/_FAULT_INFORMATION_X64"
+        },
+        {
+            "key": "Standalone/__m64",
+            "text": "__m64",
+            "value": "Standalone/__m64"
+        },
+        {
+            "key": "Standalone/__m128",
+            "text": "__m128",
+            "value": "Standalone/__m128"
         },
         {
             "key": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT",
@@ -10325,16 +10325,6 @@
             "value": "Win10_20H1_18836/x86/System32"
         },
         {
-            "key": "Win10_20H1_18850/x64/System32",
-            "text": "Win10_20H1_18850-x64 (10.0.18850.1000)",
-            "value": "Win10_20H1_18850/x64/System32"
-        },
-        {
-            "key": "Win10_20H1_18850/x86/System32",
-            "text": "Win10_20H1_18850-x86 (10.0.18850.1000)",
-            "value": "Win10_20H1_18850/x86/System32"
-        },
-        {
             "key": "Win10_20H1_18865/ARM64/System32",
             "text": "Win10_20H1_18865-ARM64 (10.0.18865.1000)",
             "value": "Win10_20H1_18865/ARM64/System32"
@@ -10393,21 +10383,6 @@
             "key": "Win10_20H1_18941/x86/System32",
             "text": "Win10_20H1_18941-x86 (10.0.18941.1001)",
             "value": "Win10_20H1_18941/x86/System32"
-        },
-        {
-            "key": "Win10_20H1_18975/ARM64/System32",
-            "text": "Win10_20H1_18975-ARM64 (10.0.18975.1000)",
-            "value": "Win10_20H1_18975/ARM64/System32"
-        },
-        {
-            "key": "Win10_20H1_18975/x64/System32",
-            "text": "Win10_20H1_18975-x64 (10.0.18975.1000)",
-            "value": "Win10_20H1_18975/x64/System32"
-        },
-        {
-            "key": "Win10_20H1_18975/x86/System32",
-            "text": "Win10_20H1_18975-x86 (10.0.18975.1000)",
-            "value": "Win10_20H1_18975/x86/System32"
         },
         {
             "key": "Win10_20H1_18990/ARM64/System32",

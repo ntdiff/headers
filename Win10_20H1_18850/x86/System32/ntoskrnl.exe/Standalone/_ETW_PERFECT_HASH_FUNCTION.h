@@ -1,2 +1,0 @@
-struct _ETW_PERFECT_HASH_FUNCTION;
-
