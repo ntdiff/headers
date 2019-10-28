@@ -52,6 +52,9 @@
 ?BTreeNewNode@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SGPAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PAU1@KK@Z
 ?BTreeNewNode@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SGPAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@PAU1@KK@Z
 ?BTreeNewNode@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SGPAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PAU1@KK@Z
+?BTreeNodeFindKey@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SGKPAU1@PAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
+?BTreeNodeFindKey@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SGKPAU1@PAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
+?BTreeNodeFindKey@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SGKPAU1@PAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@T_SM_PAGE_KEY@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SGXPAU1@PAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SGXPAU1@PAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SGXPAU1@PAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@@Z
@@ -81,6 +84,7 @@
 ?BTreeWalkPostOrderInternal@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SGJPAU1@PAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PAU_SINGLE_LIST_ENTRY@@P6GJPAX3PAK@Z3PAPAU23@@Z
 ?BTreeWalkPostOrderInternal@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SGJPAU1@PAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PAU_SINGLE_LIST_ENTRY@@P6GJPAX3PAK@Z3PAPAU23@@Z
 ?CheckSum@MBR_HEADER@@QAEKXZ
+?Compare@ST_HASH_ENTRY_COMPARATOR@?$ST_STORE@USM_TRAITS@@@@SGHPAXABK1@Z
 ?Compare@ST_REGION_ENTRY_COMPARATOR@?$ST_STORE@USM_TRAITS@@@@SGHPAXABK1@Z
 ?CompareLangIDs@@YAHPBX0@Z
 ?CompareLangName@@YAHPBX0@Z
@@ -146,6 +150,7 @@
 ?SmAsyncReadQueueInsert@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU_SM_ASYNC_READ_QUEUE@1@PAU_SM_ASYNC_DIRECT_READ_CTX@1@K@Z
 ?SmAsyncReadQueueWorker@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAX@Z
 ?SmCleanup@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@@Z
+?SmCompressContextQueueEntry@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU_SM_COMPRESS_CONTEXT@1@PAU_SM_COMPRESS_ENTRY@1@@Z
 ?SmCompressContextUpdateMemoryCondition@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU_SM_COMPRESS_CONTEXT@1@W4_SMP_MEMORY_CONDITION@@K@Z
 ?SmCompressCtxBalancerThread@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAX@Z
 ?SmCompressCtxCleanup@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU_SM_COMPRESS_CONTEXT@1@@Z
@@ -161,6 +166,7 @@
 ?SmFatalHeapCorruptionDumpCallback@@YGXW4_KBUGCHECK_CALLBACK_REASON@@PAU_KBUGCHECK_REASON_CALLBACK_RECORD@@PAXK@Z
 ?SmFatalPageErrorDumpCallback@@YGXW4_KBUGCHECK_CALLBACK_REASON@@PAU_KBUGCHECK_REASON_CALLBACK_RECORD@@PAXK@Z
 ?SmFeAddComplete@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@PAT_SM_PAGE_KEY@@KKK@Z
+?SmFeAddFirstPass@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGJPAU1@PAT_SM_PAGE_KEY@@KPAUSEARCH_RESULT@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@K@Z
 ?SmFeAddInitiate@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGJPAU1@PAT_SM_PAGE_KEY@@KKPAU_SM_WORK_ITEM@1@PAU_SM_IO_CONTEXT@1@K@Z
 ?SmFeCheckPresent@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGKPAU1@PAT_SM_PAGE_KEY@@PAK2@Z
 ?SmFeEmpty@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@@Z
@@ -186,6 +192,7 @@
 ?SmPageRead@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGJPAU1@PAT_SM_PAGE_KEY@@PAU_MDL@@PAXPAU_IO_STATUS_BLOCK@@@Z
 ?SmPageWrite@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGJPAU1@PAT_SM_PAGE_KEY@@T_SM_PAGE_ADD_PARAM@@PAU_MDL@@PAXPAU_IO_STATUS_BLOCK@@K@Z
 ?SmPerformStoreMaintenance@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGJPAU1@PAU?$SMKM_STORE@USM_TRAITS@@@@W4_ST_MAINTENANCE_TYPE@@@Z
+?SmProcessAddCompletion@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@PAU_SM_WORK_ITEM@1@KPAU?$SMKM_STORE@USM_TRAITS@@@@J@Z
 ?SmProcessIoCompletion@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@PAT_SM_PAGE_KEY@@KKJK@Z
 ?SmProcessReadCompletion@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@PAU_SM_WORK_ITEM@1@KPAU?$SMKM_STORE@USM_TRAITS@@@@J@Z
 ?SmReInitialize@?$SMKM_STORE_MGR@USM_TRAITS@@@@SGXPAU1@@Z
@@ -324,8 +331,10 @@
 ?StInitialize@?$ST_STORE@USM_TRAITS@@@@SGXPAU1@@Z
 ?StLazyWorkMgrInitialize@?$ST_STORE@USM_TRAITS@@@@SGXPAU_ST_LAZY_WORK_MGR@1@@Z
 ?StLazyWorkMgrQueueWork@?$ST_STORE@USM_TRAITS@@@@SGXPAU_ST_LAZY_WORK_MGR@1@W4_ST_LAZY_WORK_TYPE@1@KK@Z
+?StLazyWorkMgrResetIdle@?$ST_STORE@USM_TRAITS@@@@SGXPAU_ST_LAZY_WORK_MGR@1@@Z
 ?StLazyWorkMgrRunExpiredWork@?$ST_STORE@USM_TRAITS@@@@SGXPAU_ST_LAZY_WORK_MGR@1@_K@Z
 ?StLazyWorkMgrSetSchedule@?$ST_STORE@USM_TRAITS@@@@SGXPAU_ST_LAZY_WORK_MGR@1@_K@Z
+?StLockTryAcquireExclusive@@YGKPAUVLOCK@@PAK@Z
 ?StMapAndLockRegion@?$ST_STORE@USM_TRAITS@@@@SGPADPAU_ST_DATA_MGR@1@KKK@Z
 ?StMetaRegionsUpdate@?$ST_STORE@USM_TRAITS@@@@SGJPAU1@PAU_ST_WORK_ITEM@1@@Z
 ?StNpEnumBTreeNodes@?$ST_STORE@USM_TRAITS@@@@SGJPAUNP_CTX@NP_CONTEXT@@P6GJPAX1PAK@Z1@Z
@@ -616,7 +625,6 @@
 @KeInitializeGate@8
 @KeInitializeGuardedMutex@4
 @KeInitializeWaitChain@4
-@KeInitializeWaitChainEntryEx@8
 @KeInvalidAccessAllowed@4
 @KeInvalidateRangeAllCaches@8
 @KeIsContextSwapActive@4
@@ -689,6 +697,7 @@
 @KiProcessDebugRegister@8
 @KiProcessDeferredReadyList@12
 @KiProcessThreadWaitList@16
+@KiQueryEffectivePriorityThread@8
 @KiQueueReadyThread@8
 @KiReadyThread@8
 @KiRecordDr7@8
@@ -730,6 +739,7 @@
 @KiXMMIZeroPages@8
 @KiXMMIZeroPagesNoSave@8
 @KiZeroPages@8
+@KxAcquireQueuedSpinLock@8
 @KxFlushSingleTb@12
 @KxReleaseQueuedSpinLock@4
 @KxTryToAcquireQueuedSpinLock@8
@@ -811,6 +821,7 @@
 @RtlInterlockedCompareExchange64@12
 @RtlInterlockedSetClearBits@12
 @RtlPrefetchMemoryNonTemporal@8
+@RtlRemoveEntryCircularList@8
 @RtlUlongByteSwap@4
 @RtlUlonglongByteSwap@8
 @RtlUshortByteSwap@4
@@ -1277,6 +1288,7 @@ _AlpcpDeferredFreeCompletionPacketLookaside@4
 _AlpcpDeletePort@4
 _AlpcpDeleteView@4
 _AlpcpDereferenceBlobEx@8
+_AlpcpDereferenceProcess@4
 _AlpcpDestroyPort@4
 _AlpcpDisconnectPort@8
 _AlpcpDispatchMessage@4
@@ -1297,6 +1309,7 @@ _AlpcpFreeBuffer@4
 _AlpcpFreeCompletionList@4
 _AlpcpFreeCompletionPacketLookaside@4
 _AlpcpFreeMessageFunction@4
+_AlpcpGetAvailableAttributes@4
 _AlpcpGetDataFromUserVaSafe@8
 _AlpcpGetEffectiveTokenMessage@20
 _AlpcpGetMessageAttributeOffset@8
@@ -1320,6 +1333,7 @@ _AlpcpLocateMessageLog@4
 _AlpcpLocateSectionView@16
 _AlpcpLocateView@8
 _AlpcpLockForCachedReferenceBlob@4
+_AlpcpLockPortShared@4
 _AlpcpLogClosePort@4
 _AlpcpLogConnectFail@8
 _AlpcpLogConnectRequest@4
@@ -1337,6 +1351,7 @@ _AlpcpPortQueryBasicInfo@20
 _AlpcpPortQueryConnectedSidInfo@20
 _AlpcpPortQueryServerInfo@20
 _AlpcpPrepareViewForDelivery@12
+_AlpcpProbeAndCaptureMessageHeader@12
 _AlpcpProbeMessageAttributes@12
 _AlpcpProcessConnectionRequest@36
 _AlpcpProcessSynchronousRequest@40
@@ -1354,6 +1369,7 @@ _AlpcpReferenceMessageByWaitingThread@8
 _AlpcpReferenceMessageByWaitingThreadPort@8
 _AlpcpReferenceMessageByWaitingThreadPortQueue@8
 _AlpcpReferencePortByHandle@16
+_AlpcpReferenceProcess@4
 _AlpcpRegisterCompletionListDatabase@4
 _AlpcpReleasePagedPoolQuota@8
 _AlpcpReleaseViewAttribute@4
@@ -1374,6 +1390,7 @@ _AlpcpTransferQuotaMessage@4
 _AlpcpTryLockForCachedReferenceBlob@4
 _AlpcpUnlockBlob@4
 _AlpcpUnlockMessage@4
+_AlpcpUnlockPortShared@4
 _AlpcpUnlockSecurityData@4
 _AlpcpUnregisterCompletionListDatabase@4
 _AlpcpValidateAndSetPortAttributes@28
@@ -1720,7 +1737,6 @@ _BcpGetMaxResourceProfile@8
 _BcpGetProgressMessages@12
 _BcpPrintSpaces@24
 _BcpSanitizeDriverName@8
-_BcpSetCursorPosition@12
 _BcpTicksToMicroseconds@16
 _BgAcquireSpinLock@0
 _BgConsoleDestroyInterface@4
@@ -2465,7 +2481,6 @@ _CmpCheckAndFixSecurityCellsRefcount@4
 _CmpCheckCreateAccess@24
 _CmpCheckCreateAccessOnKcbStack@32
 _CmpCheckHivePrimaryFileReadWriteAccess@4
-_CmpCheckKcbStackAccess@20
 _CmpCheckKey@28
 _CmpCheckKeyAccess@20
 _CmpCheckKeyBodyAccess@20
@@ -2480,8 +2495,8 @@ _CmpCheckSecurityCellAccess@20
 _CmpCheckValueList@40
 _CmpCheckWrpKeyAccess@4
 _CmpClaimGlobalQuota@4
+_CmpCleanUpHigherLayerKcbCaches@4
 _CmpCleanUpHigherLayerKcbCachesPostCallback@8
-_CmpCleanUpHigherLayerKcbCachesPreCallback@8
 _CmpCleanUpKCBCacheTable@12
 _CmpCleanUpKcbCacheWithLock@8
 _CmpCleanUpKcbValueCache@4
@@ -2493,6 +2508,7 @@ _CmpCleanupKcbStack@4
 _CmpCleanupKeyNodeStack@4
 _CmpCleanupLightWeightPrepare@8
 _CmpCleanupLightWeightTransaction@8
+_CmpCleanupLightWeightUoWData@8
 _CmpCleanupParseContext@8
 _CmpCleanupPathInfo@4
 _CmpCleanupRollbackPacket@4
@@ -2598,7 +2614,6 @@ _CmpDiscardKcb@4
 _CmpDiskFullWarning@0
 _CmpDiskFullWarningWorker@4
 _CmpDoAccessCheckOnKCB@16
-_CmpDoAccessCheckOnKcbSubtree@20
 _CmpDoAccessCheckOnLayeredSubtree@24
 _CmpDoAccessCheckOnSubtree@20
 _CmpDoBuildVirtualStack@12
@@ -2643,7 +2658,6 @@ _CmpDuplicateIndex@12
 _CmpEffectiveTokenForSubject@8
 _CmpEnableLazyFlush@4
 _CmpEnableLazyFlushDpcRoutine@16
-_CmpEnumerateAllHigherLayerKcbs@24
 _CmpEnumerateAllOpenSubKeys@16
 _CmpEnumerateKcbCacheBucket@16
 _CmpEnumerateLayeredKey@32
@@ -2683,7 +2697,6 @@ _CmpFindSubKeyInRoot@16
 _CmpFindSubkeyInHashByChildCell@20
 _CmpFindTagIndex@16
 _CmpFindValueByName@12
-_CmpFindValueByNameFromCache@16
 _CmpFinishBeingActiveFlusherAndReconciler@4
 _CmpFinishSystemHivesLoad@4
 _CmpFireCleanupNotifications@4
@@ -2790,7 +2803,6 @@ _CmpGetVolumeLogFileSizeCap@4
 _CmpGlobalLockKeyForWrite@8
 _CmpGlobalUnlockKeyForWrite@8
 _CmpHKeyNameLen@4
-_CmpHKeyNodeSize@4
 _CmpHandlePageFileOpenNotification@0
 _CmpHashCompressedComponent@8
 _CmpHashUnicodeComponent@4
@@ -2844,7 +2856,6 @@ _CmpInsertSecurityCellList@16
 _CmpInterlockedFunction@8
 _CmpInvalidateAllHigherLayerKcbs@12
 _CmpInvalidateAllHigherLayerKcbsPostCallback@8
-_CmpInvalidateAllHigherLayerKcbsPreCallback@8
 _CmpInvalidateSubtree@12
 _CmpInvalidateSubtreeWorker@8
 _CmpIsBufferGloballyVisible@4
@@ -3016,7 +3027,6 @@ _CmpPrepareForSubtreeInvalidationWorker@8
 _CmpPrepareLightWeightTransaction@4
 _CmpPrepareToInvalidateAllHigherLayerKcbs@12
 _CmpPrepareToInvalidateAllHigherLayerKcbsPostCallback@8
-_CmpPrepareToInvalidateAllHigherLayerKcbsPreCallback@8
 _CmpPreserveSystemHiveData@8
 _CmpProcessForSimpleStringSub@8
 _CmpProcessLightWeightUOW@12
@@ -3024,7 +3034,6 @@ _CmpPromoteKey@12
 _CmpPromoteSingleKeyFromKcbStacks@12
 _CmpPromoteSingleKeyFromParentKcbAndChildKeyNode@12
 _CmpPromoteSubtree@12
-_CmpPromoteSubtreeForKcbStack@8
 _CmpProtectPool@12
 _CmpPublishEventForPcaResolver@4
 _CmpQueryFileSecurityDescriptor@8
@@ -3164,6 +3173,7 @@ _CmpStartKeyNodeStack@8
 _CmpStartKeyNodeStackFromKcbStack@12
 _CmpStartRMLog@8
 _CmpStartRMLogs@4
+_CmpStartSiloKeyLockTracker@4
 _CmpStartSiloRegistryNamespace@4
 _CmpStopRMLog@4
 _CmpStopSiloKeyLockTracker@4
@@ -3304,7 +3314,6 @@ _CmpVolumeManagerUnlockContextListShared@4
 _CmpWaitForHiveMount@16
 _CmpWaitForLateUnloadWorker@0
 _CmpWaitOnHiveWriteQueue@12
-_CmpWakeWriteQueueWaiters@8
 _CmpWalkOneLevel@44
 _CmpWalkPath@12
 _CmpWalkUnicodeStringPath@12
@@ -3354,7 +3363,6 @@ _DbgkCopyProcessDebugPort@16
 _DbgkCreateMinimalProcess@4
 _DbgkCreateMinimalThread@4
 _DbgkCreateThread@4
-_DbgkEnableDebugPrintCallbacksAfterHibernate@0
 _DbgkExitProcess@4
 _DbgkExitThread@4
 _DbgkForwardException@12
@@ -3608,9 +3616,7 @@ _EtwSetProcessTelemetryCoverage@8
 _EtwShutdown@4
 _EtwStartAutoLogger@12
 _EtwTelemetryCoverageReport@4
-_EtwTiLogAllocExecVm@24
 _EtwTiLogMapExecView@24
-_EtwTiLogProtectExecVm@24
 _EtwTiLogQueueApcThread@24
 _EtwTiLogReadWriteVm@24
 _EtwTiLogSetContextThread@16
@@ -4396,7 +4402,6 @@ _ExDisableAllLookasideLists@0
 _ExDisableHandleTracing@4
 _ExDisableResourceBoostLite@4
 _ExDisownFastResource@8
-_ExDrainPoolLookasideList@4
 _ExDupHandleTable@20
 _ExEnableHandleExceptions@8
 _ExEnableHandleTracing@8
@@ -4418,7 +4423,6 @@ _ExFreeCacheAwarePushLock@4
 _ExFreeCacheAwareRundownProtection@4
 _ExFreeCallBack@4
 _ExFreeHeapPages@16
-_ExFreeHeapPool@4
 _ExFreeLargePool@16
 _ExFreePool@4
 _ExFreePoolEx@8
@@ -4516,7 +4520,6 @@ _ExNotifyBootDeviceRemoval@4
 _ExNotifyCallback@12
 _ExNotifyPlatformBinaryExecuted@0
 _ExNotifyWithProcessing@16
-_ExPartitionDestroy@4
 _ExPoolCleanupExpansionTable@8
 _ExProcessorCounterSetCallback@12
 _ExProtectPool@12
@@ -4767,6 +4770,10 @@ _ExpGetSystemWriteConstraintInformation@4
 _ExpGetThreadResourceHint@4
 _ExpGetUILanguagePolicy@8
 _ExpGetVMActivationStatus@20
+_ExpHeapGCInitialization@0
+_ExpHpCompactSessionPools@0
+_ExpHpCompactionRoutine@4
+_ExpHpGCTimerCallback@8
 _ExpHpIsSpecialPoolHeap@4
 _ExpInitBootEntropyInformation@12
 _ExpInitExpCheckTestSigningInfo@12
@@ -4827,8 +4834,6 @@ _ExpPartitionStart@4
 _ExpPcwDisabledStatus@0
 _ExpPcwHostCallback@8
 _ExpPrepareNewSvmDevice@16
-_ExpPrepareToWaitForResourceExclusive@12
-_ExpPrepareToWaitForResourceShared@12
 _ExpPrepareToWakeResourceExclusive@16
 _ExpPrepareToWakeResourceShared@16
 _ExpProfileCreate@44
@@ -4869,7 +4874,6 @@ _ExpRemoveCurrentThreadFromThreadHistory@4
 _ExpRemoveGeneralLookaside@8
 _ExpRemoveHandleTable@4
 _ExpRemovePoolTrackerExpansion@12
-_ExpRemoveTagForBigPages@28
 _ExpReplaceListEntry@8
 _ExpResizeBigPageTable@12
 _ExpResourceEnforcesOwnershipTransfer@4
@@ -4887,10 +4891,8 @@ _ExpSaPageGroupAllocateMemory@8
 _ExpSaPageGroupDescriptorAllocate@8
 _ExpSaPageGroupDescriptorFree@4
 _ExpSaPageGroupFreeMemory@12
-_ExpSafeSubtract@8
 _ExpSafeWcslen@8
 _ExpSafeWcslenUnaligned@8
-_ExpSanitizePoolTag@4
 _ExpScanGeneralLookasideList@8
 _ExpScanSystemLookasideList@0
 _ExpSeedHotTags@0
@@ -5061,6 +5063,7 @@ _FadePalette@4
 _Feature_Leap_Seconds_Sixty_Second__private_IsEnabledPreCheck@0
 _Feature_OneShotHRTimer__private_IsEnabledPreCheck@0
 _Feature_PdttSupport__private_IsEnabledPreCheck@0
+_Feature_PowerButtonBugcheck__private_IsEnabledPreCheck@0
 _Feature_RelaxTcbForUWP__private_IsEnabledPreCheck@0
 _Feature_SchedulerAggressiveForegroundBoost__private_IsEnabledPreCheck@0
 _Feature_SchedulerAssistAllowRealTime__private_IsEnabledPreCheck@0
@@ -5126,6 +5129,7 @@ _FsRtlAddEntry@12
 _FsRtlAddLargeMcbEntry@28
 _FsRtlAddMcbEntry@16
 _FsRtlAddToTunnelCache@32
+_FsRtlAddToTunnelCacheEx@32
 _FsRtlAllocateExtraCreateParameter@24
 _FsRtlAllocateExtraCreateParameterFromLookasideList@24
 _FsRtlAllocateExtraCreateParameterList@8
@@ -5153,7 +5157,7 @@ _FsRtlCheckNotifyForDeleteLite@4
 _FsRtlCheckOplock@20
 _FsRtlCheckOplockEx@24
 _FsRtlCheckUpperOplock@24
-_FsRtlCompareNodeAndKey@16
+_FsRtlCompareNodeAndKey@20
 _FsRtlCompleteLockIrpReal@24
 _FsRtlCopyRead@32
 _FsRtlCopyWrite@32
@@ -5182,6 +5186,7 @@ _FsRtlFindFirstOverlapInNode@12
 _FsRtlFindFirstOverlappingExclusiveNode@20
 _FsRtlFindFirstOverlappingSharedNode@20
 _FsRtlFindInTunnelCache@32
+_FsRtlFindInTunnelCacheEx@36
 _FsRtlFindLargeIndex@12
 _FsRtlFreeExtraCreateParameter@4
 _FsRtlFreeExtraCreateParameterList@4
@@ -5601,8 +5606,6 @@ _HvlInvokeHypervisorDebugger@8
 _HvlInvokeWheaErrorNotificationCallback@12
 _HvlIsAnyHypervisorPresent@0
 _HvlIsCoreSharingPossible@0
-_HvlIsHypervisorPresent@0
-_HvlIsPartitionCpuManager@0
 _HvlLogGuestCrashInformation@20
 _HvlLpGetMachineCheckContext@16
 _HvlLpReadCpuid@24
@@ -5648,7 +5651,6 @@ _HvlSetPlatformIdleState@4
 _HvlSetQpcBias@8
 _HvlSetSystemMachineCheckProperty@4
 _HvlSetSystemSleepProperty@12
-_HvlStartBootLogicalProcessors@4
 _HvlSuspendPartition@8
 _HvlSwitchVirtualAddressSpace@4
 _HvlUnmapDeviceInterrupt@12
@@ -5694,7 +5696,6 @@ _HvlpLogIommuInitStatus@0
 _HvlpLogProcessorStartupFailure@12
 _HvlpLpComparison@16
 _HvlpLpCpuid@16
-_HvlpMapEarlyPages@16
 _HvlpMapStatisticsPage@12
 _HvlpMarkHvlPagesForHibernation@0
 _HvlpPhase0Enlightenments@4
@@ -5775,9 +5776,7 @@ _HvpLogUnreadableLog@8
 _HvpMapHiveImage@20
 _HvpMapHiveImageFromFile@20
 _HvpMapHiveImageFromViewMap@12
-_HvpMappedViewConvertLockedPagesToCOWByPolicy@8
 _HvpMappedViewConvertRegionFromLockedToCOWByPolicy@24
-_HvpMappedViewGetPropertiesForFileOffset@12
 _HvpMarkCellDirty@16
 _HvpMarkDirty@16
 _HvpMinLong64@16
@@ -5808,7 +5807,6 @@ _HvpViewMapCreateViewsForRegion@24
 _HvpViewMapDeleteViewTreeNode@8
 _HvpViewMapExtendStorage@8
 _HvpViewMapFindViewForFileOffset@12
-_HvpViewMapFreeView@8
 _HvpViewMapGetLastView@4
 _HvpViewMapGetMaxStorageLength@4
 _HvpViewMapMakeViewRangeCOWByCaller@24
@@ -6619,6 +6617,7 @@ _IopIsDescendantNode@8
 _IopIsFileOpenOrSection@16
 _IopIsKnownGoodLegacyFsFilter@4
 _IopIsPciRootBus@8
+_IopIsRelationInList@8
 _IopIsReportedAlready@20
 _IopIsSecurityContextAppContainer@4
 _IopIssueSystemEnvironmentCallout@4
@@ -7686,6 +7685,7 @@ _KiChainedDispatch@0
 _KiChargeSchedulingGroupCycleTime@8
 _KiCheckAndRearmForceIdle@0
 _KiCheckDueTimeExpired@16
+_KiCheckForAtlThunk@8
 _KiCheckForDuplicateBugCheckCallback@8
 _KiCheckForEffectivePriorityChange@8
 _KiCheckForKernelApcDelivery@0
@@ -7712,10 +7712,8 @@ _KiCompleteKernelInit@12
 _KiComputeCpuSetAffinity@4
 _KiComputeCpuSetAffinityMask@16
 _KiComputeGroupSchedulingRank@12
-_KiComputeNewInterruptTime@12
 _KiComputeNewPriority@8
 _KiComputeNewSystemTime@8
-_KiComputePriorityFloor@8
 _KiComputeProcessorDataSize@4
 _KiComputeQuantumTargetThread@20
 _KiComputeSharedReadyQueueAffinityThread@8
@@ -7729,6 +7727,7 @@ _KiConfigureSchedulingInformation@8
 _KiConnectInterruptInternal@8
 _KiConnectSecondaryInterrupt@4
 _KiConnectVectorAndInterruptObject@8
+_KiContextFromNpxFrame@20
 _KiContextToNpxFrame@20
 _KiContinue@12
 _KiContinuePreviousModeUser@16
@@ -7742,11 +7741,13 @@ _KiDeliverApc@12
 _KiDeregisterNmiSxCallback@12
 _KiDetachProcess@8
 _KiDetectAccessBitErrata@4
-_KiDetectAmdSsbdSupport@12
+_KiDetectAmdNonArchSsbdSupport@8
+_KiDetectAmdSsbdSupport@8
 _KiDetectFpuLeakage@0
 _KiDetectHardwareSpecControlFeatures@20
 _KiDetectKvaLeakage@4
 _KiDisableCacheErrataSource@0
+_KiDisableVpPreemption@8
 _KiDisconnectInterruptCommon@12
 _KiDisconnectInterruptInternal@8
 _KiDisconnectSecondaryInterrupt@8
@@ -7854,7 +7855,7 @@ _KiGetSavedIptState@12
 _KiGetSavedSupervisorState@8
 _KiGetTbLeafInfo@0
 _KiGetThreadEffectiveRankNonZero@20
-_KiGetThreadScb@12
+_KiGetThreadReadyTime@4
 _KiGetTickCount
 _KiGetTickCountShadow
 _KiGetVectorInfo@8
@@ -8000,7 +8001,6 @@ _KiNodeCostSort
 _KiNonNumaQueryNodeCapacity@8
 _KiNonNumaQueryNodeDistance@12
 _KiOutSwapKernelStacks@0
-_KiOutSwapProcesses@4
 _KiParseLoadOptions@4
 _KiPassiveIsrWatchdog@16
 _KiPassiveRelease@0
@@ -8023,7 +8023,6 @@ _KiProcessorStart@0
 _KiQosResponseRequired@8
 _KiQuantumEnd@0
 _KiQueryIptSupport@8
-_KiQueryProcessStibpPairingAllowed@12
 _KiQueryProcessorNode@12
 _KiQueryProximityNode@8
 _KiQueryUnbiasedInterruptTime@4
@@ -8052,6 +8051,7 @@ _KiRemoveTimer2@4
 _KiRequestTimer2Expiration@0
 _KiRescheduleThreadAfterAffinityChange@24
 _KiResetClockInterval@4
+_KiResetClockIntervalOneShot@0
 _KiResetForceIdle@8
 _KiResetGlobalDpcWatchdogProfiler@4
 _KiResetScb@8
@@ -8124,6 +8124,7 @@ _KiSetSystemAffinityThread@16
 _KiSetSystemAffinityThreadToProcessor@8
 _KiSetSystemTimeDpc@16
 _KiSetThreadSchedulingGroup@8
+_KiSetThreadState@12
 _KiSetThreadTag@8
 _KiSetTimerEx@24
 _KiSetVirtualHeteroClockIntervalRequest@4
@@ -8438,6 +8439,7 @@ _KiUpdateMinimumWeight@12
 _KiUpdateNodeAffinitizedFlag@4
 _KiUpdateNumberProcessors@4
 _KiUpdateNumberProcessorsIpi@4
+_KiUpdatePriorityMatrixThreadState@16
 _KiUpdateProcessorCount@8
 _KiUpdateSavedSupervisorState@0
 _KiUpdateSharedReadyQueueAffinityThread@8
@@ -8712,7 +8714,6 @@ _LookupAceTypeInTable@12
 _LookupSidInTable@28
 _LpcExitProcess@4
 _LpcInitSystem@0
-_LpcInitializeProcess@4
 _LpcReplyWaitReplyPort@12
 _LpcRequestPort@8
 _LpcRequestWaitReplyPort@12
@@ -8731,7 +8732,6 @@ _MIDL_user_free@4
 _MI_CHECK_HIBER_VERIFY_PTE@4
 _MI_CLEAR_RESET_PTE@4
 _MI_GET_NODE_FROM_VALID_PTE@4
-_MI_GET_PAGE_FRAME_FROM_TRANSITION_PTE@4
 _MI_INTERLOCKED_EXCHANGE_PTE@12
 _MI_IS_CLONE_COMMIT_CHARGED@12
 _MI_IS_PHYSICAL_ADDRESS@4
@@ -8741,7 +8741,6 @@ _MI_LOCK_RELOCATIONS_EXCLUSIVE@8
 _MI_MAKE_PROTECT_WRITE_COPY@4
 _MI_PAGEFILE_WRITE@20
 _MI_PROTO_FORMAT_COMBINED@8
-_MI_READ_PTE_LOCK_FREE@4
 _MI_TIGHTER_PERMISSIONS@16
 _MI_UNLOCK_RELOCATIONS_EXCLUSIVE@8
 _MI_WRITE_INVALID_PTE_TB_FLUSH_NEEDED@12
@@ -8901,7 +8900,6 @@ _MiBackSingleImageWithPagefile@4
 _MiBackSystemImageWithPagefile@4
 _MiBadMemoryLogger@4
 _MiBadRefCount@4
-_MiBadShareCount@4
 _MiBeginPageAccessor@8
 _MiBeginProcessClean@8
 _MiBitmapsCachedEntryLengthChanged@12
@@ -8982,10 +8980,12 @@ _MiCheckPteRelease@8
 _MiCheckPteReserve@8
 _MiCheckPurgeAndUpMapCount@4
 _MiCheckRelevantKernelShadows@4
+_MiCheckReservePageFileSpace@12
 _MiCheckSecuredVad@20
 _MiCheckSessionPoolAllocations@0
 _MiCheckSpecialPoolSlop@12
 _MiCheckSystemNxFault@16
+_MiCheckSystemPageTables@4
 _MiCheckSystemTrimEndCriteria@12
 _MiCheckTrimUnusedPageFileRegions@4
 _MiCheckUserVirtualAddress@12
@@ -9009,6 +9009,7 @@ _MiClearPageFileHash@8
 _MiClearPartitionPageBitMap@8
 _MiClearPfnImageVerified@8
 _MiClearPfnReuseFields@4
+_MiClearPfnSlist@4
 _MiClearPteAccessed@24
 _MiClearRangeInPartitionTree@12
 _MiClearStackOwners@8
@@ -9053,6 +9054,7 @@ _MiCompareSlabEntry@8
 _MiCompareTbFlushTimeStamp@8
 _MiCompletePrivateZeroFault@12
 _MiCompleteProtoPteFault@24
+_MiCompleteSystemCacheViewFlush@4
 _MiCompressImportList@4
 _MiCompressRelocations@8
 _MiCompressTbFlushList@4
@@ -9120,9 +9122,9 @@ _MiCopyToCfgBitMap@36
 _MiCopyToUntrustedMemory@16
 _MiCopyToUserVa@16
 _MiCopyTopLevelMappings@8
-_MiCountNonPagedPool@8
 _MiCountSharedPages@12
 _MiCountSystemImageCommitment@4
+_MiCountSystemPool@12
 _MiCrashdumpRemovePte@12
 _MiCrcStillIntact@20
 _MiCreateAweInfoBitMap@4
@@ -9167,7 +9169,6 @@ _MiCreateSectionCommon@40
 _MiCreateSectionForDriver@16
 _MiCreateSessionDriverProtos@12
 _MiCreateSharedZeroPages@8
-_MiCreateSlabAllocationsFromLoaderBlock@4
 _MiCreateSlabEntriesFromLoaderSlab@12
 _MiCreateSoftwareWsle@8
 _MiCreateSparsePfnDatabase@4
@@ -9393,6 +9394,7 @@ _MiFillPerSessionProtos@36
 _MiFillPfnGaps@0
 _MiFillPhysicalPages@12
 _MiFillPteHierarchy@8
+_MiFillPteWithProto@12
 _MiFillSessionWorkingSetEntry@8
 _MiFillSystemPtes@24
 _MiFillVirtualFaultInfo@16
@@ -9453,7 +9455,6 @@ _MiFlushTbAsNeeded@16
 _MiFlushTbList@4
 _MiFlushTbListEarly@8
 _MiFlushValidPteFromTb@16
-_MiForceAgeWorkingSet@8
 _MiForceCrashForInvalidAccess@8
 _MiForceSectionClosed@8
 _MiForcedTrim@8
@@ -9587,7 +9588,6 @@ _MiGetNumberOfCachedPtes@4
 _MiGetPage@12
 _MiGetPageChain@28
 _MiGetPageFileHigh@8
-_MiGetPageFileReservationOffset@4
 _MiGetPageFileSectionForReservation@12
 _MiGetPageForEnclave@8
 _MiGetPageForHeader@8
@@ -9605,7 +9605,6 @@ _MiGetPagingFileOffset@4
 _MiGetPdeAddress@4
 _MiGetPerfectColorHeadPage@20
 _MiGetPfnLink@4
-_MiGetPfnListPage@4
 _MiGetPfnPriority@4
 _MiGetPfnProtection@12
 _MiGetPhysicalAddress@12
@@ -9614,13 +9613,11 @@ _MiGetPoolPages@12
 _MiGetPrivatePageCount@4
 _MiGetProcessPartition@4
 _MiGetProtoPteAddress@16
-_MiGetPrototypePteDirect@8
 _MiGetPrototypePteRanges@8
 _MiGetPteAddress@4
 _MiGetPteFromCopyList@12
 _MiGetPteLink@8
 _MiGetPteMappingPair@8
-_MiGetPteTimeStamp@8
 _MiGetReadyInPageBlock@4
 _MiGetSectionStrongImageReference@4
 _MiGetSessionIdForVa@4
@@ -9635,7 +9632,6 @@ _MiGetSpecificSlistPage@8
 _MiGetStandbyRepurposed@8
 _MiGetSubsectionCharges@12
 _MiGetSubsectionDriverProtos@4
-_MiGetSubsectionFromPte@8
 _MiGetSystemAddressForImage@12
 _MiGetSystemCacheReverseMap@4
 _MiGetSystemPage@8
@@ -9731,7 +9727,6 @@ _MiInitializeEnclavePfn@12
 _MiInitializeFaultVaListCore@16
 _MiInitializeForkMaps@8
 _MiInitializeGapFrames@8
-_MiInitializeHardFaultPfn@20
 _MiInitializeImageHeaderPage@8
 _MiInitializeImageProtos@12
 _MiInitializeInPageSupport@8
@@ -9847,6 +9842,7 @@ _MiInsertVadCharges@12
 _MiInsertVadEvent@12
 _MiInsertViewOfPhysicalSection@8
 _MiInsertVmAccessedEntry@8
+_MiInvalidPteConforms@12
 _MiInvalidateCollidedIos@4
 _MiInvalidatePageFileBitmapsCache@20
 _MiIoPagesInRun@8
@@ -9874,7 +9870,6 @@ _MiIsProbeActive@12
 _MiIsProcessCfgEnabled@0
 _MiIsProcessCfgExportSuppressionEnabled@0
 _MiIsPrototypePteVadLookup@8
-_MiIsPteDecommittedPage@4
 _MiIsPteEvaluated@8
 _MiIsPteInStore@16
 _MiIsPteProtectionCompatible@8
@@ -9949,7 +9944,6 @@ _MiLockLowestValidPageTable@12
 _MiLockMemoryLists@8
 _MiLockNestedPageAtDpcInline@4
 _MiLockNestedVad@4
-_MiLockNestedVadShared@4
 _MiLockNonPagedPoolPte@8
 _MiLockOwnedProtoPage@8
 _MiLockPagableImageSection@8
@@ -10021,7 +10015,6 @@ _MiMakeImagePageOk@24
 _MiMakeImageReadOnly@4
 _MiMakeIoRangePermanent@4
 _MiMakeIoRangePermanentDpc@16
-_MiMakeLinkedListPte@8
 _MiMakeOutswappedPageResident@20
 _MiMakePageAvoidRead@28
 _MiMakePageBad@8
@@ -10511,7 +10504,6 @@ _MiReturnSystemVa@16
 _MiReturnVadQuota@12
 _MiReturnWsToExpansionList@8
 _MiReuseStandbyPage@4
-_MiReverseSwizzleInvalidPte@8
 _MiRevertQuasiPte@8
 _MiRevertRelocatedImagePfn@16
 _MiRevertRelocations@12
@@ -10585,7 +10577,6 @@ _MiSetPfnKernelStack@8
 _MiSetPfnLink@8
 _MiSetPfnOriginalPte@12
 _MiSetPfnOwnedAndActive@20
-_MiSetPfnPageState@8
 _MiSetPfnTbFlushStamp@12
 _MiSetProbePagesAhead@4
 _MiSetProtectionOnSection@32
@@ -10604,7 +10595,6 @@ _MiShadowTopLevelPxes@12
 _MiShareExistingControlArea@4
 _MiSharePages@20
 _MiShouldTrimUnusedSegments@0
-_MiShouldYieldProcessor@0
 _MiShowBadMapper@8
 _MiShutdownSystem@0
 _MiSignalLargePageRebuild@4
@@ -10612,7 +10602,6 @@ _MiSignalNonPagedPoolWatchers@0
 _MiSimpleAgePte@12
 _MiSimpleAgeWorkingSetEPTCallback@20
 _MiSimpleAgeWorkingSetTail@4
-_MiSimpleAging@8
 _MiSizeMemoryListLocks@0
 _MiSkipEntirePagefileRegions@20
 _MiSkipFractionalPagefileRegion@12
@@ -10642,17 +10631,20 @@ _MiStoreEvictPageFile@4
 _MiStoreEvictThread@4
 _MiStoreFaultComplete@8
 _MiStoreFreeWriteSupport@8
+_MiStoreGetWriteSupport@4
 _MiStoreLogFullPagefile@0
 _MiStoreLogWriteCompleteFailure@4
 _MiStoreLogWriteDisabled@8
 _MiStoreLogWriteIssueFailure@24
 _MiStoreLogWriteIssueRetry@20
 _MiStoreMarkLockedPagesModified@4
+_MiStoreModifiedWriteCompletePfn@8
 _MiStoreModifiedWriteDereference@4
 _MiStoreSetEvictPageFile@8
 _MiStoreSetPageFileRunEvicted@12
 _MiStoreUpdateMemoryConditions@4
 _MiStoreUpdatePagefileHash@16
+_MiStoreWriteIssue@32
 _MiStoreWriteModifiedCompleteApc@20
 _MiStoreWriteModifiedPages@4
 _MiStrongCodeImage@8
@@ -10753,9 +10745,7 @@ _MiUnlockMdlWritePages@12
 _MiUnlockNestedPageTableWritePte@20
 _MiUnlockNestedProtoPoolPage@4
 _MiUnlockNestedVad@4
-_MiUnlockNestedVadShared@4
 _MiUnlockPage@8
-_MiUnlockPageTable@8
 _MiUnlockPageTableCharges@8
 _MiUnlockPageTableInternal@8
 _MiUnlockPageTableRange@8
@@ -10801,7 +10791,6 @@ _MiUpdateLargePageBitMap@20
 _MiUpdateLargePagePfns@12
 _MiUpdateLargePageSectionPfn@16
 _MiUpdateLastSubsectionSize@12
-_MiUpdateLinkedListInPte@16
 _MiUpdateMirrorBitmaps@0
 _MiUpdateOldPagesEPTCallback@20
 _MiUpdateOldPte@12
@@ -10853,7 +10842,6 @@ _MiVadPureReserve@4
 _MiValidCombineProtection@4
 _MiValidFault@12
 _MiValidVirtualizationFault@12
-_MiValidateAllocationType@8
 _MiValidateExistingImage@4
 _MiValidateExportSuppressedUserCallTarget@8
 _MiValidateImagePfn@32
@@ -10902,8 +10890,6 @@ _MiWriteProtectSystemImages@0
 _MiWritePteShadow@12
 _MiWriteSharedDemandZeroPte@20
 _MiWriteTopLevelPxe@12
-_MiWriteUselessChildPte@4
-_MiWriteValidPteNewProtection@16
 _MiWriteValidPteVolatile@12
 _MiWsSwapPageFileNumber@4
 _MiWsleFlush@16
@@ -11000,7 +10986,6 @@ _MmCreateTeb@20
 _MmDbgCopyMemory@24
 _MmDbgMarkPfnModifiedWorker@0
 _MmDeleteKernelStack@8
-_MmDeletePartition@4
 _MmDeleteProcessAddressSpace@4
 _MmDeleteProcessor@4
 _MmDeleteShadowMapping@8
@@ -11057,7 +11042,6 @@ _MmGetFileObjectForSection@4
 _MmGetHighestPhysicalPage@4
 _MmGetImageBase@12
 _MmGetImageFileSignatureInformation@4
-_MmGetImageSectionBasedAddress@4
 _MmGetIoSessionState@8
 _MmGetLowestPhysicalPage@4
 _MmGetMaximumFileSectionSize@0
@@ -11290,7 +11274,6 @@ _MmUnmapViewInSystemCache@12
 _MmUnmapViewInSystemSpace@4
 _MmUnmapViewOfSection@8
 _MmUnsecureVirtualMemory@4
-_MmUpdateHiberMappings@8
 _MmUpdateMdlTracker@12
 _MmUpdateMdlTrackerForMdlSwitch@8
 _MmUpdateOldWorkingSetPages@12
@@ -12931,10 +12914,12 @@ _PiSwDeviceOperationsAllowed@4
 _PiSwDispatch@8
 _PiSwDoesCreateChangesRequireReEnum@8
 _PiSwFindBusRelations@4
+_PiSwFindChildren@4
 _PiSwFindPdoAssociation@12
 _PiSwFindSwDevice@4
 _PiSwFreeGenericTableEntry@8
 _PiSwFreeInterfaceList@4
+_PiSwFreePdoAssociationsList@4
 _PiSwGetChildPdo@8
 _PiSwInit@0
 _PiSwInstanceInfoFree@4
@@ -13672,7 +13657,6 @@ _PoInitDriverServices@0
 _PoInitHiberServices@4
 _PoInitSystem@8
 _PoInitializeBroadcast@4
-_PoInitializePdc@4
 _PoInitializeStopWatch@8
 _PoInitiateProcessorWake@4
 _PoIsArmedStopWatchCollection@4
@@ -13743,7 +13727,6 @@ _PoUnregisterSystemState@4
 _PoUserShutdownCancelled@0
 _PoUserShutdownInitiated@0
 _PoVolumeDevice@4
-_PointerEncode@8
 _PopAccountBatteryEnergyChange@4
 _PopAccountCbEnergyChange@0
 _PopAccumulateNonActivatedCpuTime@12
@@ -13805,7 +13788,6 @@ _PopBatteryQueryEstimatedTime@8
 _PopBatteryQueryStatus@8
 _PopBatteryQueueWork@4
 _PopBatteryReadTag@4
-_PopBatteryRefreshStatus@0
 _PopBatteryRemove@4
 _PopBatteryTracePercentageRemaining@16
 _PopBatteryTraceSystemBatteryStatus@4
@@ -13917,8 +13899,6 @@ _PopConsoleSessionActiveInput@12
 _PopConsoleSessionPassiveInput@12
 _PopControlMonitor@8
 _PopCoolingExtensionPnpNotification@8
-_PopCoolingInit@0
-_PopCoolingInitializeWnfEvents@0
 _PopCoolingTelemetryWorker@0
 _PopCopyWakeSource@12
 _PopCountDataAsProduced@24
@@ -14041,6 +14021,8 @@ _PopDiagTraceFxComponentRegistration@28
 _PopDiagTraceFxComponentWake@12
 _PopDiagTraceFxDefaultPepWorkerEnd@20
 _PopDiagTraceFxDeviceAccounting@24
+_PopDiagTraceFxDeviceDirectedCompletion@8
+_PopDiagTraceFxDeviceDirectedTransition@8
 _PopDiagTraceFxDeviceIdleConstraints@12
 _PopDiagTraceFxDevicePowerRequirement@12
 _PopDiagTraceFxDevicePowerState@8
@@ -14144,7 +14126,6 @@ _PopDirectedDripsAcquireTransitionLock@4
 _PopDirectedDripsBuildBroadcastTree@8
 _PopDirectedDripsBuildPs4BroadcastTree@12
 _PopDirectedDripsClearDisengageReason@4
-_PopDirectedDripsCompletePdcLpeNotificationRequest@4
 _PopDirectedDripsDiagCreateBlockerEntryBoolean@12
 _PopDirectedDripsDiagCreateBlockerEntryULong@12
 _PopDirectedDripsDiagCreateDeviceDiagnostic@8
@@ -14308,7 +14289,6 @@ _PopEtStringSet@8
 _PopEvaluateAggressiveStandbyActions@4
 _PopEvaluateGlobalUserStatus@0
 _PopEvaluateInputSuppressionAction@0
-_PopEvaluateInputSuppressionRequired@0
 _PopEventCalloutDispatch@8
 _PopExecuteOnTargetProcessors@16
 _PopExecutePowerAction@20
@@ -14321,7 +14301,6 @@ _PopExtendConnectionState@4
 _PopExternalMonitorUpdatedWorker@4
 _PopFanAdd@4
 _PopFanEndCsFanPeriod@0
-_PopFanInit@0
 _PopFanIrpComplete@12
 _PopFanRemove@4
 _PopFanReportBootStartDevices@0
@@ -14529,7 +14508,6 @@ _PopHardDiskPowerSettingCallback@16
 _PopHiberCheckForDebugBreak@0
 _PopHiberCheckResume@0
 _PopHiberChecksumHiberFileData@24
-_PopHiberComplete@8
 _PopHiberEarlyCleanup@4
 _PopHiberEvaluateSkippingMemoryMapValidation@0
 _PopHiberInitializeResources@4
@@ -14546,15 +14524,14 @@ _PopIdleInitAoAcDozeS4Timer@0
 _PopIdleTriggerAdaptiveStandbyAction@4
 _PopIgnoreBatteryStatusChange@0
 _PopIncrementPowerSettingPendingUpdates@4
-_PopInitModernSleepEnabledActions@0
 _PopInitPlatformSettings@0
 _PopInitSIdle@4
+_PopInitSIdleUpdateNotificationWorker@0
 _PopInitShutdownList@0
 _PopInitSystemSleeperThread@8
 _PopInitVideoWnfState@0
 _PopInitializeAdpm@0
 _PopInitializeDirectedDrips@0
-_PopInitializeDripsWatchdog@0
 _PopInitializeHeteroProcessors@4
 _PopInitializeHighPerfPowerRequest@0
 _PopInitializeIRTimer@28
@@ -14668,13 +14645,10 @@ _PopOrphanCoolingExtension@4
 _PopPausePowerRequestStats@4
 _PopPdcCallback@4
 _PopPdcCompleteResiliencyCallback@8
-_PopPdcCsCheckSystemVolumeDevice@0
 _PopPdcCsDeviceNotification@4
-_PopPdcDeepIoCoalescingCallback@8
 _PopPdcEngagePhases@8
 _PopPdcIdleResiliencyCallback@8
 _PopPdcInvocation@8
-_PopPdcIoCoalescingCallback@8
 _PopPdcQueryActivationStats@4
 _PopPdcRegister@8
 _PopPdcUpdateDeviceCompliance@0
@@ -14777,7 +14751,6 @@ _PopPluginRequestPowerControl@28
 _PopPluginResetSocSubsystemAccounting@8
 _PopPluginUnregisterDevice@8
 _PopPoCoalescingCallback@12
-_PopPolicyDeviceInit@0
 _PopPolicyDeviceRemove@4
 _PopPolicyDeviceTargetChange@8
 _PopPolicySystemIdle@0
@@ -14868,7 +14841,6 @@ _PopQueueQuerySetIrp@4
 _PopQueueTargetDpc@8
 _PopQueueWorkItem@8
 _PopReadErrataDeviceAllowedForInputSuppression@0
-_PopReadErrataForIncorrectLidNotification@0
 _PopReadErrataSkipHibernateMemoryMapValidation@0
 _PopReadErrataSkipMemoryOverwriteRequestControlLockAction@0
 _PopReadHiberbootGroupPolicy@4
@@ -14935,7 +14907,6 @@ _PopRunMaximumIrpWorkers@0
 _PopRunNormalIrpWorkers@0
 _PopRundownPowerSettings@0
 _PopRundownThermalRequests@0
-_PopRwLockInitialize@4
 _PopS0LowPowerIdleInfo@4
 _PopSIdleUpdateNotificationWorker@4
 _PopSafeCopyUnicodeString@16
@@ -14957,7 +14928,6 @@ _PopSessionDisconnected@8
 _PopSessionInputChange@12
 _PopSessionWinlogonNotification@8
 _PopSetAwayModeStatus@4
-_PopSetBatteryDischargingState@8
 _PopSetBootPhaseRange@16
 _PopSetCleanShutdownMarker@0
 _PopSetConnectedStandbyMarker@8
@@ -14987,7 +14957,6 @@ _PopSetSystemShutdownMarker@0
 _PopSetSystemState@8
 _PopSetUserShutdownMarkerWorker@4
 _PopSetWatchdog@12
-_PopSetWeakChargerState@8
 _PopSetWin32kDisplayTimeout@8
 _PopSetWin32kInputTimeout@8
 _PopSetupAirplaneModeNotification@0
@@ -14995,7 +14964,6 @@ _PopSetupAudioEventNotification@0
 _PopSetupBluetoothChargingNotification@0
 _PopSetupFullScrenVideoNotification@0
 _PopSetupHighPerfPowerRequest@0
-_PopSetupKsrCallbacks@0
 _PopSetupMixedRealitytNotification@0
 _PopSetupSleepNotifies@4
 _PopSetupSprActiveSessionChangeNotification@0
@@ -15093,7 +15061,6 @@ _PopTraceThermalZonePassiveHistogram@4
 _PopTraceZoneCr3Mitigated@8
 _PopTraceZoneCr3Tripped@8
 _PopTransitionCheckpoint@8
-_PopTransitionCheckpointInit@0
 _PopTransitionSystemPowerStateEx@4
 _PopTransitionTelemetryOsState@8
 _PopTransitionToSleep@4
@@ -15163,7 +15130,6 @@ _PopWakeSourceSize@4
 _PopWakeSourceTimeoutDpc@16
 _PopWakeSourceTimeoutWorker@4
 _PopWatchdogDpc@16
-_PopWatchdogInit@0
 _PopWatchdogWorker@4
 _PopWdiTimerCallback@16
 _PopWdiTimerWorkerThread@4
@@ -15943,6 +15909,8 @@ _PspComputeReportWakeFilter@16
 _PspControlHwTracingThread@8
 _PspConvertJobLimitViolationToV1@8
 _PspConvertJobLimitViolationToV2@8
+_PspConvertJobNotificationLimitFromV1@8
+_PspConvertJobNotificationLimitFromV2@8
 _PspConvertJobNotificationLimitToV1@8
 _PspConvertJobNotificationLimitToV2@8
 _PspConvertSiloToServerSilo@12
@@ -15970,7 +15938,6 @@ _PspDeleteSiloContext@4
 _PspDeleteThreadSecurity@4
 _PspDeleteUserStack@16
 _PspDereferenceQuotaBlock@4
-_PspDetachSession@8
 _PspDfssConfigurationChangeHandler@4
 _PspDisablePrimaryTokenExchange@4
 _PspDispatchWakeNotification@12
@@ -16004,7 +15971,6 @@ _PspFreezeJobTree@8
 _PspFreezeProcessWorker@8
 _PspGenerateObjectAccessState@16
 _PspGetBaseTrapFrame@8
-_PspGetContext@12
 _PspGetContextThreadInternal@20
 _PspGetEffectiveNoWakeCharge@12
 _PspGetFreezeState@4
@@ -16054,7 +16020,6 @@ _PspInitializeJobStructures@0
 _PspInitializeMMCSSCallouts@0
 _PspInitializeNetRateControl@0
 _PspInitializeOctagonExtensionHost@0
-_PspInitializeProcessLock@4
 _PspInitializeProcessSecurity@56
 _PspInitializeProtectedProcessParameters@4
 _PspInitializeQuotaBlock@12
@@ -16180,7 +16145,6 @@ _PspRateControlLimitFlag@4
 _PspReadDfssConfigurationValues@0
 _PspReadIFEOMitigationAuditOptions@8
 _PspReadIFEOMitigationOptions@8
-_PspReadIFEONodeOptions@12
 _PspReadIFEOPerfOptions@8
 _PspReadOptionsMapFromIFEO@16
 _PspReadUserQuotaLimits@12
@@ -16266,7 +16230,6 @@ _PspSetQuotaLimits@16
 _PspSetRateControlJobPreCallback@8
 _PspSetRateControlProcessCallback@8
 _PspSetThreadPpmPolicy@8
-_PspSetupReservedUserMappings@12
 _PspSetupUserProcessAddressSpace@16
 _PspSetupUserStack@20
 _PspShutdownCsrProcess@12
@@ -16281,7 +16244,6 @@ _PspSiloInitializeSystemRootSymlink@4
 _PspSiloInitializeUserSharedData@4
 _PspSiloLoadApiSets@4
 _PspSinglePrivCheck@16
-_PspSinglePrivCheckAudit@12
 _PspSortHandleList
 _PspStorageAllocSlot@4
 _PspStorageEmptyAll@4
@@ -16823,6 +16785,7 @@ _RtlIsSandboxedToken@8
 _RtlIsServicePackVersionInstalled@4
 _RtlIsStateSeparationEnabled@0
 _RtlIsUntrustedObject@12
+_RtlIsValidHandler@12
 _RtlIsValidOemCharacter@4
 _RtlIsValidProcessTrustLabelSid@4
 _RtlLCIDToCultureName@8
@@ -16964,6 +16927,7 @@ _RtlSizeTAdd@12
 _RtlSparseArrayElementAllocate@12
 _RtlSparseArrayElementAllocated@8
 _RtlSparseArrayElementFindCapped@12
+_RtlSparseArrayStart@20
 _RtlSplay@4
 _RtlStackTraceHashFunction@8
 _RtlStateDurationAdd@8
@@ -17065,6 +17029,7 @@ _RtlUnicodeToMultiByteSize@12
 _RtlUnicodeToOemN@20
 _RtlUnicodeToUTF8N@20
 _RtlUnlockBootStatusData@4
+_RtlUnsignedMultiplyHigh@16
 _RtlUnwind@16
 _RtlUpcaseUnicodeChar@4
 _RtlUpcaseUnicodeString@12
@@ -17126,7 +17091,6 @@ _RtlpCaptureStackLimits@12
 _RtlpCheckDynamicTimeZoneInformation@8
 _RtlpCoalesceFreeBlocks@16
 _RtlpCombineAcls@32
-_RtlpCompareAces@16
 _RtlpCompareKnownAces@16
 _RtlpCompareKnownObjectAces@16
 _RtlpCompressRvaList@28
@@ -17258,6 +17222,7 @@ _RtlpHpFreeWithExceptionProtection@12
 _RtlpHpGetOwnerHeap@12
 _RtlpHpHeapAllocate@16
 _RtlpHpHeapCheckCommitLimit@16
+_RtlpHpHeapCompact@8
 _RtlpHpHeapCreate@20
 _RtlpHpHeapDestroy@4
 _RtlpHpHeapExtendContext@8
@@ -17266,7 +17231,6 @@ _RtlpHpLargeAlloc@16
 _RtlpHpLargeAllocGetMetadata@8
 _RtlpHpLargeAllocSetExtraPresent@12
 _RtlpHpLargeAllocSize@16
-_RtlpHpLargeAllocSizeInternal@12
 _RtlpHpLargeAllocationDestroy@8
 _RtlpHpLargeFree@12
 _RtlpHpLegacyGetEnvHandle@0
@@ -17281,18 +17245,16 @@ _RtlpHpLfhBucketUpdateAffinityMapping@8
 _RtlpHpLfhBucketUpdateStats@12
 _RtlpHpLfhContextAllocate@16
 _RtlpHpLfhContextCleanup@4
+_RtlpHpLfhContextCompact@8
 _RtlpHpLfhContextInitialize@28
-_RtlpHpLfhContextUpdateFreeCommitCount@8
+_RtlpHpLfhContextMaximumExtension@4
 _RtlpHpLfhOwnerCleanup@8
+_RtlpHpLfhOwnerCompact@12
 _RtlpHpLfhOwnerInitialize@16
 _RtlpHpLfhOwnerMoveSubsegment@12
-_RtlpHpLfhSlotAddSubsegment@8
 _RtlpHpLfhSlotAllocate@20
-_RtlpHpLfhSlotReserveBlock@16
-_RtlpHpLfhSubsegmentAllocateBlock@16
 _RtlpHpLfhSubsegmentCommitBlock@12
 _RtlpHpLfhSubsegmentComputeCommitUnit@8
-_RtlpHpLfhSubsegmentCountEmptyUnits@4
 _RtlpHpLfhSubsegmentCreate@12
 _RtlpHpLfhSubsegmentDecBlockCounts@20
 _RtlpHpLfhSubsegmentDecommitPages@20
@@ -17301,15 +17263,11 @@ _RtlpHpLfhSubsegmentFree@16
 _RtlpHpLfhSubsegmentFreeBlock@16
 _RtlpHpLfhSubsegmentIncBlockCounts@28
 _RtlpHpLfhSubsegmentInitialize@20
-_RtlpHpLfhSubsegmentLockOwner@12
-_RtlpHpLfhSubsegmentReserveBlock@20
 _RtlpHpLfhSubsegmentSetExtraPresentBlock@12
-_RtlpHpLfhSubsegmentSetOwner@8
-_RtlpHpLfhSubsegmentSetUnusedBytes@12
 _RtlpHpLfhSubsegmentSizeBlock@16
 _RtlpHpLfhSubsegmentSizeBlockInternal@16
 _RtlpHpMetadataAlloc@20
-_RtlpHpMetadataCommit@20
+_RtlpHpMetadataCommit@24
 _RtlpHpMetadataFree@12
 _RtlpHpMetadataHeapCreate@12
 _RtlpHpMetadataHeapCtxGet@8
@@ -17317,9 +17275,11 @@ _RtlpHpMetadataHeapStart@12
 _RtlpHpQueryContext@12
 _RtlpHpQueryVA@20
 _RtlpHpRegisterEnvironment@8
-_RtlpHpReleaseLockExclusive@12
+_RtlpHpReleaseLockShared@12
+_RtlpHpScheduleCompaction@4
 _RtlpHpSegAlloc@20
 _RtlpHpSegContextCleanup@4
+_RtlpHpSegContextCompact@8
 _RtlpHpSegContextInitialize@36
 _RtlpHpSegContextReserve@12
 _RtlpHpSegDescriptorValidate@8
@@ -17328,24 +17288,23 @@ _RtlpHpSegFreeRangeInsert@12
 _RtlpHpSegFreeRangeRemove@8
 _RtlpHpSegGetOwner@8
 _RtlpHpSegHeapAddSegment@8
-_RtlpHpSegHeapCheckCommitLimit@8
+_RtlpHpSegHeapRemoveSegment@8
 _RtlpHpSegLargeRangeAllocate@16
 _RtlpHpSegLfhAllocate@20
 _RtlpHpSegLfhExtendContext@8
 _RtlpHpSegLfhVsCommit@12
 _RtlpHpSegLfhVsDecommit@12
 _RtlpHpSegLfhVsFree@16
+_RtlpHpSegLockAcquire@8
+_RtlpHpSegLockRelease@12
 _RtlpHpSegMgrAllocate@12
 _RtlpHpSegMgrApplyLargePagePolicy@4
 _RtlpHpSegMgrCheckOpportunisticLargePage@12
 _RtlpHpSegMgrCommit@28
 _RtlpHpSegMgrCommitComplete@24
 _RtlpHpSegMgrCommitInitiate@24
-_RtlpHpSegMgrLock@4
 _RtlpHpSegMgrRelease@12
 _RtlpHpSegMgrReserve@20
-_RtlpHpSegMgrUnlock@8
-_RtlpHpSegMgrVaCtxAlloc@12
 _RtlpHpSegMgrVaCtxFree@12
 _RtlpHpSegMgrVaCtxInitialize@16
 _RtlpHpSegMgrVaCtxInsert@8
@@ -17370,7 +17329,6 @@ _RtlpHpSizeHeap@12
 _RtlpHpSizeHeapInternal@16
 _RtlpHpVaMgrAlloc@12
 _RtlpHpVaMgrAllocAligned@12
-_RtlpHpVaMgrCtxAlloc@16
 _RtlpHpVaMgrCtxAllocatorCompare@12
 _RtlpHpVaMgrCtxAllocatorDereference@8
 _RtlpHpVaMgrCtxAllocatorFind@16
@@ -17395,7 +17353,6 @@ _RtlpHpVsChunkComputeCost@16
 _RtlpHpVsChunkDecommit@20
 _RtlpHpVsChunkFree@20
 _RtlpHpVsChunkSetExtraPresent@12
-_RtlpHpVsChunkSetUnusedBytes@16
 _RtlpHpVsChunkSize@16
 _RtlpHpVsChunkSplit@24
 _RtlpHpVsContextAddSubsegment@8
@@ -17404,7 +17361,6 @@ _RtlpHpVsContextFree@20
 _RtlpHpVsContextInitialize@24
 _RtlpHpVsFreeChunkInsert@12
 _RtlpHpVsFreeChunkRemove@12
-_RtlpHpVsIsPageAlignedUserAddr@8
 _RtlpHpVsSubsegmentCleanup@8
 _RtlpHpVsSubsegmentCommitPages@24
 _RtlpHpVsSubsegmentComputeSize@12
@@ -17438,9 +17394,7 @@ _RtlpIsNameInExpressionPrivate@20
 _RtlpIsRangeAvailable@44
 _RtlpIsValidExceptionChain@16
 _RtlpLangNameInMultiSzString@8
-_RtlpLfhBlockBitmapAllocate@20
 _RtlpLfhBucketUsageUpdate@12
-_RtlpLfhIncrementDataSlot@0
 _RtlpLoadInstallLanguageFallback@12
 _RtlpLoadLanguageConfigList@12
 _RtlpLoadPolicyLanguageSpec@16
@@ -17916,7 +17870,7 @@ _SeUnregisterLogonSessionTerminatedRoutineEx@8
 _SeValidSecurityDescriptor@8
 _SeValidateFileAsImageType@12
 _SeValidateImageData@28
-_SeValidateImageHeader@44
+_SeValidateImageHeader@56
 _SeValidateSecurityQos@4
 _SecureDump_EncryptSymmetricKeyWithPublicKey@0
 _SecureDump_Encrypt_DmpData@28
@@ -18135,6 +18089,7 @@ _SepIsMinTCB@28
 _SepIsNgenImage@4
 _SepIsOptionPresent@8
 _SepIsPackageSid@4
+_SepIsParentOfChildAppContainer@12
 _SepIsRemovableStorageDevice@4
 _SepIsSiblingTokenByPointer@8
 _SepIsSidEqual@8
@@ -18452,6 +18407,7 @@ _SmStoreSetProcessVaRanges@8
 _SmSwapStore@4
 _SmUniqueIdParseProductName@12
 _SmUpdateMemoryCondition@8
+_SmUpdateStoreContext@16
 _SmWaitForSyncIo@4
 _SmWorkItemQueue@12
 _SmWorkQueueGetDepth@8
@@ -18491,6 +18447,7 @@ _SmpFpWaitForResource@12
 _SmpKeyedStoreCreate@12
 _SmpKeyedStoreDeleteInitiate@12
 _SmpKeyedStoreEntryGet@16
+_SmpKeyedStoreReference@16
 _SmpKeyedStoreSetVaRanges@16
 _SmpPageWrite@28
 _SmpProcessQueryStoreStats@8
@@ -18577,7 +18534,6 @@ _TmSinglePhaseReject@8
 _TmThawTransactions@0
 _TraceDataRecordCallInfo@12
 _TraceLoggingProviderEnabled@16
-_TraceLoggingRegister@4
 _TraceLoggingRegisterEx@12
 _TraceLoggingUnregister@4
 _TraitsCompare@8
@@ -19830,6 +19786,7 @@ _ViFilterGenericCompletionRoutine@12
 _ViFilterIsDeviceExcluded@4
 _ViFilterRemoveNotificationCompletion@12
 _ViFilterStartCompletionRoutine@12
+_ViFilterYieldInitialization@4
 _ViFindMappedRegisterInFile@12
 _ViFindTriageDriverTargets@8
 _ViFindTriageRule@12
@@ -21091,13 +21048,11 @@ __CmGetDeviceMappedPropertyFromInstanceKeyRegValue@32
 __CmGetDeviceMappedPropertyFromRegProp@36
 __CmGetDeviceMappedPropertyKeys@28
 __CmGetDeviceMappedPropertyLocales@28
-__CmGetDevicePanelEdge@4
 __CmGetDevicePanelGroup@4
 __CmGetDevicePanelMappedProperty@36
 __CmGetDevicePanelMappedPropertyKeys@28
 __CmGetDevicePanelMappedPropertyLocales@28
 __CmGetDevicePanelRegKeyPath@32
-__CmGetDevicePanelSide@4
 __CmGetDeviceParent@16
 __CmGetDeviceRegKeyPath@32
 __CmGetDeviceRegKeySecurityDescriptor@12
@@ -21214,6 +21169,7 @@ __MapCmRelationTypeToNtRelationType@4
 __NLG_Call
 __NLG_Notify
 __NLG_Notify1
+__NtPlugPlayGetDeviceInterfaceEnabled@16
 __NtPlugPlayGetDeviceProperty@28
 __NtPlugPlayGetDeviceRelatedDevice@28
 __NtPlugPlayGetDeviceRelationsList@28
@@ -21325,14 +21281,12 @@ __RegRtlDeleteTreeInternal@16
 __RegRtlEnumKey@16
 __RegRtlEnumKeyWithCallback@12
 __RegRtlEnumValue@28
-__RegRtlGetKeySecurity@16
 __RegRtlIsPredefinedKey@4
 __RegRtlOpenKeyTransacted@24
 __RegRtlOpenPredefinedKey@8
 __RegRtlQueryInfoKey@24
 __RegRtlQueryKeyPathName@12
 __RegRtlQueryValue@20
-__RegRtlSetKeySecurity@12
 __RegRtlSetValue@20
 __RtlEnlargedIntegerMultiply@8
 __RtlEnlargedUnsignedDivide@16

@@ -509,9 +509,10 @@ typedef struct _MI_SECTION_STATE
   /* 0x0288 */ unsigned long RetpolineStubPages;
   /* 0x0290 */ struct _RTL_BITMAP_EX KernelRetpolineBitMap;
   /* 0x02a0 */ struct _RTL_RETPOLINE_ROUTINES RetpolineRoutines;
-  /* 0x02ec */ unsigned long ImageChecksumBreakpoint;
-  /* 0x02f0 */ unsigned long ImageSizeBreakpoint;
-  /* 0x02f4 */ volatile long ImageValidationFailed;
-  /* 0x02f8 */ long __PADDING__[2];
-} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0300 */
+  /* 0x02f0 */ struct _MMPTE* RetpolineRevertPte;
+  /* 0x02f8 */ unsigned long ImageChecksumBreakpoint;
+  /* 0x02fc */ unsigned long ImageSizeBreakpoint;
+  /* 0x0300 */ volatile long ImageValidationFailed;
+  /* 0x0304 */ long __PADDING__[15];
+} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0340 */
 

@@ -166,8 +166,7 @@ typedef struct _TEB64
   /* 0x179c */ unsigned long IsImpersonating;
   /* 0x17a0 */ unsigned __int64 NlsCache;
   /* 0x17a8 */ unsigned __int64 pShimData;
-  /* 0x17b0 */ unsigned short HeapVirtualAffinity;
-  /* 0x17b2 */ unsigned short LowFragHeapDataSlot;
+  /* 0x17b0 */ unsigned long HeapData;
   /* 0x17b4 */ unsigned char Padding7[4];
   /* 0x17b8 */ unsigned __int64 CurrentTransactionHandle;
   /* 0x17c0 */ unsigned __int64 ActiveFrame;

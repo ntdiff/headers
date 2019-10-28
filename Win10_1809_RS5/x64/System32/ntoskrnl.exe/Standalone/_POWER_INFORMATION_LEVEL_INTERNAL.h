@@ -50,6 +50,7 @@ typedef enum _POWER_INFORMATION_LEVEL_INTERNAL
   PowerInternalProcessorIdleVeto = 47,
   PowerInternalPlatformIdleVeto = 48,
   PowerInternalIsLongPowerButtonBugcheckEnabled = 49,
-  PowerInformationInternalMaximum = 50,
+  PowerInternalAutoChkCausedReboot = 50,
+  PowerInformationInternalMaximum = 51,
 } POWER_INFORMATION_LEVEL_INTERNAL, *PPOWER_INFORMATION_LEVEL_INTERNAL;
 

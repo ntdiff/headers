@@ -3,6 +3,34 @@ struct RTL_HP_ENV_HANDLE
   /* 0x0000 */ void* h[2];
 }; /* size: 0x0008 */
 
+typedef struct _RTL_HEAP_MEMORY_LIMIT_DATA
+{
+  /* 0x0000 */ unsigned long CommitLimitBytes;
+  /* 0x0004 */ unsigned long CommitLimitFailureCode;
+  /* 0x0008 */ unsigned long MaxAllocationSizeBytes;
+  /* 0x000c */ unsigned long AllocationLimitFailureCode;
+} RTL_HEAP_MEMORY_LIMIT_DATA, *PRTL_HEAP_MEMORY_LIMIT_DATA; /* size: 0x0010 */
+
+typedef struct _RTL_RB_TREE
+{
+  /* 0x0000 */ struct _RTL_BALANCED_NODE* Root;
+  union
+  {
+    /* 0x0004 */ unsigned char Encoded : 1; /* bit position: 0 */
+    /* 0x0004 */ struct _RTL_BALANCED_NODE* Min;
+  }; /* size: 0x0004 */
+} RTL_RB_TREE, *PRTL_RB_TREE; /* size: 0x0008 */
+
+typedef union _RTL_RUN_ONCE
+{
+  union
+  {
+    /* 0x0000 */ void* Ptr;
+    /* 0x0000 */ unsigned long Value;
+    /* 0x0000 */ unsigned long State : 2; /* bit position: 0 */
+  }; /* size: 0x0004 */
+} RTL_RUN_ONCE, *PRTL_RUN_ONCE; /* size: 0x0004 */
+
 typedef struct _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS
 {
   /* 0x0000 */ volatile unsigned long SmallPagesInUseWithinLarge;
@@ -26,16 +54,6 @@ typedef struct _HEAP_RUNTIME_MEMORY_STATS
   /* 0x0010 */ struct _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS LargePageStats[2];
   /* 0x0020 */ struct _RTL_HP_SEG_ALLOC_POLICY LargePageUtilizationPolicy;
 } HEAP_RUNTIME_MEMORY_STATS, *PHEAP_RUNTIME_MEMORY_STATS; /* size: 0x002c */
-
-typedef struct _RTL_RB_TREE
-{
-  /* 0x0000 */ struct _RTL_BALANCED_NODE* Root;
-  union
-  {
-    /* 0x0004 */ unsigned char Encoded : 1; /* bit position: 0 */
-    /* 0x0004 */ struct _RTL_BALANCED_NODE* Min;
-  }; /* size: 0x0004 */
-} RTL_RB_TREE, *PRTL_RB_TREE; /* size: 0x0008 */
 
 typedef struct _LIST_ENTRY
 {
@@ -70,37 +88,20 @@ typedef struct _HEAP_SEG_CONTEXT
     }; /* size: 0x0001 */
   } /* size: 0x0001 */ Flags;
   /* 0x000c */ unsigned long MaxAllocationSize;
-  /* 0x0010 */ unsigned long SegmentLock;
-  /* 0x0014 */ struct _LIST_ENTRY SegmentListHead;
-  /* 0x001c */ unsigned long SegmentCount;
-  /* 0x0020 */ struct _RTL_RB_TREE FreePageRanges;
-  /* 0x0028 */ unsigned long FreeSegmentListLock;
-  /* 0x002c */ struct _SINGLE_LIST_ENTRY FreeSegmentList[2];
-  /* 0x0034 */ struct _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS* OlpStats;
-  /* 0x0038 */ struct _HEAP_RUNTIME_MEMORY_STATS* MemStats;
-  /* 0x003c */ void* LfhContext;
-  /* 0x0040 */ void* VsContext;
-  /* 0x0044 */ struct RTL_HP_ENV_HANDLE EnvHandle;
-  /* 0x004c */ void* Heap;
-} HEAP_SEG_CONTEXT, *PHEAP_SEG_CONTEXT; /* size: 0x0050 */
-
-typedef union _RTL_RUN_ONCE
-{
-  union
-  {
-    /* 0x0000 */ void* Ptr;
-    /* 0x0000 */ unsigned long Value;
-    /* 0x0000 */ unsigned long State : 2; /* bit position: 0 */
-  }; /* size: 0x0004 */
-} RTL_RUN_ONCE, *PRTL_RUN_ONCE; /* size: 0x0004 */
-
-typedef struct _RTL_HEAP_MEMORY_LIMIT_DATA
-{
-  /* 0x0000 */ unsigned long CommitLimitBytes;
-  /* 0x0004 */ unsigned long CommitLimitFailureCode;
-  /* 0x0008 */ unsigned long MaxAllocationSizeBytes;
-  /* 0x000c */ unsigned long AllocationLimitFailureCode;
-} RTL_HEAP_MEMORY_LIMIT_DATA, *PRTL_HEAP_MEMORY_LIMIT_DATA; /* size: 0x0010 */
+  /* 0x0010 */ short OlpStatsOffset;
+  /* 0x0012 */ short MemStatsOffset;
+  /* 0x0014 */ void* LfhContext;
+  /* 0x0018 */ void* VsContext;
+  /* 0x001c */ struct RTL_HP_ENV_HANDLE EnvHandle;
+  /* 0x0024 */ void* Heap;
+  /* 0x0040 */ unsigned long SegmentLock;
+  /* 0x0044 */ struct _LIST_ENTRY SegmentListHead;
+  /* 0x004c */ unsigned long SegmentCount;
+  /* 0x0050 */ struct _RTL_RB_TREE FreePageRanges;
+  /* 0x0058 */ unsigned long FreeSegmentListLock;
+  /* 0x005c */ struct _SINGLE_LIST_ENTRY FreeSegmentList[2];
+  /* 0x0064 */ long __PADDING__[7];
+} HEAP_SEG_CONTEXT, *PHEAP_SEG_CONTEXT; /* size: 0x0080 */
 
 typedef enum _RTLP_HP_LOCK_TYPE
 {
@@ -146,13 +147,9 @@ typedef struct _HEAP_VS_CONTEXT
 
 typedef struct _RTL_HP_LFH_CONFIG
 {
-  /* 0x0000 */ unsigned long MaxBlockSize;
-  /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct
-  {
-    /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
-  } /* size: 0x0004 */ Flags;
-} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x000c */
+  /* 0x0000 */ unsigned short MaxBlockSize;
+  /* 0x0002 */ unsigned short MaxSubsegmentPages;
+} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x0004 */
 
 typedef struct _HEAP_LFH_SUBSEGMENT_STAT
 {
@@ -173,39 +170,40 @@ typedef struct _HEAP_LFH_CONTEXT
 {
   /* 0x0000 */ void* BackendCtx;
   /* 0x0004 */ struct _HEAP_SUBALLOCATOR_CALLBACKS Callbacks;
-  /* 0x0018 */ unsigned char MaxAffinity;
-  /* 0x001c */ const unsigned char* AffinityModArray;
-  /* 0x0020 */ unsigned char LockType;
-  /* 0x0024 */ struct _HEAP_RUNTIME_MEMORY_STATS* MemStats;
-  /* 0x0028 */ struct _RTL_HP_LFH_CONFIG Config;
-  /* 0x0034 */ unsigned long SubsegmentCreationLock;
-  /* 0x0038 */ union _HEAP_LFH_SUBSEGMENT_STATS BucketStats;
-  /* 0x003c */ struct _HEAP_LFH_BUCKET* Buckets[129];
-} HEAP_LFH_CONTEXT, *PHEAP_LFH_CONTEXT; /* size: 0x0240 */
+  /* 0x0018 */ const unsigned char* AffinityModArray;
+  /* 0x001c */ unsigned char MaxAffinity;
+  /* 0x001d */ unsigned char LockType;
+  /* 0x001e */ short MemStatsOffset;
+  /* 0x0020 */ struct _RTL_HP_LFH_CONFIG Config;
+  /* 0x0040 */ union _HEAP_LFH_SUBSEGMENT_STATS BucketStats;
+  /* 0x0044 */ unsigned long SubsegmentCreationLock;
+  /* 0x0080 */ struct _HEAP_LFH_BUCKET* Buckets[129];
+  /* 0x0284 */ long __PADDING__[15];
+} HEAP_LFH_CONTEXT, *PHEAP_LFH_CONTEXT; /* size: 0x02c0 */
 
 typedef struct _SEGMENT_HEAP
 {
   /* 0x0000 */ struct RTL_HP_ENV_HANDLE EnvHandle;
   /* 0x0008 */ unsigned long Signature;
   /* 0x000c */ unsigned long GlobalFlags;
-  /* 0x0010 */ struct _HEAP_RUNTIME_MEMORY_STATS MemStats;
-  /* 0x003c */ unsigned long Interceptor;
-  /* 0x0040 */ unsigned short ProcessHeapListIndex;
-  /* 0x0042 */ unsigned short GlobalLockCount;
-  /* 0x0044 */ unsigned long GlobalLockOwner;
-  /* 0x0048 */ unsigned long AllocatedFromMetadata : 1; /* bit position: 0 */
-  /* 0x004c */ unsigned long LargeMetadataLock;
-  /* 0x0050 */ struct _RTL_RB_TREE LargeAllocMetadata;
-  /* 0x0058 */ volatile unsigned long LargeReservedPages;
-  /* 0x005c */ volatile unsigned long LargeCommittedPages;
-  /* 0x0060 */ struct _HEAP_SEG_CONTEXT SegContexts[2];
-  /* 0x0100 */ union _RTL_RUN_ONCE StackTraceInitVar;
-  /* 0x0104 */ struct _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
-  /* 0x0114 */ unsigned long ContextExtendLock;
-  /* 0x0118 */ unsigned char* AllocatedBase;
-  /* 0x011c */ unsigned char* UncommittedBase;
-  /* 0x0120 */ unsigned char* ReservedLimit;
-  /* 0x0124 */ struct _HEAP_VS_CONTEXT VsContext;
-  /* 0x0164 */ struct _HEAP_LFH_CONTEXT LfhContext;
-} SEGMENT_HEAP, *PSEGMENT_HEAP; /* size: 0x03a4 */
+  /* 0x0010 */ unsigned long Interceptor;
+  /* 0x0014 */ unsigned short ProcessHeapListIndex;
+  /* 0x0016 */ unsigned short AllocatedFromMetadata : 1; /* bit position: 0 */
+  /* 0x0018 */ struct _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
+  /* 0x0040 */ unsigned long LargeMetadataLock;
+  /* 0x0044 */ struct _RTL_RB_TREE LargeAllocMetadata;
+  /* 0x004c */ volatile unsigned long LargeReservedPages;
+  /* 0x0050 */ volatile unsigned long LargeCommittedPages;
+  /* 0x0054 */ union _RTL_RUN_ONCE StackTraceInitVar;
+  /* 0x0080 */ struct _HEAP_RUNTIME_MEMORY_STATS MemStats;
+  /* 0x00ac */ unsigned short GlobalLockCount;
+  /* 0x00b0 */ unsigned long GlobalLockOwner;
+  /* 0x00b4 */ unsigned long ContextExtendLock;
+  /* 0x00b8 */ unsigned char* AllocatedBase;
+  /* 0x00bc */ unsigned char* UncommittedBase;
+  /* 0x00c0 */ unsigned char* ReservedLimit;
+  /* 0x0100 */ struct _HEAP_SEG_CONTEXT SegContexts[2];
+  /* 0x0200 */ struct _HEAP_VS_CONTEXT VsContext;
+  /* 0x0240 */ struct _HEAP_LFH_CONTEXT LfhContext;
+} SEGMENT_HEAP, *PSEGMENT_HEAP; /* size: 0x0500 */
 

@@ -5402,6 +5402,7 @@ HalpIrtAllocateIndex
 HalpIrtFreeIndex
 HalpIsCmciImplemented
 HalpIsEFIRuntimeActive
+HalpIsHeap64KRegionExecutable
 HalpIsHvPresent
 HalpIsHvUsedForReboot
 HalpIsInterruptTypeSecondary

@@ -813,7 +813,7 @@ _HalpInterruptUnmaskLevelTriggeredLines@0
 _HalpInterruptUpdateLinesPostSwap@20
 _HalpInterruptUpdateLocalUnitIdentifier@16
 _HalpInterruptVectorDataToGsiv@8
-_HalpInterruptWaitForProcessorStartUp@4
+_HalpInterruptWaitForProcessorStartUp@8
 _HalpInvokeIsrForGsiv@12
 _HalpIommuAcquireNewDomain@8
 _HalpIommuAllocateAndZeroPageTable@12
@@ -831,7 +831,6 @@ _HalpIommuCreateDmarPageTable@28
 _HalpIommuDeleteDevice@4
 _HalpIommuDereferenceHardwareDomain@8
 _HalpIommuDetermineReservedPciRid@4
-_HalpIommuDomainMapLogicalRange@32
 _HalpIommuDomainUnmapLogicalRange@16
 _HalpIommuEnableInterrupts@0
 _HalpIommuExtMarkHiberMemory@12
@@ -877,6 +876,7 @@ _HalpIommuUpdateReservedRegion@8
 _HalpIrtAllocateIndex@20
 _HalpIrtFreeIndex@12
 _HalpIsEFIRuntimeActive@0
+_HalpIsHeap64KRegionExecutable@4
 _HalpIsHvPresent@0
 _HalpIsHvUsedForReboot@0
 _HalpIsInterruptTypeSecondary@8

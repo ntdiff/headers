@@ -627,6 +627,7 @@ LdrpMergeNodes
 LdrpMergeParentBaseLanguagesToList
 LdrpMinimalMapModule
 LdrpMultiSZCchLength
+LdrpNameToOrdinal
 LdrpNotifyLoadOfGraph
 LdrpObtainLockedEnclave
 LdrpOverrideExportSuppression
@@ -675,7 +676,6 @@ LdrpResValidateFilePath
 LdrpResolveDelayLoadDescriptor
 LdrpResolveDelayloadAddress
 LdrpResolveDllName
-LdrpResolveForwarder
 LdrpResolveProcedureAddress
 LdrpSearchPath
 LdrpSearchResourceSection_U
@@ -702,7 +702,6 @@ LdrpUnmapModule
 LdrpUnsuppressAddressTakenIat
 LdrpUpdateStatistics
 LdrpValidateEntrySection
-LdrpValidateImportRedirectionDll
 LdrpValidateIntegrityContinuity
 LdrpValidateUserCallTarget
 LdrpValidateUserCallTargetES
@@ -2610,7 +2609,6 @@ RtlpHeapTrkLeakCallback
 RtlpHpAllocVA
 RtlpHpAllocWithExceptionProtection
 RtlpHpAllocateHeap
-RtlpHpAllocateHeapBackend
 RtlpHpAllocateHeapInternal
 RtlpHpAppCompatDontChangePolicy
 RtlpHpAppCompatEnablePaddingAndLFHSubsegmentCommit
@@ -2654,14 +2652,15 @@ RtlpHpLargeFree
 RtlpHpLargeReAlloc
 RtlpHpLfhBucketActivate
 RtlpHpLfhBucketAddSubsegment
+RtlpHpLfhBucketAllocateSlot
 RtlpHpLfhBucketInitialize
 RtlpHpLfhBucketSubsegmentStatsUpdate
 RtlpHpLfhBucketUpdateAffinityMapping
 RtlpHpLfhBucketUpdateStats
 RtlpHpLfhContextCleanup
+RtlpHpLfhContextCompact
 RtlpHpLfhContextInitialize
 RtlpHpLfhContextLockUnlock
-RtlpHpLfhContextUpdateFreeCommitCount
 RtlpHpLfhOwnerCleanup
 RtlpHpLfhOwnerCompact
 RtlpHpLfhOwnerInitialize
@@ -2680,7 +2679,6 @@ RtlpHpLfhSubsegmentFreeBlock
 RtlpHpLfhSubsegmentIncBlockCounts
 RtlpHpLfhSubsegmentInitialize
 RtlpHpLfhSubsegmentSetOwner
-RtlpHpLfhSubsegmentSetUnusedBytes
 RtlpHpLfhSubsegmentSizeBlockInternal
 RtlpHpLfhSubsegmentWalk
 RtlpHpMetadataAlloc
@@ -2727,7 +2725,6 @@ RtlpHpSegMgrCommitComplete
 RtlpHpSegMgrCommitInitiate
 RtlpHpSegMgrRelease
 RtlpHpSegMgrReserve
-RtlpHpSegMgrVaCtxAlloc
 RtlpHpSegMgrVaCtxFree
 RtlpHpSegMgrVaCtxInitialize
 RtlpHpSegMgrVaCtxInsert
@@ -2745,7 +2742,6 @@ RtlpHpSegReportBusyBlock
 RtlpHpSegReportPageRange
 RtlpHpSegReportSegment
 RtlpHpSegSegmentAllocate
-RtlpHpSegSegmentComputeCommit
 RtlpHpSegSegmentFree
 RtlpHpSegSegmentInitialize
 RtlpHpSegSetExtraPresent
@@ -2821,7 +2817,6 @@ RtlpHpVsContextFree
 RtlpHpVsContextInitialize
 RtlpHpVsFreeChunkInsert
 RtlpHpVsFreeChunkRemove
-RtlpHpVsIsPageAlignedUserAddr
 RtlpHpVsSubsegmentCleanup
 RtlpHpVsSubsegmentCommitPages
 RtlpHpVsSubsegmentCreate
@@ -3492,7 +3487,6 @@ TppWorkPost
 TppWorkUnposted
 TppWorkWait
 TppWorkerFindTask
-TppWorkerSwitchNode
 TppWorkerThread
 TppWorkerpInnerExceptionFilter
 TppWorkerpOuterExceptionFilter

@@ -8468,11 +8468,6 @@
             "value": "Standalone/_MACHINE_CHECK_NESTING_LEVEL"
         },
         {
-            "key": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE",
-            "text": "_HEAP_SEGMENT_MGR_COMMIT_STATE",
-            "value": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE"
-        },
-        {
             "key": "Standalone/_MACHINE_FRAME",
             "text": "_MACHINE_FRAME",
             "value": "Standalone/_MACHINE_FRAME"
@@ -8488,6 +8483,11 @@
             "value": "Standalone/_HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS"
         },
         {
+            "key": "Standalone/_RTL_HP_SEG_ALLOC_POLICY",
+            "text": "_RTL_HP_SEG_ALLOC_POLICY",
+            "value": "Standalone/_RTL_HP_SEG_ALLOC_POLICY"
+        },
+        {
             "key": "Standalone/_LEAP_SECOND_DATA",
             "text": "_LEAP_SECOND_DATA",
             "value": "Standalone/_LEAP_SECOND_DATA"
@@ -8498,9 +8498,109 @@
             "value": "Standalone/_RTL_HEAP_MEMORY_LIMIT_DATA"
         },
         {
-            "key": "Standalone/_RTL_HP_SEG_ALLOC_POLICY",
-            "text": "_RTL_HP_SEG_ALLOC_POLICY",
-            "value": "Standalone/_RTL_HP_SEG_ALLOC_POLICY"
+            "key": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE",
+            "text": "_HEAP_SEGMENT_MGR_COMMIT_STATE",
+            "value": "Standalone/_HEAP_SEGMENT_MGR_COMMIT_STATE"
+        },
+        {
+            "key": "Standalone/_PO_DIRECTED_DRIPS_STATE",
+            "text": "_PO_DIRECTED_DRIPS_STATE",
+            "value": "Standalone/_PO_DIRECTED_DRIPS_STATE"
+        },
+        {
+            "key": "Standalone/wil_details_ServiceReportingKind",
+            "text": "wil_details_ServiceReportingKind",
+            "value": "Standalone/wil_details_ServiceReportingKind"
+        },
+        {
+            "key": "Standalone/wil_details_CachedFeatureEnabledState",
+            "text": "wil_details_CachedFeatureEnabledState",
+            "value": "Standalone/wil_details_CachedFeatureEnabledState"
+        },
+        {
+            "key": "Standalone/wil_details_CachedHasNotificationState",
+            "text": "wil_details_CachedHasNotificationState",
+            "value": "Standalone/wil_details_CachedHasNotificationState"
+        },
+        {
+            "key": "Standalone/wil_ReportingKind",
+            "text": "wil_ReportingKind",
+            "value": "Standalone/wil_ReportingKind"
+        },
+        {
+            "key": "Standalone/wil_VariantReportingKind",
+            "text": "wil_VariantReportingKind",
+            "value": "Standalone/wil_VariantReportingKind"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledStateOptions",
+            "text": "wil_FeatureEnabledStateOptions",
+            "value": "Standalone/wil_FeatureEnabledStateOptions"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledStateKind",
+            "text": "wil_FeatureEnabledStateKind",
+            "value": "Standalone/wil_FeatureEnabledStateKind"
+        },
+        {
+            "key": "Standalone/wil_FeatureEnabledState",
+            "text": "wil_FeatureEnabledState",
+            "value": "Standalone/wil_FeatureEnabledState"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigFeatureFields",
+            "text": "wil_details_StagingConfigFeatureFields",
+            "value": "Standalone/wil_details_StagingConfigFeatureFields"
+        },
+        {
+            "key": "Standalone/wil_FeatureStore",
+            "text": "wil_FeatureStore",
+            "value": "Standalone/wil_FeatureStore"
+        },
+        {
+            "key": "Standalone/wil_FeatureChangeTime",
+            "text": "wil_FeatureChangeTime",
+            "value": "Standalone/wil_FeatureChangeTime"
+        },
+        {
+            "key": "Standalone/wil_FeatureVariantPayloadKind",
+            "text": "wil_FeatureVariantPayloadKind",
+            "value": "Standalone/wil_FeatureVariantPayloadKind"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureTestStateKind",
+            "text": "wil_details_FeatureTestStateKind",
+            "value": "Standalone/wil_details_FeatureTestStateKind"
+        },
+        {
+            "key": "Standalone/wil_details_ServiceReportingOptions",
+            "text": "wil_details_ServiceReportingOptions",
+            "value": "Standalone/wil_details_ServiceReportingOptions"
+        },
+        {
+            "key": "Standalone/wil_UsageReportingMode",
+            "text": "wil_UsageReportingMode",
+            "value": "Standalone/wil_UsageReportingMode"
+        },
+        {
+            "key": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
+            "text": "_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
+            "value": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON"
+        },
+        {
+            "key": "Standalone/FEATURE_CHANGE_TIME",
+            "text": "FEATURE_CHANGE_TIME",
+            "value": "Standalone/FEATURE_CHANGE_TIME"
+        },
+        {
+            "key": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
+            "text": "_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
+            "value": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI"
+        },
+        {
+            "key": "Standalone/wil_FeatureStage",
+            "text": "wil_FeatureStage",
+            "value": "Standalone/wil_FeatureStage"
         },
         {
             "key": "Standalone/_MI_SLAB_ALLOCATOR_PROTECTION",
@@ -8513,19 +8613,19 @@
             "value": "Standalone/_MI_SLAB_ALLOCATOR_CONTEXT"
         },
         {
-            "key": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
-            "text": "_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON",
-            "value": "Standalone/_POP_DIRECTED_DRIPS_PROBLEM_DEVICE_REASON"
+            "key": "Standalone/_FAULT_INFORMATION_ARM64_TYPE",
+            "text": "_FAULT_INFORMATION_ARM64_TYPE",
+            "value": "Standalone/_FAULT_INFORMATION_ARM64_TYPE"
         },
         {
-            "key": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
-            "text": "_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI",
-            "value": "Standalone/_POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI"
+            "key": "Standalone/FEATURE_ENABLED_STATE",
+            "text": "FEATURE_ENABLED_STATE",
+            "value": "Standalone/FEATURE_ENABLED_STATE"
         },
         {
-            "key": "Standalone/_PO_DIRECTED_DRIPS_STATE",
-            "text": "_PO_DIRECTED_DRIPS_STATE",
-            "value": "Standalone/_PO_DIRECTED_DRIPS_STATE"
+            "key": "Standalone/_WNF_TYPE_ID",
+            "text": "_WNF_TYPE_ID",
+            "value": "Standalone/_WNF_TYPE_ID"
         },
         {
             "key": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON",
@@ -8533,19 +8633,14 @@
             "value": "Standalone/_POP_DEEP_SLEEP_DISENGAGE_REASON"
         },
         {
-            "key": "Standalone/_FAULT_INFORMATION_ARCH",
-            "text": "_FAULT_INFORMATION_ARCH",
-            "value": "Standalone/_FAULT_INFORMATION_ARCH"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_ARM64_TYPE",
-            "text": "_FAULT_INFORMATION_ARM64_TYPE",
-            "value": "Standalone/_FAULT_INFORMATION_ARM64_TYPE"
-        },
-        {
             "key": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING",
             "text": "_POP_FX_ACTIVE_TIME_ACCOUNTING",
             "value": "Standalone/_POP_FX_ACTIVE_TIME_ACCOUNTING"
+        },
+        {
+            "key": "Standalone/_RTL_RETPOLINE_ROUTINES",
+            "text": "_RTL_RETPOLINE_ROUTINES",
+            "value": "Standalone/_RTL_RETPOLINE_ROUTINES"
         },
         {
             "key": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD",
@@ -8553,19 +8648,89 @@
             "value": "Standalone/_MI_HUGE_SYSTEM_VIEW_HEAD"
         },
         {
+            "key": "Standalone/_FAULT_INFORMATION_ARCH",
+            "text": "_FAULT_INFORMATION_ARCH",
+            "value": "Standalone/_FAULT_INFORMATION_ARCH"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigFeature",
+            "text": "wil_details_StagingConfigFeature",
+            "value": "Standalone/wil_details_StagingConfigFeature"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigWnfStateName",
+            "text": "wil_details_StagingConfigWnfStateName",
+            "value": "Standalone/wil_details_StagingConfigWnfStateName"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigUsageTrigger",
+            "text": "wil_details_StagingConfigUsageTrigger",
+            "value": "Standalone/wil_details_StagingConfigUsageTrigger"
+        },
+        {
+            "key": "Standalone/wil_details_RecordUsageResult",
+            "text": "wil_details_RecordUsageResult",
+            "value": "Standalone/wil_details_RecordUsageResult"
+        },
+        {
+            "key": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__",
+            "text": "FEATURE_STATE_CHANGE_SUBSCRIPTION__",
+            "value": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__"
+        },
+        {
+            "key": "Standalone/wil_StagingConfig",
+            "text": "wil_StagingConfig",
+            "value": "Standalone/wil_StagingConfig"
+        },
+        {
+            "key": "Standalone/__WIL__WNF_TYPE_ID",
+            "text": "__WIL__WNF_TYPE_ID",
+            "value": "Standalone/__WIL__WNF_TYPE_ID"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigHeaderProperties",
+            "text": "wil_details_StagingConfigHeaderProperties",
+            "value": "Standalone/wil_details_StagingConfigHeaderProperties"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureProperties",
+            "text": "wil_details_FeatureProperties",
+            "value": "Standalone/wil_details_FeatureProperties"
+        },
+        {
+            "key": "Standalone/wil_details_VariantProperties",
+            "text": "wil_details_VariantProperties",
+            "value": "Standalone/wil_details_VariantProperties"
+        },
+        {
+            "key": "Standalone/wil_details_FeaturePropertyCache",
+            "text": "wil_details_FeaturePropertyCache",
+            "value": "Standalone/wil_details_FeaturePropertyCache"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureVariantPropertyCache",
+            "text": "wil_details_FeatureVariantPropertyCache",
+            "value": "Standalone/wil_details_FeatureVariantPropertyCache"
+        },
+        {
+            "key": "Standalone/FEATURE_ERROR",
+            "text": "FEATURE_ERROR",
+            "value": "Standalone/FEATURE_ERROR"
+        },
+        {
             "key": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT",
             "text": "_ETW_EVENT_CALLBACK_CONTEXT",
             "value": "Standalone/_ETW_EVENT_CALLBACK_CONTEXT"
         },
         {
-            "key": "Standalone/_KIST_LINK_FRAME",
-            "text": "_KIST_LINK_FRAME",
-            "value": "Standalone/_KIST_LINK_FRAME"
+            "key": "Standalone/__WIL__WNF_STATE_NAME",
+            "text": "__WIL__WNF_STATE_NAME",
+            "value": "Standalone/__WIL__WNF_STATE_NAME"
         },
         {
-            "key": "Standalone/_KIST_BASE_FRAME",
-            "text": "_KIST_BASE_FRAME",
-            "value": "Standalone/_KIST_BASE_FRAME"
+            "key": "Standalone/_wil_details_UsageSubscriptionData",
+            "text": "_wil_details_UsageSubscriptionData",
+            "value": "Standalone/_wil_details_UsageSubscriptionData"
         },
         {
             "key": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY",
@@ -8573,9 +8738,64 @@
             "value": "Standalone/_MI_SLAB_ALLOCATOR_ENTRY"
         },
         {
+            "key": "Standalone/FEATURE_LOGGED_TRAITS",
+            "text": "FEATURE_LOGGED_TRAITS",
+            "value": "Standalone/FEATURE_LOGGED_TRAITS"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfig",
+            "text": "wil_details_StagingConfig",
+            "value": "Standalone/wil_details_StagingConfig"
+        },
+        {
+            "key": "Standalone/wil_details_SetPropertyFlagContext",
+            "text": "wil_details_SetPropertyFlagContext",
+            "value": "Standalone/wil_details_SetPropertyFlagContext"
+        },
+        {
+            "key": "Standalone/wil_details_SetPropertyCacheUsageContext",
+            "text": "wil_details_SetPropertyCacheUsageContext",
+            "value": "Standalone/wil_details_SetPropertyCacheUsageContext"
+        },
+        {
+            "key": "Standalone/wil_details_StagingConfigHeader",
+            "text": "wil_details_StagingConfigHeader",
+            "value": "Standalone/wil_details_StagingConfigHeader"
+        },
+        {
+            "key": "Standalone/wil_FeatureState",
+            "text": "wil_FeatureState",
+            "value": "Standalone/wil_FeatureState"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureTestState",
+            "text": "wil_details_FeatureTestState",
+            "value": "Standalone/wil_details_FeatureTestState"
+        },
+        {
+            "key": "Standalone/_KIST_BASE_FRAME",
+            "text": "_KIST_BASE_FRAME",
+            "value": "Standalone/_KIST_BASE_FRAME"
+        },
+        {
+            "key": "Standalone/_KIST_LINK_FRAME",
+            "text": "_KIST_LINK_FRAME",
+            "value": "Standalone/_KIST_LINK_FRAME"
+        },
+        {
+            "key": "Standalone/__WIL__WNF_USER_SUBSCRIPTION",
+            "text": "__WIL__WNF_USER_SUBSCRIPTION",
+            "value": "Standalone/__WIL__WNF_USER_SUBSCRIPTION"
+        },
+        {
             "key": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS",
             "text": "_FAULT_INFORMATION_ARM64_FLAGS",
             "value": "Standalone/_FAULT_INFORMATION_ARM64_FLAGS"
+        },
+        {
+            "key": "Standalone/_DEVICE_FAULT_CONFIGURATION",
+            "text": "_DEVICE_FAULT_CONFIGURATION",
+            "value": "Standalone/_DEVICE_FAULT_CONFIGURATION"
         },
         {
             "key": "Standalone/_FAULT_INFORMATION_ARM64",
@@ -8588,19 +8808,9 @@
             "value": "Standalone/_FAULT_INFORMATION"
         },
         {
-            "key": "Standalone/_DEVICE_FAULT_CONFIGURATION",
-            "text": "_DEVICE_FAULT_CONFIGURATION",
-            "value": "Standalone/_DEVICE_FAULT_CONFIGURATION"
-        },
-        {
-            "key": "Standalone/_RTL_RETPOLINE_ROUTINES",
-            "text": "_RTL_RETPOLINE_ROUTINES",
-            "value": "Standalone/_RTL_RETPOLINE_ROUTINES"
-        },
-        {
-            "key": "Standalone/_MI_IMAGE_LOAD_CONFIG",
-            "text": "_MI_IMAGE_LOAD_CONFIG",
-            "value": "Standalone/_MI_IMAGE_LOAD_CONFIG"
+            "key": "Standalone/_RTL_RETPOLINE_BINARY_INFO",
+            "text": "_RTL_RETPOLINE_BINARY_INFO",
+            "value": "Standalone/_RTL_RETPOLINE_BINARY_INFO"
         },
         {
             "key": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
@@ -8608,9 +8818,9 @@
             "value": "Standalone/_IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
         },
         {
-            "key": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "text": "_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
-            "value": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
+            "key": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION",
+            "text": "_MI_RETPOLINE_RELOCATION_INFORMATION",
+            "value": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION"
         },
         {
             "key": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION",
@@ -8618,24 +8828,24 @@
             "value": "Standalone/_IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION"
         },
         {
-            "key": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX",
-            "text": "_RTL_RETPOLINE_RELOCATION_INDEX",
-            "value": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX"
-        },
-        {
             "key": "Standalone/_RTL_RVA_LIST",
             "text": "_RTL_RVA_LIST",
             "value": "Standalone/_RTL_RVA_LIST"
         },
         {
-            "key": "Standalone/_RTL_RETPOLINE_BINARY_INFO",
-            "text": "_RTL_RETPOLINE_BINARY_INFO",
-            "value": "Standalone/_RTL_RETPOLINE_BINARY_INFO"
+            "key": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "text": "_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION",
+            "value": "Standalone/_IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION"
         },
         {
-            "key": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION",
-            "text": "_MI_RETPOLINE_RELOCATION_INFORMATION",
-            "value": "Standalone/_MI_RETPOLINE_RELOCATION_INFORMATION"
+            "key": "Standalone/_MI_IMAGE_LOAD_CONFIG",
+            "text": "_MI_IMAGE_LOAD_CONFIG",
+            "value": "Standalone/_MI_IMAGE_LOAD_CONFIG"
+        },
+        {
+            "key": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX",
+            "text": "_RTL_RETPOLINE_RELOCATION_INDEX",
+            "value": "Standalone/_RTL_RETPOLINE_RELOCATION_INDEX"
         },
         {
             "key": "Standalone/_HALP_EMERGENCY_LA_QUEUE_TYPE",
@@ -8718,81 +8928,6 @@
             "value": "Standalone/_RTLP_HP_QUEUE_LOCK_HANDLE"
         },
         {
-            "key": "Standalone/wil_details_ServiceReportingKind",
-            "text": "wil_details_ServiceReportingKind",
-            "value": "Standalone/wil_details_ServiceReportingKind"
-        },
-        {
-            "key": "Standalone/wil_details_CachedFeatureEnabledState",
-            "text": "wil_details_CachedFeatureEnabledState",
-            "value": "Standalone/wil_details_CachedFeatureEnabledState"
-        },
-        {
-            "key": "Standalone/wil_details_CachedHasNotificationState",
-            "text": "wil_details_CachedHasNotificationState",
-            "value": "Standalone/wil_details_CachedHasNotificationState"
-        },
-        {
-            "key": "Standalone/wil_ReportingKind",
-            "text": "wil_ReportingKind",
-            "value": "Standalone/wil_ReportingKind"
-        },
-        {
-            "key": "Standalone/wil_VariantReportingKind",
-            "text": "wil_VariantReportingKind",
-            "value": "Standalone/wil_VariantReportingKind"
-        },
-        {
-            "key": "Standalone/wil_FeatureEnabledStateOptions",
-            "text": "wil_FeatureEnabledStateOptions",
-            "value": "Standalone/wil_FeatureEnabledStateOptions"
-        },
-        {
-            "key": "Standalone/wil_FeatureEnabledStateKind",
-            "text": "wil_FeatureEnabledStateKind",
-            "value": "Standalone/wil_FeatureEnabledStateKind"
-        },
-        {
-            "key": "Standalone/wil_FeatureEnabledState",
-            "text": "wil_FeatureEnabledState",
-            "value": "Standalone/wil_FeatureEnabledState"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigFeatureFields",
-            "text": "wil_details_StagingConfigFeatureFields",
-            "value": "Standalone/wil_details_StagingConfigFeatureFields"
-        },
-        {
-            "key": "Standalone/wil_FeatureStore",
-            "text": "wil_FeatureStore",
-            "value": "Standalone/wil_FeatureStore"
-        },
-        {
-            "key": "Standalone/wil_FeatureChangeTime",
-            "text": "wil_FeatureChangeTime",
-            "value": "Standalone/wil_FeatureChangeTime"
-        },
-        {
-            "key": "Standalone/wil_FeatureVariantPayloadKind",
-            "text": "wil_FeatureVariantPayloadKind",
-            "value": "Standalone/wil_FeatureVariantPayloadKind"
-        },
-        {
-            "key": "Standalone/wil_details_FeatureTestStateKind",
-            "text": "wil_details_FeatureTestStateKind",
-            "value": "Standalone/wil_details_FeatureTestStateKind"
-        },
-        {
-            "key": "Standalone/wil_details_ServiceReportingOptions",
-            "text": "wil_details_ServiceReportingOptions",
-            "value": "Standalone/wil_details_ServiceReportingOptions"
-        },
-        {
-            "key": "Standalone/wil_UsageReportingMode",
-            "text": "wil_UsageReportingMode",
-            "value": "Standalone/wil_UsageReportingMode"
-        },
-        {
             "key": "Standalone/_WHEA_ERROR_SOURCE_CONFIGURATION_DD",
             "text": "_WHEA_ERROR_SOURCE_CONFIGURATION_DD",
             "value": "Standalone/_WHEA_ERROR_SOURCE_CONFIGURATION_DD"
@@ -8823,11 +8958,6 @@
             "value": "Standalone/_WNF_SUBSCRIPTION_STATE"
         },
         {
-            "key": "Standalone/FEATURE_CHANGE_TIME",
-            "text": "FEATURE_CHANGE_TIME",
-            "value": "Standalone/FEATURE_CHANGE_TIME"
-        },
-        {
             "key": "Standalone/_EX_HEAP_TYPE",
             "text": "_EX_HEAP_TYPE",
             "value": "Standalone/_EX_HEAP_TYPE"
@@ -8853,26 +8983,6 @@
             "value": "Standalone/_EX_HEAP_POOL_NODE"
         },
         {
-            "key": "Standalone/wil_details_FeatureTestState",
-            "text": "wil_details_FeatureTestState",
-            "value": "Standalone/wil_details_FeatureTestState"
-        },
-        {
-            "key": "Standalone/wil_FeatureStage",
-            "text": "wil_FeatureStage",
-            "value": "Standalone/wil_FeatureStage"
-        },
-        {
-            "key": "Standalone/wil_StagingConfig",
-            "text": "wil_StagingConfig",
-            "value": "Standalone/wil_StagingConfig"
-        },
-        {
-            "key": "Standalone/FEATURE_ENABLED_STATE",
-            "text": "FEATURE_ENABLED_STATE",
-            "value": "Standalone/FEATURE_ENABLED_STATE"
-        },
-        {
             "key": "Standalone/_POP_SYSTEM_IDLE_EVENT_TYPE",
             "text": "_POP_SYSTEM_IDLE_EVENT_TYPE",
             "value": "Standalone/_POP_SYSTEM_IDLE_EVENT_TYPE"
@@ -8881,16 +8991,6 @@
             "key": "Standalone/_MM_SHARED_VAD_FLAGS",
             "text": "_MM_SHARED_VAD_FLAGS",
             "value": "Standalone/_MM_SHARED_VAD_FLAGS"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigHeaderProperties",
-            "text": "wil_details_StagingConfigHeaderProperties",
-            "value": "Standalone/wil_details_StagingConfigHeaderProperties"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigHeader",
-            "text": "wil_details_StagingConfigHeader",
-            "value": "Standalone/wil_details_StagingConfigHeader"
         },
         {
             "key": "Standalone/_WNF_NODE_HEADER",
@@ -8928,21 +9028,6 @@
             "value": "Standalone/_MI_SECTION_WOW_STATE"
         },
         {
-            "key": "Standalone/wil_details_FeatureProperties",
-            "text": "wil_details_FeatureProperties",
-            "value": "Standalone/wil_details_FeatureProperties"
-        },
-        {
-            "key": "Standalone/wil_details_VariantProperties",
-            "text": "wil_details_VariantProperties",
-            "value": "Standalone/wil_details_VariantProperties"
-        },
-        {
-            "key": "Standalone/wil_details_FeaturePropertyCache",
-            "text": "wil_details_FeaturePropertyCache",
-            "value": "Standalone/wil_details_FeaturePropertyCache"
-        },
-        {
             "key": "Standalone/_WNF_SCOPE_MAP_ENTRY",
             "text": "_WNF_SCOPE_MAP_ENTRY",
             "value": "Standalone/_WNF_SCOPE_MAP_ENTRY"
@@ -8956,21 +9041,6 @@
             "key": "Standalone/_MM_GRAPHICS_VAD_FLAGS",
             "text": "_MM_GRAPHICS_VAD_FLAGS",
             "value": "Standalone/_MM_GRAPHICS_VAD_FLAGS"
-        },
-        {
-            "key": "Standalone/__WIL__WNF_STATE_NAME",
-            "text": "__WIL__WNF_STATE_NAME",
-            "value": "Standalone/__WIL__WNF_STATE_NAME"
-        },
-        {
-            "key": "Standalone/wil_details_FeatureVariantPropertyCache",
-            "text": "wil_details_FeatureVariantPropertyCache",
-            "value": "Standalone/wil_details_FeatureVariantPropertyCache"
-        },
-        {
-            "key": "Standalone/FEATURE_ERROR",
-            "text": "FEATURE_ERROR",
-            "value": "Standalone/FEATURE_ERROR"
         },
         {
             "key": "Standalone/_POP_FX_DEVICE_DIRECTED_TRANSITION_STATE",
@@ -8988,29 +9058,9 @@
             "value": "Standalone/_POP_DEVICE_POWER_PROFILE"
         },
         {
-            "key": "Standalone/wil_details_RecordUsageResult",
-            "text": "wil_details_RecordUsageResult",
-            "value": "Standalone/wil_details_RecordUsageResult"
-        },
-        {
             "key": "Standalone/_MM_PRIVATE_VAD_FLAGS",
             "text": "_MM_PRIVATE_VAD_FLAGS",
             "value": "Standalone/_MM_PRIVATE_VAD_FLAGS"
-        },
-        {
-            "key": "Standalone/_WNF_TYPE_ID",
-            "text": "_WNF_TYPE_ID",
-            "value": "Standalone/_WNF_TYPE_ID"
-        },
-        {
-            "key": "Standalone/FEATURE_LOGGED_TRAITS",
-            "text": "FEATURE_LOGGED_TRAITS",
-            "value": "Standalone/FEATURE_LOGGED_TRAITS"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfig",
-            "text": "wil_details_StagingConfig",
-            "value": "Standalone/wil_details_StagingConfig"
         },
         {
             "key": "Standalone/_POP_COMPONENT_POWER_PROFILE",
@@ -9038,41 +9088,6 @@
             "value": "Standalone/_WNF_NAME_INSTANCE"
         },
         {
-            "key": "Standalone/wil_details_SetPropertyFlagContext",
-            "text": "wil_details_SetPropertyFlagContext",
-            "value": "Standalone/wil_details_SetPropertyFlagContext"
-        },
-        {
-            "key": "Standalone/wil_details_SetPropertyCacheUsageContext",
-            "text": "wil_details_SetPropertyCacheUsageContext",
-            "value": "Standalone/wil_details_SetPropertyCacheUsageContext"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigFeature",
-            "text": "wil_details_StagingConfigFeature",
-            "value": "Standalone/wil_details_StagingConfigFeature"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigWnfStateName",
-            "text": "wil_details_StagingConfigWnfStateName",
-            "value": "Standalone/wil_details_StagingConfigWnfStateName"
-        },
-        {
-            "key": "Standalone/wil_details_StagingConfigUsageTrigger",
-            "text": "wil_details_StagingConfigUsageTrigger",
-            "value": "Standalone/wil_details_StagingConfigUsageTrigger"
-        },
-        {
-            "key": "Standalone/wil_FeatureState",
-            "text": "wil_FeatureState",
-            "value": "Standalone/wil_FeatureState"
-        },
-        {
-            "key": "Standalone/_wil_details_UsageSubscriptionData",
-            "text": "_wil_details_UsageSubscriptionData",
-            "value": "Standalone/_wil_details_UsageSubscriptionData"
-        },
-        {
             "key": "Standalone/_MI_LARGEPAGE_VAD_INFO",
             "text": "_MI_LARGEPAGE_VAD_INFO",
             "value": "Standalone/_MI_LARGEPAGE_VAD_INFO"
@@ -9081,16 +9096,6 @@
             "key": "Standalone/_WNF_SUBSCRIPTION",
             "text": "_WNF_SUBSCRIPTION",
             "value": "Standalone/_WNF_SUBSCRIPTION"
-        },
-        {
-            "key": "Standalone/__WIL__WNF_USER_SUBSCRIPTION",
-            "text": "__WIL__WNF_USER_SUBSCRIPTION",
-            "value": "Standalone/__WIL__WNF_USER_SUBSCRIPTION"
-        },
-        {
-            "key": "Standalone/__WIL__WNF_TYPE_ID",
-            "text": "__WIL__WNF_TYPE_ID",
-            "value": "Standalone/__WIL__WNF_TYPE_ID"
         },
         {
             "key": "Standalone/_WNF_DELIVERY_DESCRIPTOR",
@@ -9131,11 +9136,6 @@
             "key": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE",
             "text": "_HIDDEN_PROCESSOR_POWER_INTERFACE",
             "value": "Standalone/_HIDDEN_PROCESSOR_POWER_INTERFACE"
-        },
-        {
-            "key": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__",
-            "text": "FEATURE_STATE_CHANGE_SUBSCRIPTION__",
-            "value": "Standalone/FEATURE_STATE_CHANGE_SUBSCRIPTION__"
         },
         {
             "key": "Standalone/_MI_NODE_NUMBER_ZERO_BASED",
@@ -10201,66 +10201,6 @@
             "key": "Standalone/_PO_MEMORY_RANGE_TABLE",
             "text": "_PO_MEMORY_RANGE_TABLE",
             "value": "Standalone/_PO_MEMORY_RANGE_TABLE"
-        },
-        {
-            "key": "Standalone/_PF_SCENARIO_TYPE",
-            "text": "_PF_SCENARIO_TYPE",
-            "value": "Standalone/_PF_SCENARIO_TYPE"
-        },
-        {
-            "key": "Standalone/_MEMORY_TYPE",
-            "text": "_MEMORY_TYPE",
-            "value": "Standalone/_MEMORY_TYPE"
-        },
-        {
-            "key": "Standalone/_PS_QUOTA_TYPE",
-            "text": "_PS_QUOTA_TYPE",
-            "value": "Standalone/_PS_QUOTA_TYPE"
-        },
-        {
-            "key": "Standalone/PROCESSOR_PERF_STATE",
-            "text": "PROCESSOR_PERF_STATE",
-            "value": "Standalone/PROCESSOR_PERF_STATE"
-        },
-        {
-            "key": "Standalone/_IO_COUNTERS",
-            "text": "_IO_COUNTERS",
-            "value": "Standalone/_IO_COUNTERS"
-        },
-        {
-            "key": "Standalone/_PROCESS_WS_WATCH_INFORMATION",
-            "text": "_PROCESS_WS_WATCH_INFORMATION",
-            "value": "Standalone/_PROCESS_WS_WATCH_INFORMATION"
-        },
-        {
-            "key": "Standalone/_PS_JOB_TOKEN_FILTER",
-            "text": "_PS_JOB_TOKEN_FILTER",
-            "value": "Standalone/_PS_JOB_TOKEN_FILTER"
-        },
-        {
-            "key": "Standalone/_PS_IMPERSONATION_INFORMATION",
-            "text": "_PS_IMPERSONATION_INFORMATION",
-            "value": "Standalone/_PS_IMPERSONATION_INFORMATION"
-        },
-        {
-            "key": "Standalone/_EPROCESS_QUOTA_ENTRY",
-            "text": "_EPROCESS_QUOTA_ENTRY",
-            "value": "Standalone/_EPROCESS_QUOTA_ENTRY"
-        },
-        {
-            "key": "Standalone/_HEAP_UCR_SEGMENT",
-            "text": "_HEAP_UCR_SEGMENT",
-            "value": "Standalone/_HEAP_UCR_SEGMENT"
-        },
-        {
-            "key": "Standalone/_HEAP_UNCOMMMTTED_RANGE",
-            "text": "_HEAP_UNCOMMMTTED_RANGE",
-            "value": "Standalone/_HEAP_UNCOMMMTTED_RANGE"
-        },
-        {
-            "key": "Standalone/_Wx86ThreadState",
-            "text": "_Wx86ThreadState",
-            "value": "Standalone/_Wx86ThreadState"
         }
     ],
     "version": [
@@ -10326,12 +10266,12 @@
         },
         {
             "key": "Win10_1809_RS5/x64/System32",
-            "text": "Win10_1809_RS5-x64 (10.0.17741.1000)",
+            "text": "Win10_1809_RS5-x64 (10.0.17763.1)",
             "value": "Win10_1809_RS5/x64/System32"
         },
         {
             "key": "Win10_1809_RS5/x86/System32",
-            "text": "Win10_1809_RS5-x86 (10.0.17741.1000)",
+            "text": "Win10_1809_RS5-x86 (10.0.17763.1)",
             "value": "Win10_1809_RS5/x86/System32"
         },
         {
@@ -10588,16 +10528,6 @@
             "key": "WinVista_SP2/x86/System32",
             "text": "WinVista_SP2-x86 (6.0.6002.18005)",
             "value": "WinVista_SP2/x86/System32"
-        },
-        {
-            "key": "WinXP_SP2/x86/System32",
-            "text": "WinXP_SP2-x86 (5.1.2600.2180)",
-            "value": "WinXP_SP2/x86/System32"
-        },
-        {
-            "key": "WinXP_SP3/x86/System32",
-            "text": "WinXP_SP3-x86 (5.1.2600.5512)",
-            "value": "WinXP_SP3/x86/System32"
         }
     ]
 }

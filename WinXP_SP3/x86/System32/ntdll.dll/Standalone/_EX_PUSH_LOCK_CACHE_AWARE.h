@@ -1,5 +1,0 @@
-typedef struct _EX_PUSH_LOCK_CACHE_AWARE
-{
-  /* 0x0000 */ struct _EX_PUSH_LOCK* Locks[32];
-} EX_PUSH_LOCK_CACHE_AWARE, *PEX_PUSH_LOCK_CACHE_AWARE; /* size: 0x0080 */
-

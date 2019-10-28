@@ -928,8 +928,7 @@ typedef struct _ETHREAD
   /* 0x045c */ struct _EJOB* Silo;
   /* 0x0460 */ struct _UNICODE_STRING* ThreadName;
   /* 0x0464 */ unsigned long LastExpectedRunTime;
-  /* 0x0468 */ unsigned short HeapLfhPrivateData;
-  /* 0x046a */ unsigned short Unused;
+  /* 0x0468 */ unsigned long HeapData;
   /* 0x046c */ struct _LIST_ENTRY OwnerEntryListHead;
   /* 0x0474 */ unsigned long DisownedOwnerEntryListLock;
   /* 0x0478 */ struct _LIST_ENTRY DisownedOwnerEntryListHead;

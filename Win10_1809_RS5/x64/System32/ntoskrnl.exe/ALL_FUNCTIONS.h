@@ -88,7 +88,6 @@ $$f
 ?BTreeNewNode@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@KK@Z
 ?BTreeNodeFindKey@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
 ?BTreeNodeFindKey@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
-?BTreeNodeFindKey@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@T_SM_PAGE_KEY@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@@Z
@@ -143,6 +142,7 @@ $$f
 ?Initialize@SC_DISK@@UEAAJXZ
 ?Initialize@SC_MBR@@QEAAXPEAVSC_DISK@@@Z
 ?InitializePartitionCache@SC_DISK@@QEAAJXZ
+?IsEqualGUID@@YAHAEBU_GUID@@0@Z
 ?IsNeutralLanguageItem@@YAHPEBUCultureDataType@@@Z
 ?IsVbr@SC_DISK@@QEAAEXZ
 ?NpCleanup@NP_CONTEXT@@SAXPEAU1@K@Z
@@ -2873,9 +2873,9 @@ EtwTracePool
 EtwTracePriority
 EtwTraceProcess
 EtwTraceProcessTerminate
-EtwTracePsIoRateControl
 EtwTraceRaw
 EtwTraceReadyThread
+EtwTraceRetpolineExit
 EtwTraceShouldYieldProcessor
 EtwTraceSiloDcEvent
 EtwTraceSiloKernelEvent
@@ -3829,7 +3829,6 @@ ExShutdownSystem
 ExSizeOfAutoExpandPushLock
 ExSizeOfRundownProtectionCacheAware
 ExSlowReplenishHandleTableEntry
-ExSpinLockIsContended
 ExStartRecordingIRTimerExpiries
 ExStopRecordingIRTimerExpiries
 ExSubscribeWnfStateChange
@@ -4047,6 +4046,10 @@ ExpGetSystemWriteConstraintInformation
 ExpGetThreadResourceHint
 ExpGetUILanguagePolicy
 ExpGetVMActivationStatus
+ExpHeapGCInitialization
+ExpHpCompactSessionPools
+ExpHpCompactionRoutine
+ExpHpGCTimerCallback
 ExpHpIsSpecialPoolHeap
 ExpInitBootEntropyInformation
 ExpInitExpCheckTestSigningInfo
@@ -4174,7 +4177,6 @@ ExpSaPageGroupAllocateMemory
 ExpSaPageGroupDescriptorAllocate
 ExpSaPageGroupDescriptorFree
 ExpSaPageGroupFreeMemory
-ExpSafeSubtract
 ExpSafeWcslen
 ExpScanGeneralLookasideList
 ExpScanSystemLookasideList
@@ -4391,6 +4393,7 @@ FsRtlAddEntry
 FsRtlAddLargeMcbEntry
 FsRtlAddMcbEntry
 FsRtlAddToTunnelCache
+FsRtlAddToTunnelCacheEx
 FsRtlAllocateExtraCreateParameter
 FsRtlAllocateExtraCreateParameterFromLookasideList
 FsRtlAllocateExtraCreateParameterList
@@ -4447,6 +4450,7 @@ FsRtlFindFirstOverlapInNode
 FsRtlFindFirstOverlappingExclusiveNode
 FsRtlFindFirstOverlappingSharedNode
 FsRtlFindInTunnelCache
+FsRtlFindInTunnelCacheEx
 FsRtlFindLargeIndex
 FsRtlFreeExtraCreateParameter
 FsRtlFreeExtraCreateParameterList
@@ -4765,6 +4769,7 @@ HvFreeUnreconciledData
 HvGetEffectiveLogSizeCapForHive
 HvGetHiveLogFileStatus
 HvHiveCleanup
+HvHiveConvertLockedPagesToCowByPolicy
 HvHiveInitialize
 HvHiveStartEmptyClone
 HvHiveStartFileBacked
@@ -4777,7 +4782,6 @@ HvIsRangeDirty
 HvLoadHive
 HvLockHiveFlusherExclusive
 HvLockHiveFlusherShared
-HvLockHiveWriter
 HvMarkBaseBlockDirty
 HvMarkCellDirty
 HvMoveLayoutStats
@@ -4795,7 +4799,6 @@ HvUnCOWReconciledPages
 HvUnlockHiveFilePages
 HvUnlockHiveFlusherExclusive
 HvUnlockHiveFlusherShared
-HvUnlockHiveWriter
 HvValidateOrInvalidatePrimaryFileHeader
 HvViewMapContainsLockedPages
 HvWriteExternal
@@ -4884,7 +4887,6 @@ HvlInvokeWheaErrorNotificationCallback
 HvlIsCoreSharingPossible
 HvlIsHypercallOverlayLocked
 HvlIsHypervisorPresent
-HvlIsPartitionCpuManager
 HvlIsRootPowerSchedulerQosPresent
 HvlIsStibpPairingRecommended
 HvlIterateSecurePagesForHibernation
@@ -4907,6 +4909,7 @@ HvlNotifyRootCrashdump
 HvlParkedVirtualProcessors
 HvlPerformEndOfInterrupt
 HvlPhase0Initialize
+HvlPhase1Initialize
 HvlPhase2Initialize
 HvlPrepareForHibernate
 HvlPrepareForRootCrashdump
@@ -5132,7 +5135,6 @@ HvpMapHiveImageFromFile
 HvpMapHiveImageFromViewMap
 HvpMappedViewConvertLockedPagesToCOWByPolicy
 HvpMappedViewConvertRegionFromLockedToCOWByPolicy
-HvpMappedViewGetPropertiesForFileOffset
 HvpMarkCellDirty
 HvpMarkDirty
 HvpPerformLogFileRecovery
@@ -5155,6 +5157,7 @@ HvpValidateLoadedBin
 HvpViewMapAdjustFlag
 HvpViewMapCOWAndUnsealRange
 HvpViewMapCleanup
+HvpViewMapConvertLockedPagesToCOWByPolicy
 HvpViewMapCreateView
 HvpViewMapCreateViewsForRegion
 HvpViewMapDeleteViewTreeNode
@@ -5166,7 +5169,6 @@ HvpViewMapMakeViewRangeUnCOWByCaller
 HvpViewMapMakeViewRangeUnCOWByPolicy
 HvpViewMapMakeViewRangeValid
 HvpViewMapMigrateCOWData
-HvpViewMapMustPagesBeLocal
 HvpViewMapPromoteRangeToMapping
 HvpViewMapSealRange
 HvpViewMapShrinkStorage
@@ -5175,7 +5177,6 @@ HvpViewMapTouchPages
 HvpViewMapUnCOWAndSealRange
 INCREASE_MAPPED_TRANSFER_BYTE_COUNT
 INCREMENT_ADAPTER_CHANNELS
-IPT_TRACING_ENABLED
 IS_PTE_NOT_DEMAND_ZERO
 IdnaMemAlloc
 InbvAcquireDisplayOwnership
@@ -6213,6 +6214,7 @@ IopUnloadSafeCompletion
 IopUnmaskInterrupt
 IopUpdateFunctionPointers
 IopUpdateMinidumpContext
+IopUpdateWriteTransferCount
 IopUserCompletion
 IopUserRundown
 IopValidateJunctionTarget
@@ -6551,6 +6553,7 @@ KeFlushMultipleRangeTb
 KeFlushProcessTb
 KeFlushProcessWriteBuffers
 KeFlushQueuedDpcs
+KeFlushRsb
 KeFlushSingleCurrentTb
 KeFlushSingleTb
 KeFlushTb
@@ -6633,7 +6636,6 @@ KeInitializeTimerTable
 KeInitializeTriageDumpDataArray
 KeInitializeUmsThread
 KeInitializeWaitChain
-KeInitializeWaitChainEntryEx
 KeInsertByKeyDeviceQueue
 KeInsertDeviceQueue
 KeInsertHeadQueue
@@ -6662,6 +6664,7 @@ KeIsEmptyAffinityEx
 KeIsEqualAffinityEx
 KeIsExecutingDpc
 KeIsForceIdleEngaged
+KeIsImportOptimizationEnabled
 KeIsRetpolineEnabled
 KeIsSingleGroupAffinityEx
 KeIsSubsetAffinityEx
@@ -6758,6 +6761,7 @@ KeReadyThread
 KeRebaselineInterruptTime
 KeRebaselineSystemTime
 KeRecomputeCpuSetAffinityProcess
+KeReenterRetpolinedCode
 KeRegisterBoundCallback
 KeRegisterBugCheckCallback
 KeRegisterBugCheckReasonCallback
@@ -7003,6 +7007,7 @@ KiAbTryIncrementIoWaiterCounts
 KiAccessPage
 KiAcquireInterruptConnectLock
 KiAcquireKobjectLockSafe
+KiAcquirePrcbLock
 KiAcquireQueuedSpinLockInstrumented
 KiAcquireReleaseObjectRundownLockExclusive
 KiAcquireReleaseThreadLock
@@ -7162,7 +7167,7 @@ KiDeferredReadyThread
 KiDeliverApc
 KiDeregisterNmiSxCallback
 KiDetachProcess
-KiDetectAmdSsbdSupport
+KiDetectAmdNonArchSsbdSupport
 KiDetectFpuLeakage
 KiDetectHardwareSpecControlFeatures
 KiDetectKvaLeakage
@@ -7246,6 +7251,7 @@ KiFloatingErrorFaultShadow
 KiFlushAddressSpaceTb
 KiFlushAffinity
 KiFlushCacheLines
+KiFlushCurrentRsb
 KiFlushCurrentTbOnly
 KiFlushCurrentTbWorker
 KiFlushProcessTbWorker
@@ -7255,6 +7261,7 @@ KiFlushRangeAllCaches
 KiFlushRangeTb
 KiFlushRangeWorker
 KiFlushReadyLists
+KiFlushRsbTarget
 KiFlushSingleTbWorker
 KiFlushWriteBuffersTarget
 KiForceIdleParkUnparkDpcRoutine
@@ -7300,6 +7307,7 @@ KiGetSystemServiceTraceTable
 KiGetTbLeafInfo
 KiGetThreadCpuSetMaskPointer
 KiGetThreadEffectiveRankNonZero
+KiGetThreadReadyTime
 KiGetTr
 KiGetTrapFrameMode
 KiGetXSaveSupportedFeatures
@@ -7307,6 +7315,7 @@ KiGroupSchedulingGenerationEnd
 KiGroupSchedulingMoveThread
 KiGroupSchedulingQuantumEnd
 KiHandleBound
+KiHandleMcheck
 KiHeadlessDisplayString
 KiHeteroChooseTargetProcessor
 KiHvEnlightenedGuestPriorityKick
@@ -7349,6 +7358,7 @@ KiInitializeVelocity
 KiInitializeXSave
 KiInitiateUserApc
 KiInsertDeferredPreemptionApc
+KiInsertDeferredReadyList
 KiInsertInterruptObjectOrdered
 KiInsertNonMaxOverQuotaScb
 KiInsertQueueApc
@@ -7517,6 +7527,7 @@ KiProcessSecondarySignalList
 KiProcessThreadWaitList
 KiProcessorCallbackNop
 KiQuantumEnd
+KiQueryEffectivePriorityThread
 KiQueryIptSupport
 KiQueryProcessorNode
 KiQueryProximityNode
@@ -7531,6 +7542,7 @@ KiReadFixedMtrr
 KiReadGuestSchedulerAssistPriority
 KiReadKernelDr7
 KiReadyDeferredReadyList
+KiReadyOutSwappedThreads
 KiReadyThread
 KiRecomputeGroupSchedulingRank
 KiReduceByEffectiveIdleSmtSet
@@ -7652,6 +7664,7 @@ KiSetSystemAffinityThread
 KiSetSystemAffinityThreadToProcessor
 KiSetSystemTimeDpc
 KiSetThreadSchedulingGroup
+KiSetThreadState
 KiSetTimerEx
 KiSetUserTbFlushPending
 KiSetVirtualHeteroClockIntervalRequest
@@ -7783,6 +7796,7 @@ KiUpdateMinimumWeight
 KiUpdateNodeAffinitizedFlag
 KiUpdateNumberProcessors
 KiUpdateNumberProcessorsIpi
+KiUpdatePriorityMatrixThreadState
 KiUpdateProcessorCount
 KiUpdateSavedSupervisorState
 KiUpdateSharedReadyQueueAffinityThread
@@ -8136,7 +8150,6 @@ LsaRegisterLogonProcess
 MIDL_user_allocate
 MIDL_user_free
 MI_CLEAR_RESET_PTE
-MI_GET_PAGE_FRAME_FROM_TRANSITION_PTE
 MI_INTERLOCKED_EXCHANGE_PTE
 MI_IS_PHYSICAL_ADDRESS
 MI_IS_PTE_IN_WS_SWAP_SET
@@ -8192,7 +8205,6 @@ MiAbortCombineScan
 MiAccessCheck
 MiAcquireNonPagedResources
 MiAcquireNonPagedResourcesForce
-MiAcquireResourceExclusiveLite
 MiActOnMirrorBitmap
 MiActOnPartitionNodePages
 MiActOnPte
@@ -8223,6 +8235,7 @@ MiAddTriageDumpPtes
 MiAddViewsForSection
 MiAddWorkingSetEntries
 MiAddZeroingThreads
+MiAddressToRetpolineBit
 MiAdjustCachedStacks
 MiAdjustFaultList
 MiAdjustModifiedPageLoad
@@ -8321,7 +8334,6 @@ MiBackSingleImageWithPagefile
 MiBackSystemImageWithPagefile
 MiBadMemoryLogger
 MiBadRefCount
-MiBadShareCount
 MiBeginHoldingDirtyFaults
 MiBeginPageAccessor
 MiBeginProcessClean
@@ -8345,6 +8357,7 @@ MiCanDeleteEnclave
 MiCanFileBeTruncatedInternal
 MiCanFlushMakeProgress
 MiCanGrantExecute
+MiCanMergeTbFlushEntryBackwards
 MiCanPageMove
 MiCanStealKernelStack
 MiCancelPhase0Locking
@@ -8557,9 +8570,9 @@ MiCopyToUserVa
 MiCopyTopLevelMappings
 MiCountBootRegions
 MiCountCommittedPages
-MiCountNonPagedPool
 MiCountSharedPages
 MiCountSystemImageCommitment
+MiCountSystemPool
 MiCountWslesInPageTable
 MiCrashdumpRemovePte
 MiCrcStillIntact
@@ -8654,7 +8667,6 @@ MiDecrementSubsection
 MiDecrementSubsectionViewCount
 MiDecrementSubsections
 MiDecrementVadsBeingDeleted
-MiDelayFaultingThread
 MiDeleteAweBitMap
 MiDeleteAweInfo
 MiDeleteAweInfoPages
@@ -8701,7 +8713,6 @@ MiDeletePartition
 MiDeletePartitionResources
 MiDeletePerSessionProtos
 MiDeletePfnBitMaps
-MiDeleteProcessHotPatchContext
 MiDeleteProcessShadow
 MiDeletePteList
 MiDeletePteRun
@@ -8778,6 +8789,8 @@ MiDoSingleFixup
 MiDoStackCopy
 MiDoesControlAreaHaveUserWritableReferences
 MiDoesControlAreaRequireRetpolineFixups
+MiDoesDriverProvideImportsForDriver
+MiDoesImageSupportRetpoline
 MiDoneWithThisPageGetAnother
 MiDrainControlAreaWrites
 MiDrainCrossPartitionUsage
@@ -8892,6 +8905,7 @@ MiFinishPlaceholderVadReplacement
 MiFinishResume
 MiFinishVadDeletion
 MiFlowThroughInsertNode
+MiFlowThroughRemoveNode
 MiFlushAcquire
 MiFlushAllFilesystemPages
 MiFlushAllHintedStorePages
@@ -9066,7 +9080,6 @@ MiGetNumberOfCachedPtes
 MiGetPage
 MiGetPageChain
 MiGetPageFileHigh
-MiGetPageFileReservationOffset
 MiGetPageFileSectionForReservation
 MiGetPageForEnclave
 MiGetPageForHeader
@@ -9084,7 +9097,6 @@ MiGetPagingFileOffset
 MiGetPdeAddress
 MiGetPerfectColorHeadPage
 MiGetPfnLink
-MiGetPfnListPage
 MiGetPfnPriority
 MiGetPfnProtection
 MiGetPhysicalAddress
@@ -9095,7 +9107,6 @@ MiGetProcessHotPatchContext
 MiGetProcessPartition
 MiGetProtoPteAddress
 MiGetPrototypePteBoundaries
-MiGetPrototypePteDirect
 MiGetPrototypePteRanges
 MiGetPteAddress
 MiGetPteFromCopyList
@@ -9115,7 +9126,6 @@ MiGetStandbyRepurposed
 MiGetSubsectionCharges
 MiGetSubsectionCrossPartitionReferences
 MiGetSubsectionDriverProtos
-MiGetSubsectionFromPte
 MiGetSubsectionHoldingCrossPartitionReferences
 MiGetSystemAddressForImage
 MiGetSystemCacheReverseMap
@@ -9190,7 +9200,6 @@ MiIncrementCombinedPte
 MiIncrementLargeSubsections
 MiIncrementPfn
 MiIncrementSubsectionViewCount
-MiIncrementVmFaultCount
 MiInitNucleus
 MiInitPerfMemoryFlags
 MiInitSystem
@@ -9227,7 +9236,6 @@ MiInitializeEnclavePfn
 MiInitializeFaultVaListCore
 MiInitializeForkMaps
 MiInitializeGapFrames
-MiInitializeHardFaultPfn
 MiInitializeImageExtents
 MiInitializeImageHeaderPage
 MiInitializeImageHotPatchContext
@@ -9347,6 +9355,7 @@ MiInsertVadCharges
 MiInsertVadEvent
 MiInsertViewOfPhysicalSection
 MiInsertVmAccessedEntry
+MiInvalidPteConforms
 MiInvalidateCollidedIos
 MiInvalidatePageFileBitmapsCache
 MiIoPagesInRun
@@ -9358,6 +9367,8 @@ MiIsAddressValid
 MiIsCfgBitMapPageShared
 MiIsDecayPfn
 MiIsFaultPteIntact
+MiIsFreeZeroPfnCold
+MiIsImportOptimizationEnabled
 MiIsLowestPageTablePage
 MiIsPfn
 MiIsPfnCommitNotCharged
@@ -9448,14 +9459,12 @@ MiLockLowestValidPageTable
 MiLockMemoryLists
 MiLockNestedPageAtDpcInline
 MiLockNestedVad
-MiLockNestedVadShared
 MiLockNonPagedPoolPte
 MiLockOwnedProtoPage
 MiLockPagableImageSection
 MiLockPagableSections
 MiLockPage
 MiLockPageAndSetDirty
-MiLockPageAtDpc
 MiLockPageInline
 MiLockPageLeafPageTable
 MiLockPageTable
@@ -9480,8 +9489,6 @@ MiLockVad
 MiLockVadCore
 MiLockVadRange
 MiLockVadShared
-MiLockWorkingSetCoreExclusive
-MiLockWorkingSetExclusive
 MiLockWorkingSetOptimal
 MiLockWorkingSetShared
 MiLockdownSections
@@ -9522,13 +9529,13 @@ MiLookupIoPageNode
 MiMakeCombineCandidateClean
 MiMakeDemandZeroPte
 MiMakeDriverPagesPrivate
+MiMakeHyperPteDemandZero
 MiMakeHyperRangeAccessible
 MiMakeImagePageOk
 MiMakeImageReadOnly
 MiMakeIoRangePermanent
 MiMakeIoRangePermanentDpc
 MiMakeLargePageTable
-MiMakeLinkedListPte
 MiMakeOutswappedPageResident
 MiMakePageAvoidRead
 MiMakePageBad
@@ -9540,7 +9547,6 @@ MiMakeProtoAddressValid
 MiMakeProtoLeafValid
 MiMakeProtoReadOnly
 MiMakePrototypePteDirect
-MiMakePrototypePteVadLookup
 MiMakeQuasiPte
 MiMakeSecureExclusive
 MiMakeShadowPageTableRange
@@ -9551,7 +9557,7 @@ MiMakeSystemCacheRangeValid
 MiMakeSystemLeavesNonZero
 MiMakeSystemRangeAvailable
 MiMakeTransitionHeatBatch
-MiMakeTransitionPte
+MiMakeTransitionPteValid
 MiMakeUnusedImageExtentsCold
 MiMakeUnusedSegmentDeleteOnClose
 MiMakeValidPte
@@ -9562,6 +9568,7 @@ MiMapArbitraryPage
 MiMapBBTMemory
 MiMapCacheExceptionFilter
 MiMapCfgBitMapSection
+MiMapChildLargePageVads
 MiMapContiguousMemory
 MiMapContiguousMemoryLarge
 MiMapDummyPages
@@ -9814,7 +9821,6 @@ MiQueryLoadedPatches
 MiQueryMemoryListInformation
 MiQueryPfn
 MiQueryProcessActivePatches
-MiQueryStateMatches
 MiQuerySystemBase
 MiQueueControlAreaDelete
 MiQueueExtentPfnDeletion
@@ -9907,7 +9913,6 @@ MiReleaseProcessReferenceToSessionDataPage
 MiReleasePteCopyList
 MiReleasePtes
 MiReleaseReadListResources
-MiReleaseResourceLite
 MiReleaseScrubPacket
 MiReleaseSessionVa
 MiReleaseSystemCacheView
@@ -10049,7 +10054,6 @@ MiReturnSystemVa
 MiReturnVadQuota
 MiReturnWsToExpansionList
 MiReuseStandbyPage
-MiReverseSwizzleInvalidPte
 MiRevertQuasiPte
 MiRevertRelocatedImagePfn
 MiRevertRelocations
@@ -10110,7 +10114,6 @@ MiSessionUpdateImageCharges
 MiSetControlAreaSystemVa
 MiSetDeleteOnClose
 MiSetFaultPacketDirectives
-MiSetFreshPfnFromFreeList
 MiSetGraphicsPtes
 MiSetImageHotPatchAllowed
 MiSetImageProtection
@@ -10153,7 +10156,6 @@ MiSharePages
 MiSharedVaToPartition
 MiShouldLockPteDirectly
 MiShouldTrimUnusedSegments
-MiShouldYieldProcessor
 MiShowBadMapper
 MiShutdownSystem
 MiSignalLargePageRebuild
@@ -10164,7 +10166,6 @@ MiSimpleAgeWorkingSetTail
 MiSimpleAging
 MiSizeMemoryListLocks
 MiSkipEntirePagefileRegions
-MiSkipFractionalPagefileRegion
 MiSlabAllocatorRecentFailure
 MiSlistGetFreePage
 MiSlowRotateCopy
@@ -10260,7 +10261,6 @@ MiTrimWorkingSetEPTCallback
 MiTrimWorkingSetTail
 MiTrimmedEnough
 MiTryDeleteTransitionPte
-MiTryLocateWsle
 MiTryLockLeafAndContainingPagesAtDpc
 MiTryLockLeafPage
 MiTryLockProtoPoolPageAtDpc
@@ -10329,7 +10329,6 @@ MiUnlockVad
 MiUnlockVadCore
 MiUnlockVadRange
 MiUnlockVadShared
-MiUnlockWorkingSetCoreExclusive
 MiUnlockWorkingSetExclusive
 MiUnlockWorkingSetShared
 MiUnlockWsle
@@ -10360,7 +10359,6 @@ MiUpdateLargePageBitMap
 MiUpdateLargePagePfns
 MiUpdateLargePageSectionPfn
 MiUpdateLastSubsectionSize
-MiUpdateLinkedListInPte
 MiUpdateMirrorBitmaps
 MiUpdateOldPagesEPTCallback
 MiUpdateOldPte
@@ -10464,6 +10462,7 @@ MiWriteProtectSystemImages
 MiWritePteShadow
 MiWriteSharedDemandZeroPte
 MiWriteTopLevelPxe
+MiWriteUselessChildPte
 MiWriteValidPteNewPage
 MiWriteValidPteNewProtection
 MiWriteValidPteVolatile
@@ -10479,7 +10478,6 @@ MiZeroBootLargePages
 MiZeroBootMappings
 MiZeroCfgSystemWideBitmap
 MiZeroCfgSystemWideBitmapWorker
-MiZeroFault
 MiZeroInParallel
 MiZeroInParallelWorker
 MiZeroLargePage
@@ -10576,6 +10574,7 @@ MmDeterminePoolType
 MmDisableModifiedWriteOfSection
 MmDiscardDriverSection
 MmDoesFileHaveUserWritableReferences
+MmDoesImageSupportRetpoline
 MmDuplicateMemory
 MmEmptyAllWorkingSets
 MmEnablePeriodicAccessClearing
@@ -10617,7 +10616,6 @@ MmGetCacheAttribute
 MmGetCfgBitMapInformation
 MmGetChannelInformation
 MmGetControlAreaPartition
-MmGetCurrentProcessorColor
 MmGetDefaultPagePriority
 MmGetDirectoryFrameFromProcess
 MmGetDumpRange
@@ -10748,6 +10746,7 @@ MmMapViewOfSection
 MmMapViewOfSectionEx
 MmMarkHiberPhase
 MmMarkHiberRange
+MmMarkHypercallPageRetpolineBit
 MmMarkImageForHiberPhase
 MmMarkPhysicalMemoryAsBad
 MmMarkPhysicalMemoryAsGood
@@ -10756,7 +10755,6 @@ MmMdlPagesAreZero
 MmNotifyProcessInSwapTrigger
 MmObtainChargesToLockPagedPool
 MmOnlySystemCacheViewsPresent
-MmOutSwapProcess
 MmOutSwapVirtualAddresses
 MmOutSwapWorkingSet
 MmPageEntireDriver
@@ -11623,6 +11621,7 @@ ObpShutdownCloseHandleProcedure
 ObpStartRuntimeStackTrace
 ObpStopRuntimeStackTrace
 ObpTraceObjectDereferenceIfActive
+ObpTraceObjectReferenceIfActive
 ObpUnlockDirectory
 ObpUnlockHandleDatabaseEntry
 ObpVerifyAccessToBoundaryEntry
@@ -12506,7 +12505,6 @@ PiSwIrpSetLifetime
 PiSwIrpStartCreate
 PiSwIrpStartCreateWorker
 PiSwIsValidPnpId
-PiSwLock
 PiSwMakePdoInactive
 PiSwPdoAssociationFree
 PiSwPdoDriverEntry
@@ -12523,7 +12521,6 @@ PiSwRemovePdoAssociation
 PiSwStartCreate
 PiSwStopDestroy
 PiSwUnassociateDeviceObject
-PiSwUnlock
 PiSwUpdateArrayProperties
 PiSwValidateCreateData
 PiSwValidatePropertyArray
@@ -12643,7 +12640,6 @@ PipEventRemovalCheckOpenHandles
 PipFindDependencyNodePath
 PipFindDeviceOverrideEntry
 PipForAllChildDeviceNodes
-PipForAllDeviceNodes
 PipForAllDeviceNodesCallback
 PipForDeviceNodeSubtree
 PipFreeBindingId
@@ -13277,7 +13273,6 @@ PoUnregisterSystemState
 PoUserShutdownCancelled
 PoUserShutdownInitiated
 PoVolumeDevice
-PointerEncode
 PopAccountBatteryEnergyChange
 PopAccountCbEnergyChange
 PopAccumulateNonActivatedCpuTime
@@ -13559,6 +13554,8 @@ PopDiagTraceFxComponentResidency
 PopDiagTraceFxComponentWake
 PopDiagTraceFxDefaultPepWorkerEnd
 PopDiagTraceFxDeviceAccounting
+PopDiagTraceFxDeviceDirectedCompletion
+PopDiagTraceFxDeviceDirectedTransition
 PopDiagTraceFxDeviceIdleConstraints
 PopDiagTraceFxDevicePowerRequirement
 PopDiagTraceFxDevicePowerState
@@ -14356,7 +14353,6 @@ PopReadUlongPowerKey
 PopReadyChildWake
 PopReadyParentSleep
 PopRecalculateCBTriggerLevels
-PopRecordBatteryPercentage
 PopRecordHibernateDiagnosticInfo
 PopRecordLidState
 PopRecordLongPowerButtonPressDetected
@@ -14422,7 +14418,6 @@ PopSessionDisconnected
 PopSessionInputChange
 PopSessionWinlogonNotification
 PopSetAwayModeStatus
-PopSetBatteryDischargingState
 PopSetBootPhaseRange
 PopSetCleanShutdownMarker
 PopSetConnectedStandbyMarker
@@ -14450,7 +14445,6 @@ PopSetSystemAwayMode
 PopSetSystemState
 PopSetUserShutdownMarkerWorker
 PopSetWatchdog
-PopSetWeakChargerState
 PopSetWin32kDisplayTimeout
 PopSetWin32kInputTimeout
 PopSetupAirplaneModeNotification
@@ -14471,7 +14465,6 @@ PopSleepStudyTaskClientTimerWorker
 PopSpoilBatteryEstimate
 PopSpoilEstimatesOnPowerStateTransitionWorker
 PopSqmAddToStream
-PopSqmBatteryUpdate
 PopSqmCreateDwordStreamEntry
 PopSqmFanEnumeration
 PopSqmThermalCriticalEvent
@@ -14651,7 +14644,6 @@ PpDevCfgProcessDeviceExtensions
 PpDevCfgProcessDeviceOperations
 PpDevCfgProcessDeviceReset
 PpDevCfgProcessDevices
-PpDevCfgTraceDeviceStart
 PpDevNodeInsertIntoTree
 PpDevNodeLockTree
 PpDevNodeRemoveFromTree
@@ -15392,6 +15384,7 @@ PspChangeProcessExecutionState
 PspChargeJobWakeCounter
 PspChargeProcessWakeCounter
 PspChargeQuota
+PspCheckConditionalWakeCharge
 PspCheckForInvalidAccessByProtection
 PspCheckJobAccessState
 PspClearProcessThreadCidRefs
@@ -15405,6 +15398,8 @@ PspComputeQuantum
 PspComputeQuantumAndPriority
 PspComputeReportWakeFilter
 PspControlHwTracingThread
+PspConvertJobNotificationLimitFromV1
+PspConvertJobNotificationLimitFromV2
 PspConvertJobToMixed
 PspConvertSiloToServerSilo
 PspCopyAndFixupParameters
@@ -15569,7 +15564,6 @@ PspIumFreePartitionState
 PspIumFreePhysicalPages
 PspIumGetPhysicalPage
 PspIumGetSystemData
-PspIumInitialize
 PspIumReplenishPartitionPages
 PspIumVerifyParentSd
 PspIumWorker
@@ -15845,7 +15839,7 @@ PspWow64SetupUserProcessAddressSpace
 PspWow64SetupUserStack
 PspWow64ThunkProcessParameters
 PspWritePebAffinityInfo
-PspWriteProcessParentSecurityDomain
+PspWriteProcessSecurityDomain
 PspWriteTebIdealProcessor
 PspWriteTebImpersonationInfo
 PtrToUlong
@@ -15964,7 +15958,6 @@ RtlAppendStringToString
 RtlAppendUnicodeStringToString
 RtlAppendUnicodeToString
 RtlApplyHotPatch
-RtlApplyImportRelocationToImage
 RtlApplyImportRelocationToPage
 RtlApplyIndirectRelocationToPage
 RtlApplySwitchJumpRelocationToPage
@@ -15990,6 +15983,7 @@ RtlCSparseBitmapEnterLockingRegion
 RtlCSparseBitmapFindBitSetCapped
 RtlCSparseBitmapLeaveLockingRegion
 RtlCSparseBitmapStart
+RtlCalculateUnwindInfoSizeForRetpoline
 RtlCapabilityCheck
 RtlCapabilityCheckForSingleSessionSku
 RtlCaptureContext
@@ -15998,7 +15992,6 @@ RtlCaptureImageExceptionValues
 RtlCaptureStackBackTrace
 RtlCharToInteger
 RtlCheckBootStatusIntegrity
-RtlCheckCurrentPatchesApplied
 RtlCheckPortableOperatingSystem
 RtlCheckRegistryKey
 RtlCheckSystemBootStatusIntegrity
@@ -16044,6 +16037,7 @@ RtlCopyLuid
 RtlCopyLuidAndAttributesArray
 RtlCopyMemoryNonTemporal
 RtlCopyRangeList
+RtlCopyRetpolineStubsUnwindInfo
 RtlCopySid
 RtlCopySidAndAttributesArray
 RtlCopyString
@@ -16061,6 +16055,7 @@ RtlCreateHeap
 RtlCreateInvertedFunctionTableCacheEntry
 RtlCreateRegistryKey
 RtlCreateRetpolineRelocationInformation
+RtlCreateRetpolineStubsFunctionTable
 RtlCreateRvaList
 RtlCreateSecurityDescriptor
 RtlCreateSystemVolumeInformationFolder
@@ -16252,7 +16247,6 @@ RtlGuardIsValidWow64StackPointer
 RtlHashBytes2
 RtlHashUnicodeString
 RtlHotPatchSynchronizationRequired
-RtlHpEnvContextCreate
 RtlHpGlobalsInitialize
 RtlHpHeapManagerCleanup
 RtlHpHeapManagerInitialize
@@ -16608,6 +16602,7 @@ RtlUnicodeToMultiByteSize
 RtlUnicodeToOemN
 RtlUnicodeToUTF8N
 RtlUnlockBootStatusData
+RtlUnsignedMultiplyHigh
 RtlUnwind
 RtlUnwindEx
 RtlUpcaseUnicodeChar
@@ -16675,6 +16670,8 @@ RtlpCapChkTelemetryRunOnce
 RtlpCapabilityCheckSystemCapability
 RtlpCaptureContext
 RtlpCaptureContext2
+RtlpCaptureDynamicRelocationTableRva
+RtlpCaptureRetpolineBinaryInfoForImage
 RtlpCheckDynamicTimeZoneInformation
 RtlpCheckFunctionPatchApplied
 RtlpCoalesceFreeBlocks
@@ -16765,6 +16762,7 @@ RtlpGetNormalization
 RtlpGetNtProductTypeFromRegistry
 RtlpGetPolicyValueForSystemCapability
 RtlpGetRegistryHandle
+RtlpGetRetpolineStubsFunctionTable
 RtlpGetSetBootStatusData
 RtlpGetStackLimits
 RtlpGetTokenNamedObjectPath
@@ -16805,6 +16803,7 @@ RtlpHpFreeWithExceptionProtection
 RtlpHpGetOwnerHeap
 RtlpHpHeapAllocate
 RtlpHpHeapCheckCommitLimit
+RtlpHpHeapCompact
 RtlpHpHeapCreate
 RtlpHpHeapDestroy
 RtlpHpHeapExtendContext
@@ -16821,6 +16820,7 @@ RtlpHpLegacyGetEnvHandle
 RtlpHpLfhBucketActivate
 RtlpHpLfhBucketAddSubsegment
 RtlpHpLfhBucketAllocate
+RtlpHpLfhBucketAllocateSlot
 RtlpHpLfhBucketComputeNewSubsegmentBlockCount
 RtlpHpLfhBucketGetSubsegment
 RtlpHpLfhBucketInitialize
@@ -16829,9 +16829,10 @@ RtlpHpLfhBucketUpdateAffinityMapping
 RtlpHpLfhBucketUpdateStats
 RtlpHpLfhContextAllocate
 RtlpHpLfhContextCleanup
+RtlpHpLfhContextCompact
 RtlpHpLfhContextInitialize
-RtlpHpLfhContextUpdateFreeCommitCount
 RtlpHpLfhOwnerCleanup
+RtlpHpLfhOwnerCompact
 RtlpHpLfhOwnerInitialize
 RtlpHpLfhOwnerMoveSubsegment
 RtlpHpLfhSlotAllocate
@@ -16855,8 +16856,11 @@ RtlpHpMetadataHeapCtxGet
 RtlpHpMetadataHeapStart
 RtlpHpQueryVA
 RtlpHpRegisterEnvironment
+RtlpHpReleaseLockShared
+RtlpHpScheduleCompaction
 RtlpHpSegAlloc
 RtlpHpSegContextCleanup
+RtlpHpSegContextCompact
 RtlpHpSegContextInitialize
 RtlpHpSegContextReserve
 RtlpHpSegDescriptorValidate
@@ -16865,6 +16869,7 @@ RtlpHpSegFreeRangeInsert
 RtlpHpSegFreeRangeRemove
 RtlpHpSegHeapAddSegment
 RtlpHpSegHeapCheckCommitLimit
+RtlpHpSegHeapRemoveSegment
 RtlpHpSegLargeRangeAllocate
 RtlpHpSegLfhAllocate
 RtlpHpSegLfhExtendContext
@@ -16872,6 +16877,7 @@ RtlpHpSegLfhVsCommit
 RtlpHpSegLfhVsDecommit
 RtlpHpSegLfhVsFree
 RtlpHpSegLockAcquire
+RtlpHpSegLockRelease
 RtlpHpSegMgrAllocate
 RtlpHpSegMgrApplyLargePagePolicy
 RtlpHpSegMgrCommit
@@ -16892,7 +16898,6 @@ RtlpHpSegPageRangeHandleCommit
 RtlpHpSegPageRangeShrink
 RtlpHpSegPageRangeSplit
 RtlpHpSegSegmentAllocate
-RtlpHpSegSegmentComputeCommit
 RtlpHpSegSegmentFree
 RtlpHpSegSegmentInitialize
 RtlpHpSegSetExtraPresent
@@ -16933,7 +16938,6 @@ RtlpHpVsContextFree
 RtlpHpVsContextInitialize
 RtlpHpVsFreeChunkInsert
 RtlpHpVsFreeChunkRemove
-RtlpHpVsIsPageAlignedUserAddr
 RtlpHpVsSubsegmentCleanup
 RtlpHpVsSubsegmentCommitPages
 RtlpHpVsSubsegmentCreate
@@ -17150,7 +17154,6 @@ SdbGuestTargetPlatformFlagsToRuntimePlatformFlags
 SdbInitDatabaseInMemory
 SdbMakeIndexKeyFromStringEx
 SdbOpenDatabaseEx
-SdbQueryDataEx
 SdbQueryDataExTagID
 SdbReadBinaryTag
 SdbReadDWORDTag
@@ -17951,6 +17954,7 @@ SmKmVirtualLockCtxMemoryUnlocked
 SmKmVolumeQueryUniqueId
 SmMapPage
 SmPageRead
+SmPerformStoreSwapOperation
 SmPrepareForFatalHeapCorruption
 SmPrepareForFatalPageError
 SmProcessCompressionInfoRequest
@@ -19740,7 +19744,6 @@ VslBindNtIum
 VslCallEnclave
 VslCloseSecureHandle
 VslCompleteSecureDriverLoad
-VslCompleteSlabConfiguration
 VslConfigureDynamicMemory
 VslConnectSwInterrupt
 VslCreateEnclave
@@ -19777,6 +19780,7 @@ VslGetSecureTebAddress
 VslGetSetSecureContext
 VslHandleKsrCall
 VslInitializeEnclave
+VslInitializeRetpoline
 VslInitializeSecureKernelCfg
 VslIsSecureKernelRunning
 VslIsTrustletRunning
@@ -19805,7 +19809,6 @@ VslRundownSecureProcess
 VslSendDebugAttachNotifications
 VslSetCodeIntegrityPolicy
 VslSetPlaceholderPages
-VslSetRetpolinePfn
 VslSetupLiveDumpBufferInSk
 VslSlowFlushSecureRangeList
 VslStartSecureProcessor
@@ -21043,11 +21046,13 @@ __ascii_stricmp
 __ascii_strnicmp
 __chkstk
 __guard_retpoline_exit
+__guard_retpoline_exit_indirect_rax
+__guard_retpoline_icall_handler
 __guard_retpoline_import_r10
 __guard_retpoline_import_r10_do_jmp
 __guard_retpoline_import_r10_do_retpoline
+__guard_retpoline_import_r10_log_event
 __guard_retpoline_indirect_cfg_rax
-__guard_retpoline_indirect_rax_do_jmp
 __guard_retpoline_switchtable_jump_r10
 __guard_retpoline_switchtable_jump_r11
 __guard_retpoline_switchtable_jump_r12
@@ -21064,7 +21069,6 @@ __guard_retpoline_switchtable_jump_rdi
 __guard_retpoline_switchtable_jump_rdx
 __guard_retpoline_switchtable_jump_rsi
 __guard_retpoline_switchtable_jump_rsp
-__guard_wrap_icall_dispatch_cfg
 __isascii
 __longjmp_internal
 __misaligned_access

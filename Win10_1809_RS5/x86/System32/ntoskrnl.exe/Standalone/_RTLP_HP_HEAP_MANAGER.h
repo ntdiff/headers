@@ -98,13 +98,9 @@ typedef struct _RTLP_HP_METADATA_HEAP_CTX
 
 typedef struct _RTL_HP_LFH_CONFIG
 {
-  /* 0x0000 */ unsigned long MaxBlockSize;
-  /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct
-  {
-    /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
-  } /* size: 0x0004 */ Flags;
-} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x000c */
+  /* 0x0000 */ unsigned short MaxBlockSize;
+  /* 0x0002 */ unsigned short MaxSubsegmentPages;
+} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x0004 */
 
 typedef struct _RTL_HP_VS_CONFIG
 {
@@ -121,8 +117,8 @@ typedef struct _RTL_HP_VS_CONFIG
 typedef struct _RTL_HP_SUB_ALLOCATOR_CONFIGS
 {
   /* 0x0000 */ struct _RTL_HP_LFH_CONFIG LfhConfigs;
-  /* 0x000c */ struct _RTL_HP_VS_CONFIG VsConfigs;
-} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0010 */
+  /* 0x0004 */ struct _RTL_HP_VS_CONFIG VsConfigs;
+} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0008 */
 
 typedef struct _RTLP_HP_HEAP_MANAGER
 {
@@ -131,5 +127,5 @@ typedef struct _RTLP_HP_HEAP_MANAGER
   /* 0x0028 */ struct _HEAP_VAMGR_CTX VaMgr;
   /* 0x1c44 */ struct _RTLP_HP_METADATA_HEAP_CTX MetadataHeaps[3];
   /* 0x1c5c */ struct _RTL_HP_SUB_ALLOCATOR_CONFIGS SubAllocConfigs;
-} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x1c6c */
+} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x1c64 */
 

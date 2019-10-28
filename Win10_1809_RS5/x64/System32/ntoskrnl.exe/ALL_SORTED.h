@@ -7,6 +7,11 @@ struct DEBUG_MEMORY_REQUIREMENTS;
 enum DEVICE_TEXT_TYPE;
 struct DOCK_INTERFACE;
 enum ETW_COMPRESSION_RESUMPTION_MODE;
+enum FEATURE_CHANGE_TIME;
+enum FEATURE_ENABLED_STATE;
+struct FEATURE_ERROR;
+struct FEATURE_LOGGED_TRAITS;
+struct FEATURE_STATE_CHANGE_SUBSCRIPTION__;
 enum HAL_APIC_DESTINATION_MODE;
 struct HAL_PRIVATE_DISPATCH;
 enum HSTORAGE_TYPE;
@@ -1467,6 +1472,7 @@ struct _WNF_LOCK;
 struct _WNF_SCOPE_MAP;
 struct _WNF_SILODRIVERSTATE;
 struct _WNF_STATE_NAME;
+struct _WNF_TYPE_ID;
 enum _WORKING_SET_TYPE;
 struct _WORK_QUEUE_ENTRY;
 struct _WORK_QUEUE_ITEM;
@@ -1484,12 +1490,48 @@ struct _XSTATE_CONFIGURATION;
 struct _XSTATE_CONTEXT;
 struct _XSTATE_FEATURE;
 struct _XSTATE_SAVE;
+struct __WIL__WNF_STATE_NAME;
+struct __WIL__WNF_TYPE_ID;
+struct __WIL__WNF_USER_SUBSCRIPTION;
 struct _flags;
 struct _iobuf;
 union _u;
+struct _wil_details_UsageSubscriptionData;
 struct tagSWITCH_CONTEXT;
 struct tagSWITCH_CONTEXT_ATTRIBUTE;
 struct tagSWITCH_CONTEXT_DATA;
+enum wil_FeatureChangeTime;
+enum wil_FeatureEnabledState;
+enum wil_FeatureEnabledStateKind;
+enum wil_FeatureEnabledStateOptions;
+enum wil_FeatureStage;
+struct wil_FeatureState;
+enum wil_FeatureStore;
+enum wil_FeatureVariantPayloadKind;
+enum wil_ReportingKind;
+struct wil_StagingConfig;
+enum wil_UsageReportingMode;
+enum wil_VariantReportingKind;
+enum wil_details_CachedFeatureEnabledState;
+enum wil_details_CachedHasNotificationState;
+struct wil_details_FeatureProperties;
+union wil_details_FeaturePropertyCache;
+struct wil_details_FeatureTestState;
+enum wil_details_FeatureTestStateKind;
+struct wil_details_FeatureVariantPropertyCache;
+struct wil_details_RecordUsageResult;
+enum wil_details_ServiceReportingKind;
+enum wil_details_ServiceReportingOptions;
+struct wil_details_SetPropertyCacheUsageContext;
+struct wil_details_SetPropertyFlagContext;
+struct wil_details_StagingConfig;
+struct wil_details_StagingConfigFeature;
+enum wil_details_StagingConfigFeatureFields;
+struct wil_details_StagingConfigHeader;
+struct wil_details_StagingConfigHeaderProperties;
+struct wil_details_StagingConfigUsageTrigger;
+struct wil_details_StagingConfigWnfStateName;
+struct wil_details_VariantProperties;
 
 typedef enum
 {
@@ -1573,6 +1615,55 @@ enum ETW_COMPRESSION_RESUMPTION_MODE
   EtwCompressionModeNoDisable = 1,
   EtwCompressionModeNoRestart = 2,
 };
+
+enum FEATURE_CHANGE_TIME
+{
+  FEATURE_CHANGE_TIME_READ = 0,
+  FEATURE_CHANGE_TIME_MODULE_RELOAD = 1,
+  FEATURE_CHANGE_TIME_SESSION = 2,
+  FEATURE_CHANGE_TIME_REBOOT = 3,
+  FEATURE_CHANGE_TIME_USER_FLAG = 128,
+};
+
+enum FEATURE_ENABLED_STATE
+{
+  FEATURE_ENABLED_STATE_DEFAULT = 0,
+  FEATURE_ENABLED_STATE_DISABLED = 1,
+  FEATURE_ENABLED_STATE_ENABLED = 2,
+  FEATURE_ENABLED_STATE_HAS_NOTIFICATION = 128,
+  FEATURE_ENABLED_STATE_HAS_VARIANT_CONFIGURATION = 64,
+};
+
+struct FEATURE_ERROR
+{
+  /* 0x0000 */ HRESULT hr;
+  /* 0x0004 */ unsigned short lineNumber;
+  /* 0x0008 */ const char* file;
+  /* 0x0010 */ const char* process;
+  /* 0x0018 */ const char* modulePath;
+  /* 0x0020 */ unsigned int callerReturnAddressOffset;
+  /* 0x0028 */ const char* callerModule;
+  /* 0x0030 */ const char* message;
+  /* 0x0038 */ unsigned short originLineNumber;
+  /* 0x0040 */ const char* originFile;
+  /* 0x0048 */ const char* originModule;
+  /* 0x0050 */ unsigned int originCallerReturnAddressOffset;
+  /* 0x0058 */ const char* originCallerModule;
+  /* 0x0060 */ const char* originName;
+}; /* size: 0x0068 */
+
+struct FEATURE_LOGGED_TRAITS
+{
+  /* 0x0000 */ unsigned short version;
+  /* 0x0002 */ unsigned short baseVersion;
+  /* 0x0004 */ unsigned char stage;
+  /* 0x0005 */ char __PADDING__[1];
+}; /* size: 0x0006 */
+
+struct FEATURE_STATE_CHANGE_SUBSCRIPTION__
+{
+  /* 0x0000 */ int unused;
+}; /* size: 0x0004 */
 
 enum HAL_APIC_DESTINATION_MODE
 {
@@ -6737,8 +6828,7 @@ typedef struct _ETHREAD
   /* 0x07d0 */ struct _UNICODE_STRING* ThreadName;
   /* 0x07d8 */ struct _CONTEXT* SetContextState;
   /* 0x07e0 */ unsigned long LastExpectedRunTime;
-  /* 0x07e4 */ unsigned short HeapLfhPrivateData;
-  /* 0x07e6 */ unsigned short Unused;
+  /* 0x07e4 */ unsigned long HeapData;
   /* 0x07e8 */ struct _LIST_ENTRY OwnerEntryListHead;
   /* 0x07f8 */ unsigned __int64 DisownedOwnerEntryListLock;
   /* 0x0800 */ struct _LIST_ENTRY DisownedOwnerEntryListHead;
@@ -14128,7 +14218,8 @@ typedef struct _LOADER_PARAMETER_EXTENSION
     /* 0x0074 */ unsigned long IumEnabled : 1; /* bit position: 9 */
     /* 0x0074 */ unsigned long IsSmbboot : 1; /* bit position: 10 */
     /* 0x0074 */ unsigned long BootLogEnabled : 1; /* bit position: 11 */
-    /* 0x0074 */ unsigned long Unused : 9; /* bit position: 12 */
+    /* 0x0074 */ unsigned long DriverVerifierEnabled : 1; /* bit position: 12 */
+    /* 0x0074 */ unsigned long Unused : 8; /* bit position: 13 */
     /* 0x0074 */ unsigned long FeatureSimulations : 6; /* bit position: 21 */
     /* 0x0074 */ unsigned long MicrocodeSelfHosting : 1; /* bit position: 27 */
     /* 0x0074 */ unsigned long XhciLegacyHandoffSkip : 1; /* bit position: 28 */
@@ -15779,11 +15870,12 @@ typedef struct _MI_SECTION_STATE
   /* 0x0288 */ unsigned long RetpolineStubPages;
   /* 0x0290 */ struct _RTL_BITMAP_EX KernelRetpolineBitMap;
   /* 0x02a0 */ struct _RTL_RETPOLINE_ROUTINES RetpolineRoutines;
-  /* 0x02ec */ unsigned long ImageChecksumBreakpoint;
-  /* 0x02f0 */ unsigned long ImageSizeBreakpoint;
-  /* 0x02f4 */ volatile long ImageValidationFailed;
-  /* 0x02f8 */ long __PADDING__[2];
-} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0300 */
+  /* 0x02f0 */ struct _MMPTE* RetpolineRevertPte;
+  /* 0x02f8 */ unsigned long ImageChecksumBreakpoint;
+  /* 0x02fc */ unsigned long ImageSizeBreakpoint;
+  /* 0x0300 */ volatile long ImageValidationFailed;
+  /* 0x0304 */ long __PADDING__[15];
+} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0340 */
 
 typedef struct _MI_SESSION_DRIVER_UNLOAD
 {
@@ -15969,32 +16061,32 @@ typedef struct _MI_SYSTEM_INFORMATION
 {
   /* 0x0000 */ struct _MI_POOL_STATE Pools;
   /* 0x0180 */ struct _MI_SECTION_STATE Sections;
-  /* 0x0480 */ struct _MI_SYSTEM_IMAGE_STATE SystemImages;
-  /* 0x0540 */ struct _MI_SESSION_STATE Sessions;
-  /* 0x15c8 */ struct _MI_PROCESS_STATE Processes;
-  /* 0x1640 */ struct _MI_HARDWARE_STATE Hardware;
-  /* 0x17c0 */ struct _MI_SYSTEM_VA_STATE SystemVa;
-  /* 0x1cc0 */ struct _MI_COMBINE_STATE PageCombines;
-  /* 0x1cd8 */ struct _MI_PAGELIST_STATE PageLists;
-  /* 0x1d00 */ struct _MI_PARTITION_STATE Partitions;
-  /* 0x1d60 */ struct _MI_SHUTDOWN_STATE Shutdowns;
-  /* 0x1dd8 */ struct _MI_ERROR_STATE Errors;
-  /* 0x1ec0 */ struct _MI_ACCESS_LOG_STATE AccessLog;
-  /* 0x1f40 */ struct _MI_DEBUGGER_STATE Debugger;
-  /* 0x2060 */ struct _MI_STANDBY_STATE Standby;
-  /* 0x2100 */ struct _MI_SYSTEM_PTE_STATE SystemPtes;
-  /* 0x2300 */ struct _MI_IO_PAGE_STATE IoPages;
-  /* 0x2370 */ struct _MI_PAGING_IO_STATE PagingIo;
-  /* 0x23c0 */ struct _MI_COMMON_PAGE_STATE CommonPages;
-  /* 0x2480 */ struct _MI_SYSTEM_TRIM_STATE Trims;
-  /* 0x24c0 */ unsigned __int64 Cookie;
-  /* 0x24c8 */ void* volatile* BootRegistryRuns;
-  /* 0x24d0 */ volatile long ZeroingDisabled;
-  /* 0x24d4 */ unsigned char FullyInitialized;
-  /* 0x24d5 */ unsigned char SafeBooted;
-  /* 0x24d8 */ const struct _TlgProvider_t* TraceLogging;
-  /* 0x2500 */ struct _MI_VISIBLE_STATE Vs;
-} MI_SYSTEM_INFORMATION, *PMI_SYSTEM_INFORMATION; /* size: 0x3140 */
+  /* 0x04c0 */ struct _MI_SYSTEM_IMAGE_STATE SystemImages;
+  /* 0x0580 */ struct _MI_SESSION_STATE Sessions;
+  /* 0x1608 */ struct _MI_PROCESS_STATE Processes;
+  /* 0x1680 */ struct _MI_HARDWARE_STATE Hardware;
+  /* 0x1800 */ struct _MI_SYSTEM_VA_STATE SystemVa;
+  /* 0x1d00 */ struct _MI_COMBINE_STATE PageCombines;
+  /* 0x1d18 */ struct _MI_PAGELIST_STATE PageLists;
+  /* 0x1d40 */ struct _MI_PARTITION_STATE Partitions;
+  /* 0x1da0 */ struct _MI_SHUTDOWN_STATE Shutdowns;
+  /* 0x1e18 */ struct _MI_ERROR_STATE Errors;
+  /* 0x1f00 */ struct _MI_ACCESS_LOG_STATE AccessLog;
+  /* 0x1f80 */ struct _MI_DEBUGGER_STATE Debugger;
+  /* 0x20a0 */ struct _MI_STANDBY_STATE Standby;
+  /* 0x2140 */ struct _MI_SYSTEM_PTE_STATE SystemPtes;
+  /* 0x2340 */ struct _MI_IO_PAGE_STATE IoPages;
+  /* 0x23b0 */ struct _MI_PAGING_IO_STATE PagingIo;
+  /* 0x2400 */ struct _MI_COMMON_PAGE_STATE CommonPages;
+  /* 0x24c0 */ struct _MI_SYSTEM_TRIM_STATE Trims;
+  /* 0x2500 */ unsigned __int64 Cookie;
+  /* 0x2508 */ void* volatile* BootRegistryRuns;
+  /* 0x2510 */ volatile long ZeroingDisabled;
+  /* 0x2514 */ unsigned char FullyInitialized;
+  /* 0x2515 */ unsigned char SafeBooted;
+  /* 0x2518 */ const struct _TlgProvider_t* TraceLogging;
+  /* 0x2540 */ struct _MI_VISIBLE_STATE Vs;
+} MI_SYSTEM_INFORMATION, *PMI_SYSTEM_INFORMATION; /* size: 0x3180 */
 
 typedef struct _MI_SYSTEM_NODE_INFORMATION
 {
@@ -20486,7 +20578,8 @@ typedef enum _POWER_INFORMATION_LEVEL_INTERNAL
   PowerInternalProcessorIdleVeto = 47,
   PowerInternalPlatformIdleVeto = 48,
   PowerInternalIsLongPowerButtonBugcheckEnabled = 49,
-  PowerInformationInternalMaximum = 50,
+  PowerInternalAutoChkCausedReboot = 50,
+  PowerInformationInternalMaximum = 51,
 } POWER_INFORMATION_LEVEL_INTERNAL, *PPOWER_INFORMATION_LEVEL_INTERNAL;
 
 typedef enum _POWER_INFORMATION_LEVEL_INTERNAL_TTMTCAPI
@@ -22148,7 +22241,7 @@ typedef struct _RTLP_HP_HEAP_MANAGER
   /* 0x0050 */ struct _HEAP_VAMGR_CTX VaMgr;
   /* 0x3090 */ struct _RTLP_HP_METADATA_HEAP_CTX MetadataHeaps[3];
   /* 0x30c0 */ struct _RTL_HP_SUB_ALLOCATOR_CONFIGS SubAllocConfigs;
-} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x30d0 */
+} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x30c8 */
 
 typedef enum _RTLP_HP_LOCK_TYPE
 {
@@ -22439,19 +22532,15 @@ typedef struct _RTL_HEAP_MEMORY_LIMIT_DATA
 
 typedef struct _RTL_HP_LFH_CONFIG
 {
-  /* 0x0000 */ unsigned long MaxBlockSize;
-  /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct
-  {
-    /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
-  } /* size: 0x0004 */ Flags;
-} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x000c */
+  /* 0x0000 */ unsigned short MaxBlockSize;
+  /* 0x0002 */ unsigned short MaxSubsegmentPages;
+} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x0004 */
 
 typedef struct _RTL_HP_SUB_ALLOCATOR_CONFIGS
 {
   /* 0x0000 */ struct _RTL_HP_LFH_CONFIG LfhConfigs;
-  /* 0x000c */ struct _RTL_HP_VS_CONFIG VsConfigs;
-} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0010 */
+  /* 0x0004 */ struct _RTL_HP_VS_CONFIG VsConfigs;
+} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0008 */
 
 typedef struct _RTL_HP_VS_CONFIG
 {
@@ -23239,6 +23328,8 @@ typedef enum _SKSERVICE
   SECURESERVICE_COMPLETE_SLAB_CONFIGURATION = 219,
   SECURESERVICE_INITIALIZE_RETPOLINE = 220,
   SECURESERVICE_SET_RETPOLINE_PFN = 221,
+  SECURESERVICE_PERFORM_RETPOLINE_RELOCATIONS = 222,
+  SECURESERVICE_UPDATE_IMPORT_RELOCATIONS = 223,
   SECURESERVICE_DISPATCH_LEVEL_FIRST = 223,
   SECURESERVICE_FLUSH_ADDRESS_SPACE = 224,
   SECURESERVICE_FAST_FLUSH_RANGE_LIST = 225,
@@ -23677,8 +23768,7 @@ typedef struct _TEB
   /* 0x179c */ unsigned long IsImpersonating;
   /* 0x17a0 */ void* NlsCache;
   /* 0x17a8 */ void* pShimData;
-  /* 0x17b0 */ unsigned short HeapVirtualAffinity;
-  /* 0x17b2 */ unsigned short LowFragHeapDataSlot;
+  /* 0x17b0 */ unsigned long HeapData;
   /* 0x17b4 */ unsigned char Padding7[4];
   /* 0x17b8 */ void* CurrentTransactionHandle;
   /* 0x17c0 */ struct _TEB_ACTIVE_FRAME* ActiveFrame;
@@ -23815,8 +23905,7 @@ typedef struct _TEB32
   /* 0x0f9c */ unsigned long IsImpersonating;
   /* 0x0fa0 */ unsigned long NlsCache;
   /* 0x0fa4 */ unsigned long pShimData;
-  /* 0x0fa8 */ unsigned short HeapVirtualAffinity;
-  /* 0x0faa */ unsigned short LowFragHeapDataSlot;
+  /* 0x0fa8 */ unsigned long HeapData;
   /* 0x0fac */ unsigned long CurrentTransactionHandle;
   /* 0x0fb0 */ unsigned long ActiveFrame;
   /* 0x0fb4 */ unsigned long FlsData;
@@ -23961,8 +24050,7 @@ typedef struct _TEB64
   /* 0x179c */ unsigned long IsImpersonating;
   /* 0x17a0 */ unsigned __int64 NlsCache;
   /* 0x17a8 */ unsigned __int64 pShimData;
-  /* 0x17b0 */ unsigned short HeapVirtualAffinity;
-  /* 0x17b2 */ unsigned short LowFragHeapDataSlot;
+  /* 0x17b0 */ unsigned long HeapData;
   /* 0x17b4 */ unsigned char Padding7[4];
   /* 0x17b8 */ unsigned __int64 CurrentTransactionHandle;
   /* 0x17c0 */ unsigned __int64 ActiveFrame;
@@ -26194,6 +26282,11 @@ typedef struct _WNF_STATE_NAME
   /* 0x0000 */ unsigned long Data[2];
 } WNF_STATE_NAME, *PWNF_STATE_NAME; /* size: 0x0008 */
 
+typedef struct _WNF_TYPE_ID
+{
+  /* 0x0000 */ struct _GUID TypeId;
+} WNF_TYPE_ID, *PWNF_TYPE_ID; /* size: 0x0010 */
+
 typedef enum _WORKING_SET_TYPE
 {
   WorkingSetTypeUser = 0,
@@ -26489,6 +26582,18 @@ typedef struct _XSTATE_SAVE
   /* 0x0018 */ struct _XSTATE_CONTEXT XStateContext;
 } XSTATE_SAVE, *PXSTATE_SAVE; /* size: 0x0038 */
 
+typedef struct __WIL__WNF_STATE_NAME
+{
+  /* 0x0000 */ unsigned long Data[2];
+} _WIL__WNF_STATE_NAME, *P_WIL__WNF_STATE_NAME; /* size: 0x0008 */
+
+typedef struct __WIL__WNF_TYPE_ID
+{
+  /* 0x0000 */ struct _GUID TypeId;
+} _WIL__WNF_TYPE_ID, *P_WIL__WNF_TYPE_ID; /* size: 0x0010 */
+
+struct __WIL__WNF_USER_SUBSCRIPTION;
+
 typedef struct _flags
 {
   struct /* bitfield */
@@ -26527,6 +26632,13 @@ typedef union _u
   }; /* size: 0x0050 */
 } u, *Pu; /* size: 0x0050 */
 
+typedef struct _wil_details_UsageSubscriptionData
+{
+  /* 0x0000 */ unsigned int featureId;
+  /* 0x0004 */ unsigned short serviceReportingKind;
+  /* 0x0006 */ char __PADDING__[2];
+} wil_details_UsageSubscriptionData, *Pwil_details_UsageSubscriptionData; /* size: 0x0008 */
+
 struct tagSWITCH_CONTEXT
 {
   /* 0x0000 */ struct tagSWITCH_CONTEXT_ATTRIBUTE Attribute;
@@ -26552,6 +26664,318 @@ struct tagSWITCH_CONTEXT_DATA
   /* 0x003c */ unsigned long ulElementCount;
   /* 0x0040 */ struct _GUID guElements[48];
 }; /* size: 0x0340 */
+
+enum wil_FeatureChangeTime
+{
+  wil_FeatureChangeTime_OnRead = 0,
+  wil_FeatureChangeTime_OnReload = 1,
+  wil_FeatureChangeTime_OnSession = 2,
+  wil_FeatureChangeTime_OnReboot = 3,
+};
+
+enum wil_FeatureEnabledState
+{
+  wil_FeatureEnabledState_Default = 0,
+  wil_FeatureEnabledState_Disabled = 1,
+  wil_FeatureEnabledState_Enabled = 2,
+};
+
+enum wil_FeatureEnabledStateKind
+{
+  wil_FeatureEnabledStateKind_All = 0,
+  wil_FeatureEnabledStateKind_Service = 1,
+  wil_FeatureEnabledStateKind_User = 2,
+  wil_FeatureEnabledStateKind_Test = 3,
+};
+
+enum wil_FeatureEnabledStateOptions
+{
+  wil_FeatureEnabledStateOptions_None = 0,
+  wil_FeatureEnabledStateOptions_VariantConfig = 1,
+};
+
+enum wil_FeatureStage
+{
+  wil_FeatureStage_AlwaysDisabled = 0,
+  wil_FeatureStage_DisabledByDefault = 1,
+  wil_FeatureStage_EnabledByDefault = 2,
+  wil_FeatureStage_AlwaysEnabled = 3,
+};
+
+struct wil_FeatureState
+{
+  /* 0x0000 */ enum wil_FeatureEnabledState enabledState;
+  /* 0x0004 */ unsigned char variant;
+  /* 0x0008 */ enum wil_FeatureVariantPayloadKind payloadKind;
+  /* 0x000c */ unsigned int payload;
+  /* 0x0010 */ int hasNotification;
+  /* 0x0014 */ int isVariantConfiguration;
+}; /* size: 0x0018 */
+
+enum wil_FeatureStore
+{
+  wil_FeatureStore_Machine = 0,
+  wil_FeatureStore_User = 1,
+  wil_FeatureStore_All = 2,
+};
+
+enum wil_FeatureVariantPayloadKind
+{
+  wil_FeatureVariantPayloadKind_None = 0,
+  wil_FeatureVariantPayloadKind_Resident = 1,
+  wil_FeatureVariantPayloadKind_External = 2,
+};
+
+enum wil_ReportingKind
+{
+  wil_ReportingKind_None = 0,
+  wil_ReportingKind_UniqueUsage = 1,
+  wil_ReportingKind_UniqueOpportunity = 2,
+  wil_ReportingKind_DeviceUsage = 3,
+  wil_ReportingKind_DeviceOpportunity = 4,
+  wil_ReportingKind_TotalDuration = 5,
+  wil_ReportingKind_PausedDuration = 6,
+};
+
+struct wil_StagingConfig;
+
+enum wil_UsageReportingMode
+{
+  wil_UsageReportingMode_Default = 0,
+  wil_UsageReportingMode_SuppressPotential = 1,
+  wil_UsageReportingMode_SuppressImplicit = 2,
+};
+
+enum wil_VariantReportingKind
+{
+  wil_VariantReportingKind_None = 0,
+  wil_VariantReportingKind_UniqueUsage = 1,
+  wil_VariantReportingKind_DeviceUsage = 2,
+};
+
+enum wil_details_CachedFeatureEnabledState
+{
+  wil_details_CachedFeatureEnabledState_Unknown = 0,
+  wil_details_CachedFeatureEnabledState_Disabled = 1,
+  wil_details_CachedFeatureEnabledState_Enabled = 2,
+  wil_details_CachedFeatureEnabledState_Desired = 3,
+};
+
+enum wil_details_CachedHasNotificationState
+{
+  wil_details_CachedHasNotificationState_Unknown = 0,
+  wil_details_CachedHasNotificationState_DoesNotHaveNotifications = 1,
+  wil_details_CachedHasNotificationState_HasNotification = 2,
+};
+
+struct wil_details_FeatureProperties
+{
+  struct /* bitfield */
+  {
+    /* 0x0000 */ unsigned int enabledState : 2; /* bit position: 0 */
+    /* 0x0000 */ unsigned int isVariant : 1; /* bit position: 2 */
+    /* 0x0000 */ unsigned int queuedForReporting : 1; /* bit position: 3 */
+    /* 0x0000 */ unsigned int hasNotificationState : 2; /* bit position: 4 */
+    /* 0x0000 */ unsigned int usageCount : 9; /* bit position: 6 */
+    /* 0x0000 */ unsigned int usageCountRepresentsPotential : 1; /* bit position: 15 */
+    /* 0x0000 */ unsigned int reportedDeviceUsage : 1; /* bit position: 16 */
+    /* 0x0000 */ unsigned int reportedDevicePotential : 1; /* bit position: 17 */
+    /* 0x0000 */ unsigned int reportedDeviceOpportunity : 1; /* bit position: 18 */
+    /* 0x0000 */ unsigned int reportedDevicePotentialOpportunity : 1; /* bit position: 19 */
+    /* 0x0000 */ unsigned int recordedDeviceUsage : 1; /* bit position: 20 */
+    /* 0x0000 */ unsigned int recordedDevicePotential : 1; /* bit position: 21 */
+    /* 0x0000 */ unsigned int recordedDeviceOpportunity : 1; /* bit position: 22 */
+    /* 0x0000 */ unsigned int recordedDevicePotentialOpportunity : 1; /* bit position: 23 */
+    /* 0x0000 */ unsigned int opportunityCount : 7; /* bit position: 24 */
+    /* 0x0000 */ unsigned int opportunityCountRepresentsPotential : 1; /* bit position: 31 */
+  }; /* bitfield */
+}; /* size: 0x0004 */
+
+union wil_details_FeaturePropertyCache
+{
+  union
+  {
+    /* 0x0000 */ struct wil_details_FeatureProperties cache;
+    /* 0x0000 */ struct wil_details_VariantProperties variant;
+    /* 0x0000 */ volatile long var;
+  }; /* size: 0x0004 */
+}; /* size: 0x0004 */
+
+struct wil_details_FeatureTestState
+{
+  /* 0x0000 */ enum wil_details_FeatureTestStateKind kind;
+  /* 0x0004 */ unsigned int featureId;
+  /* 0x0008 */ enum wil_FeatureEnabledState state;
+  /* 0x000c */ unsigned char variant;
+  /* 0x0010 */ unsigned int payload;
+  /* 0x0018 */ struct wil_details_FeatureTestState* next;
+}; /* size: 0x0020 */
+
+enum wil_details_FeatureTestStateKind
+{
+  wil_details_FeatureTestStateKind_EnabledState = 0,
+  wil_details_FeatureTestStateKind_Variant = 1,
+};
+
+struct wil_details_FeatureVariantPropertyCache
+{
+  /* 0x0000 */ union wil_details_FeaturePropertyCache propertyCache;
+  /* 0x0004 */ unsigned int payloadId;
+}; /* size: 0x0008 */
+
+struct wil_details_RecordUsageResult
+{
+  /* 0x0000 */ int queueBackground;
+  /* 0x0004 */ unsigned int countImmediate;
+  /* 0x0008 */ enum wil_details_ServiceReportingKind kindImmediate;
+  /* 0x000c */ unsigned int payloadId;
+  /* 0x0010 */ int ignoredUse;
+  /* 0x0014 */ int isVariantConfiguration;
+}; /* size: 0x0018 */
+
+enum wil_details_ServiceReportingKind
+{
+  wil_details_ServiceReportingKind_UniqueUsage = 0,
+  wil_details_ServiceReportingKind_UniqueOpportunity = 1,
+  wil_details_ServiceReportingKind_DeviceUsage = 2,
+  wil_details_ServiceReportingKind_DeviceOpportunity = 3,
+  wil_details_ServiceReportingKind_PotentialUniqueUsage = 4,
+  wil_details_ServiceReportingKind_PotentialUniqueOpportunity = 5,
+  wil_details_ServiceReportingKind_PotentialDeviceUsage = 6,
+  wil_details_ServiceReportingKind_PotentialDeviceOpportunity = 7,
+  wil_details_ServiceReportingKind_EnabledTotalDuration = 8,
+  wil_details_ServiceReportingKind_EnabledPausedDuration = 9,
+  wil_details_ServiceReportingKind_DisabledTotalDuration = 10,
+  wil_details_ServiceReportingKind_DisabledPausedDuration = 11,
+  wil_details_ServiceReportingKind_CustomEnabledBase = 100,
+  wil_details_ServiceReportingKind_CustomDisabledBase = 150,
+  wil_details_ServiceReportingKind_Store = 254,
+  wil_details_ServiceReportingKind_None = 255,
+  wil_details_ServiceReportingKind_VariantDevicePotentialBase = 256,
+  wil_details_ServiceReportingKind_VariantDeviceUsageBase = 320,
+  wil_details_ServiceReportingKind_VariantUniquePotentialBase = 384,
+  wil_details_ServiceReportingKind_VariantUniqueUsageBase = 448,
+};
+
+enum wil_details_ServiceReportingOptions
+{
+  wil_details_ServiceReportingOptions_None = 0,
+  wil_details_ServiceReportingOptions_VariantConfig = 1,
+};
+
+struct wil_details_SetPropertyCacheUsageContext
+{
+  /* 0x0000 */ struct wil_details_RecordUsageResult* result;
+  /* 0x0008 */ enum wil_details_ServiceReportingKind kind;
+  /* 0x0010 */ unsigned __int64 addend;
+}; /* size: 0x0018 */
+
+struct wil_details_SetPropertyFlagContext
+{
+  /* 0x0000 */ struct wil_details_RecordUsageResult* result;
+  /* 0x0008 */ unsigned long flags;
+  /* 0x000c */ int ignoreReporting;
+}; /* size: 0x0010 */
+
+struct wil_details_StagingConfig
+{
+  /* 0x0000 */ enum wil_FeatureStore store;
+  /* 0x0004 */ int forUpdate;
+  /* 0x0008 */ unsigned long readChangeStamp;
+  /* 0x000c */ unsigned char readVersion;
+  /* 0x0010 */ int modified;
+  /* 0x0018 */ struct wil_details_StagingConfigHeader* header;
+  /* 0x0020 */ struct wil_details_StagingConfigFeature* features;
+  /* 0x0028 */ struct wil_details_StagingConfigUsageTrigger* triggers;
+  /* 0x0030 */ int changedInSession;
+  /* 0x0038 */ void* buffer;
+  /* 0x0040 */ unsigned __int64 bufferSize;
+  /* 0x0048 */ unsigned __int64 bufferAlloc;
+  /* 0x0050 */ int bufferOwned;
+  /* 0x0054 */ long __PADDING__[1];
+}; /* size: 0x0058 */
+
+struct wil_details_StagingConfigFeature
+{
+  /* 0x0000 */ unsigned int featureId;
+  struct /* bitfield */
+  {
+    /* 0x0004 */ unsigned int changedInSession : 1; /* bit position: 0 */
+    /* 0x0004 */ unsigned int isVariantConfig : 1; /* bit position: 1 */
+    /* 0x0004 */ unsigned int unused1 : 6; /* bit position: 2 */
+    /* 0x0004 */ unsigned int serviceState : 2; /* bit position: 8 */
+    /* 0x0004 */ unsigned int userState : 2; /* bit position: 10 */
+    /* 0x0004 */ unsigned int testState : 2; /* bit position: 12 */
+    /* 0x0004 */ unsigned int unused2 : 2; /* bit position: 14 */
+    /* 0x0004 */ unsigned int unused3 : 8; /* bit position: 16 */
+    /* 0x0004 */ unsigned int variant : 6; /* bit position: 24 */
+    /* 0x0004 */ unsigned int payloadKind : 2; /* bit position: 30 */
+  }; /* bitfield */
+  /* 0x0008 */ unsigned int payload;
+}; /* size: 0x000c */
+
+enum wil_details_StagingConfigFeatureFields
+{
+  wil_details_StagingConfigFeatureFields_None = 0,
+  wil_details_StagingConfigFeatureFields_ServiceState = 1,
+  wil_details_StagingConfigFeatureFields_UserState = 2,
+  wil_details_StagingConfigFeatureFields_TestState = 4,
+  wil_details_StagingConfigFeatureFields_Variant = 8,
+};
+
+struct wil_details_StagingConfigHeader
+{
+  /* 0x0000 */ unsigned char version;
+  /* 0x0001 */ unsigned char versionMinor;
+  /* 0x0002 */ unsigned short headerSizeBytes;
+  /* 0x0004 */ unsigned short featureCount;
+  /* 0x0006 */ unsigned short featureUsageTriggerCount;
+  /* 0x0008 */ struct wil_details_StagingConfigHeaderProperties sessionProperties;
+  /* 0x000c */ struct wil_details_StagingConfigHeaderProperties properties;
+}; /* size: 0x0010 */
+
+struct wil_details_StagingConfigHeaderProperties
+{
+  struct /* bitfield */
+  {
+    /* 0x0000 */ unsigned int ignoreServiceState : 1; /* bit position: 0 */
+    /* 0x0000 */ unsigned int ignoreUserState : 1; /* bit position: 1 */
+    /* 0x0000 */ unsigned int ignoreTestState : 1; /* bit position: 2 */
+    /* 0x0000 */ unsigned int ignoreVariants : 1; /* bit position: 3 */
+    /* 0x0000 */ unsigned int unused : 28; /* bit position: 4 */
+  }; /* bitfield */
+}; /* size: 0x0004 */
+
+struct wil_details_StagingConfigUsageTrigger
+{
+  /* 0x0000 */ unsigned int featureId;
+  /* 0x0004 */ struct wil_details_StagingConfigWnfStateName trigger;
+  struct /* bitfield */
+  {
+    /* 0x000c */ unsigned int serviceReportingKind : 16; /* bit position: 0 */
+    /* 0x000c */ unsigned int isVariantConfig : 1; /* bit position: 16 */
+    /* 0x000c */ unsigned int unused : 15; /* bit position: 17 */
+  }; /* bitfield */
+}; /* size: 0x0010 */
+
+struct wil_details_StagingConfigWnfStateName
+{
+  /* 0x0000 */ unsigned int Data[2];
+}; /* size: 0x0008 */
+
+struct wil_details_VariantProperties
+{
+  struct /* bitfield */
+  {
+    /* 0x0000 */ unsigned int enabledState : 2; /* bit position: 0 */
+    /* 0x0000 */ unsigned int isVariant : 1; /* bit position: 2 */
+    /* 0x0000 */ unsigned int queuedForReporting : 1; /* bit position: 3 */
+    /* 0x0000 */ unsigned int hasNotificationState : 2; /* bit position: 4 */
+    /* 0x0000 */ unsigned int recordedDeviceUsage : 1; /* bit position: 6 */
+    /* 0x0000 */ unsigned int variant : 6; /* bit position: 7 */
+    /* 0x0000 */ unsigned int unused : 19; /* bit position: 13 */
+  }; /* bitfield */
+}; /* size: 0x0004 */
 
 /*
 $$0
@@ -26643,7 +27067,6 @@ $$f
 ?BTreeNewNode@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@KK@Z
 ?BTreeNodeFindKey@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
 ?BTreeNodeFindKey@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@K@Z
-?BTreeNodeFindKey@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAKPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@T_SM_PAGE_KEY@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z
 ?BTreeNodeFree@?$B_TREE@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@$0BAAA@UB_TREE_DUMMY_NODE_POOL@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@USMKM_FRONTEND_ENTRY@?$SMKM_STORE_MGR@USM_TRAITS@@@@@@@Z
@@ -26698,6 +27121,7 @@ $$f
 ?Initialize@SC_DISK@@UEAAJXZ
 ?Initialize@SC_MBR@@QEAAXPEAVSC_DISK@@@Z
 ?InitializePartitionCache@SC_DISK@@QEAAJXZ
+?IsEqualGUID@@YAHAEBU_GUID@@0@Z
 ?IsNeutralLanguageItem@@YAHPEBUCultureDataType@@@Z
 ?IsVbr@SC_DISK@@QEAAEXZ
 ?NpCleanup@NP_CONTEXT@@SAXPEAU1@K@Z
@@ -29428,9 +29852,9 @@ EtwTracePool
 EtwTracePriority
 EtwTraceProcess
 EtwTraceProcessTerminate
-EtwTracePsIoRateControl
 EtwTraceRaw
 EtwTraceReadyThread
+EtwTraceRetpolineExit
 EtwTraceShouldYieldProcessor
 EtwTraceSiloDcEvent
 EtwTraceSiloKernelEvent
@@ -30384,7 +30808,6 @@ ExShutdownSystem
 ExSizeOfAutoExpandPushLock
 ExSizeOfRundownProtectionCacheAware
 ExSlowReplenishHandleTableEntry
-ExSpinLockIsContended
 ExStartRecordingIRTimerExpiries
 ExStopRecordingIRTimerExpiries
 ExSubscribeWnfStateChange
@@ -30602,6 +31025,10 @@ ExpGetSystemWriteConstraintInformation
 ExpGetThreadResourceHint
 ExpGetUILanguagePolicy
 ExpGetVMActivationStatus
+ExpHeapGCInitialization
+ExpHpCompactSessionPools
+ExpHpCompactionRoutine
+ExpHpGCTimerCallback
 ExpHpIsSpecialPoolHeap
 ExpInitBootEntropyInformation
 ExpInitExpCheckTestSigningInfo
@@ -30729,7 +31156,6 @@ ExpSaPageGroupAllocateMemory
 ExpSaPageGroupDescriptorAllocate
 ExpSaPageGroupDescriptorFree
 ExpSaPageGroupFreeMemory
-ExpSafeSubtract
 ExpSafeWcslen
 ExpScanGeneralLookasideList
 ExpScanSystemLookasideList
@@ -30946,6 +31372,7 @@ FsRtlAddEntry
 FsRtlAddLargeMcbEntry
 FsRtlAddMcbEntry
 FsRtlAddToTunnelCache
+FsRtlAddToTunnelCacheEx
 FsRtlAllocateExtraCreateParameter
 FsRtlAllocateExtraCreateParameterFromLookasideList
 FsRtlAllocateExtraCreateParameterList
@@ -31002,6 +31429,7 @@ FsRtlFindFirstOverlapInNode
 FsRtlFindFirstOverlappingExclusiveNode
 FsRtlFindFirstOverlappingSharedNode
 FsRtlFindInTunnelCache
+FsRtlFindInTunnelCacheEx
 FsRtlFindLargeIndex
 FsRtlFreeExtraCreateParameter
 FsRtlFreeExtraCreateParameterList
@@ -31320,6 +31748,7 @@ HvFreeUnreconciledData
 HvGetEffectiveLogSizeCapForHive
 HvGetHiveLogFileStatus
 HvHiveCleanup
+HvHiveConvertLockedPagesToCowByPolicy
 HvHiveInitialize
 HvHiveStartEmptyClone
 HvHiveStartFileBacked
@@ -31332,7 +31761,6 @@ HvIsRangeDirty
 HvLoadHive
 HvLockHiveFlusherExclusive
 HvLockHiveFlusherShared
-HvLockHiveWriter
 HvMarkBaseBlockDirty
 HvMarkCellDirty
 HvMoveLayoutStats
@@ -31350,7 +31778,6 @@ HvUnCOWReconciledPages
 HvUnlockHiveFilePages
 HvUnlockHiveFlusherExclusive
 HvUnlockHiveFlusherShared
-HvUnlockHiveWriter
 HvValidateOrInvalidatePrimaryFileHeader
 HvViewMapContainsLockedPages
 HvWriteExternal
@@ -31439,7 +31866,6 @@ HvlInvokeWheaErrorNotificationCallback
 HvlIsCoreSharingPossible
 HvlIsHypercallOverlayLocked
 HvlIsHypervisorPresent
-HvlIsPartitionCpuManager
 HvlIsRootPowerSchedulerQosPresent
 HvlIsStibpPairingRecommended
 HvlIterateSecurePagesForHibernation
@@ -31462,6 +31888,7 @@ HvlNotifyRootCrashdump
 HvlParkedVirtualProcessors
 HvlPerformEndOfInterrupt
 HvlPhase0Initialize
+HvlPhase1Initialize
 HvlPhase2Initialize
 HvlPrepareForHibernate
 HvlPrepareForRootCrashdump
@@ -31687,7 +32114,6 @@ HvpMapHiveImageFromFile
 HvpMapHiveImageFromViewMap
 HvpMappedViewConvertLockedPagesToCOWByPolicy
 HvpMappedViewConvertRegionFromLockedToCOWByPolicy
-HvpMappedViewGetPropertiesForFileOffset
 HvpMarkCellDirty
 HvpMarkDirty
 HvpPerformLogFileRecovery
@@ -31710,6 +32136,7 @@ HvpValidateLoadedBin
 HvpViewMapAdjustFlag
 HvpViewMapCOWAndUnsealRange
 HvpViewMapCleanup
+HvpViewMapConvertLockedPagesToCOWByPolicy
 HvpViewMapCreateView
 HvpViewMapCreateViewsForRegion
 HvpViewMapDeleteViewTreeNode
@@ -31721,7 +32148,6 @@ HvpViewMapMakeViewRangeUnCOWByCaller
 HvpViewMapMakeViewRangeUnCOWByPolicy
 HvpViewMapMakeViewRangeValid
 HvpViewMapMigrateCOWData
-HvpViewMapMustPagesBeLocal
 HvpViewMapPromoteRangeToMapping
 HvpViewMapSealRange
 HvpViewMapShrinkStorage
@@ -31730,7 +32156,6 @@ HvpViewMapTouchPages
 HvpViewMapUnCOWAndSealRange
 INCREASE_MAPPED_TRANSFER_BYTE_COUNT
 INCREMENT_ADAPTER_CHANNELS
-IPT_TRACING_ENABLED
 IS_PTE_NOT_DEMAND_ZERO
 IdnaMemAlloc
 InbvAcquireDisplayOwnership
@@ -32768,6 +33193,7 @@ IopUnloadSafeCompletion
 IopUnmaskInterrupt
 IopUpdateFunctionPointers
 IopUpdateMinidumpContext
+IopUpdateWriteTransferCount
 IopUserCompletion
 IopUserRundown
 IopValidateJunctionTarget
@@ -33106,6 +33532,7 @@ KeFlushMultipleRangeTb
 KeFlushProcessTb
 KeFlushProcessWriteBuffers
 KeFlushQueuedDpcs
+KeFlushRsb
 KeFlushSingleCurrentTb
 KeFlushSingleTb
 KeFlushTb
@@ -33188,7 +33615,6 @@ KeInitializeTimerTable
 KeInitializeTriageDumpDataArray
 KeInitializeUmsThread
 KeInitializeWaitChain
-KeInitializeWaitChainEntryEx
 KeInsertByKeyDeviceQueue
 KeInsertDeviceQueue
 KeInsertHeadQueue
@@ -33217,6 +33643,7 @@ KeIsEmptyAffinityEx
 KeIsEqualAffinityEx
 KeIsExecutingDpc
 KeIsForceIdleEngaged
+KeIsImportOptimizationEnabled
 KeIsRetpolineEnabled
 KeIsSingleGroupAffinityEx
 KeIsSubsetAffinityEx
@@ -33313,6 +33740,7 @@ KeReadyThread
 KeRebaselineInterruptTime
 KeRebaselineSystemTime
 KeRecomputeCpuSetAffinityProcess
+KeReenterRetpolinedCode
 KeRegisterBoundCallback
 KeRegisterBugCheckCallback
 KeRegisterBugCheckReasonCallback
@@ -33558,6 +33986,7 @@ KiAbTryIncrementIoWaiterCounts
 KiAccessPage
 KiAcquireInterruptConnectLock
 KiAcquireKobjectLockSafe
+KiAcquirePrcbLock
 KiAcquireQueuedSpinLockInstrumented
 KiAcquireReleaseObjectRundownLockExclusive
 KiAcquireReleaseThreadLock
@@ -33717,7 +34146,7 @@ KiDeferredReadyThread
 KiDeliverApc
 KiDeregisterNmiSxCallback
 KiDetachProcess
-KiDetectAmdSsbdSupport
+KiDetectAmdNonArchSsbdSupport
 KiDetectFpuLeakage
 KiDetectHardwareSpecControlFeatures
 KiDetectKvaLeakage
@@ -33801,6 +34230,7 @@ KiFloatingErrorFaultShadow
 KiFlushAddressSpaceTb
 KiFlushAffinity
 KiFlushCacheLines
+KiFlushCurrentRsb
 KiFlushCurrentTbOnly
 KiFlushCurrentTbWorker
 KiFlushProcessTbWorker
@@ -33810,6 +34240,7 @@ KiFlushRangeAllCaches
 KiFlushRangeTb
 KiFlushRangeWorker
 KiFlushReadyLists
+KiFlushRsbTarget
 KiFlushSingleTbWorker
 KiFlushWriteBuffersTarget
 KiForceIdleParkUnparkDpcRoutine
@@ -33855,6 +34286,7 @@ KiGetSystemServiceTraceTable
 KiGetTbLeafInfo
 KiGetThreadCpuSetMaskPointer
 KiGetThreadEffectiveRankNonZero
+KiGetThreadReadyTime
 KiGetTr
 KiGetTrapFrameMode
 KiGetXSaveSupportedFeatures
@@ -33862,6 +34294,7 @@ KiGroupSchedulingGenerationEnd
 KiGroupSchedulingMoveThread
 KiGroupSchedulingQuantumEnd
 KiHandleBound
+KiHandleMcheck
 KiHeadlessDisplayString
 KiHeteroChooseTargetProcessor
 KiHvEnlightenedGuestPriorityKick
@@ -33904,6 +34337,7 @@ KiInitializeVelocity
 KiInitializeXSave
 KiInitiateUserApc
 KiInsertDeferredPreemptionApc
+KiInsertDeferredReadyList
 KiInsertInterruptObjectOrdered
 KiInsertNonMaxOverQuotaScb
 KiInsertQueueApc
@@ -34072,6 +34506,7 @@ KiProcessSecondarySignalList
 KiProcessThreadWaitList
 KiProcessorCallbackNop
 KiQuantumEnd
+KiQueryEffectivePriorityThread
 KiQueryIptSupport
 KiQueryProcessorNode
 KiQueryProximityNode
@@ -34086,6 +34521,7 @@ KiReadFixedMtrr
 KiReadGuestSchedulerAssistPriority
 KiReadKernelDr7
 KiReadyDeferredReadyList
+KiReadyOutSwappedThreads
 KiReadyThread
 KiRecomputeGroupSchedulingRank
 KiReduceByEffectiveIdleSmtSet
@@ -34207,6 +34643,7 @@ KiSetSystemAffinityThread
 KiSetSystemAffinityThreadToProcessor
 KiSetSystemTimeDpc
 KiSetThreadSchedulingGroup
+KiSetThreadState
 KiSetTimerEx
 KiSetUserTbFlushPending
 KiSetVirtualHeteroClockIntervalRequest
@@ -34338,6 +34775,7 @@ KiUpdateMinimumWeight
 KiUpdateNodeAffinitizedFlag
 KiUpdateNumberProcessors
 KiUpdateNumberProcessorsIpi
+KiUpdatePriorityMatrixThreadState
 KiUpdateProcessorCount
 KiUpdateSavedSupervisorState
 KiUpdateSharedReadyQueueAffinityThread
@@ -34691,7 +35129,6 @@ LsaRegisterLogonProcess
 MIDL_user_allocate
 MIDL_user_free
 MI_CLEAR_RESET_PTE
-MI_GET_PAGE_FRAME_FROM_TRANSITION_PTE
 MI_INTERLOCKED_EXCHANGE_PTE
 MI_IS_PHYSICAL_ADDRESS
 MI_IS_PTE_IN_WS_SWAP_SET
@@ -34747,7 +35184,6 @@ MiAbortCombineScan
 MiAccessCheck
 MiAcquireNonPagedResources
 MiAcquireNonPagedResourcesForce
-MiAcquireResourceExclusiveLite
 MiActOnMirrorBitmap
 MiActOnPartitionNodePages
 MiActOnPte
@@ -34778,6 +35214,7 @@ MiAddTriageDumpPtes
 MiAddViewsForSection
 MiAddWorkingSetEntries
 MiAddZeroingThreads
+MiAddressToRetpolineBit
 MiAdjustCachedStacks
 MiAdjustFaultList
 MiAdjustModifiedPageLoad
@@ -34876,7 +35313,6 @@ MiBackSingleImageWithPagefile
 MiBackSystemImageWithPagefile
 MiBadMemoryLogger
 MiBadRefCount
-MiBadShareCount
 MiBeginHoldingDirtyFaults
 MiBeginPageAccessor
 MiBeginProcessClean
@@ -34900,6 +35336,7 @@ MiCanDeleteEnclave
 MiCanFileBeTruncatedInternal
 MiCanFlushMakeProgress
 MiCanGrantExecute
+MiCanMergeTbFlushEntryBackwards
 MiCanPageMove
 MiCanStealKernelStack
 MiCancelPhase0Locking
@@ -35112,9 +35549,9 @@ MiCopyToUserVa
 MiCopyTopLevelMappings
 MiCountBootRegions
 MiCountCommittedPages
-MiCountNonPagedPool
 MiCountSharedPages
 MiCountSystemImageCommitment
+MiCountSystemPool
 MiCountWslesInPageTable
 MiCrashdumpRemovePte
 MiCrcStillIntact
@@ -35209,7 +35646,6 @@ MiDecrementSubsection
 MiDecrementSubsectionViewCount
 MiDecrementSubsections
 MiDecrementVadsBeingDeleted
-MiDelayFaultingThread
 MiDeleteAweBitMap
 MiDeleteAweInfo
 MiDeleteAweInfoPages
@@ -35256,7 +35692,6 @@ MiDeletePartition
 MiDeletePartitionResources
 MiDeletePerSessionProtos
 MiDeletePfnBitMaps
-MiDeleteProcessHotPatchContext
 MiDeleteProcessShadow
 MiDeletePteList
 MiDeletePteRun
@@ -35333,6 +35768,8 @@ MiDoSingleFixup
 MiDoStackCopy
 MiDoesControlAreaHaveUserWritableReferences
 MiDoesControlAreaRequireRetpolineFixups
+MiDoesDriverProvideImportsForDriver
+MiDoesImageSupportRetpoline
 MiDoneWithThisPageGetAnother
 MiDrainControlAreaWrites
 MiDrainCrossPartitionUsage
@@ -35447,6 +35884,7 @@ MiFinishPlaceholderVadReplacement
 MiFinishResume
 MiFinishVadDeletion
 MiFlowThroughInsertNode
+MiFlowThroughRemoveNode
 MiFlushAcquire
 MiFlushAllFilesystemPages
 MiFlushAllHintedStorePages
@@ -35621,7 +36059,6 @@ MiGetNumberOfCachedPtes
 MiGetPage
 MiGetPageChain
 MiGetPageFileHigh
-MiGetPageFileReservationOffset
 MiGetPageFileSectionForReservation
 MiGetPageForEnclave
 MiGetPageForHeader
@@ -35639,7 +36076,6 @@ MiGetPagingFileOffset
 MiGetPdeAddress
 MiGetPerfectColorHeadPage
 MiGetPfnLink
-MiGetPfnListPage
 MiGetPfnPriority
 MiGetPfnProtection
 MiGetPhysicalAddress
@@ -35650,7 +36086,6 @@ MiGetProcessHotPatchContext
 MiGetProcessPartition
 MiGetProtoPteAddress
 MiGetPrototypePteBoundaries
-MiGetPrototypePteDirect
 MiGetPrototypePteRanges
 MiGetPteAddress
 MiGetPteFromCopyList
@@ -35670,7 +36105,6 @@ MiGetStandbyRepurposed
 MiGetSubsectionCharges
 MiGetSubsectionCrossPartitionReferences
 MiGetSubsectionDriverProtos
-MiGetSubsectionFromPte
 MiGetSubsectionHoldingCrossPartitionReferences
 MiGetSystemAddressForImage
 MiGetSystemCacheReverseMap
@@ -35745,7 +36179,6 @@ MiIncrementCombinedPte
 MiIncrementLargeSubsections
 MiIncrementPfn
 MiIncrementSubsectionViewCount
-MiIncrementVmFaultCount
 MiInitNucleus
 MiInitPerfMemoryFlags
 MiInitSystem
@@ -35782,7 +36215,6 @@ MiInitializeEnclavePfn
 MiInitializeFaultVaListCore
 MiInitializeForkMaps
 MiInitializeGapFrames
-MiInitializeHardFaultPfn
 MiInitializeImageExtents
 MiInitializeImageHeaderPage
 MiInitializeImageHotPatchContext
@@ -35902,6 +36334,7 @@ MiInsertVadCharges
 MiInsertVadEvent
 MiInsertViewOfPhysicalSection
 MiInsertVmAccessedEntry
+MiInvalidPteConforms
 MiInvalidateCollidedIos
 MiInvalidatePageFileBitmapsCache
 MiIoPagesInRun
@@ -35913,6 +36346,8 @@ MiIsAddressValid
 MiIsCfgBitMapPageShared
 MiIsDecayPfn
 MiIsFaultPteIntact
+MiIsFreeZeroPfnCold
+MiIsImportOptimizationEnabled
 MiIsLowestPageTablePage
 MiIsPfn
 MiIsPfnCommitNotCharged
@@ -36003,14 +36438,12 @@ MiLockLowestValidPageTable
 MiLockMemoryLists
 MiLockNestedPageAtDpcInline
 MiLockNestedVad
-MiLockNestedVadShared
 MiLockNonPagedPoolPte
 MiLockOwnedProtoPage
 MiLockPagableImageSection
 MiLockPagableSections
 MiLockPage
 MiLockPageAndSetDirty
-MiLockPageAtDpc
 MiLockPageInline
 MiLockPageLeafPageTable
 MiLockPageTable
@@ -36035,8 +36468,6 @@ MiLockVad
 MiLockVadCore
 MiLockVadRange
 MiLockVadShared
-MiLockWorkingSetCoreExclusive
-MiLockWorkingSetExclusive
 MiLockWorkingSetOptimal
 MiLockWorkingSetShared
 MiLockdownSections
@@ -36077,13 +36508,13 @@ MiLookupIoPageNode
 MiMakeCombineCandidateClean
 MiMakeDemandZeroPte
 MiMakeDriverPagesPrivate
+MiMakeHyperPteDemandZero
 MiMakeHyperRangeAccessible
 MiMakeImagePageOk
 MiMakeImageReadOnly
 MiMakeIoRangePermanent
 MiMakeIoRangePermanentDpc
 MiMakeLargePageTable
-MiMakeLinkedListPte
 MiMakeOutswappedPageResident
 MiMakePageAvoidRead
 MiMakePageBad
@@ -36095,7 +36526,6 @@ MiMakeProtoAddressValid
 MiMakeProtoLeafValid
 MiMakeProtoReadOnly
 MiMakePrototypePteDirect
-MiMakePrototypePteVadLookup
 MiMakeQuasiPte
 MiMakeSecureExclusive
 MiMakeShadowPageTableRange
@@ -36106,7 +36536,7 @@ MiMakeSystemCacheRangeValid
 MiMakeSystemLeavesNonZero
 MiMakeSystemRangeAvailable
 MiMakeTransitionHeatBatch
-MiMakeTransitionPte
+MiMakeTransitionPteValid
 MiMakeUnusedImageExtentsCold
 MiMakeUnusedSegmentDeleteOnClose
 MiMakeValidPte
@@ -36117,6 +36547,7 @@ MiMapArbitraryPage
 MiMapBBTMemory
 MiMapCacheExceptionFilter
 MiMapCfgBitMapSection
+MiMapChildLargePageVads
 MiMapContiguousMemory
 MiMapContiguousMemoryLarge
 MiMapDummyPages
@@ -36369,7 +36800,6 @@ MiQueryLoadedPatches
 MiQueryMemoryListInformation
 MiQueryPfn
 MiQueryProcessActivePatches
-MiQueryStateMatches
 MiQuerySystemBase
 MiQueueControlAreaDelete
 MiQueueExtentPfnDeletion
@@ -36462,7 +36892,6 @@ MiReleaseProcessReferenceToSessionDataPage
 MiReleasePteCopyList
 MiReleasePtes
 MiReleaseReadListResources
-MiReleaseResourceLite
 MiReleaseScrubPacket
 MiReleaseSessionVa
 MiReleaseSystemCacheView
@@ -36604,7 +37033,6 @@ MiReturnSystemVa
 MiReturnVadQuota
 MiReturnWsToExpansionList
 MiReuseStandbyPage
-MiReverseSwizzleInvalidPte
 MiRevertQuasiPte
 MiRevertRelocatedImagePfn
 MiRevertRelocations
@@ -36665,7 +37093,6 @@ MiSessionUpdateImageCharges
 MiSetControlAreaSystemVa
 MiSetDeleteOnClose
 MiSetFaultPacketDirectives
-MiSetFreshPfnFromFreeList
 MiSetGraphicsPtes
 MiSetImageHotPatchAllowed
 MiSetImageProtection
@@ -36708,7 +37135,6 @@ MiSharePages
 MiSharedVaToPartition
 MiShouldLockPteDirectly
 MiShouldTrimUnusedSegments
-MiShouldYieldProcessor
 MiShowBadMapper
 MiShutdownSystem
 MiSignalLargePageRebuild
@@ -36719,7 +37145,6 @@ MiSimpleAgeWorkingSetTail
 MiSimpleAging
 MiSizeMemoryListLocks
 MiSkipEntirePagefileRegions
-MiSkipFractionalPagefileRegion
 MiSlabAllocatorRecentFailure
 MiSlistGetFreePage
 MiSlowRotateCopy
@@ -36815,7 +37240,6 @@ MiTrimWorkingSetEPTCallback
 MiTrimWorkingSetTail
 MiTrimmedEnough
 MiTryDeleteTransitionPte
-MiTryLocateWsle
 MiTryLockLeafAndContainingPagesAtDpc
 MiTryLockLeafPage
 MiTryLockProtoPoolPageAtDpc
@@ -36884,7 +37308,6 @@ MiUnlockVad
 MiUnlockVadCore
 MiUnlockVadRange
 MiUnlockVadShared
-MiUnlockWorkingSetCoreExclusive
 MiUnlockWorkingSetExclusive
 MiUnlockWorkingSetShared
 MiUnlockWsle
@@ -36915,7 +37338,6 @@ MiUpdateLargePageBitMap
 MiUpdateLargePagePfns
 MiUpdateLargePageSectionPfn
 MiUpdateLastSubsectionSize
-MiUpdateLinkedListInPte
 MiUpdateMirrorBitmaps
 MiUpdateOldPagesEPTCallback
 MiUpdateOldPte
@@ -37019,6 +37441,7 @@ MiWriteProtectSystemImages
 MiWritePteShadow
 MiWriteSharedDemandZeroPte
 MiWriteTopLevelPxe
+MiWriteUselessChildPte
 MiWriteValidPteNewPage
 MiWriteValidPteNewProtection
 MiWriteValidPteVolatile
@@ -37034,7 +37457,6 @@ MiZeroBootLargePages
 MiZeroBootMappings
 MiZeroCfgSystemWideBitmap
 MiZeroCfgSystemWideBitmapWorker
-MiZeroFault
 MiZeroInParallel
 MiZeroInParallelWorker
 MiZeroLargePage
@@ -37131,6 +37553,7 @@ MmDeterminePoolType
 MmDisableModifiedWriteOfSection
 MmDiscardDriverSection
 MmDoesFileHaveUserWritableReferences
+MmDoesImageSupportRetpoline
 MmDuplicateMemory
 MmEmptyAllWorkingSets
 MmEnablePeriodicAccessClearing
@@ -37172,7 +37595,6 @@ MmGetCacheAttribute
 MmGetCfgBitMapInformation
 MmGetChannelInformation
 MmGetControlAreaPartition
-MmGetCurrentProcessorColor
 MmGetDefaultPagePriority
 MmGetDirectoryFrameFromProcess
 MmGetDumpRange
@@ -37303,6 +37725,7 @@ MmMapViewOfSection
 MmMapViewOfSectionEx
 MmMarkHiberPhase
 MmMarkHiberRange
+MmMarkHypercallPageRetpolineBit
 MmMarkImageForHiberPhase
 MmMarkPhysicalMemoryAsBad
 MmMarkPhysicalMemoryAsGood
@@ -37311,7 +37734,6 @@ MmMdlPagesAreZero
 MmNotifyProcessInSwapTrigger
 MmObtainChargesToLockPagedPool
 MmOnlySystemCacheViewsPresent
-MmOutSwapProcess
 MmOutSwapVirtualAddresses
 MmOutSwapWorkingSet
 MmPageEntireDriver
@@ -38178,6 +38600,7 @@ ObpShutdownCloseHandleProcedure
 ObpStartRuntimeStackTrace
 ObpStopRuntimeStackTrace
 ObpTraceObjectDereferenceIfActive
+ObpTraceObjectReferenceIfActive
 ObpUnlockDirectory
 ObpUnlockHandleDatabaseEntry
 ObpVerifyAccessToBoundaryEntry
@@ -39061,7 +39484,6 @@ PiSwIrpSetLifetime
 PiSwIrpStartCreate
 PiSwIrpStartCreateWorker
 PiSwIsValidPnpId
-PiSwLock
 PiSwMakePdoInactive
 PiSwPdoAssociationFree
 PiSwPdoDriverEntry
@@ -39078,7 +39500,6 @@ PiSwRemovePdoAssociation
 PiSwStartCreate
 PiSwStopDestroy
 PiSwUnassociateDeviceObject
-PiSwUnlock
 PiSwUpdateArrayProperties
 PiSwValidateCreateData
 PiSwValidatePropertyArray
@@ -39198,7 +39619,6 @@ PipEventRemovalCheckOpenHandles
 PipFindDependencyNodePath
 PipFindDeviceOverrideEntry
 PipForAllChildDeviceNodes
-PipForAllDeviceNodes
 PipForAllDeviceNodesCallback
 PipForDeviceNodeSubtree
 PipFreeBindingId
@@ -39832,7 +40252,6 @@ PoUnregisterSystemState
 PoUserShutdownCancelled
 PoUserShutdownInitiated
 PoVolumeDevice
-PointerEncode
 PopAccountBatteryEnergyChange
 PopAccountCbEnergyChange
 PopAccumulateNonActivatedCpuTime
@@ -40114,6 +40533,8 @@ PopDiagTraceFxComponentResidency
 PopDiagTraceFxComponentWake
 PopDiagTraceFxDefaultPepWorkerEnd
 PopDiagTraceFxDeviceAccounting
+PopDiagTraceFxDeviceDirectedCompletion
+PopDiagTraceFxDeviceDirectedTransition
 PopDiagTraceFxDeviceIdleConstraints
 PopDiagTraceFxDevicePowerRequirement
 PopDiagTraceFxDevicePowerState
@@ -40911,7 +41332,6 @@ PopReadUlongPowerKey
 PopReadyChildWake
 PopReadyParentSleep
 PopRecalculateCBTriggerLevels
-PopRecordBatteryPercentage
 PopRecordHibernateDiagnosticInfo
 PopRecordLidState
 PopRecordLongPowerButtonPressDetected
@@ -40977,7 +41397,6 @@ PopSessionDisconnected
 PopSessionInputChange
 PopSessionWinlogonNotification
 PopSetAwayModeStatus
-PopSetBatteryDischargingState
 PopSetBootPhaseRange
 PopSetCleanShutdownMarker
 PopSetConnectedStandbyMarker
@@ -41005,7 +41424,6 @@ PopSetSystemAwayMode
 PopSetSystemState
 PopSetUserShutdownMarkerWorker
 PopSetWatchdog
-PopSetWeakChargerState
 PopSetWin32kDisplayTimeout
 PopSetWin32kInputTimeout
 PopSetupAirplaneModeNotification
@@ -41026,7 +41444,6 @@ PopSleepStudyTaskClientTimerWorker
 PopSpoilBatteryEstimate
 PopSpoilEstimatesOnPowerStateTransitionWorker
 PopSqmAddToStream
-PopSqmBatteryUpdate
 PopSqmCreateDwordStreamEntry
 PopSqmFanEnumeration
 PopSqmThermalCriticalEvent
@@ -41206,7 +41623,6 @@ PpDevCfgProcessDeviceExtensions
 PpDevCfgProcessDeviceOperations
 PpDevCfgProcessDeviceReset
 PpDevCfgProcessDevices
-PpDevCfgTraceDeviceStart
 PpDevNodeInsertIntoTree
 PpDevNodeLockTree
 PpDevNodeRemoveFromTree
@@ -41947,6 +42363,7 @@ PspChangeProcessExecutionState
 PspChargeJobWakeCounter
 PspChargeProcessWakeCounter
 PspChargeQuota
+PspCheckConditionalWakeCharge
 PspCheckForInvalidAccessByProtection
 PspCheckJobAccessState
 PspClearProcessThreadCidRefs
@@ -41960,6 +42377,8 @@ PspComputeQuantum
 PspComputeQuantumAndPriority
 PspComputeReportWakeFilter
 PspControlHwTracingThread
+PspConvertJobNotificationLimitFromV1
+PspConvertJobNotificationLimitFromV2
 PspConvertJobToMixed
 PspConvertSiloToServerSilo
 PspCopyAndFixupParameters
@@ -42124,7 +42543,6 @@ PspIumFreePartitionState
 PspIumFreePhysicalPages
 PspIumGetPhysicalPage
 PspIumGetSystemData
-PspIumInitialize
 PspIumReplenishPartitionPages
 PspIumVerifyParentSd
 PspIumWorker
@@ -42400,7 +42818,7 @@ PspWow64SetupUserProcessAddressSpace
 PspWow64SetupUserStack
 PspWow64ThunkProcessParameters
 PspWritePebAffinityInfo
-PspWriteProcessParentSecurityDomain
+PspWriteProcessSecurityDomain
 PspWriteTebIdealProcessor
 PspWriteTebImpersonationInfo
 PtrToUlong
@@ -42519,7 +42937,6 @@ RtlAppendStringToString
 RtlAppendUnicodeStringToString
 RtlAppendUnicodeToString
 RtlApplyHotPatch
-RtlApplyImportRelocationToImage
 RtlApplyImportRelocationToPage
 RtlApplyIndirectRelocationToPage
 RtlApplySwitchJumpRelocationToPage
@@ -42545,6 +42962,7 @@ RtlCSparseBitmapEnterLockingRegion
 RtlCSparseBitmapFindBitSetCapped
 RtlCSparseBitmapLeaveLockingRegion
 RtlCSparseBitmapStart
+RtlCalculateUnwindInfoSizeForRetpoline
 RtlCapabilityCheck
 RtlCapabilityCheckForSingleSessionSku
 RtlCaptureContext
@@ -42553,7 +42971,6 @@ RtlCaptureImageExceptionValues
 RtlCaptureStackBackTrace
 RtlCharToInteger
 RtlCheckBootStatusIntegrity
-RtlCheckCurrentPatchesApplied
 RtlCheckPortableOperatingSystem
 RtlCheckRegistryKey
 RtlCheckSystemBootStatusIntegrity
@@ -42599,6 +43016,7 @@ RtlCopyLuid
 RtlCopyLuidAndAttributesArray
 RtlCopyMemoryNonTemporal
 RtlCopyRangeList
+RtlCopyRetpolineStubsUnwindInfo
 RtlCopySid
 RtlCopySidAndAttributesArray
 RtlCopyString
@@ -42616,6 +43034,7 @@ RtlCreateHeap
 RtlCreateInvertedFunctionTableCacheEntry
 RtlCreateRegistryKey
 RtlCreateRetpolineRelocationInformation
+RtlCreateRetpolineStubsFunctionTable
 RtlCreateRvaList
 RtlCreateSecurityDescriptor
 RtlCreateSystemVolumeInformationFolder
@@ -42807,7 +43226,6 @@ RtlGuardIsValidWow64StackPointer
 RtlHashBytes2
 RtlHashUnicodeString
 RtlHotPatchSynchronizationRequired
-RtlHpEnvContextCreate
 RtlHpGlobalsInitialize
 RtlHpHeapManagerCleanup
 RtlHpHeapManagerInitialize
@@ -43163,6 +43581,7 @@ RtlUnicodeToMultiByteSize
 RtlUnicodeToOemN
 RtlUnicodeToUTF8N
 RtlUnlockBootStatusData
+RtlUnsignedMultiplyHigh
 RtlUnwind
 RtlUnwindEx
 RtlUpcaseUnicodeChar
@@ -43230,6 +43649,8 @@ RtlpCapChkTelemetryRunOnce
 RtlpCapabilityCheckSystemCapability
 RtlpCaptureContext
 RtlpCaptureContext2
+RtlpCaptureDynamicRelocationTableRva
+RtlpCaptureRetpolineBinaryInfoForImage
 RtlpCheckDynamicTimeZoneInformation
 RtlpCheckFunctionPatchApplied
 RtlpCoalesceFreeBlocks
@@ -43320,6 +43741,7 @@ RtlpGetNormalization
 RtlpGetNtProductTypeFromRegistry
 RtlpGetPolicyValueForSystemCapability
 RtlpGetRegistryHandle
+RtlpGetRetpolineStubsFunctionTable
 RtlpGetSetBootStatusData
 RtlpGetStackLimits
 RtlpGetTokenNamedObjectPath
@@ -43360,6 +43782,7 @@ RtlpHpFreeWithExceptionProtection
 RtlpHpGetOwnerHeap
 RtlpHpHeapAllocate
 RtlpHpHeapCheckCommitLimit
+RtlpHpHeapCompact
 RtlpHpHeapCreate
 RtlpHpHeapDestroy
 RtlpHpHeapExtendContext
@@ -43376,6 +43799,7 @@ RtlpHpLegacyGetEnvHandle
 RtlpHpLfhBucketActivate
 RtlpHpLfhBucketAddSubsegment
 RtlpHpLfhBucketAllocate
+RtlpHpLfhBucketAllocateSlot
 RtlpHpLfhBucketComputeNewSubsegmentBlockCount
 RtlpHpLfhBucketGetSubsegment
 RtlpHpLfhBucketInitialize
@@ -43384,9 +43808,10 @@ RtlpHpLfhBucketUpdateAffinityMapping
 RtlpHpLfhBucketUpdateStats
 RtlpHpLfhContextAllocate
 RtlpHpLfhContextCleanup
+RtlpHpLfhContextCompact
 RtlpHpLfhContextInitialize
-RtlpHpLfhContextUpdateFreeCommitCount
 RtlpHpLfhOwnerCleanup
+RtlpHpLfhOwnerCompact
 RtlpHpLfhOwnerInitialize
 RtlpHpLfhOwnerMoveSubsegment
 RtlpHpLfhSlotAllocate
@@ -43410,8 +43835,11 @@ RtlpHpMetadataHeapCtxGet
 RtlpHpMetadataHeapStart
 RtlpHpQueryVA
 RtlpHpRegisterEnvironment
+RtlpHpReleaseLockShared
+RtlpHpScheduleCompaction
 RtlpHpSegAlloc
 RtlpHpSegContextCleanup
+RtlpHpSegContextCompact
 RtlpHpSegContextInitialize
 RtlpHpSegContextReserve
 RtlpHpSegDescriptorValidate
@@ -43420,6 +43848,7 @@ RtlpHpSegFreeRangeInsert
 RtlpHpSegFreeRangeRemove
 RtlpHpSegHeapAddSegment
 RtlpHpSegHeapCheckCommitLimit
+RtlpHpSegHeapRemoveSegment
 RtlpHpSegLargeRangeAllocate
 RtlpHpSegLfhAllocate
 RtlpHpSegLfhExtendContext
@@ -43427,6 +43856,7 @@ RtlpHpSegLfhVsCommit
 RtlpHpSegLfhVsDecommit
 RtlpHpSegLfhVsFree
 RtlpHpSegLockAcquire
+RtlpHpSegLockRelease
 RtlpHpSegMgrAllocate
 RtlpHpSegMgrApplyLargePagePolicy
 RtlpHpSegMgrCommit
@@ -43447,7 +43877,6 @@ RtlpHpSegPageRangeHandleCommit
 RtlpHpSegPageRangeShrink
 RtlpHpSegPageRangeSplit
 RtlpHpSegSegmentAllocate
-RtlpHpSegSegmentComputeCommit
 RtlpHpSegSegmentFree
 RtlpHpSegSegmentInitialize
 RtlpHpSegSetExtraPresent
@@ -43488,7 +43917,6 @@ RtlpHpVsContextFree
 RtlpHpVsContextInitialize
 RtlpHpVsFreeChunkInsert
 RtlpHpVsFreeChunkRemove
-RtlpHpVsIsPageAlignedUserAddr
 RtlpHpVsSubsegmentCleanup
 RtlpHpVsSubsegmentCommitPages
 RtlpHpVsSubsegmentCreate
@@ -43705,7 +44133,6 @@ SdbGuestTargetPlatformFlagsToRuntimePlatformFlags
 SdbInitDatabaseInMemory
 SdbMakeIndexKeyFromStringEx
 SdbOpenDatabaseEx
-SdbQueryDataEx
 SdbQueryDataExTagID
 SdbReadBinaryTag
 SdbReadDWORDTag
@@ -44506,6 +44933,7 @@ SmKmVirtualLockCtxMemoryUnlocked
 SmKmVolumeQueryUniqueId
 SmMapPage
 SmPageRead
+SmPerformStoreSwapOperation
 SmPrepareForFatalHeapCorruption
 SmPrepareForFatalPageError
 SmProcessCompressionInfoRequest
@@ -46295,7 +46723,6 @@ VslBindNtIum
 VslCallEnclave
 VslCloseSecureHandle
 VslCompleteSecureDriverLoad
-VslCompleteSlabConfiguration
 VslConfigureDynamicMemory
 VslConnectSwInterrupt
 VslCreateEnclave
@@ -46332,6 +46759,7 @@ VslGetSecureTebAddress
 VslGetSetSecureContext
 VslHandleKsrCall
 VslInitializeEnclave
+VslInitializeRetpoline
 VslInitializeSecureKernelCfg
 VslIsSecureKernelRunning
 VslIsTrustletRunning
@@ -46360,7 +46788,6 @@ VslRundownSecureProcess
 VslSendDebugAttachNotifications
 VslSetCodeIntegrityPolicy
 VslSetPlaceholderPages
-VslSetRetpolinePfn
 VslSetupLiveDumpBufferInSk
 VslSlowFlushSecureRangeList
 VslStartSecureProcessor
@@ -47598,11 +48025,13 @@ __ascii_stricmp
 __ascii_strnicmp
 __chkstk
 __guard_retpoline_exit
+__guard_retpoline_exit_indirect_rax
+__guard_retpoline_icall_handler
 __guard_retpoline_import_r10
 __guard_retpoline_import_r10_do_jmp
 __guard_retpoline_import_r10_do_retpoline
+__guard_retpoline_import_r10_log_event
 __guard_retpoline_indirect_cfg_rax
-__guard_retpoline_indirect_rax_do_jmp
 __guard_retpoline_switchtable_jump_r10
 __guard_retpoline_switchtable_jump_r11
 __guard_retpoline_switchtable_jump_r12
@@ -47619,7 +48048,6 @@ __guard_retpoline_switchtable_jump_rdi
 __guard_retpoline_switchtable_jump_rdx
 __guard_retpoline_switchtable_jump_rsi
 __guard_retpoline_switchtable_jump_rsp
-__guard_wrap_icall_dispatch_cfg
 __isascii
 __longjmp_internal
 __misaligned_access

@@ -204,7 +204,8 @@ typedef struct _LOADER_PARAMETER_EXTENSION
     /* 0x004c */ unsigned long IumEnabled : 1; /* bit position: 9 */
     /* 0x004c */ unsigned long IsSmbboot : 1; /* bit position: 10 */
     /* 0x004c */ unsigned long BootLogEnabled : 1; /* bit position: 11 */
-    /* 0x004c */ unsigned long Unused : 9; /* bit position: 12 */
+    /* 0x004c */ unsigned long DriverVerifierEnabled : 1; /* bit position: 12 */
+    /* 0x004c */ unsigned long Unused : 8; /* bit position: 13 */
     /* 0x004c */ unsigned long FeatureSimulations : 6; /* bit position: 21 */
     /* 0x004c */ unsigned long MicrocodeSelfHosting : 1; /* bit position: 27 */
     /* 0x004c */ unsigned long XhciLegacyHandoffSkip : 1; /* bit position: 28 */

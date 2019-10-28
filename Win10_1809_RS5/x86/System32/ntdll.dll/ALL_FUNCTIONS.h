@@ -50,7 +50,6 @@
 @RtlpInterlockedFlushSList@4
 @RtlpInterlockedPopEntrySList@4
 @RtlpInterlockedPushEntrySList@8
-@RtlpLowFragHeapAllocFromContext@16
 @RtlpLowFragHeapAllocateFromZone@8
 @RtlpMoveActCtxToFreeList@4
 @RtlpOpenBaseImageFileOptionsKey@4
@@ -835,7 +834,6 @@ _LdrpSetAlternateResourceModuleHandle@32
 _LdrpSetModuleSigningLevel@20
 _LdrpSetProtection@8
 _LdrpSetThreadPreferredLangList@0
-_LdrpShouldModuleImportBeRedirected@4
 _LdrpSignalModuleMapped@4
 _LdrpSnapKernelBaseExtensions@0
 _LdrpSnapModule@4
@@ -853,10 +851,8 @@ _LdrpUnsuppressAddressTakenIat@12
 _LdrpUpdateStatistics@0
 _LdrpValidPathComponentsMask@0
 _LdrpValidateEntrySection@4
-_LdrpValidateImportRedirectionDll@8
 _LdrpValidateIntegrityContinuity@12
 _LdrpVerifyAlternateResourceModuleEx@24
-_LdrpVsmEnclaveUnregisterTelemetry@0
 _LdrpWorkCallback@12
 _LdrpWriteBackProtectedDelayLoad@20
 _LdrxCallInitRoutine@16
@@ -2776,7 +2772,7 @@ _RtlpHpLfhContextCleanup@4
 _RtlpHpLfhContextCompact@8
 _RtlpHpLfhContextInitialize@28
 _RtlpHpLfhContextLockUnlock@8
-_RtlpHpLfhContextUpdateFreeCommitCount@8
+_RtlpHpLfhContextMaximumExtension@4
 _RtlpHpLfhOwnerCleanup@8
 _RtlpHpLfhOwnerCompact@12
 _RtlpHpLfhOwnerInitialize@16
@@ -2799,11 +2795,12 @@ _RtlpHpLfhSubsegmentLockOwner@12
 _RtlpHpLfhSubsegmentSetExtraPresentBlock@12
 _RtlpHpLfhSubsegmentSetOwner@8
 _RtlpHpLfhSubsegmentSetUnusedBytes@12
+_RtlpHpLfhSubsegmentSizeBlock@16
 _RtlpHpLfhSubsegmentSizeBlockInternal@16
 _RtlpHpLfhSubsegmentWalk@24
 _RtlpHpLockHeapForCloning@4
 _RtlpHpMetadataAlloc@20
-_RtlpHpMetadataCommit@20
+_RtlpHpMetadataCommit@24
 _RtlpHpMetadataFree@12
 _RtlpHpMetadataHeapCreate@12
 _RtlpHpMetadataHeapCtxGet@8
@@ -2835,7 +2832,6 @@ _RtlpHpSegFreeRangeInsert@12
 _RtlpHpSegFreeRangeRemove@8
 _RtlpHpSegGetDescriptorValidateSafe@8
 _RtlpHpSegHeapAddSegment@8
-_RtlpHpSegHeapCheckCommitLimit@8
 _RtlpHpSegLargeRangeAllocate@16
 _RtlpHpSegLfhAllocate@20
 _RtlpHpSegLfhExtendContext@8
@@ -2845,15 +2841,11 @@ _RtlpHpSegLfhVsFree@16
 _RtlpHpSegLockAcquire@8
 _RtlpHpSegMgrAllocate@12
 _RtlpHpSegMgrApplyLargePagePolicy@4
-_RtlpHpSegMgrCheckOpportunisticLargePage@12
 _RtlpHpSegMgrCommit@28
 _RtlpHpSegMgrCommitComplete@24
 _RtlpHpSegMgrCommitInitiate@24
-_RtlpHpSegMgrLock@4
 _RtlpHpSegMgrRelease@12
 _RtlpHpSegMgrReserve@20
-_RtlpHpSegMgrUnlock@8
-_RtlpHpSegMgrVaCtxAlloc@12
 _RtlpHpSegMgrVaCtxFree@12
 _RtlpHpSegMgrVaCtxInitialize@16
 _RtlpHpSegMgrVaCtxInsert@8
@@ -2956,7 +2948,6 @@ _RtlpHpVsContextFree@20
 _RtlpHpVsContextInitialize@24
 _RtlpHpVsFreeChunkInsert@12
 _RtlpHpVsFreeChunkRemove@12
-_RtlpHpVsIsPageAlignedUserAddr@8
 _RtlpHpVsSubsegmentCleanup@8
 _RtlpHpVsSubsegmentCommitPages@24
 _RtlpHpVsSubsegmentComputeSize@12
@@ -3112,6 +3103,7 @@ _RtlpMuiRegGetOrAddString@16
 _RtlpMuiRegGetOrAddStringToPool@16
 _RtlpMuiRegGetString@16
 _RtlpMuiRegGetStringFromPool@8
+_RtlpMuiRegGetStringIndexInPool@8
 _RtlpMuiRegGrowLanguageConfigList@8
 _RtlpMuiRegGrowLanguageList@8
 _RtlpMuiRegGrowLanguages@8
@@ -3312,6 +3304,7 @@ _RtlpUnsuppressForwardReferencingCallTarget@4
 _RtlpUpcaseUnicodeStringPrivate@12
 _RtlpUpdateHeapListIndex@8
 _RtlpUpdateHeapWatermarks@4
+_RtlpUpdateLfhRandomDataArray@0
 _RtlpUpdateTEBLanguage@12
 _RtlpUpdateTagEntry@20
 _RtlpValidAccessFilterAce@4
@@ -3455,7 +3448,6 @@ _TpCaptureCaller@4
 _TpCheckTerminateWorker@4
 _TpDbgDumpHeapUsage@12
 _TpDbgSetLogRoutine@4
-_TpDereferenceGlobalPool@4
 _TpDisablePoolCallbackChecks@4
 _TpDisassociateCallback@4
 _TpInitializePackage@0
@@ -3637,7 +3629,6 @@ _WerEscalationReadImageVersionInfoForModuleBaseSafe@12
 _WerReportExceptionWorker@4
 _WerReportSQMEvent@16
 _WerpAllocateAndInitializeSid@44
-_WerpBreakIntoDebuggerIfPresent@12
 _WerpCreateCompletionEvent@4
 _WerpCreateCrashDataSection@8
 _WerpEscalationIsDisabled@0
@@ -4412,6 +4403,7 @@ _bsearch
 _bsearch_s
 _ceil
 _cos
+_decode_digit@4
 _fabs
 _floor
 _isalnum

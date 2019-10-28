@@ -12,6 +12,7 @@ enum POWER_ACTION;
 enum PPM_IDLE_BUCKET_TIME_TYPE;
 enum PS_CREATE_STATE;
 enum RTLP_CSPARSE_BITMAP_STATE;
+union RTLP_HP_LFH_PERF_FLAGS;
 struct RTL_HP_ENV_HANDLE;
 enum ReplacesCorHdrNumericDefines;
 enum SE_WS_APPX_SIGNATURE_ORIGIN;
@@ -701,6 +702,28 @@ enum RTLP_CSPARSE_BITMAP_STATE
   UserBitmapInvalid = 1,
   UserBitmapValid = 2,
 };
+
+union RTLP_HP_LFH_PERF_FLAGS
+{
+  union
+  {
+    struct /* bitfield */
+    {
+      /* 0x0000 */ unsigned long HotspotDetection : 1; /* bit position: 0 */
+      /* 0x0000 */ unsigned long HotspotFullCommit : 1; /* bit position: 1 */
+      /* 0x0000 */ unsigned long ActiveSubsegment : 1; /* bit position: 2 */
+      /* 0x0000 */ unsigned long SmallerSubsegment : 1; /* bit position: 3 */
+      /* 0x0000 */ unsigned long SingleAffinitySlot : 1; /* bit position: 4 */
+      /* 0x0000 */ unsigned long ApplyLfhDecommitPolicy : 1; /* bit position: 5 */
+      /* 0x0000 */ unsigned long EnableGarbageCollection : 1; /* bit position: 6 */
+      /* 0x0000 */ unsigned long LargePagePreCommit : 1; /* bit position: 7 */
+      /* 0x0000 */ unsigned long OpportunisticLargePreCommit : 1; /* bit position: 8 */
+      /* 0x0000 */ unsigned long LfhForcedAffinity : 1; /* bit position: 9 */
+      /* 0x0000 */ unsigned long LfhCachelinePadding : 1; /* bit position: 10 */
+    }; /* bitfield */
+    /* 0x0000 */ unsigned long AllFlags;
+  }; /* size: 0x0004 */
+}; /* size: 0x0004 */
 
 struct RTL_HP_ENV_HANDLE
 {
@@ -2347,8 +2370,7 @@ typedef struct _ETHREAD
   /* 0x07d0 */ struct _UNICODE_STRING* ThreadName;
   /* 0x07d8 */ struct _CONTEXT* SetContextState;
   /* 0x07e0 */ unsigned long LastExpectedRunTime;
-  /* 0x07e4 */ unsigned short HeapLfhPrivateData;
-  /* 0x07e6 */ unsigned short Unused;
+  /* 0x07e4 */ unsigned long HeapData;
   /* 0x07e8 */ struct _LIST_ENTRY OwnerEntryListHead;
   /* 0x07f8 */ unsigned __int64 DisownedOwnerEntryListLock;
   /* 0x0800 */ struct _LIST_ENTRY DisownedOwnerEntryListHead;
@@ -3589,15 +3611,16 @@ typedef struct _HEAP_LFH_CONTEXT
 {
   /* 0x0000 */ void* BackendCtx;
   /* 0x0008 */ struct _HEAP_SUBALLOCATOR_CALLBACKS Callbacks;
-  /* 0x0030 */ unsigned char MaxAffinity;
-  /* 0x0038 */ const unsigned char* AffinityModArray;
-  /* 0x0040 */ unsigned char LockType;
-  /* 0x0048 */ struct _HEAP_RUNTIME_MEMORY_STATS* MemStats;
-  /* 0x0050 */ struct _RTL_HP_LFH_CONFIG Config;
-  /* 0x0060 */ unsigned __int64 SubsegmentCreationLock;
-  /* 0x0068 */ union _HEAP_LFH_SUBSEGMENT_STATS BucketStats;
-  /* 0x0070 */ struct _HEAP_LFH_BUCKET* Buckets[129];
-} HEAP_LFH_CONTEXT, *PHEAP_LFH_CONTEXT; /* size: 0x0478 */
+  /* 0x0030 */ const unsigned char* AffinityModArray;
+  /* 0x0038 */ unsigned char MaxAffinity;
+  /* 0x0039 */ unsigned char LockType;
+  /* 0x003a */ short MemStatsOffset;
+  /* 0x003c */ struct _RTL_HP_LFH_CONFIG Config;
+  /* 0x0040 */ union _HEAP_LFH_SUBSEGMENT_STATS BucketStats;
+  /* 0x0048 */ unsigned __int64 SubsegmentCreationLock;
+  /* 0x0080 */ struct _HEAP_LFH_BUCKET* Buckets[129];
+  /* 0x0488 */ long __PADDING__[14];
+} HEAP_LFH_CONTEXT, *PHEAP_LFH_CONTEXT; /* size: 0x04c0 */
 
 typedef struct _HEAP_LFH_FAST_REF
 {
@@ -3941,19 +3964,20 @@ typedef struct _HEAP_SEG_CONTEXT
     }; /* size: 0x0001 */
   } /* size: 0x0001 */ Flags;
   /* 0x0010 */ unsigned long MaxAllocationSize;
-  /* 0x0018 */ unsigned __int64 SegmentLock;
-  /* 0x0020 */ struct _LIST_ENTRY SegmentListHead;
-  /* 0x0030 */ unsigned __int64 SegmentCount;
-  /* 0x0038 */ struct _RTL_RB_TREE FreePageRanges;
-  /* 0x0048 */ unsigned __int64 FreeSegmentListLock;
-  /* 0x0050 */ struct _SINGLE_LIST_ENTRY FreeSegmentList[2];
-  /* 0x0060 */ struct _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS* OlpStats;
-  /* 0x0068 */ struct _HEAP_RUNTIME_MEMORY_STATS* MemStats;
-  /* 0x0070 */ void* LfhContext;
-  /* 0x0078 */ void* VsContext;
-  /* 0x0080 */ struct RTL_HP_ENV_HANDLE EnvHandle;
-  /* 0x0090 */ void* Heap;
-} HEAP_SEG_CONTEXT, *PHEAP_SEG_CONTEXT; /* size: 0x0098 */
+  /* 0x0014 */ short OlpStatsOffset;
+  /* 0x0016 */ short MemStatsOffset;
+  /* 0x0018 */ void* LfhContext;
+  /* 0x0020 */ void* VsContext;
+  /* 0x0028 */ struct RTL_HP_ENV_HANDLE EnvHandle;
+  /* 0x0038 */ void* Heap;
+  /* 0x0040 */ unsigned __int64 SegmentLock;
+  /* 0x0048 */ struct _LIST_ENTRY SegmentListHead;
+  /* 0x0058 */ unsigned __int64 SegmentCount;
+  /* 0x0060 */ struct _RTL_RB_TREE FreePageRanges;
+  /* 0x0070 */ unsigned __int64 FreeSegmentListLock;
+  /* 0x0078 */ struct _SINGLE_LIST_ENTRY FreeSegmentList[2];
+  /* 0x0088 */ long __PADDING__[14];
+} HEAP_SEG_CONTEXT, *PHEAP_SEG_CONTEXT; /* size: 0x00c0 */
 
 typedef enum _HEAP_SEG_RANGE_TYPE
 {
@@ -9544,7 +9568,7 @@ typedef struct _RTLP_HP_HEAP_MANAGER
   /* 0x0050 */ struct _HEAP_VAMGR_CTX VaMgr;
   /* 0x3090 */ struct _RTLP_HP_METADATA_HEAP_CTX MetadataHeaps[3];
   /* 0x30c0 */ struct _RTL_HP_SUB_ALLOCATOR_CONFIGS SubAllocConfigs;
-} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x30d0 */
+} RTLP_HP_HEAP_MANAGER, *PRTLP_HP_HEAP_MANAGER; /* size: 0x30c8 */
 
 typedef enum _RTLP_HP_LOCK_TYPE
 {
@@ -9783,13 +9807,9 @@ typedef struct _RTL_HEAP_MEMORY_LIMIT_DATA
 
 typedef struct _RTL_HP_LFH_CONFIG
 {
-  /* 0x0000 */ unsigned long MaxBlockSize;
-  /* 0x0004 */ unsigned long MaxSubsegmentSize;
-  struct
-  {
-    /* 0x0008 */ unsigned long ForceEnable : 1; /* bit position: 0 */
-  } /* size: 0x0004 */ Flags;
-} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x000c */
+  /* 0x0000 */ unsigned short MaxBlockSize;
+  /* 0x0002 */ unsigned short MaxSubsegmentPages;
+} RTL_HP_LFH_CONFIG, *PRTL_HP_LFH_CONFIG; /* size: 0x0004 */
 
 typedef struct _RTL_HP_SEG_ALLOC_POLICY
 {
@@ -9802,8 +9822,8 @@ typedef struct _RTL_HP_SEG_ALLOC_POLICY
 typedef struct _RTL_HP_SUB_ALLOCATOR_CONFIGS
 {
   /* 0x0000 */ struct _RTL_HP_LFH_CONFIG LfhConfigs;
-  /* 0x000c */ struct _RTL_HP_VS_CONFIG VsConfigs;
-} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0010 */
+  /* 0x0004 */ struct _RTL_HP_VS_CONFIG VsConfigs;
+} RTL_HP_SUB_ALLOCATOR_CONFIGS, *PRTL_HP_SUB_ALLOCATOR_CONFIGS; /* size: 0x0008 */
 
 typedef struct _RTL_HP_VS_CONFIG
 {
@@ -10101,26 +10121,26 @@ typedef struct _SEGMENT_HEAP
   /* 0x0000 */ struct RTL_HP_ENV_HANDLE EnvHandle;
   /* 0x0010 */ unsigned long Signature;
   /* 0x0014 */ unsigned long GlobalFlags;
-  /* 0x0018 */ struct _HEAP_RUNTIME_MEMORY_STATS MemStats;
-  /* 0x0070 */ unsigned long Interceptor;
-  /* 0x0074 */ unsigned short ProcessHeapListIndex;
-  /* 0x0076 */ unsigned short GlobalLockCount;
-  /* 0x0078 */ unsigned long GlobalLockOwner;
-  /* 0x007c */ unsigned long AllocatedFromMetadata : 1; /* bit position: 0 */
-  /* 0x0080 */ unsigned __int64 LargeMetadataLock;
-  /* 0x0088 */ struct _RTL_RB_TREE LargeAllocMetadata;
-  /* 0x0098 */ volatile unsigned __int64 LargeReservedPages;
-  /* 0x00a0 */ volatile unsigned __int64 LargeCommittedPages;
-  /* 0x00a8 */ struct _HEAP_SEG_CONTEXT SegContexts[2];
-  /* 0x01d8 */ union _RTL_RUN_ONCE StackTraceInitVar;
-  /* 0x01e0 */ struct _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
-  /* 0x0200 */ unsigned __int64 ContextExtendLock;
-  /* 0x0208 */ unsigned char* AllocatedBase;
-  /* 0x0210 */ unsigned char* UncommittedBase;
-  /* 0x0218 */ unsigned char* ReservedLimit;
-  /* 0x0220 */ struct _HEAP_VS_CONTEXT VsContext;
-  /* 0x0298 */ struct _HEAP_LFH_CONTEXT LfhContext;
-} SEGMENT_HEAP, *PSEGMENT_HEAP; /* size: 0x0710 */
+  /* 0x0018 */ unsigned long Interceptor;
+  /* 0x001c */ unsigned short ProcessHeapListIndex;
+  /* 0x001e */ unsigned short AllocatedFromMetadata : 1; /* bit position: 0 */
+  /* 0x0020 */ struct _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
+  /* 0x0040 */ unsigned __int64 LargeMetadataLock;
+  /* 0x0048 */ struct _RTL_RB_TREE LargeAllocMetadata;
+  /* 0x0058 */ volatile unsigned __int64 LargeReservedPages;
+  /* 0x0060 */ volatile unsigned __int64 LargeCommittedPages;
+  /* 0x0068 */ union _RTL_RUN_ONCE StackTraceInitVar;
+  /* 0x0080 */ struct _HEAP_RUNTIME_MEMORY_STATS MemStats;
+  /* 0x00d8 */ unsigned short GlobalLockCount;
+  /* 0x00dc */ unsigned long GlobalLockOwner;
+  /* 0x00e0 */ unsigned __int64 ContextExtendLock;
+  /* 0x00e8 */ unsigned char* AllocatedBase;
+  /* 0x00f0 */ unsigned char* UncommittedBase;
+  /* 0x00f8 */ unsigned char* ReservedLimit;
+  /* 0x0100 */ struct _HEAP_SEG_CONTEXT SegContexts[2];
+  /* 0x0280 */ struct _HEAP_VS_CONTEXT VsContext;
+  /* 0x0300 */ struct _HEAP_LFH_CONTEXT LfhContext;
+} SEGMENT_HEAP, *PSEGMENT_HEAP; /* size: 0x07c0 */
 
 typedef struct _SEGMENT_HEAP_EXTRA
 {
@@ -10495,8 +10515,7 @@ typedef struct _TEB
   /* 0x179c */ unsigned long IsImpersonating;
   /* 0x17a0 */ void* NlsCache;
   /* 0x17a8 */ void* pShimData;
-  /* 0x17b0 */ unsigned short HeapVirtualAffinity;
-  /* 0x17b2 */ unsigned short LowFragHeapDataSlot;
+  /* 0x17b0 */ unsigned long HeapData;
   /* 0x17b4 */ unsigned char Padding7[4];
   /* 0x17b8 */ void* CurrentTransactionHandle;
   /* 0x17c0 */ struct _TEB_ACTIVE_FRAME* ActiveFrame;
@@ -10633,8 +10652,7 @@ typedef struct _TEB32
   /* 0x0f9c */ unsigned long IsImpersonating;
   /* 0x0fa0 */ unsigned long NlsCache;
   /* 0x0fa4 */ unsigned long pShimData;
-  /* 0x0fa8 */ unsigned short HeapVirtualAffinity;
-  /* 0x0faa */ unsigned short LowFragHeapDataSlot;
+  /* 0x0fa8 */ unsigned long HeapData;
   /* 0x0fac */ unsigned long CurrentTransactionHandle;
   /* 0x0fb0 */ unsigned long ActiveFrame;
   /* 0x0fb4 */ unsigned long FlsData;
@@ -10779,8 +10797,7 @@ typedef struct _TEB64
   /* 0x179c */ unsigned long IsImpersonating;
   /* 0x17a0 */ unsigned __int64 NlsCache;
   /* 0x17a8 */ unsigned __int64 pShimData;
-  /* 0x17b0 */ unsigned short HeapVirtualAffinity;
-  /* 0x17b2 */ unsigned short LowFragHeapDataSlot;
+  /* 0x17b0 */ unsigned long HeapData;
   /* 0x17b4 */ unsigned char Padding7[4];
   /* 0x17b8 */ unsigned __int64 CurrentTransactionHandle;
   /* 0x17c0 */ unsigned __int64 ActiveFrame;
@@ -12225,6 +12242,7 @@ LdrpMergeNodes
 LdrpMergeParentBaseLanguagesToList
 LdrpMinimalMapModule
 LdrpMultiSZCchLength
+LdrpNameToOrdinal
 LdrpNotifyLoadOfGraph
 LdrpObtainLockedEnclave
 LdrpOverrideExportSuppression
@@ -12273,7 +12291,6 @@ LdrpResValidateFilePath
 LdrpResolveDelayLoadDescriptor
 LdrpResolveDelayloadAddress
 LdrpResolveDllName
-LdrpResolveForwarder
 LdrpResolveProcedureAddress
 LdrpSearchPath
 LdrpSearchResourceSection_U
@@ -12300,7 +12317,6 @@ LdrpUnmapModule
 LdrpUnsuppressAddressTakenIat
 LdrpUpdateStatistics
 LdrpValidateEntrySection
-LdrpValidateImportRedirectionDll
 LdrpValidateIntegrityContinuity
 LdrpValidateUserCallTarget
 LdrpValidateUserCallTargetES
@@ -14208,7 +14224,6 @@ RtlpHeapTrkLeakCallback
 RtlpHpAllocVA
 RtlpHpAllocWithExceptionProtection
 RtlpHpAllocateHeap
-RtlpHpAllocateHeapBackend
 RtlpHpAllocateHeapInternal
 RtlpHpAppCompatDontChangePolicy
 RtlpHpAppCompatEnablePaddingAndLFHSubsegmentCommit
@@ -14252,14 +14267,15 @@ RtlpHpLargeFree
 RtlpHpLargeReAlloc
 RtlpHpLfhBucketActivate
 RtlpHpLfhBucketAddSubsegment
+RtlpHpLfhBucketAllocateSlot
 RtlpHpLfhBucketInitialize
 RtlpHpLfhBucketSubsegmentStatsUpdate
 RtlpHpLfhBucketUpdateAffinityMapping
 RtlpHpLfhBucketUpdateStats
 RtlpHpLfhContextCleanup
+RtlpHpLfhContextCompact
 RtlpHpLfhContextInitialize
 RtlpHpLfhContextLockUnlock
-RtlpHpLfhContextUpdateFreeCommitCount
 RtlpHpLfhOwnerCleanup
 RtlpHpLfhOwnerCompact
 RtlpHpLfhOwnerInitialize
@@ -14278,7 +14294,6 @@ RtlpHpLfhSubsegmentFreeBlock
 RtlpHpLfhSubsegmentIncBlockCounts
 RtlpHpLfhSubsegmentInitialize
 RtlpHpLfhSubsegmentSetOwner
-RtlpHpLfhSubsegmentSetUnusedBytes
 RtlpHpLfhSubsegmentSizeBlockInternal
 RtlpHpLfhSubsegmentWalk
 RtlpHpMetadataAlloc
@@ -14325,7 +14340,6 @@ RtlpHpSegMgrCommitComplete
 RtlpHpSegMgrCommitInitiate
 RtlpHpSegMgrRelease
 RtlpHpSegMgrReserve
-RtlpHpSegMgrVaCtxAlloc
 RtlpHpSegMgrVaCtxFree
 RtlpHpSegMgrVaCtxInitialize
 RtlpHpSegMgrVaCtxInsert
@@ -14343,7 +14357,6 @@ RtlpHpSegReportBusyBlock
 RtlpHpSegReportPageRange
 RtlpHpSegReportSegment
 RtlpHpSegSegmentAllocate
-RtlpHpSegSegmentComputeCommit
 RtlpHpSegSegmentFree
 RtlpHpSegSegmentInitialize
 RtlpHpSegSetExtraPresent
@@ -14419,7 +14432,6 @@ RtlpHpVsContextFree
 RtlpHpVsContextInitialize
 RtlpHpVsFreeChunkInsert
 RtlpHpVsFreeChunkRemove
-RtlpHpVsIsPageAlignedUserAddr
 RtlpHpVsSubsegmentCleanup
 RtlpHpVsSubsegmentCommitPages
 RtlpHpVsSubsegmentCreate
@@ -15090,7 +15102,6 @@ TppWorkPost
 TppWorkUnposted
 TppWorkWait
 TppWorkerFindTask
-TppWorkerSwitchNode
 TppWorkerThread
 TppWorkerpInnerExceptionFilter
 TppWorkerpOuterExceptionFilter

@@ -156,8 +156,7 @@ typedef struct _TEB
   /* 0x0f9c */ unsigned long IsImpersonating;
   /* 0x0fa0 */ void* NlsCache;
   /* 0x0fa4 */ void* pShimData;
-  /* 0x0fa8 */ unsigned short HeapVirtualAffinity;
-  /* 0x0faa */ unsigned short LowFragHeapDataSlot;
+  /* 0x0fa8 */ unsigned long HeapData;
   /* 0x0fac */ void* CurrentTransactionHandle;
   /* 0x0fb0 */ struct _TEB_ACTIVE_FRAME* ActiveFrame;
   /* 0x0fb4 */ void* FlsData;

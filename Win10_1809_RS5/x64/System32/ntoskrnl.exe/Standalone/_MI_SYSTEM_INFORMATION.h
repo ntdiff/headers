@@ -562,11 +562,12 @@ typedef struct _MI_SECTION_STATE
   /* 0x0288 */ unsigned long RetpolineStubPages;
   /* 0x0290 */ struct _RTL_BITMAP_EX KernelRetpolineBitMap;
   /* 0x02a0 */ struct _RTL_RETPOLINE_ROUTINES RetpolineRoutines;
-  /* 0x02ec */ unsigned long ImageChecksumBreakpoint;
-  /* 0x02f0 */ unsigned long ImageSizeBreakpoint;
-  /* 0x02f4 */ volatile long ImageValidationFailed;
-  /* 0x02f8 */ long __PADDING__[2];
-} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0300 */
+  /* 0x02f0 */ struct _MMPTE* RetpolineRevertPte;
+  /* 0x02f8 */ unsigned long ImageChecksumBreakpoint;
+  /* 0x02fc */ unsigned long ImageSizeBreakpoint;
+  /* 0x0300 */ volatile long ImageValidationFailed;
+  /* 0x0304 */ long __PADDING__[15];
+} MI_SECTION_STATE, *PMI_SECTION_STATE; /* size: 0x0340 */
 
 typedef struct _KMUTANT
 {
@@ -1498,30 +1499,30 @@ typedef struct _MI_SYSTEM_INFORMATION
 {
   /* 0x0000 */ struct _MI_POOL_STATE Pools;
   /* 0x0180 */ struct _MI_SECTION_STATE Sections;
-  /* 0x0480 */ struct _MI_SYSTEM_IMAGE_STATE SystemImages;
-  /* 0x0540 */ struct _MI_SESSION_STATE Sessions;
-  /* 0x15c8 */ struct _MI_PROCESS_STATE Processes;
-  /* 0x1640 */ struct _MI_HARDWARE_STATE Hardware;
-  /* 0x17c0 */ struct _MI_SYSTEM_VA_STATE SystemVa;
-  /* 0x1cc0 */ struct _MI_COMBINE_STATE PageCombines;
-  /* 0x1cd8 */ struct _MI_PAGELIST_STATE PageLists;
-  /* 0x1d00 */ struct _MI_PARTITION_STATE Partitions;
-  /* 0x1d60 */ struct _MI_SHUTDOWN_STATE Shutdowns;
-  /* 0x1dd8 */ struct _MI_ERROR_STATE Errors;
-  /* 0x1ec0 */ struct _MI_ACCESS_LOG_STATE AccessLog;
-  /* 0x1f40 */ struct _MI_DEBUGGER_STATE Debugger;
-  /* 0x2060 */ struct _MI_STANDBY_STATE Standby;
-  /* 0x2100 */ struct _MI_SYSTEM_PTE_STATE SystemPtes;
-  /* 0x2300 */ struct _MI_IO_PAGE_STATE IoPages;
-  /* 0x2370 */ struct _MI_PAGING_IO_STATE PagingIo;
-  /* 0x23c0 */ struct _MI_COMMON_PAGE_STATE CommonPages;
-  /* 0x2480 */ struct _MI_SYSTEM_TRIM_STATE Trims;
-  /* 0x24c0 */ unsigned __int64 Cookie;
-  /* 0x24c8 */ void* volatile* BootRegistryRuns;
-  /* 0x24d0 */ volatile long ZeroingDisabled;
-  /* 0x24d4 */ unsigned char FullyInitialized;
-  /* 0x24d5 */ unsigned char SafeBooted;
-  /* 0x24d8 */ const struct _TlgProvider_t* TraceLogging;
-  /* 0x2500 */ struct _MI_VISIBLE_STATE Vs;
-} MI_SYSTEM_INFORMATION, *PMI_SYSTEM_INFORMATION; /* size: 0x3140 */
+  /* 0x04c0 */ struct _MI_SYSTEM_IMAGE_STATE SystemImages;
+  /* 0x0580 */ struct _MI_SESSION_STATE Sessions;
+  /* 0x1608 */ struct _MI_PROCESS_STATE Processes;
+  /* 0x1680 */ struct _MI_HARDWARE_STATE Hardware;
+  /* 0x1800 */ struct _MI_SYSTEM_VA_STATE SystemVa;
+  /* 0x1d00 */ struct _MI_COMBINE_STATE PageCombines;
+  /* 0x1d18 */ struct _MI_PAGELIST_STATE PageLists;
+  /* 0x1d40 */ struct _MI_PARTITION_STATE Partitions;
+  /* 0x1da0 */ struct _MI_SHUTDOWN_STATE Shutdowns;
+  /* 0x1e18 */ struct _MI_ERROR_STATE Errors;
+  /* 0x1f00 */ struct _MI_ACCESS_LOG_STATE AccessLog;
+  /* 0x1f80 */ struct _MI_DEBUGGER_STATE Debugger;
+  /* 0x20a0 */ struct _MI_STANDBY_STATE Standby;
+  /* 0x2140 */ struct _MI_SYSTEM_PTE_STATE SystemPtes;
+  /* 0x2340 */ struct _MI_IO_PAGE_STATE IoPages;
+  /* 0x23b0 */ struct _MI_PAGING_IO_STATE PagingIo;
+  /* 0x2400 */ struct _MI_COMMON_PAGE_STATE CommonPages;
+  /* 0x24c0 */ struct _MI_SYSTEM_TRIM_STATE Trims;
+  /* 0x2500 */ unsigned __int64 Cookie;
+  /* 0x2508 */ void* volatile* BootRegistryRuns;
+  /* 0x2510 */ volatile long ZeroingDisabled;
+  /* 0x2514 */ unsigned char FullyInitialized;
+  /* 0x2515 */ unsigned char SafeBooted;
+  /* 0x2518 */ const struct _TlgProvider_t* TraceLogging;
+  /* 0x2540 */ struct _MI_VISIBLE_STATE Vs;
+} MI_SYSTEM_INFORMATION, *PMI_SYSTEM_INFORMATION; /* size: 0x3180 */
 

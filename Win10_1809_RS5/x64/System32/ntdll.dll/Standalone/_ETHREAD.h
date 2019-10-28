@@ -978,8 +978,7 @@ typedef struct _ETHREAD
   /* 0x07d0 */ struct _UNICODE_STRING* ThreadName;
   /* 0x07d8 */ struct _CONTEXT* SetContextState;
   /* 0x07e0 */ unsigned long LastExpectedRunTime;
-  /* 0x07e4 */ unsigned short HeapLfhPrivateData;
-  /* 0x07e6 */ unsigned short Unused;
+  /* 0x07e4 */ unsigned long HeapData;
   /* 0x07e8 */ struct _LIST_ENTRY OwnerEntryListHead;
   /* 0x07f8 */ unsigned __int64 DisownedOwnerEntryListLock;
   /* 0x0800 */ struct _LIST_ENTRY DisownedOwnerEntryListHead;
