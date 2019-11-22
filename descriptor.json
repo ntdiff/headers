@@ -9383,6 +9383,31 @@
             "value": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT"
         },
         {
+            "key": "Standalone/_PROC_PERF_CHECK_CONTEXT",
+            "text": "_PROC_PERF_CHECK_CONTEXT",
+            "value": "Standalone/_PROC_PERF_CHECK_CONTEXT"
+        },
+        {
+            "key": "Standalone/_KCONTINUE_TYPE",
+            "text": "_KCONTINUE_TYPE",
+            "value": "Standalone/_KCONTINUE_TYPE"
+        },
+        {
+            "key": "Standalone/_CM_PARSE_DEBUG_INFO",
+            "text": "_CM_PARSE_DEBUG_INFO",
+            "value": "Standalone/_CM_PARSE_DEBUG_INFO"
+        },
+        {
+            "key": "Standalone/_PROCESSOR_PRESENCE",
+            "text": "_PROCESSOR_PRESENCE",
+            "value": "Standalone/_PROCESSOR_PRESENCE"
+        },
+        {
+            "key": "Standalone/_MI_ENCLAVE_STATE",
+            "text": "_MI_ENCLAVE_STATE",
+            "value": "Standalone/_MI_ENCLAVE_STATE"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -10413,6 +10438,21 @@
             "key": "Win10_20H1_19002/x86/System32",
             "text": "Win10_20H1_19002-x86 (10.0.19002.1)",
             "value": "Win10_20H1_19002/x86/System32"
+        },
+        {
+            "key": "Win10_20H1_19030/ARM64/System32",
+            "text": "Win10_20H1_19030-ARM64 (10.0.19030.1)",
+            "value": "Win10_20H1_19030/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_19030/x64/System32",
+            "text": "Win10_20H1_19030-x64 (10.0.19030.1)",
+            "value": "Win10_20H1_19030/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_19030/x86/System32",
+            "text": "Win10_20H1_19030-x86 (10.0.19030.1)",
+            "value": "Win10_20H1_19030/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
