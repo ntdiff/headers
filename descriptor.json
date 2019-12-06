@@ -10455,6 +10455,21 @@
             "value": "Win10_20H1_19030/x86/System32"
         },
         {
+            "key": "Win10_20H1_19037/ARM64/System32",
+            "text": "Win10_20H1_19037-ARM64 (10.0.19037.1)",
+            "value": "Win10_20H1_19037/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H1_19037/x64/System32",
+            "text": "Win10_20H1_19037-x64 (10.0.19037.1)",
+            "value": "Win10_20H1_19037/x64/System32"
+        },
+        {
+            "key": "Win10_20H1_19037/x86/System32",
+            "text": "Win10_20H1_19037-x86 (10.0.19037.1)",
+            "value": "Win10_20H1_19037/x86/System32"
+        },
+        {
             "key": "Win7/x64/System32",
             "text": "Win7-x64 (6.1.7600.16385)",
             "value": "Win7/x64/System32"
