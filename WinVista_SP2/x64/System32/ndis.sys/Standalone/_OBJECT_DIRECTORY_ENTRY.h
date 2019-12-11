@@ -1,0 +1,2 @@
+struct _OBJECT_DIRECTORY_ENTRY;
+

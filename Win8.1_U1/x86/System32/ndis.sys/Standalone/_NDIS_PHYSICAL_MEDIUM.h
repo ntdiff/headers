@@ -1,0 +1,25 @@
+typedef enum _NDIS_PHYSICAL_MEDIUM
+{
+  NdisPhysicalMediumUnspecified = 0,
+  NdisPhysicalMediumWirelessLan = 1,
+  NdisPhysicalMediumCableModem = 2,
+  NdisPhysicalMediumPhoneLine = 3,
+  NdisPhysicalMediumPowerLine = 4,
+  NdisPhysicalMediumDSL = 5,
+  NdisPhysicalMediumFibreChannel = 6,
+  NdisPhysicalMedium1394 = 7,
+  NdisPhysicalMediumWirelessWan = 8,
+  NdisPhysicalMediumNative802_11 = 9,
+  NdisPhysicalMediumBluetooth = 10,
+  NdisPhysicalMediumInfiniband = 11,
+  NdisPhysicalMediumWiMax = 12,
+  NdisPhysicalMediumUWB = 13,
+  NdisPhysicalMedium802_3 = 14,
+  NdisPhysicalMedium802_5 = 15,
+  NdisPhysicalMediumIrda = 16,
+  NdisPhysicalMediumWiredWAN = 17,
+  NdisPhysicalMediumWiredCoWan = 18,
+  NdisPhysicalMediumOther = 19,
+  NdisPhysicalMediumMax = 20,
+} NDIS_PHYSICAL_MEDIUM, *PNDIS_PHYSICAL_MEDIUM;
+

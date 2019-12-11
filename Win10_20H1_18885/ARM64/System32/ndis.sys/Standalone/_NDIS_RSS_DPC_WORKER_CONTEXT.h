@@ -1,0 +1,2 @@
+struct _NDIS_RSS_DPC_WORKER_CONTEXT;
+

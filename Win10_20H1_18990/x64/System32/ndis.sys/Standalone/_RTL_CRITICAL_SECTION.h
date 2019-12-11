@@ -1,0 +1,2 @@
+struct _RTL_CRITICAL_SECTION;
+

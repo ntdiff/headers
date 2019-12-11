@@ -1,0 +1,2 @@
+struct _NDIS_PCW_DATA_BLOCK;
+
