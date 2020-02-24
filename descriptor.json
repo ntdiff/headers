@@ -15458,6 +15458,136 @@
             "value": "Standalone/_MI_ENCLAVE_STATE"
         },
         {
+            "key": "Standalone/_KSOFTWARE_INTERRUPT_TARGET",
+            "text": "_KSOFTWARE_INTERRUPT_TARGET",
+            "value": "Standalone/_KSOFTWARE_INTERRUPT_TARGET"
+        },
+        {
+            "key": "Standalone/_KE_PROCESS_CONCURRENCY_COUNT",
+            "text": "_KE_PROCESS_CONCURRENCY_COUNT",
+            "value": "Standalone/_KE_PROCESS_CONCURRENCY_COUNT"
+        },
+        {
+            "key": "Standalone/_KE_IDEAL_PROCESSOR_SET_BREAKPOINTS",
+            "text": "_KE_IDEAL_PROCESSOR_SET_BREAKPOINTS",
+            "value": "Standalone/_KE_IDEAL_PROCESSOR_SET_BREAKPOINTS"
+        },
+        {
+            "key": "Standalone/_KSOFTWARE_INTERRUPT_BATCH",
+            "text": "_KSOFTWARE_INTERRUPT_BATCH",
+            "value": "Standalone/_KSOFTWARE_INTERRUPT_BATCH"
+        },
+        {
+            "key": "Standalone/_KE_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK",
+            "text": "_KE_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK",
+            "value": "Standalone/_KE_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK"
+        },
+        {
+            "key": "Standalone/_ARM64_ESR_ISS_ABORT_REGISTER",
+            "text": "_ARM64_ESR_ISS_ABORT_REGISTER",
+            "value": "Standalone/_ARM64_ESR_ISS_ABORT_REGISTER"
+        },
+        {
+            "key": "Standalone/_NLS_STATE",
+            "text": "_NLS_STATE",
+            "value": "Standalone/_NLS_STATE"
+        },
+        {
+            "key": "Standalone/_GIC_MSIFRAME_ENTRY",
+            "text": "_GIC_MSIFRAME_ENTRY",
+            "value": "Standalone/_GIC_MSIFRAME_ENTRY"
+        },
+        {
+            "key": "Standalone/_GIC_ITS",
+            "text": "_GIC_ITS",
+            "value": "Standalone/_GIC_ITS"
+        },
+        {
+            "key": "Standalone/PCW_REGISTRATION_FLAGS",
+            "text": "PCW_REGISTRATION_FLAGS",
+            "value": "Standalone/PCW_REGISTRATION_FLAGS"
+        },
+        {
+            "key": "Standalone/_CC_VOLUME_TELEMETRY",
+            "text": "_CC_VOLUME_TELEMETRY",
+            "value": "Standalone/_CC_VOLUME_TELEMETRY"
+        },
+        {
+            "key": "Standalone/_CS_OVERRIDE_SETTING",
+            "text": "_CS_OVERRIDE_SETTING",
+            "value": "Standalone/_CS_OVERRIDE_SETTING"
+        },
+        {
+            "key": "Standalone/_PROCLOCALGIC",
+            "text": "_PROCLOCALGIC",
+            "value": "Standalone/_PROCLOCALGIC"
+        },
+        {
+            "key": "Standalone/_GIC_REDISTRIBUTOR",
+            "text": "_GIC_REDISTRIBUTOR",
+            "value": "Standalone/_GIC_REDISTRIBUTOR"
+        },
+        {
+            "key": "Standalone/_LOADER_FEATURE_CONFIGURATION_INFORMATION",
+            "text": "_LOADER_FEATURE_CONFIGURATION_INFORMATION",
+            "value": "Standalone/_LOADER_FEATURE_CONFIGURATION_INFORMATION"
+        },
+        {
+            "key": "Standalone/_LOCAL_X2APIC_NMISOURCE",
+            "text": "_LOCAL_X2APIC_NMISOURCE",
+            "value": "Standalone/_LOCAL_X2APIC_NMISOURCE"
+        },
+        {
+            "key": "Standalone/_PROCLOCALX2APIC",
+            "text": "_PROCLOCALX2APIC",
+            "value": "Standalone/_PROCLOCALX2APIC"
+        },
+        {
+            "key": "Standalone/_GIC_DISTRIBUTOR",
+            "text": "_GIC_DISTRIBUTOR",
+            "value": "Standalone/_GIC_DISTRIBUTOR"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureDescriptor",
+            "text": "wil_details_FeatureDescriptor",
+            "value": "Standalone/wil_details_FeatureDescriptor"
+        },
+        {
+            "key": "Standalone/_MI_PFN_ULONG5",
+            "text": "_MI_PFN_ULONG5",
+            "value": "Standalone/_MI_PFN_ULONG5"
+        },
+        {
+            "key": "Standalone/_DEBUG_IOMMU_EFI_DATA",
+            "text": "_DEBUG_IOMMU_EFI_DATA",
+            "value": "Standalone/_DEBUG_IOMMU_EFI_DATA"
+        },
+        {
+            "key": "Standalone/PROCESS_PERF_COUNTERS",
+            "text": "PROCESS_PERF_COUNTERS",
+            "value": "Standalone/PROCESS_PERF_COUNTERS"
+        },
+        {
+            "key": "Standalone/_ETW_BOOT_CONFIG",
+            "text": "_ETW_BOOT_CONFIG",
+            "value": "Standalone/_ETW_BOOT_CONFIG"
+        },
+        {
+            "key": "Standalone/_BOOT_FIRMWARE_RAMDISK_INFO",
+            "text": "_BOOT_FIRMWARE_RAMDISK_INFO",
+            "value": "Standalone/_BOOT_FIRMWARE_RAMDISK_INFO"
+        },
+        {
+            "key": "Standalone/_MI_SYSTEM_ZEROING",
+            "text": "_MI_SYSTEM_ZEROING",
+            "value": "Standalone/_MI_SYSTEM_ZEROING"
+        },
+        {
+            "key": "Standalone/_MI_SYSTEM_NODE_NONPAGED_POOL",
+            "text": "_MI_SYSTEM_NODE_NONPAGED_POOL",
+            "value": "Standalone/_MI_SYSTEM_NODE_NONPAGED_POOL"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -16708,6 +16838,21 @@
             "key": "Win10_20H1_19037/x86/System32",
             "text": "Win10_20H1_19037-x86 (10.0.19037.1)",
             "value": "Win10_20H1_19037/x86/System32"
+        },
+        {
+            "key": "Win10_20H2_19569/ARM64/System32",
+            "text": "Win10_20H2_19569-ARM64 (10.0.19569.1000)",
+            "value": "Win10_20H2_19569/ARM64/System32"
+        },
+        {
+            "key": "Win10_20H2_19569/x64/System32",
+            "text": "Win10_20H2_19569-x64 (10.0.19569.1000)",
+            "value": "Win10_20H2_19569/x64/System32"
+        },
+        {
+            "key": "Win10_20H2_19569/x86/System32",
+            "text": "Win10_20H2_19569-x86 (10.0.19569.1000)",
+            "value": "Win10_20H2_19569/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
