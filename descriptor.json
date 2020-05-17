@@ -14863,6 +14863,546 @@
             "value": "Standalone/_KQOS_GROUPING_SETS"
         },
         {
+            "key": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
+            "text": "_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
+            "value": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE"
+        },
+        {
+            "key": "Standalone/_KSTATIC_AFFINITY_BLOCK",
+            "text": "_KSTATIC_AFFINITY_BLOCK",
+            "value": "Standalone/_KSTATIC_AFFINITY_BLOCK"
+        },
+        {
+            "key": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
+            "text": "_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
+            "value": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE"
+        },
+        {
+            "key": "Standalone/_PROC_PERF_CHECK_CONTEXT",
+            "text": "_PROC_PERF_CHECK_CONTEXT",
+            "value": "Standalone/_PROC_PERF_CHECK_CONTEXT"
+        },
+        {
+            "key": "Standalone/_KCONTINUE_TYPE",
+            "text": "_KCONTINUE_TYPE",
+            "value": "Standalone/_KCONTINUE_TYPE"
+        },
+        {
+            "key": "Standalone/_PROCESSOR_PRESENCE",
+            "text": "_PROCESSOR_PRESENCE",
+            "value": "Standalone/_PROCESSOR_PRESENCE"
+        },
+        {
+            "key": "Standalone/_KTIMER_TABLE_STATE",
+            "text": "_KTIMER_TABLE_STATE",
+            "value": "Standalone/_KTIMER_TABLE_STATE"
+        },
+        {
+            "key": "Standalone/_EXP_LICENSE_STATE",
+            "text": "_EXP_LICENSE_STATE",
+            "value": "Standalone/_EXP_LICENSE_STATE"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE",
+            "text": "_RTL_FEATURE_CONFIGURATION_TYPE",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY",
+            "text": "_RTL_FEATURE_CONFIGURATION_PRIORITY",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL_ITEM",
+            "text": "_POP_FX_WORK_POOL_ITEM",
+            "value": "Standalone/_POP_FX_WORK_POOL_ITEM"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL",
+            "text": "_POP_FX_WORK_POOL",
+            "value": "Standalone/_POP_FX_WORK_POOL"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS",
+            "text": "_RTL_FEATURE_ENABLED_STATE_OPTIONS",
+            "value": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS"
+        },
+        {
+            "key": "Standalone/_MI_INPAGE_SUPPORT_TYPES",
+            "text": "_MI_INPAGE_SUPPORT_TYPES",
+            "value": "Standalone/_MI_INPAGE_SUPPORT_TYPES"
+        },
+        {
+            "key": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT",
+            "text": "_BUGCHECK_RECOVERY_LOG_EVENT",
+            "value": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT"
+        },
+        {
+            "key": "Standalone/_POP_FX_WORK_POOL_QUEUE",
+            "text": "_POP_FX_WORK_POOL_QUEUE",
+            "value": "Standalone/_POP_FX_WORK_POOL_QUEUE"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_TYPES",
+            "text": "_MI_WRITE_TYPES",
+            "value": "Standalone/_MI_WRITE_TYPES"
+        },
+        {
+            "key": "Standalone/_WDT_HANDLE",
+            "text": "_WDT_HANDLE",
+            "value": "Standalone/_WDT_HANDLE"
+        },
+        {
+            "key": "Standalone/wil_details_RecordedState",
+            "text": "wil_details_RecordedState",
+            "value": "Standalone/wil_details_RecordedState"
+        },
+        {
+            "key": "Standalone/_ETW_PARTITION_CONTEXT",
+            "text": "_ETW_PARTITION_CONTEXT",
+            "value": "Standalone/_ETW_PARTITION_CONTEXT"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_CALIBRATION",
+            "text": "_MI_WRITE_CALIBRATION",
+            "value": "Standalone/_MI_WRITE_CALIBRATION"
+        },
+        {
+            "key": "Standalone/_tlgProvider_t",
+            "text": "_tlgProvider_t",
+            "value": "Standalone/_tlgProvider_t"
+        },
+        {
+            "key": "Standalone/_AWEINFO",
+            "text": "_AWEINFO",
+            "value": "Standalone/_AWEINFO"
+        },
+        {
+            "key": "Standalone/_tlgProviderMetadata_t",
+            "text": "_tlgProviderMetadata_t",
+            "value": "Standalone/_tlgProviderMetadata_t"
+        },
+        {
+            "key": "Standalone/wil_details_ReportedState",
+            "text": "wil_details_ReportedState",
+            "value": "Standalone/wil_details_ReportedState"
+        },
+        {
+            "key": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING",
+            "text": "_MI_LARGE_PAGE_LISTS_CHANGING",
+            "value": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING"
+        },
+        {
+            "key": "Standalone/_MI_WRITE_MODES",
+            "text": "_MI_WRITE_MODES",
+            "value": "Standalone/_MI_WRITE_MODES"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_USAGE_REPORT",
+            "text": "_RTL_FEATURE_USAGE_REPORT",
+            "value": "Standalone/_RTL_FEATURE_USAGE_REPORT"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureReportingCache",
+            "text": "wil_details_FeatureReportingCache",
+            "value": "Standalone/wil_details_FeatureReportingCache"
+        },
+        {
+            "key": "Standalone/wil_details_FeatureStateCache",
+            "text": "wil_details_FeatureStateCache",
+            "value": "Standalone/wil_details_FeatureStateCache"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION",
+            "text": "_RTL_FEATURE_CONFIGURATION",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION"
+        },
+        {
+            "key": "Standalone/_MI_PHYSICAL_VIEW",
+            "text": "_MI_PHYSICAL_VIEW",
+            "value": "Standalone/_MI_PHYSICAL_VIEW"
+        },
+        {
+            "key": "Standalone/_CM_PARSE_DEBUG_INFO",
+            "text": "_CM_PARSE_DEBUG_INFO",
+            "value": "Standalone/_CM_PARSE_DEBUG_INFO"
+        },
+        {
+            "key": "Standalone/_NUMA_MEMORY_RANGE",
+            "text": "_NUMA_MEMORY_RANGE",
+            "value": "Standalone/_NUMA_MEMORY_RANGE"
+        },
+        {
+            "key": "Standalone/_ISRDPCSTATS_SEQUENCE",
+            "text": "_ISRDPCSTATS_SEQUENCE",
+            "value": "Standalone/_ISRDPCSTATS_SEQUENCE"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_X64_FLAGS",
+            "text": "_FAULT_INFORMATION_X64_FLAGS",
+            "value": "Standalone/_FAULT_INFORMATION_X64_FLAGS"
+        },
+        {
+            "key": "Standalone/_FAULT_INFORMATION_X64",
+            "text": "_FAULT_INFORMATION_X64",
+            "value": "Standalone/_FAULT_INFORMATION_X64"
+        },
+        {
+            "key": "Standalone/_MI_ENCLAVE_STATE",
+            "text": "_MI_ENCLAVE_STATE",
+            "value": "Standalone/_MI_ENCLAVE_STATE"
+        },
+        {
+            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_OPERATION",
+            "text": "_RTL_FEATURE_CONFIGURATION_OPERATION",
+            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_OPERATION"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<_SID const *>",
+            "text": "_tlgTypeMapBase<_SID const *>",
+            "value": "Standalone/_tlgTypeMapBase<_SID const *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<short>",
+            "text": "_tlgTypeMapBase<short>",
+            "value": "Standalone/_tlgTypeMapBase<short>"
+        },
+        {
+            "key": "Standalone/NetSetupStoreType",
+            "text": "NetSetupStoreType",
+            "value": "Standalone/NetSetupStoreType"
+        },
+        {
+            "key": "Standalone/NDIS_NDIS5_DRIVER_STATE",
+            "text": "NDIS_NDIS5_DRIVER_STATE",
+            "value": "Standalone/NDIS_NDIS5_DRIVER_STATE"
+        },
+        {
+            "key": "Standalone/_NETSETUPPROP_OPERATOR",
+            "text": "_NETSETUPPROP_OPERATOR",
+            "value": "Standalone/_NETSETUPPROP_OPERATOR"
+        },
+        {
+            "key": "Standalone/_NETSETUP_OBJECT_SOURCE",
+            "text": "_NETSETUP_OBJECT_SOURCE",
+            "value": "Standalone/_NETSETUP_OBJECT_SOURCE"
+        },
+        {
+            "key": "Standalone/_NETSETUP_OBJECT_TYPE",
+            "text": "_NETSETUP_OBJECT_TYPE",
+            "value": "Standalone/_NETSETUP_OBJECT_TYPE"
+        },
+        {
+            "key": "Standalone/_NETSETUP_ENVIRONMENT_TYPE",
+            "text": "_NETSETUP_ENVIRONMENT_TYPE",
+            "value": "Standalone/_NETSETUP_ENVIRONMENT_TYPE"
+        },
+        {
+            "key": "Standalone/_NETSETUP_QUERY_RESULT_ACTION",
+            "text": "_NETSETUP_QUERY_RESULT_ACTION",
+            "value": "Standalone/_NETSETUP_QUERY_RESULT_ACTION"
+        },
+        {
+            "key": "Standalone/_NETSETUP_REASON_BINDING_IS_CRITICAL",
+            "text": "_NETSETUP_REASON_BINDING_IS_CRITICAL",
+            "value": "Standalone/_NETSETUP_REASON_BINDING_IS_CRITICAL"
+        },
+        {
+            "key": "Standalone/_NETSETUP_BINDING_PATH_TYPE",
+            "text": "_NETSETUP_BINDING_PATH_TYPE",
+            "value": "Standalone/_NETSETUP_BINDING_PATH_TYPE"
+        },
+        {
+            "key": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE",
+            "text": "_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE",
+            "value": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE"
+        },
+        {
+            "key": "Standalone/_NETSETUP_QUERY_STATE",
+            "text": "_NETSETUP_QUERY_STATE",
+            "value": "Standalone/_NETSETUP_QUERY_STATE"
+        },
+        {
+            "key": "Standalone/_NETSETUP_PNP_DEVICE_CLASS",
+            "text": "_NETSETUP_PNP_DEVICE_CLASS",
+            "value": "Standalone/_NETSETUP_PNP_DEVICE_CLASS"
+        },
+        {
+            "key": "Standalone/_NDIS_BIND_FILTER_FLAGS",
+            "text": "_NDIS_BIND_FILTER_FLAGS",
+            "value": "Standalone/_NDIS_BIND_FILTER_FLAGS"
+        },
+        {
+            "key": "Standalone/_tlgWrapperPtrSizeType",
+            "text": "_tlgWrapperPtrSizeType",
+            "value": "Standalone/_tlgWrapperPtrSizeType"
+        },
+        {
+            "key": "Standalone/_tlgWrapperPtrSize",
+            "text": "_tlgWrapperPtrSize",
+            "value": "Standalone/_tlgWrapperPtrSize"
+        },
+        {
+            "key": "Standalone/_tlgWrapSid<_SID>",
+            "text": "_tlgWrapSid<_SID>",
+            "value": "Standalone/_tlgWrapSid<_SID>"
+        },
+        {
+            "key": "Standalone/_NDIS_NSI_INTERFACE_PURPOSE",
+            "text": "_NDIS_NSI_INTERFACE_PURPOSE",
+            "value": "Standalone/_NDIS_NSI_INTERFACE_PURPOSE"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<unsigned char>",
+            "text": "_tlgTypeMapBase<unsigned char>",
+            "value": "Standalone/_tlgTypeMapBase<unsigned char>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char>",
+            "text": "_tlgTypeMapBase<char>",
+            "value": "Standalone/_tlgTypeMapBase<char>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<wchar_t *>",
+            "text": "_tlgTypeMapBase<wchar_t *>",
+            "value": "Standalone/_tlgTypeMapBase<wchar_t *>"
+        },
+        {
+            "key": "Standalone/_tlgWrapSz<char>",
+            "text": "_tlgWrapSz<char>",
+            "value": "Standalone/_tlgWrapSz<char>"
+        },
+        {
+            "key": "Standalone/_tlgCharTraits<char>",
+            "text": "_tlgCharTraits<char>",
+            "value": "Standalone/_tlgCharTraits<char>"
+        },
+        {
+            "key": "Standalone/_tlgCharTraits<char16_t>",
+            "text": "_tlgCharTraits<char16_t>",
+            "value": "Standalone/_tlgCharTraits<char16_t>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<_FILETIME>",
+            "text": "_tlgTypeMapBase<_FILETIME>",
+            "value": "Standalone/_tlgTypeMapBase<_FILETIME>"
+        },
+        {
+            "key": "Standalone/wil::kernel_spin_lock",
+            "text": "wil::kernel_spin_lock",
+            "value": "Standalone/wil::kernel_spin_lock"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char16_t>",
+            "text": "_tlgTypeMapBase<char16_t>",
+            "value": "Standalone/_tlgTypeMapBase<char16_t>"
+        },
+        {
+            "key": "Standalone/_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE",
+            "text": "_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE",
+            "value": "Standalone/_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<unsigned short>",
+            "text": "_tlgTypeMapBase<unsigned short>",
+            "value": "Standalone/_tlgTypeMapBase<unsigned short>"
+        },
+        {
+            "key": "Standalone/_tlgWrapSz<char16_t>",
+            "text": "_tlgWrapSz<char16_t>",
+            "value": "Standalone/_tlgWrapSz<char16_t>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<bool>",
+            "text": "_tlgTypeMapBase<bool>",
+            "value": "Standalone/_tlgTypeMapBase<bool>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<signed char>",
+            "text": "_tlgTypeMapBase<signed char>",
+            "value": "Standalone/_tlgTypeMapBase<signed char>"
+        },
+        {
+            "key": "Standalone/_tlgWrapperBinary",
+            "text": "_tlgWrapperBinary",
+            "value": "Standalone/_tlgWrapperBinary"
+        },
+        {
+            "key": "Standalone/_tlgWrapSz<wchar_t>",
+            "text": "_tlgWrapSz<wchar_t>",
+            "value": "Standalone/_tlgWrapSz<wchar_t>"
+        },
+        {
+            "key": "Standalone/_PCI_MSI_MESSAGE_CONTROL",
+            "text": "_PCI_MSI_MESSAGE_CONTROL",
+            "value": "Standalone/_PCI_MSI_MESSAGE_CONTROL"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<void const *>",
+            "text": "_tlgTypeMapBase<void const *>",
+            "value": "Standalone/_tlgTypeMapBase<void const *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char const *>",
+            "text": "_tlgTypeMapBase<char const *>",
+            "value": "Standalone/_tlgTypeMapBase<char const *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char16_t *>",
+            "text": "_tlgTypeMapBase<char16_t *>",
+            "value": "Standalone/_tlgTypeMapBase<char16_t *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<float>",
+            "text": "_tlgTypeMapBase<float>",
+            "value": "Standalone/_tlgTypeMapBase<float>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char16_t const *>",
+            "text": "_tlgTypeMapBase<char16_t const *>",
+            "value": "Standalone/_tlgTypeMapBase<char16_t const *>"
+        },
+        {
+            "key": "Standalone/_tlgCharTraits<wchar_t>",
+            "text": "_tlgCharTraits<wchar_t>",
+            "value": "Standalone/_tlgCharTraits<wchar_t>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<wchar_t const *>",
+            "text": "_tlgTypeMapBase<wchar_t const *>",
+            "value": "Standalone/_tlgTypeMapBase<wchar_t const *>"
+        },
+        {
+            "key": "Standalone/_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2",
+            "text": "_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2",
+            "value": "Standalone/_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2"
+        },
+        {
+            "key": "Standalone/_RPC_BINDING_VECTOR",
+            "text": "_RPC_BINDING_VECTOR",
+            "value": "Standalone/_RPC_BINDING_VECTOR"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<unsigned __int64>",
+            "text": "_tlgTypeMapBase<unsigned __int64>",
+            "value": "Standalone/_tlgTypeMapBase<unsigned __int64>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<void *>",
+            "text": "_tlgTypeMapBase<void *>",
+            "value": "Standalone/_tlgTypeMapBase<void *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<wchar_t>",
+            "text": "_tlgTypeMapBase<wchar_t>",
+            "value": "Standalone/_tlgTypeMapBase<wchar_t>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<__int64>",
+            "text": "_tlgTypeMapBase<__int64>",
+            "value": "Standalone/_tlgTypeMapBase<__int64>"
+        },
+        {
+            "key": "Standalone/_NDIS_GFT_FLOW_STATE",
+            "text": "_NDIS_GFT_FLOW_STATE",
+            "value": "Standalone/_NDIS_GFT_FLOW_STATE"
+        },
+        {
+            "key": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE",
+            "text": "_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE",
+            "value": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<_SYSTEMTIME>",
+            "text": "_tlgTypeMapBase<_SYSTEMTIME>",
+            "value": "Standalone/_tlgTypeMapBase<_SYSTEMTIME>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<_GUID>",
+            "text": "_tlgTypeMapBase<_GUID>",
+            "value": "Standalone/_tlgTypeMapBase<_GUID>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<double>",
+            "text": "_tlgTypeMapBase<double>",
+            "value": "Standalone/_tlgTypeMapBase<double>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<unsigned int>",
+            "text": "_tlgTypeMapBase<unsigned int>",
+            "value": "Standalone/_tlgTypeMapBase<unsigned int>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
+            "text": "wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<char *>",
+            "text": "_tlgTypeMapBase<char *>",
+            "value": "Standalone/_tlgTypeMapBase<char *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<_SID *>",
+            "text": "_tlgTypeMapBase<_SID *>",
+            "value": "Standalone/_tlgTypeMapBase<_SID *>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<int>",
+            "text": "_tlgTypeMapBase<int>",
+            "value": "Standalone/_tlgTypeMapBase<int>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<unsigned long>",
+            "text": "_tlgTypeMapBase<unsigned long>",
+            "value": "Standalone/_tlgTypeMapBase<unsigned long>"
+        },
+        {
+            "key": "Standalone/wistd::integral_constant<bool,0>",
+            "text": "wistd::integral_constant<bool,0>",
+            "value": "Standalone/wistd::integral_constant<bool,0>"
+        },
+        {
+            "key": "Standalone/_tlgTypeMapBase<long>",
+            "text": "_tlgTypeMapBase<long>",
+            "value": "Standalone/_tlgTypeMapBase<long>"
+        },
+        {
+            "key": "Standalone/wistd::integral_constant<bool,1>",
+            "text": "wistd::integral_constant<bool,1>",
+            "value": "Standalone/wistd::integral_constant<bool,1>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>",
+            "text": "wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
+            "text": "wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>"
+        },
+        {
+            "key": "Standalone/wistd::__numeric_type<void>",
+            "text": "wistd::__numeric_type<void>",
+            "value": "Standalone/wistd::__numeric_type<void>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
+            "text": "wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
+            "text": "wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>"
+        },
+        {
+            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>",
+            "text": "wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>",
+            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>"
+        },
+        {
             "key": "Standalone/_tag_ARM64INTR_BARRIER_TYPE",
             "text": "_tag_ARM64INTR_BARRIER_TYPE",
             "value": "Standalone/_tag_ARM64INTR_BARRIER_TYPE"
@@ -14916,546 +15456,6 @@
             "key": "Standalone/_TRAPFRAME_LOG_ENTRY",
             "text": "_TRAPFRAME_LOG_ENTRY",
             "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
-        },
-        {
-            "key": "Standalone/_AWEINFO",
-            "text": "_AWEINFO",
-            "value": "Standalone/_AWEINFO"
-        },
-        {
-            "key": "Standalone/_MI_PHYSICAL_VIEW",
-            "text": "_MI_PHYSICAL_VIEW",
-            "value": "Standalone/_MI_PHYSICAL_VIEW"
-        },
-        {
-            "key": "Standalone/_tlgProviderMetadata_t",
-            "text": "_tlgProviderMetadata_t",
-            "value": "Standalone/_tlgProviderMetadata_t"
-        },
-        {
-            "key": "Standalone/_tlgProvider_t",
-            "text": "_tlgProvider_t",
-            "value": "Standalone/_tlgProvider_t"
-        },
-        {
-            "key": "Standalone/_tlgWrapSid<_SID>",
-            "text": "_tlgWrapSid<_SID>",
-            "value": "Standalone/_tlgWrapSid<_SID>"
-        },
-        {
-            "key": "Standalone/_tlgWrapperBinary",
-            "text": "_tlgWrapperBinary",
-            "value": "Standalone/_tlgWrapperBinary"
-        },
-        {
-            "key": "Standalone/_tlgWrapSz<wchar_t>",
-            "text": "_tlgWrapSz<wchar_t>",
-            "value": "Standalone/_tlgWrapSz<wchar_t>"
-        },
-        {
-            "key": "Standalone/_tlgWrapperPtrSize",
-            "text": "_tlgWrapperPtrSize",
-            "value": "Standalone/_tlgWrapperPtrSize"
-        },
-        {
-            "key": "Standalone/NDIS_NDIS5_DRIVER_STATE",
-            "text": "NDIS_NDIS5_DRIVER_STATE",
-            "value": "Standalone/NDIS_NDIS5_DRIVER_STATE"
-        },
-        {
-            "key": "Standalone/_tlgCharTraits<char>",
-            "text": "_tlgCharTraits<char>",
-            "value": "Standalone/_tlgCharTraits<char>"
-        },
-        {
-            "key": "Standalone/_tlgWrapperPtrSizeType",
-            "text": "_tlgWrapperPtrSizeType",
-            "value": "Standalone/_tlgWrapperPtrSizeType"
-        },
-        {
-            "key": "Standalone/_tlgWrapSz<char>",
-            "text": "_tlgWrapSz<char>",
-            "value": "Standalone/_tlgWrapSz<char>"
-        },
-        {
-            "key": "Standalone/_tlgWrapSz<char16_t>",
-            "text": "_tlgWrapSz<char16_t>",
-            "value": "Standalone/_tlgWrapSz<char16_t>"
-        },
-        {
-            "key": "Standalone/_tlgCharTraits<char16_t>",
-            "text": "_tlgCharTraits<char16_t>",
-            "value": "Standalone/_tlgCharTraits<char16_t>"
-        },
-        {
-            "key": "Standalone/_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE",
-            "text": "_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE",
-            "value": "Standalone/_NDIS_COMMON_OPEN_BLOCK::_QUEUED_CLOSE"
-        },
-        {
-            "key": "Standalone/_tlgCharTraits<wchar_t>",
-            "text": "_tlgCharTraits<wchar_t>",
-            "value": "Standalone/_tlgCharTraits<wchar_t>"
-        },
-        {
-            "key": "Standalone/_KSTATIC_AFFINITY_BLOCK",
-            "text": "_KSTATIC_AFFINITY_BLOCK",
-            "value": "Standalone/_KSTATIC_AFFINITY_BLOCK"
-        },
-        {
-            "key": "Standalone/_EXP_LICENSE_STATE",
-            "text": "_EXP_LICENSE_STATE",
-            "value": "Standalone/_EXP_LICENSE_STATE"
-        },
-        {
-            "key": "Standalone/_ETW_PARTITION_CONTEXT",
-            "text": "_ETW_PARTITION_CONTEXT",
-            "value": "Standalone/_ETW_PARTITION_CONTEXT"
-        },
-        {
-            "key": "Standalone/_MI_WRITE_TYPES",
-            "text": "_MI_WRITE_TYPES",
-            "value": "Standalone/_MI_WRITE_TYPES"
-        },
-        {
-            "key": "Standalone/_MI_WRITE_CALIBRATION",
-            "text": "_MI_WRITE_CALIBRATION",
-            "value": "Standalone/_MI_WRITE_CALIBRATION"
-        },
-        {
-            "key": "Standalone/_WDT_HANDLE",
-            "text": "_WDT_HANDLE",
-            "value": "Standalone/_WDT_HANDLE"
-        },
-        {
-            "key": "Standalone/_POP_FX_WORK_POOL_QUEUE",
-            "text": "_POP_FX_WORK_POOL_QUEUE",
-            "value": "Standalone/_POP_FX_WORK_POOL_QUEUE"
-        },
-        {
-            "key": "Standalone/_MI_INPAGE_SUPPORT_TYPES",
-            "text": "_MI_INPAGE_SUPPORT_TYPES",
-            "value": "Standalone/_MI_INPAGE_SUPPORT_TYPES"
-        },
-        {
-            "key": "Standalone/_MI_WRITE_MODES",
-            "text": "_MI_WRITE_MODES",
-            "value": "Standalone/_MI_WRITE_MODES"
-        },
-        {
-            "key": "Standalone/_POP_FX_WORK_POOL_ITEM",
-            "text": "_POP_FX_WORK_POOL_ITEM",
-            "value": "Standalone/_POP_FX_WORK_POOL_ITEM"
-        },
-        {
-            "key": "Standalone/_POP_FX_WORK_POOL",
-            "text": "_POP_FX_WORK_POOL",
-            "value": "Standalone/_POP_FX_WORK_POOL"
-        },
-        {
-            "key": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING",
-            "text": "_MI_LARGE_PAGE_LISTS_CHANGING",
-            "value": "Standalone/_MI_LARGE_PAGE_LISTS_CHANGING"
-        },
-        {
-            "key": "Standalone/_ISRDPCSTATS_SEQUENCE",
-            "text": "_ISRDPCSTATS_SEQUENCE",
-            "value": "Standalone/_ISRDPCSTATS_SEQUENCE"
-        },
-        {
-            "key": "Standalone/_NUMA_MEMORY_RANGE",
-            "text": "_NUMA_MEMORY_RANGE",
-            "value": "Standalone/_NUMA_MEMORY_RANGE"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<bool>",
-            "text": "_tlgTypeMapBase<bool>",
-            "value": "Standalone/_tlgTypeMapBase<bool>"
-        },
-        {
-            "key": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE",
-            "text": "_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE",
-            "value": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE"
-        },
-        {
-            "key": "Standalone/_NDIS_GFT_FLOW_STATE",
-            "text": "_NDIS_GFT_FLOW_STATE",
-            "value": "Standalone/_NDIS_GFT_FLOW_STATE"
-        },
-        {
-            "key": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE",
-            "text": "_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE",
-            "value": "Standalone/_NDIS_GFT_PACKET_BYTE_COUNTER_VALUE_AND_STATE"
-        },
-        {
-            "key": "Standalone/_PCI_MSI_MESSAGE_CONTROL",
-            "text": "_PCI_MSI_MESSAGE_CONTROL",
-            "value": "Standalone/_PCI_MSI_MESSAGE_CONTROL"
-        },
-        {
-            "key": "Standalone/_NDIS_BIND_FILTER_FLAGS",
-            "text": "_NDIS_BIND_FILTER_FLAGS",
-            "value": "Standalone/_NDIS_BIND_FILTER_FLAGS"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<double>",
-            "text": "_tlgTypeMapBase<double>",
-            "value": "Standalone/_tlgTypeMapBase<double>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<unsigned long>",
-            "text": "_tlgTypeMapBase<unsigned long>",
-            "value": "Standalone/_tlgTypeMapBase<unsigned long>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<long>",
-            "text": "_tlgTypeMapBase<long>",
-            "value": "Standalone/_tlgTypeMapBase<long>"
-        },
-        {
-            "key": "Standalone/wistd::integral_constant<bool,0>",
-            "text": "wistd::integral_constant<bool,0>",
-            "value": "Standalone/wistd::integral_constant<bool,0>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<unsigned __int64>",
-            "text": "_tlgTypeMapBase<unsigned __int64>",
-            "value": "Standalone/_tlgTypeMapBase<unsigned __int64>"
-        },
-        {
-            "key": "Standalone/wil::kernel_spin_lock",
-            "text": "wil::kernel_spin_lock",
-            "value": "Standalone/wil::kernel_spin_lock"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<short>",
-            "text": "_tlgTypeMapBase<short>",
-            "value": "Standalone/_tlgTypeMapBase<short>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<int>",
-            "text": "_tlgTypeMapBase<int>",
-            "value": "Standalone/_tlgTypeMapBase<int>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char const *>",
-            "text": "_tlgTypeMapBase<char const *>",
-            "value": "Standalone/_tlgTypeMapBase<char const *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<_FILETIME>",
-            "text": "_tlgTypeMapBase<_FILETIME>",
-            "value": "Standalone/_tlgTypeMapBase<_FILETIME>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char16_t *>",
-            "text": "_tlgTypeMapBase<char16_t *>",
-            "value": "Standalone/_tlgTypeMapBase<char16_t *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<wchar_t *>",
-            "text": "_tlgTypeMapBase<wchar_t *>",
-            "value": "Standalone/_tlgTypeMapBase<wchar_t *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<__int64>",
-            "text": "_tlgTypeMapBase<__int64>",
-            "value": "Standalone/_tlgTypeMapBase<__int64>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<wchar_t>",
-            "text": "_tlgTypeMapBase<wchar_t>",
-            "value": "Standalone/_tlgTypeMapBase<wchar_t>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<unsigned int>",
-            "text": "_tlgTypeMapBase<unsigned int>",
-            "value": "Standalone/_tlgTypeMapBase<unsigned int>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<_SID *>",
-            "text": "_tlgTypeMapBase<_SID *>",
-            "value": "Standalone/_tlgTypeMapBase<_SID *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<wchar_t const *>",
-            "text": "_tlgTypeMapBase<wchar_t const *>",
-            "value": "Standalone/_tlgTypeMapBase<wchar_t const *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<float>",
-            "text": "_tlgTypeMapBase<float>",
-            "value": "Standalone/_tlgTypeMapBase<float>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<_SYSTEMTIME>",
-            "text": "_tlgTypeMapBase<_SYSTEMTIME>",
-            "value": "Standalone/_tlgTypeMapBase<_SYSTEMTIME>"
-        },
-        {
-            "key": "Standalone/_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2",
-            "text": "_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2",
-            "value": "Standalone/_NDIS_PM_PROTOCOL_OFFLOAD::_PROTOCOL_OFFLOAD_PARAMETERS::_DOT11_RSN_REKEY_PARAMETERS_V2"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<unsigned char>",
-            "text": "_tlgTypeMapBase<unsigned char>",
-            "value": "Standalone/_tlgTypeMapBase<unsigned char>"
-        },
-        {
-            "key": "Standalone/wistd::__numeric_type<void>",
-            "text": "wistd::__numeric_type<void>",
-            "value": "Standalone/wistd::__numeric_type<void>"
-        },
-        {
-            "key": "Standalone/wistd::integral_constant<bool,1>",
-            "text": "wistd::integral_constant<bool,1>",
-            "value": "Standalone/wistd::integral_constant<bool,1>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<_GUID>",
-            "text": "_tlgTypeMapBase<_GUID>",
-            "value": "Standalone/_tlgTypeMapBase<_GUID>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<void const *>",
-            "text": "_tlgTypeMapBase<void const *>",
-            "value": "Standalone/_tlgTypeMapBase<void const *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<_SID const *>",
-            "text": "_tlgTypeMapBase<_SID const *>",
-            "value": "Standalone/_tlgTypeMapBase<_SID const *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char *>",
-            "text": "_tlgTypeMapBase<char *>",
-            "value": "Standalone/_tlgTypeMapBase<char *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<signed char>",
-            "text": "_tlgTypeMapBase<signed char>",
-            "value": "Standalone/_tlgTypeMapBase<signed char>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char16_t const *>",
-            "text": "_tlgTypeMapBase<char16_t const *>",
-            "value": "Standalone/_tlgTypeMapBase<char16_t const *>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<unsigned short>",
-            "text": "_tlgTypeMapBase<unsigned short>",
-            "value": "Standalone/_tlgTypeMapBase<unsigned short>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char>",
-            "text": "_tlgTypeMapBase<char>",
-            "value": "Standalone/_tlgTypeMapBase<char>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<char16_t>",
-            "text": "_tlgTypeMapBase<char16_t>",
-            "value": "Standalone/_tlgTypeMapBase<char16_t>"
-        },
-        {
-            "key": "Standalone/_tlgTypeMapBase<void *>",
-            "text": "_tlgTypeMapBase<void *>",
-            "value": "Standalone/_tlgTypeMapBase<void *>"
-        },
-        {
-            "key": "Standalone/NetSetupStoreType",
-            "text": "NetSetupStoreType",
-            "value": "Standalone/NetSetupStoreType"
-        },
-        {
-            "key": "Standalone/_NETSETUPPROP_OPERATOR",
-            "text": "_NETSETUPPROP_OPERATOR",
-            "value": "Standalone/_NETSETUPPROP_OPERATOR"
-        },
-        {
-            "key": "Standalone/_NETSETUP_OBJECT_SOURCE",
-            "text": "_NETSETUP_OBJECT_SOURCE",
-            "value": "Standalone/_NETSETUP_OBJECT_SOURCE"
-        },
-        {
-            "key": "Standalone/_NETSETUP_OBJECT_TYPE",
-            "text": "_NETSETUP_OBJECT_TYPE",
-            "value": "Standalone/_NETSETUP_OBJECT_TYPE"
-        },
-        {
-            "key": "Standalone/_NETSETUP_ENVIRONMENT_TYPE",
-            "text": "_NETSETUP_ENVIRONMENT_TYPE",
-            "value": "Standalone/_NETSETUP_ENVIRONMENT_TYPE"
-        },
-        {
-            "key": "Standalone/_NETSETUP_QUERY_RESULT_ACTION",
-            "text": "_NETSETUP_QUERY_RESULT_ACTION",
-            "value": "Standalone/_NETSETUP_QUERY_RESULT_ACTION"
-        },
-        {
-            "key": "Standalone/_NETSETUP_REASON_BINDING_IS_CRITICAL",
-            "text": "_NETSETUP_REASON_BINDING_IS_CRITICAL",
-            "value": "Standalone/_NETSETUP_REASON_BINDING_IS_CRITICAL"
-        },
-        {
-            "key": "Standalone/_NETSETUP_BINDING_PATH_TYPE",
-            "text": "_NETSETUP_BINDING_PATH_TYPE",
-            "value": "Standalone/_NETSETUP_BINDING_PATH_TYPE"
-        },
-        {
-            "key": "Standalone/_NETSETUP_QUERY_STATE",
-            "text": "_NETSETUP_QUERY_STATE",
-            "value": "Standalone/_NETSETUP_QUERY_STATE"
-        },
-        {
-            "key": "Standalone/_NETSETUP_PNP_DEVICE_CLASS",
-            "text": "_NETSETUP_PNP_DEVICE_CLASS",
-            "value": "Standalone/_NETSETUP_PNP_DEVICE_CLASS"
-        },
-        {
-            "key": "Standalone/_RPC_BINDING_VECTOR",
-            "text": "_RPC_BINDING_VECTOR",
-            "value": "Standalone/_RPC_BINDING_VECTOR"
-        },
-        {
-            "key": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
-            "text": "_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE",
-            "value": "Standalone/_MEMORY_PHYSICAL_CONTIGUITY_UNIT_STATE"
-        },
-        {
-            "key": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
-            "text": "_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE",
-            "value": "Standalone/_SYSTEM_FEATURE_CONFIGURATION_SECTION_TYPE"
-        },
-        {
-            "key": "Standalone/_KTIMER_TABLE_STATE",
-            "text": "_KTIMER_TABLE_STATE",
-            "value": "Standalone/_KTIMER_TABLE_STATE"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE",
-            "text": "_RTL_FEATURE_CONFIGURATION_TYPE",
-            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_TYPE"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY",
-            "text": "_RTL_FEATURE_CONFIGURATION_PRIORITY",
-            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_PRIORITY"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS",
-            "text": "_RTL_FEATURE_ENABLED_STATE_OPTIONS",
-            "value": "Standalone/_RTL_FEATURE_ENABLED_STATE_OPTIONS"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_USAGE_REPORT",
-            "text": "_RTL_FEATURE_USAGE_REPORT",
-            "value": "Standalone/_RTL_FEATURE_USAGE_REPORT"
-        },
-        {
-            "key": "Standalone/wil_details_FeatureStateCache",
-            "text": "wil_details_FeatureStateCache",
-            "value": "Standalone/wil_details_FeatureStateCache"
-        },
-        {
-            "key": "Standalone/wil_details_ReportedState",
-            "text": "wil_details_ReportedState",
-            "value": "Standalone/wil_details_ReportedState"
-        },
-        {
-            "key": "Standalone/wil_details_RecordedState",
-            "text": "wil_details_RecordedState",
-            "value": "Standalone/wil_details_RecordedState"
-        },
-        {
-            "key": "Standalone/wil_details_FeatureReportingCache",
-            "text": "wil_details_FeatureReportingCache",
-            "value": "Standalone/wil_details_FeatureReportingCache"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_CONFIGURATION",
-            "text": "_RTL_FEATURE_CONFIGURATION",
-            "value": "Standalone/_RTL_FEATURE_CONFIGURATION"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_X64_FLAGS",
-            "text": "_FAULT_INFORMATION_X64_FLAGS",
-            "value": "Standalone/_FAULT_INFORMATION_X64_FLAGS"
-        },
-        {
-            "key": "Standalone/_FAULT_INFORMATION_X64",
-            "text": "_FAULT_INFORMATION_X64",
-            "value": "Standalone/_FAULT_INFORMATION_X64"
-        },
-        {
-            "key": "Standalone/_RTL_FEATURE_CONFIGURATION_OPERATION",
-            "text": "_RTL_FEATURE_CONFIGURATION_OPERATION",
-            "value": "Standalone/_RTL_FEATURE_CONFIGURATION_OPERATION"
-        },
-        {
-            "key": "Standalone/_NDIS_NSI_INTERFACE_PURPOSE",
-            "text": "_NDIS_NSI_INTERFACE_PURPOSE",
-            "value": "Standalone/_NDIS_NSI_INTERFACE_PURPOSE"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
-            "text": "wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>",
-            "text": "wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(unsigned __int64 *) noexcept,unsigned __int64 * &>"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
-            "text": "wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__cdecl*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
-            "text": "wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(NDISWATCHDOG__ *),NDISWATCHDOG__ * &>"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>",
-            "text": "wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(unsigned long *) noexcept,unsigned long * &>"
-        },
-        {
-            "key": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
-            "text": "wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>",
-            "value": "Standalone/wistd::__invokable_r<void,void (__stdcall*)(wil::details::kspin_lock_saved_irql const &),wil::details::kspin_lock_saved_irql &>"
-        },
-        {
-            "key": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT",
-            "text": "_BUGCHECK_RECOVERY_LOG_EVENT",
-            "value": "Standalone/_BUGCHECK_RECOVERY_LOG_EVENT"
-        },
-        {
-            "key": "Standalone/_PROC_PERF_CHECK_CONTEXT",
-            "text": "_PROC_PERF_CHECK_CONTEXT",
-            "value": "Standalone/_PROC_PERF_CHECK_CONTEXT"
-        },
-        {
-            "key": "Standalone/_KCONTINUE_TYPE",
-            "text": "_KCONTINUE_TYPE",
-            "value": "Standalone/_KCONTINUE_TYPE"
-        },
-        {
-            "key": "Standalone/_CM_PARSE_DEBUG_INFO",
-            "text": "_CM_PARSE_DEBUG_INFO",
-            "value": "Standalone/_CM_PARSE_DEBUG_INFO"
-        },
-        {
-            "key": "Standalone/_PROCESSOR_PRESENCE",
-            "text": "_PROCESSOR_PRESENCE",
-            "value": "Standalone/_PROCESSOR_PRESENCE"
-        },
-        {
-            "key": "Standalone/_MI_ENCLAVE_STATE",
-            "text": "_MI_ENCLAVE_STATE",
-            "value": "Standalone/_MI_ENCLAVE_STATE"
         },
         {
             "key": "Standalone/_KSOFTWARE_INTERRUPT_TARGET",
@@ -16703,6 +16703,46 @@
             "key": "Win10_1909_19H2/x86/System32",
             "text": "Win10_1909_19H2-x86 (10.0.18362.418)",
             "value": "Win10_1909_19H2/x86/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x64/System32",
+            "text": "Win10_2004_20H1-x64 (10.0.19041.1)",
+            "value": "Win10_2004_20H1/x64/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x64/System32",
+            "text": "Win10_2004_20H1-x64 (10.0.19041.207)",
+            "value": "Win10_2004_20H1/x64/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x64/System32",
+            "text": "Win10_2004_20H1-x64 (10.0.19041.208)",
+            "value": "Win10_2004_20H1/x64/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x64/System32",
+            "text": "Win10_2004_20H1-x64 (10.0.19041.84)",
+            "value": "Win10_2004_20H1/x64/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x86/System32",
+            "text": "Win10_2004_20H1-x86 (10.0.19041.1)",
+            "value": "Win10_2004_20H1/x86/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x86/System32",
+            "text": "Win10_2004_20H1-x86 (10.0.19041.207)",
+            "value": "Win10_2004_20H1/x86/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x86/System32",
+            "text": "Win10_2004_20H1-x86 (10.0.19041.208)",
+            "value": "Win10_2004_20H1/x86/System32"
+        },
+        {
+            "key": "Win10_2004_20H1/x86/System32",
+            "text": "Win10_2004_20H1-x86 (10.0.19041.84)",
+            "value": "Win10_2004_20H1/x86/System32"
         },
         {
             "key": "Win10_20H1_18836/ARM64/System32",
