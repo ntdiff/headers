@@ -1,7 +1,0 @@
-typedef enum _IPSEC_OFFLOAD_V2_OPERATION
-{
-  IPsecOffloadV2Ah = 1,
-  IPsecOffloadV2Esp = 2,
-  IPsecOffloadV2Max = 3,
-} IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION;
-

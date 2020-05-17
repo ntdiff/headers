@@ -1,5 +1,0 @@
-typedef struct _ETW_PARTITION_CONTEXT
-{
-  /* 0x0000 */ struct _EPARTITION* Partition;
-} ETW_PARTITION_CONTEXT, *PETW_PARTITION_CONTEXT; /* size: 0x0004 */
-

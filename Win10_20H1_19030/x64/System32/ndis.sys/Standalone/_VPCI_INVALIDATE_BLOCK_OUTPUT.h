@@ -1,5 +1,0 @@
-typedef struct _VPCI_INVALIDATE_BLOCK_OUTPUT
-{
-  /* 0x0000 */ unsigned __int64 BlockMask;
-} VPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT; /* size: 0x0008 */
-

@@ -1,2 +1,0 @@
-struct _JOB_CPU_RATE_CONTROL;
-

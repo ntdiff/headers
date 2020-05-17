@@ -1,6 +1,0 @@
-typedef struct _NDIS_PD_TRANSMIT_QUEUE_COUNTER
-{
-  /* 0x0000 */ unsigned __int64 PacketsTransmitted;
-  /* 0x0008 */ unsigned __int64 BytesTransmitted;
-} NDIS_PD_TRANSMIT_QUEUE_COUNTER, *PNDIS_PD_TRANSMIT_QUEUE_COUNTER; /* size: 0x0010 */
-

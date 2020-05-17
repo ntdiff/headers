@@ -1,2 +1,0 @@
-struct _KUMS_CONTEXT_HEADER;
-

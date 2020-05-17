@@ -1,2 +1,0 @@
-struct _EPROCESS_QUOTA_BLOCK;
-

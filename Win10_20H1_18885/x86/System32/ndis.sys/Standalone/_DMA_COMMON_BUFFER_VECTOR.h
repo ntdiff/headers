@@ -1,2 +1,0 @@
-struct _DMA_COMMON_BUFFER_VECTOR;
-

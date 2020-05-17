@@ -1,8 +1,0 @@
-typedef struct _NDIS_NBL_MEDIA_MEDIA_SPECIFIC_INFORMATION
-{
-  /* 0x0000 */ struct _NDIS_NBL_MEDIA_MEDIA_SPECIFIC_INFORMATION* NextEntry;
-  /* 0x0004 */ unsigned long Tag;
-  /* 0x0008 */ unsigned char Data[1];
-  /* 0x0009 */ char __PADDING__[7];
-} NDIS_NBL_MEDIA_MEDIA_SPECIFIC_INFORMATION, *PNDIS_NBL_MEDIA_MEDIA_SPECIFIC_INFORMATION; /* size: 0x0010 */
-

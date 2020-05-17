@@ -1,2 +1,0 @@
-struct _NDIS_MINIPORT_AOAC;
-

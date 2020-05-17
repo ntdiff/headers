@@ -1,2 +1,0 @@
-struct _LEAP_SECOND_DATA;
-
