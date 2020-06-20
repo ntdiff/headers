@@ -1,0 +1,2 @@
+struct _KPRIORITY_STATE;
+

@@ -1,0 +1,2 @@
+struct _NDIS_IF_COMPARTMENT_BLOCK;
+

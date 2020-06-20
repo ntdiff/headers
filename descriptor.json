@@ -15588,6 +15588,231 @@
             "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
         },
         {
+            "key": "Standalone/_KPRIORITY_STATE",
+            "text": "_KPRIORITY_STATE",
+            "value": "Standalone/_KPRIORITY_STATE"
+        },
+        {
+            "key": "Standalone/_SYSTEM_POOL_LIMIT_MEM_TYPE",
+            "text": "_SYSTEM_POOL_LIMIT_MEM_TYPE",
+            "value": "Standalone/_SYSTEM_POOL_LIMIT_MEM_TYPE"
+        },
+        {
+            "key": "Standalone/_CMP_COPY_TYPE",
+            "text": "_CMP_COPY_TYPE",
+            "value": "Standalone/_CMP_COPY_TYPE"
+        },
+        {
+            "key": "Standalone/_POOL_LIMIT_INFO",
+            "text": "_POOL_LIMIT_INFO",
+            "value": "Standalone/_POOL_LIMIT_INFO"
+        },
+        {
+            "key": "Standalone/_POOL_LIMIT_TABLE_ENTRY",
+            "text": "_POOL_LIMIT_TABLE_ENTRY",
+            "value": "Standalone/_POOL_LIMIT_TABLE_ENTRY"
+        },
+        {
+            "key": "Standalone/_FREQUENCY_QOS_BUCKET",
+            "text": "_FREQUENCY_QOS_BUCKET",
+            "value": "Standalone/_FREQUENCY_QOS_BUCKET"
+        },
+        {
+            "key": "Standalone/_XPF_RECOVERY_INFO",
+            "text": "_XPF_RECOVERY_INFO",
+            "value": "Standalone/_XPF_RECOVERY_INFO"
+        },
+        {
+            "key": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
+            "text": "_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
+            "value": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION"
+        },
+        {
+            "key": "Standalone/_HAL_HV_DMA_CREATE_DOMAIN_INFO",
+            "text": "_HAL_HV_DMA_CREATE_DOMAIN_INFO",
+            "value": "Standalone/_HAL_HV_DMA_CREATE_DOMAIN_INFO"
+        },
+        {
+            "key": "Standalone/_CC_NUMA_NODE",
+            "text": "_CC_NUMA_NODE",
+            "value": "Standalone/_CC_NUMA_NODE"
+        },
+        {
+            "key": "Standalone/_SE_SAFE_OPEN_PROMPT_EXPERIENCE_RESULTS",
+            "text": "_SE_SAFE_OPEN_PROMPT_EXPERIENCE_RESULTS",
+            "value": "Standalone/_SE_SAFE_OPEN_PROMPT_EXPERIENCE_RESULTS"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/NDIS_DATA_PATH_TYPE",
+            "text": "NDIS_DATA_PATH_TYPE",
+            "value": "Standalone/NDIS_DATA_PATH_TYPE"
+        },
+        {
+            "key": "Standalone/wil::unique_call<void (__cdecl*)(void),&KeLeaveGuardedRegion,1>",
+            "text": "wil::unique_call<void (__cdecl*)(void),&KeLeaveGuardedRegion,1>",
+            "value": "Standalone/wil::unique_call<void (__cdecl*)(void),&KeLeaveGuardedRegion,1>"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::push_lock",
+            "text": "wil::push_lock",
+            "value": "Standalone/wil::push_lock"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::fast_mutex_with_critical_region",
+            "text": "wil::fast_mutex_with_critical_region",
+            "value": "Standalone/wil::fast_mutex_with_critical_region"
+        },
+        {
+            "key": "Standalone/wil::unique_call<void (__cdecl*)(void),&KeLeaveCriticalRegion,1>",
+            "text": "wil::unique_call<void (__cdecl*)(void),&KeLeaveCriticalRegion,1>",
+            "value": "Standalone/wil::unique_call<void (__cdecl*)(void),&KeLeaveCriticalRegion,1>"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::fast_mutex",
+            "text": "wil::fast_mutex",
+            "value": "Standalone/wil::fast_mutex"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__cdecl*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned __int64,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __cdecl(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned __int64,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/_LOADER_MEMORY_RANGE",
+            "text": "_LOADER_MEMORY_RANGE",
+            "value": "Standalone/_LOADER_MEMORY_RANGE"
+        },
+        {
+            "key": "Standalone/_MEMORY_MIRRORING_DATA",
+            "text": "_MEMORY_MIRRORING_DATA",
+            "value": "Standalone/_MEMORY_MIRRORING_DATA"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::unique_call<void (__stdcall*)(void),&KeLeaveGuardedRegion,1>",
+            "text": "wil::unique_call<void (__stdcall*)(void),&KeLeaveGuardedRegion,1>",
+            "value": "Standalone/wil::unique_call<void (__stdcall*)(void),&KeLeaveGuardedRegion,1>"
+        },
+        {
+            "key": "Standalone/wil::unique_call<void (__stdcall*)(void),&KeLeaveCriticalRegion,1>",
+            "text": "wil::unique_call<void (__stdcall*)(void),&KeLeaveCriticalRegion,1>",
+            "value": "Standalone/wil::unique_call<void (__stdcall*)(void),&KeLeaveCriticalRegion,1>"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "text": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >",
+            "value": "Standalone/wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_FAST_MUTEX *,void __fastcall(_FAST_MUTEX *),&ExReleaseFastMutex,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t> > >"
+        },
+        {
+            "key": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "text": "wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >",
+            "value": "Standalone/wil::details::unique_storage<wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t> >"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_shared,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_FAST_MUTEX *,void __stdcall(_FAST_MUTEX *) noexcept,&wil::details::release_fast_mutex_with_critical_region,wistd::integral_constant<unsigned int,2>,_FAST_MUTEX *,_FAST_MUTEX *,0,std::nullptr_t>"
+        },
+        {
+            "key": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "text": "wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>",
+            "value": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -16758,6 +16983,21 @@
             "key": "Win10_20H2_19569/x86/System32",
             "text": "Win10_20H2_19569-x86 (10.0.19569.1000)",
             "value": "Win10_20H2_19569/x86/System32"
+        },
+        {
+            "key": "Win10_21H1_20150/ARM64/System32",
+            "text": "Win10_21H1_20150-ARM64 (10.0.20150.1000)",
+            "value": "Win10_21H1_20150/ARM64/System32"
+        },
+        {
+            "key": "Win10_21H1_20150/x64/System32",
+            "text": "Win10_21H1_20150-x64 (10.0.20150.1000)",
+            "value": "Win10_21H1_20150/x64/System32"
+        },
+        {
+            "key": "Win10_21H1_20150/x86/System32",
+            "text": "Win10_21H1_20150-x86 (10.0.20150.1000)",
+            "value": "Win10_21H1_20150/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
