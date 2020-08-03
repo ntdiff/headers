@@ -1,0 +1,2 @@
+struct _LDRP_LOAD_CONTEXT;
+

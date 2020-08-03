@@ -1,0 +1,2 @@
+struct _HAL_PMC_COUNTERS;
+

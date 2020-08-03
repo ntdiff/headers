@@ -15813,6 +15813,251 @@
             "value": "Standalone/wil::details::resource_policy<_EX_PUSH_LOCK *,void (__stdcall*)(_EX_PUSH_LOCK *) noexcept,&wil::details::release_push_lock_exclusive,wistd::integral_constant<unsigned int,1>,_EX_PUSH_LOCK *,_EX_PUSH_LOCK *,0,std::nullptr_t>"
         },
         {
+            "key": "Standalone/_HAL_EXTENSION_ENVIRONMENT",
+            "text": "_HAL_EXTENSION_ENVIRONMENT",
+            "value": "Standalone/_HAL_EXTENSION_ENVIRONMENT"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_KNOWN_IOMMU_TYPE",
+            "text": "_EXT_IOMMU_KNOWN_IOMMU_TYPE",
+            "value": "Standalone/_EXT_IOMMU_KNOWN_IOMMU_TYPE"
+        },
+        {
+            "key": "Standalone/_HV_SUBNODE_TYPE",
+            "text": "_HV_SUBNODE_TYPE",
+            "value": "Standalone/_HV_SUBNODE_TYPE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_ADDRESS_TRANSLATION_POLICY",
+            "text": "_EXT_IOMMU_ADDRESS_TRANSLATION_POLICY",
+            "value": "Standalone/_EXT_IOMMU_ADDRESS_TRANSLATION_POLICY"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_INTERRUPT_REMAPPING_POLICY",
+            "text": "_EXT_IOMMU_INTERRUPT_REMAPPING_POLICY",
+            "value": "Standalone/_EXT_IOMMU_INTERRUPT_REMAPPING_POLICY"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_LINE_TYPE",
+            "text": "_INTERRUPT_LINE_TYPE",
+            "value": "Standalone/_INTERRUPT_LINE_TYPE"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_LINE_SUBTYPE",
+            "text": "_INTERRUPT_LINE_SUBTYPE",
+            "value": "Standalone/_INTERRUPT_LINE_SUBTYPE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_DOMAIN_TYPE",
+            "text": "_EXT_IOMMU_DOMAIN_TYPE",
+            "value": "Standalone/_EXT_IOMMU_DOMAIN_TYPE"
+        },
+        {
+            "key": "Standalone/EmptyCVariant_FeatureStaging_Poncherello",
+            "text": "EmptyCVariant_FeatureStaging_Poncherello",
+            "value": "Standalone/EmptyCVariant_FeatureStaging_Poncherello"
+        },
+        {
+            "key": "Standalone/EmptyCVariant_FeatureStaging_LeapSeconds",
+            "text": "EmptyCVariant_FeatureStaging_LeapSeconds",
+            "value": "Standalone/EmptyCVariant_FeatureStaging_LeapSeconds"
+        },
+        {
+            "key": "Standalone/EmptyCVariant_FeatureStaging_xfg",
+            "text": "EmptyCVariant_FeatureStaging_xfg",
+            "value": "Standalone/EmptyCVariant_FeatureStaging_xfg"
+        },
+        {
+            "key": "Standalone/_MI_PAGELIST_LOCK_TYPES",
+            "text": "_MI_PAGELIST_LOCK_TYPES",
+            "value": "Standalone/_MI_PAGELIST_LOCK_TYPES"
+        },
+        {
+            "key": "Standalone/_GIC3_LOCALUNIT_INFO",
+            "text": "_GIC3_LOCALUNIT_INFO",
+            "value": "Standalone/_GIC3_LOCALUNIT_INFO"
+        },
+        {
+            "key": "Standalone/_GIC3_DATA",
+            "text": "_GIC3_DATA",
+            "value": "Standalone/_GIC3_DATA"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_STEERING_MODE",
+            "text": "_INTERRUPT_STEERING_MODE",
+            "value": "Standalone/_INTERRUPT_STEERING_MODE"
+        },
+        {
+            "key": "Standalone/_INSTALLED_MEMORY_RANGE",
+            "text": "_INSTALLED_MEMORY_RANGE",
+            "value": "Standalone/_INSTALLED_MEMORY_RANGE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_FUNCTION_TABLE_EXTENDED",
+            "text": "_EXT_IOMMU_FUNCTION_TABLE_EXTENDED",
+            "value": "Standalone/_EXT_IOMMU_FUNCTION_TABLE_EXTENDED"
+        },
+        {
+            "key": "Standalone/_IOMMU_PASID_TABLE_OBJECT",
+            "text": "_IOMMU_PASID_TABLE_OBJECT",
+            "value": "Standalone/_IOMMU_PASID_TABLE_OBJECT"
+        },
+        {
+            "key": "Standalone/_EXT_ENV_SPINLOCK",
+            "text": "_EXT_ENV_SPINLOCK",
+            "value": "Standalone/_EXT_ENV_SPINLOCK"
+        },
+        {
+            "key": "Standalone/_MI_STANDBY_LOOKASIDE",
+            "text": "_MI_STANDBY_LOOKASIDE",
+            "value": "Standalone/_MI_STANDBY_LOOKASIDE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_DOMAIN_SETTINGS",
+            "text": "_EXT_IOMMU_DOMAIN_SETTINGS",
+            "value": "Standalone/_EXT_IOMMU_DOMAIN_SETTINGS"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_QC_PREFETCH_SETTINGS",
+            "text": "_EXT_IOMMU_QC_PREFETCH_SETTINGS",
+            "value": "Standalone/_EXT_IOMMU_QC_PREFETCH_SETTINGS"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_QC_SID_IMPL_DEFINED_REGISTERS",
+            "text": "_EXT_IOMMU_QC_SID_IMPL_DEFINED_REGISTERS",
+            "value": "Standalone/_EXT_IOMMU_QC_SID_IMPL_DEFINED_REGISTERS"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_DOMAIN",
+            "text": "_EXT_IOMMU_DOMAIN",
+            "value": "Standalone/_EXT_IOMMU_DOMAIN"
+        },
+        {
+            "key": "Standalone/_GITS_TABLE_INFO",
+            "text": "_GITS_TABLE_INFO",
+            "value": "Standalone/_GITS_TABLE_INFO"
+        },
+        {
+            "key": "Standalone/_GITS_REMAPPING_TABLE",
+            "text": "_GITS_REMAPPING_TABLE",
+            "value": "Standalone/_GITS_REMAPPING_TABLE"
+        },
+        {
+            "key": "Standalone/_GITS_TYPER_REGISTER",
+            "text": "_GITS_TYPER_REGISTER",
+            "value": "Standalone/_GITS_TYPER_REGISTER"
+        },
+        {
+            "key": "Standalone/_ITS_DATA",
+            "text": "_ITS_DATA",
+            "value": "Standalone/_ITS_DATA"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_FUNCTION_TABLE",
+            "text": "_EXT_IOMMU_FUNCTION_TABLE",
+            "value": "Standalone/_EXT_IOMMU_FUNCTION_TABLE"
+        },
+        {
+            "key": "Standalone/_IOMMU_PAGE_HANDLING_DATA",
+            "text": "_IOMMU_PAGE_HANDLING_DATA",
+            "value": "Standalone/_IOMMU_PAGE_HANDLING_DATA"
+        },
+        {
+            "key": "Standalone/_PCI_SLOT_NUMBER",
+            "text": "_PCI_SLOT_NUMBER",
+            "value": "Standalone/_PCI_SLOT_NUMBER"
+        },
+        {
+            "key": "Standalone/_REGISTERED_IOMMU",
+            "text": "_REGISTERED_IOMMU",
+            "value": "Standalone/_REGISTERED_IOMMU"
+        },
+        {
+            "key": "Standalone/_IOMMU_RESERVED_DEVICE_LIST",
+            "text": "_IOMMU_RESERVED_DEVICE_LIST",
+            "value": "Standalone/_IOMMU_RESERVED_DEVICE_LIST"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_CAPABILITIES",
+            "text": "_EXT_IOMMU_CAPABILITIES",
+            "value": "Standalone/_EXT_IOMMU_CAPABILITIES"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU",
+            "text": "_EXT_IOMMU",
+            "value": "Standalone/_EXT_IOMMU"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_SETTINGS",
+            "text": "_EXT_IOMMU_SETTINGS",
+            "value": "Standalone/_EXT_IOMMU_SETTINGS"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_CREATE_DEVICE_FLAGS",
+            "text": "_EXT_IOMMU_CREATE_DEVICE_FLAGS",
+            "value": "Standalone/_EXT_IOMMU_CREATE_DEVICE_FLAGS"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_DEVICE",
+            "text": "_EXT_IOMMU_DEVICE",
+            "value": "Standalone/_EXT_IOMMU_DEVICE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_RESERVED_MEMORY_REGION",
+            "text": "_EXT_IOMMU_RESERVED_MEMORY_REGION",
+            "value": "Standalone/_EXT_IOMMU_RESERVED_MEMORY_REGION"
+        },
+        {
+            "key": "Standalone/_IOMMU_RESERVED_DEVICE",
+            "text": "_IOMMU_RESERVED_DEVICE",
+            "value": "Standalone/_IOMMU_RESERVED_DEVICE"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_FLUSH_CONTEXT",
+            "text": "_EXT_IOMMU_FLUSH_CONTEXT",
+            "value": "Standalone/_EXT_IOMMU_FLUSH_CONTEXT"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_OUTPUT_MAPPING",
+            "text": "_EXT_IOMMU_OUTPUT_MAPPING",
+            "value": "Standalone/_EXT_IOMMU_OUTPUT_MAPPING"
+        },
+        {
+            "key": "Standalone/_LPI_CONFIG_TABLE_ENTRY",
+            "text": "_LPI_CONFIG_TABLE_ENTRY",
+            "value": "Standalone/_LPI_CONFIG_TABLE_ENTRY"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_LINES",
+            "text": "_INTERRUPT_LINES",
+            "value": "Standalone/_INTERRUPT_LINES"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_LINE_INTERNAL_STATE",
+            "text": "_INTERRUPT_LINE_INTERNAL_STATE",
+            "value": "Standalone/_INTERRUPT_LINE_INTERNAL_STATE"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_TRACKING_ENTRY",
+            "text": "_INTERRUPT_TRACKING_ENTRY",
+            "value": "Standalone/_INTERRUPT_TRACKING_ENTRY"
+        },
+        {
+            "key": "Standalone/_INTERRUPT_TRACKING_ROOT",
+            "text": "_INTERRUPT_TRACKING_ROOT",
+            "value": "Standalone/_INTERRUPT_TRACKING_ROOT"
+        },
+        {
+            "key": "Standalone/_EXP_PULLED_FILE_TABLE",
+            "text": "_EXP_PULLED_FILE_TABLE",
+            "value": "Standalone/_EXP_PULLED_FILE_TABLE"
+        },
+        {
+            "key": "Standalone/EmptyCVariant_FeatureStaging_MinioNetworking",
+            "text": "EmptyCVariant_FeatureStaging_MinioNetworking",
+            "value": "Standalone/EmptyCVariant_FeatureStaging_MinioNetworking"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -16998,6 +17243,21 @@
             "key": "Win10_21H1_20150/x86/System32",
             "text": "Win10_21H1_20150-x86 (10.0.20150.1000)",
             "value": "Win10_21H1_20150/x86/System32"
+        },
+        {
+            "key": "Win10_21H1_20180/ARM64/System32",
+            "text": "Win10_21H1_20180-ARM64 (10.0.20180.1000)",
+            "value": "Win10_21H1_20180/ARM64/System32"
+        },
+        {
+            "key": "Win10_21H1_20180/x64/System32",
+            "text": "Win10_21H1_20180-x64 (10.0.20180.1000)",
+            "value": "Win10_21H1_20180/x64/System32"
+        },
+        {
+            "key": "Win10_21H1_20180/x86/System32",
+            "text": "Win10_21H1_20180-x86 (10.0.20180.1000)",
+            "value": "Win10_21H1_20180/x86/System32"
         },
         {
             "key": "Win7/x64/System32",
