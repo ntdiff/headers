@@ -1,0 +1,2 @@
+struct _NDIS_SELECTIVE_SUSPEND;
+

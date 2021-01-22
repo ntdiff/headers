@@ -1,0 +1,2 @@
+struct _CHPEV2_PROCESS_INFO;
+

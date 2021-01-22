@@ -1,0 +1,2 @@
+struct _ETW_SOFT_RESTART_CONTEXT;
+

@@ -1,0 +1,2 @@
+struct _KSCHEDULER_SUBNODE;
+

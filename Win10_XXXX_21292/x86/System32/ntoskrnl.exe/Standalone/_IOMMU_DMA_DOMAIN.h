@@ -1,0 +1,2 @@
+struct _IOMMU_DMA_DOMAIN;
+

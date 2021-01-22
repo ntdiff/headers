@@ -16063,6 +16063,446 @@
             "value": "Standalone/EmptyCVariant_FeatureStaging_MinioNetworking"
         },
         {
+            "key": "Standalone/_KEMUL_CONTROL_BLOCK",
+            "text": "_KEMUL_CONTROL_BLOCK",
+            "value": "Standalone/_KEMUL_CONTROL_BLOCK"
+        },
+        {
+            "key": "Standalone/_LDR_HOT_PATCH_STATE",
+            "text": "_LDR_HOT_PATCH_STATE",
+            "value": "Standalone/_LDR_HOT_PATCH_STATE"
+        },
+        {
+            "key": "Standalone/_KCLOCK_TIMER_DEADLINE_TYPE",
+            "text": "_KCLOCK_TIMER_DEADLINE_TYPE",
+            "value": "Standalone/_KCLOCK_TIMER_DEADLINE_TYPE"
+        },
+        {
+            "key": "Standalone/_KCLOCK_TIMER_ONE_SHOT_STATE",
+            "text": "_KCLOCK_TIMER_ONE_SHOT_STATE",
+            "value": "Standalone/_KCLOCK_TIMER_ONE_SHOT_STATE"
+        },
+        {
+            "key": "Standalone/_REFS_STREAM_SNAPSHOT_OPERATION",
+            "text": "_REFS_STREAM_SNAPSHOT_OPERATION",
+            "value": "Standalone/_REFS_STREAM_SNAPSHOT_OPERATION"
+        },
+        {
+            "key": "Standalone/_CPTABLEINFO",
+            "text": "_CPTABLEINFO",
+            "value": "Standalone/_CPTABLEINFO"
+        },
+        {
+            "key": "Standalone/_RTL_NLS_STATE",
+            "text": "_RTL_NLS_STATE",
+            "value": "Standalone/_RTL_NLS_STATE"
+        },
+        {
+            "key": "Standalone/_RTL_DYNAMIC_TIME_ZONE_INFORMATION",
+            "text": "_RTL_DYNAMIC_TIME_ZONE_INFORMATION",
+            "value": "Standalone/_RTL_DYNAMIC_TIME_ZONE_INFORMATION"
+        },
+        {
+            "key": "Standalone/_KSINGLE_DPC_SOFT_TIMEOUT_EVENT_INFO",
+            "text": "_KSINGLE_DPC_SOFT_TIMEOUT_EVENT_INFO",
+            "value": "Standalone/_KSINGLE_DPC_SOFT_TIMEOUT_EVENT_INFO"
+        },
+        {
+            "key": "Standalone/_MEM_DEDICATED_ATTRIBUTE_TYPE",
+            "text": "_MEM_DEDICATED_ATTRIBUTE_TYPE",
+            "value": "Standalone/_MEM_DEDICATED_ATTRIBUTE_TYPE"
+        },
+        {
+            "key": "Standalone/_AMD64_CONTEXT",
+            "text": "_AMD64_CONTEXT",
+            "value": "Standalone/_AMD64_CONTEXT"
+        },
+        {
+            "key": "Standalone/_CHPEV2_CPUAREA_INFO",
+            "text": "_CHPEV2_CPUAREA_INFO",
+            "value": "Standalone/_CHPEV2_CPUAREA_INFO"
+        },
+        {
+            "key": "Standalone/_ARM64_FPCR_REG",
+            "text": "_ARM64_FPCR_REG",
+            "value": "Standalone/_ARM64_FPCR_REG"
+        },
+        {
+            "key": "Standalone/_ARM64_FPSR_REG",
+            "text": "_ARM64_FPSR_REG",
+            "value": "Standalone/_ARM64_FPSR_REG"
+        },
+        {
+            "key": "Standalone/_AMD64_MXCSR_REG",
+            "text": "_AMD64_MXCSR_REG",
+            "value": "Standalone/_AMD64_MXCSR_REG"
+        },
+        {
+            "key": "Standalone/_LDR_HOT_PATCH_DATA",
+            "text": "_LDR_HOT_PATCH_DATA",
+            "value": "Standalone/_LDR_HOT_PATCH_DATA"
+        },
+        {
+            "key": "Standalone/_CHPEV2_PROCESS_INFO",
+            "text": "_CHPEV2_PROCESS_INFO",
+            "value": "Standalone/_CHPEV2_PROCESS_INFO"
+        },
+        {
+            "key": "Standalone/_KCLOCK_TIMER_DEADLINE_ENTRY",
+            "text": "_KCLOCK_TIMER_DEADLINE_ENTRY",
+            "value": "Standalone/_KCLOCK_TIMER_DEADLINE_ENTRY"
+        },
+        {
+            "key": "Standalone/_KCLOCK_INCREMENT_TRACE",
+            "text": "_KCLOCK_INCREMENT_TRACE",
+            "value": "Standalone/_KCLOCK_INCREMENT_TRACE"
+        },
+        {
+            "key": "Standalone/_KCLOCK_TICK_TRACE",
+            "text": "_KCLOCK_TICK_TRACE",
+            "value": "Standalone/_KCLOCK_TICK_TRACE"
+        },
+        {
+            "key": "Standalone/_KCLOCK_TIMER_STATE",
+            "text": "_KCLOCK_TIMER_STATE",
+            "value": "Standalone/_KCLOCK_TIMER_STATE"
+        },
+        {
+            "key": "Standalone/_PS_DYNAMIC_ENFORCED_ADDRESS_RANGES",
+            "text": "_PS_DYNAMIC_ENFORCED_ADDRESS_RANGES",
+            "value": "Standalone/_PS_DYNAMIC_ENFORCED_ADDRESS_RANGES"
+        },
+        {
+            "key": "Standalone/_KSCHEDULER_SUBNODE",
+            "text": "_KSCHEDULER_SUBNODE",
+            "value": "Standalone/_KSCHEDULER_SUBNODE"
+        },
+        {
+            "key": "Standalone/_PS_NTDLL_EXPORTS",
+            "text": "_PS_NTDLL_EXPORTS",
+            "value": "Standalone/_PS_NTDLL_EXPORTS"
+        },
+        {
+            "key": "Standalone/_MCA_AMD_BLOCK_TYPE",
+            "text": "_MCA_AMD_BLOCK_TYPE",
+            "value": "Standalone/_MCA_AMD_BLOCK_TYPE"
+        },
+        {
+            "key": "Standalone/_HALP_DMA_TRANSLATION_TYPE",
+            "text": "_HALP_DMA_TRANSLATION_TYPE",
+            "value": "Standalone/_HALP_DMA_TRANSLATION_TYPE"
+        },
+        {
+            "key": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_ARCH",
+            "text": "_HAL_HV_DMA_DOMAIN_CONFIG_ARCH",
+            "value": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_ARCH"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE",
+            "text": "_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE",
+            "value": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_TYPE"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE",
+            "text": "_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE",
+            "value": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION_ACCESS_TYPE"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_DOMAIN_TYPE",
+            "text": "_IOMMU_DMA_DOMAIN_TYPE",
+            "value": "Standalone/_IOMMU_DMA_DOMAIN_TYPE"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_TYPE",
+            "text": "_IOMMU_DMA_LOGICAL_ALLOCATOR_TYPE",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_TYPE"
+        },
+        {
+            "key": "Standalone/_OBP_LOOKUP_DIR_ENTRY_FLAGS",
+            "text": "_OBP_LOOKUP_DIR_ENTRY_FLAGS",
+            "value": "Standalone/_OBP_LOOKUP_DIR_ENTRY_FLAGS"
+        },
+        {
+            "key": "Standalone/_MI_FILE_EXTENT_TYPES",
+            "text": "_MI_FILE_EXTENT_TYPES",
+            "value": "Standalone/_MI_FILE_EXTENT_TYPES"
+        },
+        {
+            "key": "Standalone/_IOMMU_MAP_PHYSICAL_ADDRESS_TYPE",
+            "text": "_IOMMU_MAP_PHYSICAL_ADDRESS_TYPE",
+            "value": "Standalone/_IOMMU_MAP_PHYSICAL_ADDRESS_TYPE"
+        },
+        {
+            "key": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION_TYPE",
+            "text": "_IOMMU_DEVICE_CREATION_CONFIGURATION_TYPE",
+            "value": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION_TYPE"
+        },
+        {
+            "key": "Standalone/_AMD64_M128",
+            "text": "_AMD64_M128",
+            "value": "Standalone/_AMD64_M128"
+        },
+        {
+            "key": "Standalone/_AMD64_XMM_SAVE_AREA32",
+            "text": "_AMD64_XMM_SAVE_AREA32",
+            "value": "Standalone/_AMD64_XMM_SAVE_AREA32"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN_MAPPED_SEGMENT",
+            "text": "_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN_MAPPED_SEGMENT",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN_MAPPED_SEGMENT"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_S1_ARM64_DOMAIN_SETTINGS",
+            "text": "_EXT_IOMMU_S1_ARM64_DOMAIN_SETTINGS",
+            "value": "Standalone/_EXT_IOMMU_S1_ARM64_DOMAIN_SETTINGS"
+        },
+        {
+            "key": "Standalone/_IOMMU_PAGE_FAULT_PRIVATE_DATA",
+            "text": "_IOMMU_PAGE_FAULT_PRIVATE_DATA",
+            "value": "Standalone/_IOMMU_PAGE_FAULT_PRIVATE_DATA"
+        },
+        {
+            "key": "Standalone/_AMD_MCA_IPID",
+            "text": "_AMD_MCA_IPID",
+            "value": "Standalone/_AMD_MCA_IPID"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_DEVICE",
+            "text": "_IOMMU_DMA_DEVICE",
+            "value": "Standalone/_IOMMU_DMA_DEVICE"
+        },
+        {
+            "key": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION",
+            "text": "_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION",
+            "value": "Standalone/_DMA_COMMON_BUFFER_EXTENDED_CONFIGURATION"
+        },
+        {
+            "key": "Standalone/_MI_DEFERRED_PFNS_TO_FREE",
+            "text": "_MI_DEFERRED_PFNS_TO_FREE",
+            "value": "Standalone/_MI_DEFERRED_PFNS_TO_FREE"
+        },
+        {
+            "key": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_ARM64",
+            "text": "_HAL_HV_DMA_DOMAIN_CONFIG_ARM64",
+            "value": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_ARM64"
+        },
+        {
+            "key": "Standalone/_DMAR_PAGE_TABLE_STATE",
+            "text": "_DMAR_PAGE_TABLE_STATE",
+            "value": "Standalone/_DMAR_PAGE_TABLE_STATE"
+        },
+        {
+            "key": "Standalone/_MI_SPECIAL_PURPOSE_MEMORY_STATE",
+            "text": "_MI_SPECIAL_PURPOSE_MEMORY_STATE",
+            "value": "Standalone/_MI_SPECIAL_PURPOSE_MEMORY_STATE"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR",
+            "text": "_IOMMU_DMA_LOGICAL_ALLOCATOR",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_OPERATIONS_V1",
+            "text": "_IOMMU_DMA_LOGICAL_ALLOCATOR_OPERATIONS_V1",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_OPERATIONS_V1"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITIES",
+            "text": "_IOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITIES",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITIES"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN",
+            "text": "_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ADDRESS_TOKEN"
+        },
+        {
+            "key": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_X64",
+            "text": "_HAL_HV_DMA_DOMAIN_CONFIG_X64",
+            "value": "Standalone/_HAL_HV_DMA_DOMAIN_CONFIG_X64"
+        },
+        {
+            "key": "Standalone/_IOMMU_INTERFACE_STATE_CHANGE_FIELDS",
+            "text": "_IOMMU_INTERFACE_STATE_CHANGE_FIELDS",
+            "value": "Standalone/_IOMMU_INTERFACE_STATE_CHANGE_FIELDS"
+        },
+        {
+            "key": "Standalone/_IOMMU_INTERFACE_STATE_CHANGE",
+            "text": "_IOMMU_INTERFACE_STATE_CHANGE",
+            "value": "Standalone/_IOMMU_INTERFACE_STATE_CHANGE"
+        },
+        {
+            "key": "Standalone/_IOMMU_INTERFACE_CALLBACK_RECORD",
+            "text": "_IOMMU_INTERFACE_CALLBACK_RECORD",
+            "value": "Standalone/_IOMMU_INTERFACE_CALLBACK_RECORD"
+        },
+        {
+            "key": "Standalone/_MI_SPECIAL_PURPOSE_MEMORY_TYPE_STATE",
+            "text": "_MI_SPECIAL_PURPOSE_MEMORY_TYPE_STATE",
+            "value": "Standalone/_MI_SPECIAL_PURPOSE_MEMORY_TYPE_STATE"
+        },
+        {
+            "key": "Standalone/_MI_HOT_PATCH_PROCESS_CONTEXT",
+            "text": "_MI_HOT_PATCH_PROCESS_CONTEXT",
+            "value": "Standalone/_MI_HOT_PATCH_PROCESS_CONTEXT"
+        },
+        {
+            "key": "Standalone/_MI_HOT_PATCH_STATE",
+            "text": "_MI_HOT_PATCH_STATE",
+            "value": "Standalone/_MI_HOT_PATCH_STATE"
+        },
+        {
+            "key": "Standalone/_DMA_IOMMU_INTERFACE_V1",
+            "text": "_DMA_IOMMU_INTERFACE_V1",
+            "value": "Standalone/_DMA_IOMMU_INTERFACE_V1"
+        },
+        {
+            "key": "Standalone/_DMA_IOMMU_INTERFACE_V2",
+            "text": "_DMA_IOMMU_INTERFACE_V2",
+            "value": "Standalone/_DMA_IOMMU_INTERFACE_V2"
+        },
+        {
+            "key": "Standalone/_DMA_IOMMU_INTERFACE_EX",
+            "text": "_DMA_IOMMU_INTERFACE_EX",
+            "value": "Standalone/_DMA_IOMMU_INTERFACE_EX"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_DOMAIN_CREATION_FLAGS",
+            "text": "_IOMMU_DMA_DOMAIN_CREATION_FLAGS",
+            "value": "Standalone/_IOMMU_DMA_DOMAIN_CREATION_FLAGS"
+        },
+        {
+            "key": "Standalone/_DOMAIN_CONFIGURATION_X64",
+            "text": "_DOMAIN_CONFIGURATION_X64",
+            "value": "Standalone/_DOMAIN_CONFIGURATION_X64"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_CONFIG",
+            "text": "_IOMMU_DMA_LOGICAL_ALLOCATOR_CONFIG",
+            "value": "Standalone/_IOMMU_DMA_LOGICAL_ALLOCATOR_CONFIG"
+        },
+        {
+            "key": "Standalone/_IOMMU_DMA_RESERVED_REGION",
+            "text": "_IOMMU_DMA_RESERVED_REGION",
+            "value": "Standalone/_IOMMU_DMA_RESERVED_REGION"
+        },
+        {
+            "key": "Standalone/_IOMMU_MAP_PHYSICAL_ADDRESS",
+            "text": "_IOMMU_MAP_PHYSICAL_ADDRESS",
+            "value": "Standalone/_IOMMU_MAP_PHYSICAL_ADDRESS"
+        },
+        {
+            "key": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION_ACPI",
+            "text": "_IOMMU_DEVICE_CREATION_CONFIGURATION_ACPI",
+            "value": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION_ACPI"
+        },
+        {
+            "key": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION",
+            "text": "_IOMMU_DEVICE_CREATION_CONFIGURATION",
+            "value": "Standalone/_IOMMU_DEVICE_CREATION_CONFIGURATION"
+        },
+        {
+            "key": "Standalone/_DEVICE_BUS_SPECIFIC_RESET_TYPE",
+            "text": "_DEVICE_BUS_SPECIFIC_RESET_TYPE",
+            "value": "Standalone/_DEVICE_BUS_SPECIFIC_RESET_TYPE"
+        },
+        {
+            "key": "Standalone/NdisDebugBlock<1282700869>",
+            "text": "NdisDebugBlock<1282700869>",
+            "value": "Standalone/NdisDebugBlock<1282700869>"
+        },
+        {
+            "key": "Standalone/POOL_EXTENDED_PARAMETER_TYPE",
+            "text": "POOL_EXTENDED_PARAMETER_TYPE",
+            "value": "Standalone/POOL_EXTENDED_PARAMETER_TYPE"
+        },
+        {
+            "key": "Standalone/KALLOCATOR_NONPAGED<1280069188,512>",
+            "text": "KALLOCATOR_NONPAGED<1280069188,512>",
+            "value": "Standalone/KALLOCATOR_NONPAGED<1280069188,512>"
+        },
+        {
+            "key": "Standalone/KSpinLock",
+            "text": "KSpinLock",
+            "value": "Standalone/KSpinLock"
+        },
+        {
+            "key": "Standalone/KSpinLockManualConstruct",
+            "text": "KSpinLockManualConstruct",
+            "value": "Standalone/KSpinLockManualConstruct"
+        },
+        {
+            "key": "Standalone/KALLOCATION_TAG_DPC_ALLOC<1280069188,512>",
+            "text": "KALLOCATION_TAG_DPC_ALLOC<1280069188,512>",
+            "value": "Standalone/KALLOCATION_TAG_DPC_ALLOC<1280069188,512>"
+        },
+        {
+            "key": "Standalone/_POOL_EXTENDED_PARAMETER",
+            "text": "_POOL_EXTENDED_PARAMETER",
+            "value": "Standalone/_POOL_EXTENDED_PARAMETER"
+        },
+        {
+            "key": "Standalone/_POOL_EXTENDED_PARAMS_SECURE_POOL",
+            "text": "_POOL_EXTENDED_PARAMS_SECURE_POOL",
+            "value": "Standalone/_POOL_EXTENDED_PARAMS_SECURE_POOL"
+        },
+        {
+            "key": "Standalone/KALLOCATOR_NONPAGED<1213222468,512>",
+            "text": "KALLOCATOR_NONPAGED<1213222468,512>",
+            "value": "Standalone/KALLOCATOR_NONPAGED<1213222468,512>"
+        },
+        {
+            "key": "Standalone/KALLOCATION_TAG<1282700869,512>",
+            "text": "KALLOCATION_TAG<1282700869,512>",
+            "value": "Standalone/KALLOCATION_TAG<1282700869,512>"
+        },
+        {
+            "key": "Standalone/KSpinLockBase",
+            "text": "KSpinLockBase",
+            "value": "Standalone/KSpinLockBase"
+        },
+        {
+            "key": "Standalone/NONPAGED_OBJECT<1282700869>",
+            "text": "NONPAGED_OBJECT<1282700869>",
+            "value": "Standalone/NONPAGED_OBJECT<1282700869>"
+        },
+        {
+            "key": "Standalone/_DEVICE_BUS_SPECIFIC_RESET_INFO",
+            "text": "_DEVICE_BUS_SPECIFIC_RESET_INFO",
+            "value": "Standalone/_DEVICE_BUS_SPECIFIC_RESET_INFO"
+        },
+        {
+            "key": "Standalone/KAcquireSpinLock",
+            "text": "KAcquireSpinLock",
+            "value": "Standalone/KAcquireSpinLock"
+        },
+        {
+            "key": "Standalone/KALLOCATION_TAG_DPC_ALLOC<1213222468,512>",
+            "text": "KALLOCATION_TAG_DPC_ALLOC<1213222468,512>",
+            "value": "Standalone/KALLOCATION_TAG_DPC_ALLOC<1213222468,512>"
+        },
+        {
+            "key": "Standalone/KALLOCATOR<1282700869,512>",
+            "text": "KALLOCATOR<1282700869,512>",
+            "value": "Standalone/KALLOCATOR<1282700869,512>"
+        },
+        {
+            "key": "Standalone/_KERNEL_SHADOW_STACK_TYPE",
+            "text": "_KERNEL_SHADOW_STACK_TYPE",
+            "value": "Standalone/_KERNEL_SHADOW_STACK_TYPE"
+        },
+        {
+            "key": "Standalone/_KERNEL_SHADOW_STACK_LIMIT",
+            "text": "_KERNEL_SHADOW_STACK_LIMIT",
+            "value": "Standalone/_KERNEL_SHADOW_STACK_LIMIT"
+        },
+        {
+            "key": "Standalone/_EXT_IOMMU_S1_X64_DOMAIN_SETTINGS",
+            "text": "_EXT_IOMMU_S1_X64_DOMAIN_SETTINGS",
+            "value": "Standalone/_EXT_IOMMU_S1_X64_DOMAIN_SETTINGS"
+        },
+        {
             "key": "Standalone/HalpMpInfo",
             "text": "HalpMpInfo",
             "value": "Standalone/HalpMpInfo"
@@ -17298,6 +17738,21 @@
             "key": "Win10_21H1_20180/x86/System32",
             "text": "Win10_21H1_20180-x86 (10.0.20180.1000)",
             "value": "Win10_21H1_20180/x86/System32"
+        },
+        {
+            "key": "Win10_XXXX_21292/ARM64/System32",
+            "text": "Win10_XXXX_21292-ARM64 (10.0.21292.1000)",
+            "value": "Win10_XXXX_21292/ARM64/System32"
+        },
+        {
+            "key": "Win10_XXXX_21292/x64/System32",
+            "text": "Win10_XXXX_21292-x64 (10.0.21292.1000)",
+            "value": "Win10_XXXX_21292/x64/System32"
+        },
+        {
+            "key": "Win10_XXXX_21292/x86/System32",
+            "text": "Win10_XXXX_21292-x86 (10.0.21292.1000)",
+            "value": "Win10_XXXX_21292/x86/System32"
         },
         {
             "key": "Win7/x64/System32",

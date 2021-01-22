@@ -1,0 +1,24 @@
+typedef struct _EXT_IOMMU_S1_X64_DOMAIN_SETTINGS
+{
+  struct
+  {
+    struct /* bitfield */
+    {
+      /* 0x0000 */ unsigned char EnableTranslation : 1; /* bit position: 0 */
+      /* 0x0000 */ unsigned char Reserved : 7; /* bit position: 1 */
+    }; /* bitfield */
+  } /* size: 0x0001 */ Flags;
+  /* 0x0008 */ unsigned __int64 PageTableRoot;
+} EXT_IOMMU_S1_X64_DOMAIN_SETTINGS, *PEXT_IOMMU_S1_X64_DOMAIN_SETTINGS; /* size: 0x0010 */
+
+typedef struct _EXT_IOMMU_DOMAIN_SETTINGS
+{
+  /* 0x0000 */ struct _EXT_IOMMU_S1_X64_DOMAIN_SETTINGS S1;
+  struct
+  {
+    /* 0x0010 */ unsigned char PageTableRootLevel;
+    /* 0x0011 */ unsigned char InputSize;
+    /* 0x0018 */ unsigned __int64 PageTableRoot;
+  } /* size: 0x0010 */ S2;
+} EXT_IOMMU_DOMAIN_SETTINGS, *PEXT_IOMMU_DOMAIN_SETTINGS; /* size: 0x0020 */
+
