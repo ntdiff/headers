@@ -15588,6 +15588,16 @@
             "value": "Standalone/_TRAPFRAME_LOG_ENTRY"
         },
         {
+            "key": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
+            "text": "_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
+            "value": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION"
+        },
+        {
+            "key": "Standalone/_SYSTEM_INFORMATION_CLASS",
+            "text": "_SYSTEM_INFORMATION_CLASS",
+            "value": "Standalone/_SYSTEM_INFORMATION_CLASS"
+        },
+        {
             "key": "Standalone/_KPRIORITY_STATE",
             "text": "_KPRIORITY_STATE",
             "value": "Standalone/_KPRIORITY_STATE"
@@ -15621,11 +15631,6 @@
             "key": "Standalone/_XPF_RECOVERY_INFO",
             "text": "_XPF_RECOVERY_INFO",
             "value": "Standalone/_XPF_RECOVERY_INFO"
-        },
-        {
-            "key": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
-            "text": "_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION",
-            "value": "Standalone/_LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION"
         },
         {
             "key": "Standalone/_HAL_HV_DMA_CREATE_DOMAIN_INFO",
@@ -17228,6 +17233,41 @@
             "key": "Win10_20H2_19569/x86/System32",
             "text": "Win10_20H2_19569-x86 (10.0.19569.1000)",
             "value": "Win10_20H2_19569/x86/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x64/System32",
+            "text": "Win10_20H2_20H2-x64 (10.0.19041.488)",
+            "value": "Win10_20H2_20H2/x64/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x64/System32",
+            "text": "Win10_20H2_20H2-x64 (10.0.19041.610)",
+            "value": "Win10_20H2_20H2/x64/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x64/System32",
+            "text": "Win10_20H2_20H2-x64 (10.0.19041.631)",
+            "value": "Win10_20H2_20H2/x64/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x64/System32",
+            "text": "Win10_20H2_20H2-x64 (10.0.19041.630)",
+            "value": "Win10_20H2_20H2/x64/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x86/System32",
+            "text": "Win10_20H2_20H2-x86 (10.0.19041.610)",
+            "value": "Win10_20H2_20H2/x86/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x86/System32",
+            "text": "Win10_20H2_20H2-x86 (10.0.19041.631)",
+            "value": "Win10_20H2_20H2/x86/System32"
+        },
+        {
+            "key": "Win10_20H2_20H2/x86/System32",
+            "text": "Win10_20H2_20H2-x86 (10.0.19041.630)",
+            "value": "Win10_20H2_20H2/x86/System32"
         },
         {
             "key": "Win10_21H1_20150/ARM64/System32",
