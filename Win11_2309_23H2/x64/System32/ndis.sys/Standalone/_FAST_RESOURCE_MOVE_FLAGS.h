@@ -1,0 +1,5 @@
+typedef enum _FAST_RESOURCE_MOVE_FLAGS
+{
+  FastResourceMoveDisowned = 1,
+} FAST_RESOURCE_MOVE_FLAGS, *PFAST_RESOURCE_MOVE_FLAGS;
+

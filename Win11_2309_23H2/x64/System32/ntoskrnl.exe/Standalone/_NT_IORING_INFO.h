@@ -1,0 +1,36 @@
+enum IORING_VERSION
+{
+  IORING_VERSION_INVALID = 0,
+  IORING_VERSION_1 = 1,
+  IORING_VERSION_2 = 2,
+  IORING_VERSION_3 = 300,
+};
+
+typedef enum _NT_IORING_CREATE_REQUIRED_FLAGS
+{
+  NT_IORING_CREATE_REQUIRED_FLAG_NONE = 0,
+} NT_IORING_CREATE_REQUIRED_FLAGS, *PNT_IORING_CREATE_REQUIRED_FLAGS;
+
+typedef enum _NT_IORING_CREATE_ADVISORY_FLAGS
+{
+  NT_IORING_CREATE_ADVISORY_FLAG_NONE = 0,
+} NT_IORING_CREATE_ADVISORY_FLAGS, *PNT_IORING_CREATE_ADVISORY_FLAGS;
+
+typedef struct _NT_IORING_CREATE_FLAGS
+{
+  /* 0x0000 */ enum _NT_IORING_CREATE_REQUIRED_FLAGS Required;
+  /* 0x0004 */ enum _NT_IORING_CREATE_ADVISORY_FLAGS Advisory;
+} NT_IORING_CREATE_FLAGS, *PNT_IORING_CREATE_FLAGS; /* size: 0x0008 */
+
+typedef struct _NT_IORING_INFO
+{
+  /* 0x0000 */ enum IORING_VERSION IoRingVersion;
+  /* 0x0004 */ struct _NT_IORING_CREATE_FLAGS Flags;
+  /* 0x000c */ unsigned int SubmissionQueueSize;
+  /* 0x0010 */ unsigned int SubmissionQueueRingMask;
+  /* 0x0014 */ unsigned int CompletionQueueSize;
+  /* 0x0018 */ unsigned int CompletionQueueRingMask;
+  /* 0x0020 */ struct _NT_IORING_SUBMISSION_QUEUE* SubmissionQueue;
+  /* 0x0028 */ struct _NT_IORING_COMPLETION_QUEUE* CompletionQueue;
+} NT_IORING_INFO, *PNT_IORING_INFO; /* size: 0x0030 */
+

@@ -1,0 +1,2 @@
+struct _DBGKP_ERROR_PORT;
+

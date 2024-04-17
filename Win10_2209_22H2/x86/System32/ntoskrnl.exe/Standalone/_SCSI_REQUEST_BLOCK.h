@@ -1,0 +1,2 @@
+struct _SCSI_REQUEST_BLOCK;
+

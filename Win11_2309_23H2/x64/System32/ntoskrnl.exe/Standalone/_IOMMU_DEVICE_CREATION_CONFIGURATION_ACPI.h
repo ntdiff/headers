@@ -1,0 +1,6 @@
+typedef struct _IOMMU_DEVICE_CREATION_CONFIGURATION_ACPI
+{
+  /* 0x0000 */ unsigned int InputMappingBase;
+  /* 0x0004 */ unsigned int MappingsCount;
+} IOMMU_DEVICE_CREATION_CONFIGURATION_ACPI, *PIOMMU_DEVICE_CREATION_CONFIGURATION_ACPI; /* size: 0x0008 */
+

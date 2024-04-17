@@ -1,0 +1,2 @@
+struct _NDIS_PD_EXT_CLIENT_DISPATCH;
+

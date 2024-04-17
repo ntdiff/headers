@@ -1,0 +1,2 @@
+struct _DMAR_PAGE_TABLE_STATE;
+

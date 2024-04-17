@@ -1,0 +1,6 @@
+typedef enum _HAL_HV_DMA_DOMAIN_CONFIG_ARCH
+{
+  HalHvDmaDomainConfigArm64 = 0,
+  HalHvDmaDomainConfigX64 = 1,
+} HAL_HV_DMA_DOMAIN_CONFIG_ARCH, *PHAL_HV_DMA_DOMAIN_CONFIG_ARCH;
+

@@ -1,0 +1,2 @@
+struct _NDIS_INTERRUPT_BLOCK;
+

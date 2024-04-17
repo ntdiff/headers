@@ -1,0 +1,2 @@
+struct _EXP_LICENSE_STATE;
+

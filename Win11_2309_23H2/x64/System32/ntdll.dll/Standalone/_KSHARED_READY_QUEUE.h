@@ -1,0 +1,2 @@
+struct _KSHARED_READY_QUEUE;
+
