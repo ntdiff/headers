@@ -1,0 +1,16 @@
+typedef enum _SERVERSILO_STATE
+{
+  SERVERSILO_INITING = 0,
+  SERVERSILO_STARTED = 1,
+  SERVERSILO_TERMINATING = 2,
+  SERVERSILO_TERMINATED = 3,
+} SERVERSILO_STATE, *PSERVERSILO_STATE;
+
+typedef struct _SERVERSILO_BASIC_INFORMATION
+{
+  /* 0x0000 */ void* SiloIdNumber;
+  /* 0x0004 */ unsigned long ServiceSessionId;
+  /* 0x0008 */ unsigned long DefaultCompartmentId;
+  /* 0x000c */ enum _SERVERSILO_STATE State;
+} SERVERSILO_BASIC_INFORMATION, *PSERVERSILO_BASIC_INFORMATION; /* size: 0x0010 */
+

@@ -1,0 +1,7 @@
+typedef enum __MIDL___MIDL_itf_shpriv_core_0000_0017_0001
+{
+  GVS_NORMAL = 0,
+  GVS_USE_SPLASHSCREEN_VISUAL = 1,
+  GVS_USE_SPLASHSCREEN_VISUAL_ONCE = 2,
+} _MIDL___MIDL_itf_shpriv_core_0000_0017_0001, *P_MIDL___MIDL_itf_shpriv_core_0000_0017_0001;
+

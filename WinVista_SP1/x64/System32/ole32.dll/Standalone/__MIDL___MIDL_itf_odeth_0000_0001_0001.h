@@ -1,0 +1,7 @@
+typedef enum __MIDL___MIDL_itf_odeth_0000_0001_0001
+{
+  ORS_DONTRUNDOWN = 0,
+  ORS_OK_TO_RUNDOWN = 1,
+  ORS_OID_PINNED = 2,
+} _MIDL___MIDL_itf_odeth_0000_0001_0001, *P_MIDL___MIDL_itf_odeth_0000_0001_0001;
+

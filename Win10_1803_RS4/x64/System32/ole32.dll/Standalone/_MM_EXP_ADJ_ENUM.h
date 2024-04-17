@@ -1,0 +1,12 @@
+typedef enum _MM_EXP_ADJ_ENUM
+{
+  _MM_EXPADJ_NONE = 0,
+  _MM_EXPADJ_4 = 1,
+  _MM_EXPADJ_5 = 2,
+  _MM_EXPADJ_8 = 3,
+  _MM_EXPADJ_16 = 4,
+  _MM_EXPADJ_24 = 5,
+  _MM_EXPADJ_31 = 6,
+  _MM_EXPADJ_32 = 7,
+} MM_EXP_ADJ_ENUM, *PMM_EXP_ADJ_ENUM;
+

@@ -1,0 +1,7 @@
+typedef enum __MIDL_IBindStatusCallback_0004
+{
+  URL_ENCODING_NONE = 0,
+  URL_ENCODING_ENABLE_UTF8 = 0x10000000,
+  URL_ENCODING_DISABLE_UTF8 = 0x20000000,
+} _MIDL_IBindStatusCallback_0004, *P_MIDL_IBindStatusCallback_0004;
+

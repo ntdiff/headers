@@ -1,0 +1,5 @@
+typedef enum _CPU_SET_INFORMATION_TYPE
+{
+  CpuSetInformation = 0,
+} CPU_SET_INFORMATION_TYPE, *PCPU_SET_INFORMATION_TYPE;
+

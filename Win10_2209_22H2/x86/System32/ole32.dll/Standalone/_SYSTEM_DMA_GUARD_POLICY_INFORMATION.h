@@ -1,0 +1,5 @@
+typedef struct _SYSTEM_DMA_GUARD_POLICY_INFORMATION
+{
+  /* 0x0000 */ unsigned char DmaGuardPolicyEnabled;
+} SYSTEM_DMA_GUARD_POLICY_INFORMATION, *PSYSTEM_DMA_GUARD_POLICY_INFORMATION; /* size: 0x0001 */
+

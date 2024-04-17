@@ -1,0 +1,7 @@
+enum IMM_SYSTEM_MODE
+{
+  ISM_NONE = -1,
+  ISM_DESKTOP = 0,
+  ISM_IMMERSIVE = 1,
+};
+

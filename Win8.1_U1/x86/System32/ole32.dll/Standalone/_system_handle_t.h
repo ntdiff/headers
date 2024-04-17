@@ -1,0 +1,11 @@
+typedef enum _system_handle_t
+{
+  SYSTEM_HANDLE_FILE = 0,
+  SYSTEM_HANDLE_SEMAPHORE = 1,
+  SYSTEM_HANDLE_EVENT = 2,
+  SYSTEM_HANDLE_MUTEX = 3,
+  SYSTEM_HANDLE_PROCESS = 4,
+  SYSTEM_HANDLE_TOKEN = 5,
+  SYSTEM_HANDLE_INVALID = 255,
+} system_handle_t, *Psystem_handle_t;
+

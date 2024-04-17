@@ -1,0 +1,7 @@
+enum PackagePathType
+{
+  PackagePathType_Install = 0,
+  PackagePathType_Mutable = 1,
+  PackagePathType_Effective = 2,
+};
+

@@ -1,0 +1,6 @@
+enum SEMSTATE
+{
+  SEMSHARED = 0,
+  SEMSHAREDOWNED = 1,
+};
+

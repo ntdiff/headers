@@ -1,0 +1,58 @@
+typedef struct _NDR_CALLBACK_ROUTINES_TABLE
+{
+  /* 0x0000 */ void* NdrpServerMarshal /* function */;
+  /* 0x0008 */ void* NdrpServerOutInit /* function */;
+  /* 0x0010 */ void* NdrpSizing /* function */;
+  /* 0x0018 */ void* NdrClientZeroOut /* function */;
+  /* 0x0020 */ void* I_RpcSetNDRSlot /* function */;
+  /* 0x0028 */ void* I_RpcGetAndSetNDRSlot /* function */;
+  /* 0x0030 */ void* I_RpcGetNDRSlot /* function */;
+  /* 0x0038 */ void* NdrpClientMarshal /* function */;
+  /* 0x0040 */ void* NdrpClientUnMarshal /* function */;
+  /* 0x0048 */ void* NdrpFreeMemoryList /* function */;
+  /* 0x0050 */ void* NdrpFreeParams /* function */;
+  /* 0x0058 */ void* NdrpServerUnMarshal /* function */;
+  /* 0x0060 */ void* NdrpPerformRpcInitialization /* function */;
+  /* 0x0068 */ void* GlobalMutexClearExternal /* function */;
+  /* 0x0070 */ void* GlobalMutexRequestExternal /* function */;
+  /* 0x0078 */ void* PrintCurrentStackTrace /* function */;
+  /* 0x0080 */ void* NdrpCheckMIDLRobust /* function */;
+  /* 0x0088 */ void* DbgPrintUUID /* function */;
+  /* 0x0090 */ void* NdrpAddCorrelationData /* function */;
+  /* 0x0098 */ void* NdrpRecordCustomUnmarshal /* function */;
+  /* 0x00a0 */ void* NdrpComputeConformance /* function */;
+  /* 0x00a8 */ void* NdrpLogIIDMisMatchEvent /* function */;
+  /* 0x00b0 */ void* const* pfnMemSizeRoutines /* function */;
+  /* 0x00b8 */ void* const* pfnConvertRoutines /* function */;
+  /* 0x00c0 */ void* const* pfnFreeRoutines /* function */;
+  /* 0x00c8 */ void* const* pfnMarshallRoutines /* function */;
+  /* 0x00d0 */ void* const* pfnSizeRoutines /* function */;
+  /* 0x00d8 */ void* const* pfnUnmarshallRoutines /* function */;
+  /* 0x00e0 */ void* GetRpcVerifierSettings /* function */;
+  /* 0x00e8 */ int gfRPCVerifierEnabled;
+  /* 0x00f0 */ void* AllocWrapper /* function */;
+  /* 0x00f8 */ void* FreeWrapper /* function */;
+  /* 0x0100 */ void* NdrpClientCall2 /* function */;
+  /* 0x0108 */ void* NdrpClientCall3 /* function */;
+  /* 0x0110 */ void* Ndr64ClientInitializeContext /* function */;
+  /* 0x0118 */ void* NdrServerSetupNDR64TransferSyntax /* function */;
+  /* 0x0120 */ void* Ndr64pCheckCorrelation /* function */;
+  /* 0x0128 */ void* Ndr64EvaluateExpr /* function */;
+  /* 0x0130 */ const unsigned char* Ndr64SimpleTypeBufferSize;
+  /* 0x0138 */ const unsigned char* Ndr64SimpleTypeMemorySize;
+  /* 0x0140 */ const unsigned long* Ndr64TypeFlags;
+  /* 0x0148 */ void* const* Ndr64MemSizeRoutinesTable /* function */;
+  /* 0x0150 */ void* Ndr64pServerUnMarshal /* function */;
+  /* 0x0158 */ void* Ndr64pServerOutInit /* function */;
+  /* 0x0160 */ void* Ndr64pSizing /* function */;
+  /* 0x0168 */ void* Ndr64pServerMarshal /* function */;
+  /* 0x0170 */ void* Ndr64ServerInitialize /* function */;
+  /* 0x0178 */ void* Ndr64ClearOutParameters /* function */;
+  /* 0x0180 */ void* Ndr64ClientInitialize /* function */;
+  /* 0x0188 */ void* Ndr64pFreeParams /* function */;
+  /* 0x0190 */ void* MulNdrpInitializeContextFromProc /* function */;
+  /* 0x0198 */ void* Ndr64ClientZeroOut /* function */;
+  /* 0x01a0 */ void* Ndr64pClientUnMarshal /* function */;
+  /* 0x01a8 */ void* Ndr64pClientSetupTransferSyntax /* function */;
+} NDR_CALLBACK_ROUTINES_TABLE, *PNDR_CALLBACK_ROUTINES_TABLE; /* size: 0x01b0 */
+

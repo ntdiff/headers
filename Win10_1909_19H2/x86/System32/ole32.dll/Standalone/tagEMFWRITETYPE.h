@@ -1,0 +1,6 @@
+enum tagEMFWRITETYPE
+{
+  WRITE_AS_WMF = 13,
+  WRITE_AS_EMF = 17,
+};
+

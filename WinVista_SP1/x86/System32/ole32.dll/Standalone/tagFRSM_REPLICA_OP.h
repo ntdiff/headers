@@ -1,0 +1,6 @@
+enum tagFRSM_REPLICA_OP
+{
+  FRSM_REPLICA_ADD = 0,
+  FRSM_REPLICA_DELETE = 1,
+};
+

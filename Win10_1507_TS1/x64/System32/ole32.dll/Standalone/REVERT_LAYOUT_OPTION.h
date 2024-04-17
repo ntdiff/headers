@@ -1,0 +1,6 @@
+enum REVERT_LAYOUT_OPTION
+{
+  RLO_DEFAULT = 0,
+  RLO_TRYREVERT = 1,
+};
+

@@ -1,0 +1,7 @@
+enum tagSTGMOVE
+{
+  STGMOVE_MOVE = 0,
+  STGMOVE_COPY = 1,
+  STGMOVE_SHALLOWCOPY = 2,
+};
+

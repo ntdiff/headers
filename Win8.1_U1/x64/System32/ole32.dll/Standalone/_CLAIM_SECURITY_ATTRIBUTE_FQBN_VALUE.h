@@ -1,0 +1,6 @@
+typedef struct _CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE
+{
+  /* 0x0000 */ unsigned __int64 Version;
+  /* 0x0008 */ wchar_t* Name;
+} CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE, *PCLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE; /* size: 0x0010 */
+

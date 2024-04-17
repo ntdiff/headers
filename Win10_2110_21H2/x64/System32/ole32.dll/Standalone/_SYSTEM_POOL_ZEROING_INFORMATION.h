@@ -1,0 +1,5 @@
+typedef struct _SYSTEM_POOL_ZEROING_INFORMATION
+{
+  /* 0x0000 */ unsigned char PoolZeroingSupportPresent;
+} SYSTEM_POOL_ZEROING_INFORMATION, *PSYSTEM_POOL_ZEROING_INFORMATION; /* size: 0x0001 */
+

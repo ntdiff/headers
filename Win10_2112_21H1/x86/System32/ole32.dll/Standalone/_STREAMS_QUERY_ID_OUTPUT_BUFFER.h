@@ -1,0 +1,5 @@
+typedef struct _STREAMS_QUERY_ID_OUTPUT_BUFFER
+{
+  /* 0x0000 */ unsigned long StreamId;
+} STREAMS_QUERY_ID_OUTPUT_BUFFER, *PSTREAMS_QUERY_ID_OUTPUT_BUFFER; /* size: 0x0004 */
+

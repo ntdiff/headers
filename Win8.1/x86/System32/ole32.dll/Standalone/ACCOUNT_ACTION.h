@@ -1,0 +1,10 @@
+enum ACCOUNT_ACTION
+{
+  ACA_NONE = 0,
+  ACA_RECONNECT = 1,
+  ACA_REMOVE = 2,
+  ACA_VIEW = 4,
+  ACA_MANAGE = 8,
+  ACA_MORE = 16,
+};
+

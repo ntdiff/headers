@@ -1,0 +1,7 @@
+enum FILE_USAGE_TYPE
+{
+  FUT_PLAYING = 0,
+  FUT_EDITING = 1,
+  FUT_GENERIC = 2,
+};
+

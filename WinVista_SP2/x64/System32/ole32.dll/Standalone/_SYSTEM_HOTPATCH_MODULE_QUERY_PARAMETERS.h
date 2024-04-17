@@ -1,0 +1,6 @@
+typedef struct _SYSTEM_HOTPATCH_MODULE_QUERY_PARAMETERS
+{
+  /* 0x0000 */ unsigned long QueryFlags;
+  /* 0x0008 */ void* ProcessHandle;
+} SYSTEM_HOTPATCH_MODULE_QUERY_PARAMETERS, *PSYSTEM_HOTPATCH_MODULE_QUERY_PARAMETERS; /* size: 0x0010 */
+

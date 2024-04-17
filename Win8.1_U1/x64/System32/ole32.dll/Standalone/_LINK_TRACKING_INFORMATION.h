@@ -1,0 +1,12 @@
+typedef enum _LINK_TRACKING_INFORMATION_TYPE
+{
+  NtfsLinkTrackingInformation = 0,
+  DfsLinkTrackingInformation = 1,
+} LINK_TRACKING_INFORMATION_TYPE, *PLINK_TRACKING_INFORMATION_TYPE;
+
+typedef struct _LINK_TRACKING_INFORMATION
+{
+  /* 0x0000 */ enum _LINK_TRACKING_INFORMATION_TYPE Type;
+  /* 0x0004 */ unsigned char VolumeId[16];
+} LINK_TRACKING_INFORMATION, *PLINK_TRACKING_INFORMATION; /* size: 0x0014 */
+

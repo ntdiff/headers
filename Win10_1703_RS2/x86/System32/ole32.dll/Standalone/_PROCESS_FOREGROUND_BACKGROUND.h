@@ -1,0 +1,5 @@
+typedef struct _PROCESS_FOREGROUND_BACKGROUND
+{
+  /* 0x0000 */ unsigned char Foreground;
+} PROCESS_FOREGROUND_BACKGROUND, *PPROCESS_FOREGROUND_BACKGROUND; /* size: 0x0001 */
+

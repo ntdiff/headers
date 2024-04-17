@@ -1,0 +1,6 @@
+enum GUTTER_SLIDE_DIRECTION
+{
+  GSD_RIGHT = 0,
+  GSD_LEFT = 1,
+};
+

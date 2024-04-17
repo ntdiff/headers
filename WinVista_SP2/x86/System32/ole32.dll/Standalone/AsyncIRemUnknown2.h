@@ -1,0 +1,4 @@
+struct AsyncIRemUnknown2
+{
+}; /* size: 0x0004 */
+

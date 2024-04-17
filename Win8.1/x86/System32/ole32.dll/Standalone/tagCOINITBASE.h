@@ -1,0 +1,5 @@
+enum tagCOINITBASE
+{
+  COINITBASE_MULTITHREADED = 0,
+};
+

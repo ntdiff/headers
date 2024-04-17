@@ -1,0 +1,8 @@
+typedef struct _PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION
+{
+  /* 0x0000 */ unsigned short NumberOfTargets;
+  /* 0x0002 */ unsigned short Reserved;
+  /* 0x0004 */ unsigned long Reserved2;
+  /* 0x0008 */ struct _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET* Targets;
+} PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION, *PPROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION; /* size: 0x0010 */
+

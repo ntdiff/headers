@@ -1,0 +1,6 @@
+enum SWITCH_DIRECTION
+{
+  SWITCH_OLDER = 0,
+  SWITCH_NEWER = 1,
+};
+

@@ -1,0 +1,7 @@
+enum DESTLISTTYPE
+{
+  DLT_PINNED = 0,
+  DLT_RECENT = 1,
+  DLT_FREQUENT = 2,
+};
+

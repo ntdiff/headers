@@ -1,0 +1,5 @@
+typedef struct _SET_CACHED_RUNS_STATE_INPUT_BUFFER
+{
+  /* 0x0000 */ unsigned char Enable;
+} SET_CACHED_RUNS_STATE_INPUT_BUFFER, *PSET_CACHED_RUNS_STATE_INPUT_BUFFER; /* size: 0x0001 */
+

@@ -1,0 +1,9 @@
+enum tagUAEVENT
+{
+  UAE_LAUNCH = 0,
+  UAE_SWITCH = 1,
+  UAE_TIME = 2,
+  UAE_SESSION = 3,
+  UAE_EXCLUDEAPP = 4,
+};
+

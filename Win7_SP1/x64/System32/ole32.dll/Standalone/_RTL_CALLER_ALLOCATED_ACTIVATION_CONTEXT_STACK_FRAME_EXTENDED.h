@@ -1,0 +1,19 @@
+typedef struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME
+{
+  /* 0x0000 */ struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME* Previous;
+  /* 0x0008 */ struct _ACTIVATION_CONTEXT* ActivationContext;
+  /* 0x0010 */ unsigned long Flags;
+  /* 0x0014 */ long __PADDING__[1];
+} RTL_ACTIVATION_CONTEXT_STACK_FRAME, *PRTL_ACTIVATION_CONTEXT_STACK_FRAME; /* size: 0x0018 */
+
+typedef struct _RTL_CALLER_ALLOCATED_ACTIVATION_CONTEXT_STACK_FRAME_EXTENDED
+{
+  /* 0x0000 */ unsigned __int64 Size;
+  /* 0x0008 */ unsigned long Format;
+  /* 0x0010 */ struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME Frame;
+  /* 0x0028 */ void* Extra1;
+  /* 0x0030 */ void* Extra2;
+  /* 0x0038 */ void* Extra3;
+  /* 0x0040 */ void* Extra4;
+} RTL_CALLER_ALLOCATED_ACTIVATION_CONTEXT_STACK_FRAME_EXTENDED, *PRTL_CALLER_ALLOCATED_ACTIVATION_CONTEXT_STACK_FRAME_EXTENDED; /* size: 0x0048 */
+

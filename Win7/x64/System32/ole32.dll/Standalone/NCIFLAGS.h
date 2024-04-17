@@ -1,0 +1,6 @@
+enum NCIFLAGS
+{
+  NCI_HAVECLSID = 1,
+  NCI_HAVEPROGID = 2,
+};
+

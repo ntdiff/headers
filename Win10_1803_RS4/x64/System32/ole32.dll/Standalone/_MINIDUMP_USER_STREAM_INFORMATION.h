@@ -1,0 +1,6 @@
+typedef struct _MINIDUMP_USER_STREAM_INFORMATION
+{
+  /* 0x0000 */ unsigned long UserStreamCount;
+  /* 0x0004 */ struct _MINIDUMP_USER_STREAM* UserStreamArray;
+} MINIDUMP_USER_STREAM_INFORMATION, *PMINIDUMP_USER_STREAM_INFORMATION; /* size: 0x000c */
+

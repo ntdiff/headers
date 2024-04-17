@@ -1,0 +1,8 @@
+enum APPCRUSHER_INPUT
+{
+  ACI_TOUCH = 0,
+  ACI_MOUSE = 1,
+  ACI_KEYBOARD = 2,
+  ACI_INVALID = 3,
+};
+

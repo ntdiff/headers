@@ -1,0 +1,5 @@
+typedef struct _KEY_HANDLE_TAGS_INFORMATION
+{
+  /* 0x0000 */ unsigned long HandleTags;
+} KEY_HANDLE_TAGS_INFORMATION, *PKEY_HANDLE_TAGS_INFORMATION; /* size: 0x0004 */
+

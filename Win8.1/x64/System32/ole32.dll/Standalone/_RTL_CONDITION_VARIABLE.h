@@ -1,0 +1,14 @@
+typedef struct _RTL_CONDITION_VARIABLE
+{
+  union
+  {
+    struct /* bitfield */
+    {
+      /* 0x0000 */ unsigned __int64 WakeCount : 3; /* bit position: 0 */
+      /* 0x0000 */ unsigned __int64 Waking : 1; /* bit position: 3 */
+    }; /* bitfield */
+    /* 0x0000 */ unsigned __int64 Value;
+    /* 0x0000 */ void* Ptr;
+  }; /* size: 0x0008 */
+} RTL_CONDITION_VARIABLE, *PRTL_CONDITION_VARIABLE; /* size: 0x0008 */
+

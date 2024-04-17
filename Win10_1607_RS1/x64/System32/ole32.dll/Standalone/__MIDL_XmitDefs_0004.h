@@ -1,0 +1,6 @@
+typedef enum __MIDL_XmitDefs_0004
+{
+  WINRT_ASYNC_CALL_SUCCESS = 0,
+  WINRT_ASYNC_CALL_FAILURE = 1,
+} _MIDL_XmitDefs_0004, *P_MIDL_XmitDefs_0004;
+

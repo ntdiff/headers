@@ -1,0 +1,6 @@
+typedef struct _JOBOBJECT_ASSOCIATE_COMPLETION_PORT
+{
+  /* 0x0000 */ void* CompletionKey;
+  /* 0x0008 */ void* CompletionPort;
+} JOBOBJECT_ASSOCIATE_COMPLETION_PORT, *PJOBOBJECT_ASSOCIATE_COMPLETION_PORT; /* size: 0x0010 */
+

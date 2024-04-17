@@ -1,0 +1,6 @@
+typedef struct _VIRTUALIZATION_INSTANCE_INFO_INPUT
+{
+  /* 0x0000 */ unsigned long NumberOfWorkerThreads;
+  /* 0x0004 */ unsigned long Flags;
+} VIRTUALIZATION_INSTANCE_INFO_INPUT, *PVIRTUALIZATION_INSTANCE_INFO_INPUT; /* size: 0x0008 */
+

@@ -1,0 +1,7 @@
+enum tagRUNDOWN_RESULT
+{
+  RUNDWN_UNKNOWN = 1,
+  RUNDWN_KEEP = 2,
+  RUNDWN_RUNDOWN = 4,
+};
+

@@ -1,0 +1,6 @@
+typedef enum _TIMER_SET_INFORMATION_CLASS
+{
+  TimerSetCoalescableTimer = 0,
+  MaxTimerInfoClass = 1,
+} TIMER_SET_INFORMATION_CLASS, *PTIMER_SET_INFORMATION_CLASS;
+

@@ -1,0 +1,9 @@
+enum IHM_DISPLAY_MODE
+{
+  IDM_NONE = 0,
+  IDM_IMMERSIVE = 1,
+  IDM_FLOATING = 2,
+  IDM_DOCKED = 3,
+  IDM_SPLIT = 4,
+};
+

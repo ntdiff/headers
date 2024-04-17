@@ -1,0 +1,2 @@
+struct _STACK_TRACE_DATABASE;
+

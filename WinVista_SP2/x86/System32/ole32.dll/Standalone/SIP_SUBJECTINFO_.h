@@ -1,0 +1,2 @@
+struct SIP_SUBJECTINFO_;
+

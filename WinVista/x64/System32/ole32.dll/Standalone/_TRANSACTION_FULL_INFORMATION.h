@@ -1,0 +1,5 @@
+typedef struct _TRANSACTION_FULL_INFORMATION
+{
+  /* 0x0000 */ unsigned long NameLength;
+} TRANSACTION_FULL_INFORMATION, *PTRANSACTION_FULL_INFORMATION; /* size: 0x0004 */
+

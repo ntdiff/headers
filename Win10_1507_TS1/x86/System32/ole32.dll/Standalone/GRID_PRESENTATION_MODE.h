@@ -1,0 +1,8 @@
+enum GRID_PRESENTATION_MODE
+{
+  GPM_INVALID = 0,
+  GPM_START = 1,
+  GPM_ALLAPPS = 2,
+  GPM_SEARCH = 3,
+};
+

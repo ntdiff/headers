@@ -1,0 +1,11 @@
+enum tagORT
+{
+  ORT_UNUSED = 0,
+  ORT_OBJREF = 1,
+  ORT_LAZY_OBJREF = 2,
+  ORT_AGILE = 4,
+  ORT_LAZY_AGILE = 8,
+  ORT_STREAM = 22,
+  ORT_FREETM = 50,
+};
+

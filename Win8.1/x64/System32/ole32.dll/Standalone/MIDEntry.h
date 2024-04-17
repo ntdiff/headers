@@ -1,0 +1,21 @@
+struct SHashChain
+{
+  /* 0x0000 */ struct SHashChain* pNext;
+  /* 0x0008 */ struct SHashChain* pPrev;
+}; /* size: 0x0010 */
+
+struct SStringHashNode
+{
+  /* 0x0000 */ struct SHashChain chain;
+  /* 0x0010 */ unsigned long dwHash;
+  /* 0x0018 */ struct tagDUALSTRINGARRAY* psaKey;
+}; /* size: 0x0020 */
+
+class MIDEntry
+{
+  /* 0x0000 */ struct SStringHashNode _Node;
+  /* 0x0020 */ unsigned __int64 _mid;
+  /* 0x0028 */ unsigned long _cRefs;
+  /* 0x002c */ unsigned long _dwFlags;
+}; /* size: 0x0030 */
+

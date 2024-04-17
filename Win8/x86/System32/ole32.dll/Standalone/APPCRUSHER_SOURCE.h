@@ -1,0 +1,8 @@
+enum APPCRUSHER_SOURCE
+{
+  ACS_BACKSTACK = 0,
+  ACS_VISIBLE = 1,
+  ACS_LIST = 2,
+  ACS_INVALID = 3,
+};
+

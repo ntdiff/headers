@@ -1,0 +1,5 @@
+typedef struct _FILE_PIPE_EVENT_ENUM_OUTPUT_BUFFER
+{
+  /* 0x0000 */ unsigned long EventTypes;
+} FILE_PIPE_EVENT_ENUM_OUTPUT_BUFFER, *PFILE_PIPE_EVENT_ENUM_OUTPUT_BUFFER; /* size: 0x0004 */
+

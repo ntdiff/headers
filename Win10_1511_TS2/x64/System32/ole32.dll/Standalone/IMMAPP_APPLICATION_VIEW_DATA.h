@@ -1,0 +1,43 @@
+enum APPLICATION_VIEW_STATE
+{
+  AVS_FULLSCREEN_LANDSCAPE = 0,
+  AVS_FILLED = 1,
+  AVS_SNAPPED = 2,
+  AVS_FULLSCREEN_PORTRAIT = 3,
+};
+
+enum APPLICATION_VIEW_ORIENTATION
+{
+  AVO_LANDSCAPE = 0,
+  AVO_PORTRAIT = 1,
+};
+
+enum ADJACENT_DISPLAY_EDGES
+{
+  ADE_NONE = 0,
+  ADE_LEFT = 1,
+  ADE_RIGHT = 2,
+};
+
+enum USER_INTERACTION_MODE
+{
+  UIM_MOUSE = 0,
+  UIM_TOUCH = 1,
+};
+
+struct APPLICATION_VIEW_DATA
+{
+  /* 0x0000 */ enum APPLICATION_VIEW_STATE viewState;
+  /* 0x0004 */ enum APPLICATION_VIEW_ORIENTATION viewOrientation;
+  /* 0x0008 */ enum ADJACENT_DISPLAY_EDGES displayEdges;
+  /* 0x000c */ int fIsOnLockScreen;
+  /* 0x0010 */ int fIsFullScreenMode;
+  /* 0x0014 */ enum USER_INTERACTION_MODE userInteractionMode;
+}; /* size: 0x0018 */
+
+struct IMMAPP_APPLICATION_VIEW_DATA
+{
+  /* 0x0000 */ struct APPLICATION_VIEW_DATA current;
+  /* 0x0018 */ struct APPLICATION_VIEW_DATA deferred;
+}; /* size: 0x0030 */
+

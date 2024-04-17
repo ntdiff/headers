@@ -1,0 +1,5 @@
+typedef struct _MINIDUMP_VM_QUERY_CALLBACK
+{
+  /* 0x0000 */ unsigned __int64 Offset;
+} MINIDUMP_VM_QUERY_CALLBACK, *PMINIDUMP_VM_QUERY_CALLBACK; /* size: 0x0008 */
+

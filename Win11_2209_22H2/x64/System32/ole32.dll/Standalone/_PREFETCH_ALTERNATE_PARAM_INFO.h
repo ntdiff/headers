@@ -1,0 +1,5 @@
+typedef struct _PREFETCH_ALTERNATE_PARAM_INFO
+{
+  /* 0x0000 */ unsigned long Parameter;
+} PREFETCH_ALTERNATE_PARAM_INFO, *PPREFETCH_ALTERNATE_PARAM_INFO; /* size: 0x0004 */
+

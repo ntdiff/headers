@@ -1,0 +1,5 @@
+typedef struct _FILE_PIPE_SILO_ARRIVAL_INPUT
+{
+  /* 0x0000 */ void* JobHandle;
+} FILE_PIPE_SILO_ARRIVAL_INPUT, *PFILE_PIPE_SILO_ARRIVAL_INPUT; /* size: 0x0004 */
+

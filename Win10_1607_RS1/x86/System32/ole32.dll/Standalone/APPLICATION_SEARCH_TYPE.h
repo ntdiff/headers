@@ -1,0 +1,6 @@
+enum APPLICATION_SEARCH_TYPE
+{
+  AST_LOCAL = 0,
+  AST_GLOBAL = 1,
+};
+

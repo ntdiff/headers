@@ -1,0 +1,6 @@
+typedef enum _LRPC_SYSTEM_HANDLE_MARSHAL_DIRECTION
+{
+  MarshalDirectionMarshal = 0,
+  MarshalDirectionUnmarshal = 1,
+} LRPC_SYSTEM_HANDLE_MARSHAL_DIRECTION, *PLRPC_SYSTEM_HANDLE_MARSHAL_DIRECTION;
+

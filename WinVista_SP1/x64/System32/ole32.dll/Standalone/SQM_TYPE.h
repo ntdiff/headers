@@ -1,0 +1,7 @@
+enum SQM_TYPE
+{
+  SQM_TYPE_NONE = 0,
+  SQM_TYPE_DWORD = 1,
+  SQM_TYPE_STRING = 2,
+};
+

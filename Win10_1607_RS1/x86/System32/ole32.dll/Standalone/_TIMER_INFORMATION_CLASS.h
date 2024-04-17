@@ -1,0 +1,5 @@
+typedef enum _TIMER_INFORMATION_CLASS
+{
+  TimerBasicInformation = 0,
+} TIMER_INFORMATION_CLASS, *PTIMER_INFORMATION_CLASS;
+

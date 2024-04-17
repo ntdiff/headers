@@ -1,0 +1,6 @@
+typedef struct _SYSTEM_WATCHDOG_HANDLER_INFORMATION
+{
+  /* 0x0000 */ void* WdHandler /* function */;
+  /* 0x0004 */ void* Context;
+} SYSTEM_WATCHDOG_HANDLER_INFORMATION, *PSYSTEM_WATCHDOG_HANDLER_INFORMATION; /* size: 0x0008 */
+

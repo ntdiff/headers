@@ -1,0 +1,5 @@
+typedef enum _NT_READ_FLAGS
+{
+  NT_READ_FLAG_NONE = 0,
+} NT_READ_FLAGS, *PNT_READ_FLAGS;
+

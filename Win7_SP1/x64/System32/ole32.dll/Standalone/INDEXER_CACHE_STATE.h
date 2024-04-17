@@ -1,0 +1,6 @@
+enum INDEXER_CACHE_STATE
+{
+  ICS_HIT = 0,
+  ICS_MISS = 1,
+};
+

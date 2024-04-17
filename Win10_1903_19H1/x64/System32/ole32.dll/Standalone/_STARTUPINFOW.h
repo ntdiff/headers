@@ -1,0 +1,22 @@
+typedef struct _STARTUPINFOW
+{
+  /* 0x0000 */ unsigned long cb;
+  /* 0x0008 */ wchar_t* lpReserved;
+  /* 0x0010 */ wchar_t* lpDesktop;
+  /* 0x0018 */ wchar_t* lpTitle;
+  /* 0x0020 */ unsigned long dwX;
+  /* 0x0024 */ unsigned long dwY;
+  /* 0x0028 */ unsigned long dwXSize;
+  /* 0x002c */ unsigned long dwYSize;
+  /* 0x0030 */ unsigned long dwXCountChars;
+  /* 0x0034 */ unsigned long dwYCountChars;
+  /* 0x0038 */ unsigned long dwFillAttribute;
+  /* 0x003c */ unsigned long dwFlags;
+  /* 0x0040 */ unsigned short wShowWindow;
+  /* 0x0042 */ unsigned short cbReserved2;
+  /* 0x0048 */ unsigned char* lpReserved2;
+  /* 0x0050 */ void* hStdInput;
+  /* 0x0058 */ void* hStdOutput;
+  /* 0x0060 */ void* hStdError;
+} STARTUPINFOW, *PSTARTUPINFOW; /* size: 0x0068 */
+

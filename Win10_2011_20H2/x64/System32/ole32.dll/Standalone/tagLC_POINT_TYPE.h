@@ -1,0 +1,7 @@
+enum tagLC_POINT_TYPE
+{
+  LCPT_SCREEN = 0,
+  LCPT_CLIENT = 1,
+  LCPT_SCROLL = 2,
+};
+

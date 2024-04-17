@@ -1,0 +1,6 @@
+typedef struct _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET
+{
+  /* 0x0000 */ unsigned __int64 TargetAddress;
+  /* 0x0008 */ unsigned __int64 Flags;
+} PROCESS_DYNAMIC_EH_CONTINUATION_TARGET, *PPROCESS_DYNAMIC_EH_CONTINUATION_TARGET; /* size: 0x0010 */
+

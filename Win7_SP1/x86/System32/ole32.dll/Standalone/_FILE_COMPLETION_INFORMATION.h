@@ -1,0 +1,6 @@
+typedef struct _FILE_COMPLETION_INFORMATION
+{
+  /* 0x0000 */ void* Port;
+  /* 0x0004 */ void* Key;
+} FILE_COMPLETION_INFORMATION, *PFILE_COMPLETION_INFORMATION; /* size: 0x0008 */
+

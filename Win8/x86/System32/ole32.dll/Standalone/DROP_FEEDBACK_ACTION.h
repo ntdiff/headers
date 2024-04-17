@@ -1,0 +1,6 @@
+enum DROP_FEEDBACK_ACTION
+{
+  DFA_REGISTER = 0,
+  DFA_UPDATE = 1,
+};
+

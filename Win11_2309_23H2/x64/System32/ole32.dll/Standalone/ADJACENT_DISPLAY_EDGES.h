@@ -1,0 +1,7 @@
+enum ADJACENT_DISPLAY_EDGES
+{
+  ADE_NONE = 0,
+  ADE_LEFT = 1,
+  ADE_RIGHT = 2,
+};
+

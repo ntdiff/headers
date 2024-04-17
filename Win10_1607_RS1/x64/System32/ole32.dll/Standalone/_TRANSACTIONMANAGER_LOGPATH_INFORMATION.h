@@ -1,0 +1,7 @@
+typedef struct _TRANSACTIONMANAGER_LOGPATH_INFORMATION
+{
+  /* 0x0000 */ unsigned long LogPathLength;
+  /* 0x0004 */ wchar_t LogPath[1];
+  /* 0x0006 */ char __PADDING__[2];
+} TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION; /* size: 0x0008 */
+

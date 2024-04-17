@@ -1,0 +1,8 @@
+enum tagVARKIND
+{
+  VAR_PERINSTANCE = 0,
+  VAR_STATIC = 1,
+  VAR_CONST = 2,
+  VAR_DISPATCH = 3,
+};
+

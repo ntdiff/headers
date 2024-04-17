@@ -1,0 +1,5 @@
+typedef struct _SILOOBJECT_ROOT_DIRECTORY
+{
+  /* 0x0000 */ void* DirectoryHandle;
+} SILOOBJECT_ROOT_DIRECTORY, *PSILOOBJECT_ROOT_DIRECTORY; /* size: 0x0008 */
+

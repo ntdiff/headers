@@ -1,0 +1,7 @@
+typedef struct _SYSTEM_SECUREBOOT_PLATFORM_MANIFEST_INFORMATION
+{
+  /* 0x0000 */ unsigned long PlatformManifestSize;
+  /* 0x0004 */ unsigned char PlatformManifest[1];
+  /* 0x0005 */ char __PADDING__[3];
+} SYSTEM_SECUREBOOT_PLATFORM_MANIFEST_INFORMATION, *PSYSTEM_SECUREBOOT_PLATFORM_MANIFEST_INFORMATION; /* size: 0x0008 */
+

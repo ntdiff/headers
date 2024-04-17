@@ -1,0 +1,27 @@
+enum CallObjectOccurrenceOrStateVariable
+{
+  CalledI_RpcFreeBuffer = 0,
+  CalledI_RpcNegotiateTransferSyntax = 1,
+  CalledI_RpcGetBufferWithObject = 2,
+  CalledI_RpcGetBuffer = 3,
+  CalledI_RpcAsyncSetHandle = 4,
+  CalledI_RpcSend = 5,
+  CalledI_RpcReceive = 6,
+  CalledI_RpcAsyncAbortCall = 7,
+  CalledI_RpcSendReceive = 8,
+  ReturningFromThreadSendReceive = 9,
+  ASTAPostToPriority = 10,
+  ASTAPostToDispatchable = 11,
+  ASTAPostToQueued = 12,
+  ASTAPreThreadDispatchNormal = 13,
+  ASTAPreThreadDispatchForTimeout = 14,
+  ASTAQueuedRemoveForTimeout = 15,
+  ASTAQueuedToDispatchable = 16,
+  ASTADispatchableToQueued = 17,
+  OccurrenceLast = 18,
+  CMessageCall_iFlags = 19,
+  CAsyncCall_lFlags = 20,
+  CAsyncCall_eSignalState = 21,
+  CClientCall_m_dwFlags = 22,
+};
+

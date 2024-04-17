@@ -1,0 +1,7 @@
+enum MIDL_ES_CODE
+{
+  MES_ENCODE = 0,
+  MES_DECODE = 1,
+  MES_ENCODE_NDR64 = 2,
+};
+

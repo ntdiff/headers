@@ -1,0 +1,10 @@
+struct DragDropLogging::StaticHandle
+{
+  /* 0x0000 */ const struct _tlgProvider_t* handle;
+}; /* size: 0x0004 */
+
+class DragDropLogging
+{
+  /* 0x0010 */ struct DragDropLogging::StaticHandle m_staticHandle;
+}; /* size: 0x0014 */
+

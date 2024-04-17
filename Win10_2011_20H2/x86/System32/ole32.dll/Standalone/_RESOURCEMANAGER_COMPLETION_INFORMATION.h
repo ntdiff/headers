@@ -1,0 +1,6 @@
+typedef struct _RESOURCEMANAGER_COMPLETION_INFORMATION
+{
+  /* 0x0000 */ void* IoCompletionPortHandle;
+  /* 0x0004 */ unsigned long CompletionKey;
+} RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION; /* size: 0x0008 */
+

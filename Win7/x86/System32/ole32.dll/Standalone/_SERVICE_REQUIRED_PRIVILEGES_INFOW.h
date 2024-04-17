@@ -1,0 +1,5 @@
+typedef struct _SERVICE_REQUIRED_PRIVILEGES_INFOW
+{
+  /* 0x0000 */ wchar_t* pmszRequiredPrivileges;
+} SERVICE_REQUIRED_PRIVILEGES_INFOW, *PSERVICE_REQUIRED_PRIVILEGES_INFOW; /* size: 0x0004 */
+

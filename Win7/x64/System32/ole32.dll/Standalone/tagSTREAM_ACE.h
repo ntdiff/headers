@@ -1,0 +1,43 @@
+typedef enum _ACCESS_MODE
+{
+  NOT_USED_ACCESS = 0,
+  GRANT_ACCESS = 1,
+  SET_ACCESS = 2,
+  DENY_ACCESS = 3,
+  REVOKE_ACCESS = 4,
+  SET_AUDIT_SUCCESS = 5,
+  SET_AUDIT_FAILURE = 6,
+} ACCESS_MODE, *PACCESS_MODE;
+
+typedef enum _TRUSTEE_TYPE
+{
+  TRUSTEE_IS_UNKNOWN = 0,
+  TRUSTEE_IS_USER = 1,
+  TRUSTEE_IS_GROUP = 2,
+  TRUSTEE_IS_DOMAIN = 3,
+  TRUSTEE_IS_ALIAS = 4,
+  TRUSTEE_IS_WELL_KNOWN_GROUP = 5,
+  TRUSTEE_IS_DELETED = 6,
+  TRUSTEE_IS_INVALID = 7,
+  TRUSTEE_IS_COMPUTER = 8,
+} TRUSTEE_TYPE, *PTRUSTEE_TYPE;
+
+typedef enum _TRUSTEE_FORM
+{
+  TRUSTEE_IS_SID = 0,
+  TRUSTEE_IS_NAME = 1,
+  TRUSTEE_BAD_FORM = 2,
+  TRUSTEE_IS_OBJECTS_AND_SID = 3,
+  TRUSTEE_IS_OBJECTS_AND_NAME = 4,
+} TRUSTEE_FORM, *PTRUSTEE_FORM;
+
+struct tagSTREAM_ACE
+{
+  /* 0x0000 */ unsigned long grfAccessPermissions;
+  /* 0x0004 */ enum _ACCESS_MODE grfAccessMode;
+  /* 0x0008 */ enum _TRUSTEE_TYPE TrusteeType;
+  /* 0x000c */ enum _TRUSTEE_FORM TrusteeForm;
+  /* 0x0010 */ unsigned short* pTrusteeName;
+  /* 0x0018 */ struct tagSTREAM_SID* pSID;
+}; /* size: 0x0020 */
+

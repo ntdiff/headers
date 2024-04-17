@@ -1,0 +1,5 @@
+typedef struct _EVENTLOG_FULL_INFORMATION
+{
+  /* 0x0000 */ unsigned long dwFull;
+} EVENTLOG_FULL_INFORMATION, *PEVENTLOG_FULL_INFORMATION; /* size: 0x0004 */
+

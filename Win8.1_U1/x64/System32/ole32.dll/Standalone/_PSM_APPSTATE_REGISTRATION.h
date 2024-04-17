@@ -1,0 +1,2 @@
+struct _PSM_APPSTATE_REGISTRATION;
+

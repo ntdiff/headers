@@ -1,0 +1,6 @@
+enum tagFFFP_MODE
+{
+  FFFP_EXACTMATCH = 0,
+  FFFP_NEARESTPARENTMATCH = 1,
+};
+

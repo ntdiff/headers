@@ -1,0 +1,9 @@
+enum tagDISPLAY_SUPPORTED_ORIENTATIONS
+{
+  DSO_NONE = 0,
+  DSO_0 = 1,
+  DSO_90 = 2,
+  DSO_180 = 4,
+  DSO_270 = 8,
+};
+

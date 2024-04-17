@@ -1,0 +1,7 @@
+enum PLACE_MODE_OPTION
+{
+  PMO_NONE = 0,
+  PMO_ALLOW = 1,
+  PMO_FORCE = 2,
+};
+

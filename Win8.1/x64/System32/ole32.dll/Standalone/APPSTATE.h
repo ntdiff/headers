@@ -1,0 +1,7 @@
+enum APPSTATE
+{
+  ABSENT = 0,
+  ASSIGNED = 1,
+  PUBLISHED = 2,
+};
+

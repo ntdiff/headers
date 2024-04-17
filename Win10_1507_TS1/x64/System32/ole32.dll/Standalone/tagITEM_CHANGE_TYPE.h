@@ -1,0 +1,8 @@
+enum tagITEM_CHANGE_TYPE
+{
+  ICHT_INSERT = 0,
+  ICHT_DELETE = 1,
+  ICHT_UPDATE = 2,
+  ICHT_FILTER = 3,
+};
+

@@ -1,0 +1,25 @@
+enum OCT_BANNED_API
+{
+  OCT_BANNED_FIRST = 0,
+  OCT_BANNED_GetWindowRect = 0,
+  OCT_BANNED_ClientToScreen = 1,
+  OCT_BANNED_ScreenToClient = 2,
+  OCT_BANNED_MapWindowPoints = 3,
+  OCT_BANNED_GetDC = 4,
+  OCT_BANNED_GetDCEx = 5,
+  OCT_BANNED_EnumDisplayMonitors = 6,
+  OCT_BANNED_GetSystemMetrics = 7,
+  OCT_BANNED_MonitorFromWindow = 8,
+  OCT_BANNED_MonitorFromPoint = 9,
+  OCT_BANNED_MonitorFromRect = 10,
+  OCT_BANNED_GetMonitorInfoW = 11,
+  OCT_BANNED_GetDpiForMonitorInternal = 12,
+  OCT_BANNED_PhysicalToLogicalPoint = 13,
+  OCT_BANNED_LogicalToPhysicalPoint = 14,
+  OCT_BANNED_GetCurrentDpiInfo = 15,
+  OCT_BANNED_ShellScaling_Window = 16,
+  OCT_BANNED_ShellScaling_Monitor = 17,
+  OCT_BANNED_ShellScaling_Device = 18,
+  OCT_BANNED_LAST = 19,
+};
+

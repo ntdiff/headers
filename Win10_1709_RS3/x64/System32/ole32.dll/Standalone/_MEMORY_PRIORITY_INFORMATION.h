@@ -1,0 +1,5 @@
+typedef struct _MEMORY_PRIORITY_INFORMATION
+{
+  /* 0x0000 */ unsigned long MemoryPriority;
+} MEMORY_PRIORITY_INFORMATION, *PMEMORY_PRIORITY_INFORMATION; /* size: 0x0004 */
+

@@ -1,0 +1,6 @@
+typedef struct _SYSTEM_WORKLOAD_ALLOWED_CPU_SET_INFORMATION
+{
+  /* 0x0000 */ unsigned __int64 WorkloadClass;
+  /* 0x0008 */ unsigned __int64 CpuSets[1];
+} SYSTEM_WORKLOAD_ALLOWED_CPU_SET_INFORMATION, *PSYSTEM_WORKLOAD_ALLOWED_CPU_SET_INFORMATION; /* size: 0x0010 */
+

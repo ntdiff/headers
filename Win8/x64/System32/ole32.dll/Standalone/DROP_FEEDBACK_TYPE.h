@@ -1,0 +1,7 @@
+enum DROP_FEEDBACK_TYPE
+{
+  DFT_DROP_AREA = 0,
+  DFT_GUTTER_DRAG = 1,
+  DFT_GUTTER = 2,
+};
+

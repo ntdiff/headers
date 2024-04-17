@@ -1,0 +1,6 @@
+enum tagDIMENSION
+{
+  XDIMENSION = 88,
+  YDIMENSION = 89,
+};
+

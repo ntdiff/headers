@@ -1,0 +1,6 @@
+enum tagHANDEDNESS
+{
+  HANDEDNESS_LEFT = 0,
+  HANDEDNESS_RIGHT = 1,
+};
+

@@ -1,0 +1,23 @@
+enum tagINPUT_MESSAGE_DEVICE_TYPE
+{
+  IMDT_UNAVAILABLE = 0,
+  IMDT_KEYBOARD = 1,
+  IMDT_MOUSE = 2,
+  IMDT_TOUCH = 4,
+  IMDT_PEN = 8,
+};
+
+enum tagINPUT_MESSAGE_ORIGIN_ID
+{
+  IMO_UNAVAILABLE = 0,
+  IMO_HARDWARE = 1,
+  IMO_INJECTED = 2,
+  IMO_SYSTEM = 4,
+};
+
+struct tagINPUT_MESSAGE_SOURCE
+{
+  /* 0x0000 */ enum tagINPUT_MESSAGE_DEVICE_TYPE deviceType;
+  /* 0x0004 */ enum tagINPUT_MESSAGE_ORIGIN_ID originId;
+}; /* size: 0x0008 */
+

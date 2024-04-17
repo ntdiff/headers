@@ -1,0 +1,6 @@
+enum REMOVEITEMTYPE
+{
+  RIT_DEFAULT = 0,
+  RIT_DELETE = 1,
+};
+

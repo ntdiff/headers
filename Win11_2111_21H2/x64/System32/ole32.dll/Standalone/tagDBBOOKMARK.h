@@ -1,0 +1,7 @@
+enum tagDBBOOKMARK
+{
+  DBBMK_INVALID = 0,
+  DBBMK_FIRST = 1,
+  DBBMK_LAST = 2,
+};
+

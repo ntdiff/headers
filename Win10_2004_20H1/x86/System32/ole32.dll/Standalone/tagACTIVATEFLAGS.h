@@ -1,0 +1,5 @@
+enum tagACTIVATEFLAGS
+{
+  ACTIVATE_WINDOWLESS = 1,
+};
+

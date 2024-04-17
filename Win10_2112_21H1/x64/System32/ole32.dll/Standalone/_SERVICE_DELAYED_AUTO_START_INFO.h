@@ -1,0 +1,5 @@
+typedef struct _SERVICE_DELAYED_AUTO_START_INFO
+{
+  /* 0x0000 */ int fDelayedAutostart;
+} SERVICE_DELAYED_AUTO_START_INFO, *PSERVICE_DELAYED_AUTO_START_INFO; /* size: 0x0004 */
+

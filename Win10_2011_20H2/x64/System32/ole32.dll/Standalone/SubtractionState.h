@@ -1,0 +1,27 @@
+enum SubtractionState
+{
+  SubtractionState_BothUnsigned = 0,
+  SubtractionState_CastIntCheckMinMax = 1,
+  SubtractionState_CastIntCheckMin = 2,
+  SubtractionState_CastInt64CheckMinMax = 3,
+  SubtractionState_CastInt64CheckMin = 4,
+  SubtractionState_Uint64Int = 5,
+  SubtractionState_UintInt64 = 6,
+  SubtractionState_Int64Int = 7,
+  SubtractionState_IntInt64 = 8,
+  SubtractionState_Int64Uint = 9,
+  SubtractionState_IntUint64 = 10,
+  SubtractionState_Int64Uint64 = 11,
+  SubtractionState_BothUnsigned2 = 12,
+  SubtractionState_CastIntCheckMinMax2 = 13,
+  SubtractionState_CastInt64CheckMinMax2 = 14,
+  SubtractionState_Uint64Int2 = 15,
+  SubtractionState_UintInt642 = 16,
+  SubtractionState_Int64Int2 = 17,
+  SubtractionState_IntInt642 = 18,
+  SubtractionState_Int64Uint2 = 19,
+  SubtractionState_IntUint642 = 20,
+  SubtractionState_Int64Uint642 = 21,
+  SubtractionState_Error = 22,
+};
+

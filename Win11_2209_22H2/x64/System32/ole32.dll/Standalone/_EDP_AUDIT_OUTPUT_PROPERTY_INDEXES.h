@@ -1,0 +1,26 @@
+typedef enum _EDP_AUDIT_OUTPUT_PROPERTY_INDEXES
+{
+  EdpAuditPropertyUnsupported = -1,
+  EdpAuditPropertyTimeStamp = 0,
+  EdpAuditPropertyUserId = 1,
+  EdpAuditPropertyPolicy = 2,
+  EdpAuditPropertyJustification = 3,
+  EdpAuditPropertyPreviousEnterpriseId = 7,
+  EdpAuditPropertyFilePath = 8,
+  EdpAuditPropertyProtectionRemovedMax = 8,
+  EdpAuditPropertySourceEnterpriseId = 7,
+  EdpAuditPropertySourceAppName = 8,
+  EdpAuditPropertyDestinationEnterpriseId = 9,
+  EdpAuditPropertyDestinationAppName = 10,
+  EdpAuditPropertyDataInfo = 11,
+  EdpAuditPropertyDataCopiedMax = 11,
+  EdpAuditPropertyObject = 12,
+  EdpAuditPropertyAction = 13,
+  EdpAuditPropertySourceName = 14,
+  EdpAuditPropertySourceEID = 7,
+  EdpAuditPropertyDestinationName = 15,
+  EdpAuditPropertyDestinationEID = 9,
+  EdpAuditPropertyApplication = 16,
+  EdpAuditPropertyApplicationGeneratedMax = 16,
+} EDP_AUDIT_OUTPUT_PROPERTY_INDEXES, *PEDP_AUDIT_OUTPUT_PROPERTY_INDEXES;
+

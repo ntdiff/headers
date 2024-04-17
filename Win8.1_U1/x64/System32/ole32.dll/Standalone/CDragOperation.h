@@ -1,0 +1,58 @@
+struct tagPOINT
+{
+  /* 0x0000 */ long x;
+  /* 0x0004 */ long y;
+}; /* size: 0x0008 */
+
+class CPoint
+{
+  /* 0x0000 */ struct tagPOINT _pt;
+}; /* size: 0x0008 */
+
+enum PROCESS_DPI_AWARENESS
+{
+  PROCESS_DPI_UNINITIALIZED = -1,
+  PROCESS_DPI_UNAWARE = 0,
+  PROCESS_SYSTEM_DPI_AWARE = 1,
+  PROCESS_PER_MONITOR_DPI_AWARE = 2,
+};
+
+class CDragOperation
+{
+  /* 0x0010 */ struct IDataObject* _pDataObject;
+  /* 0x0018 */ struct tagInterfaceData* _DOBuffer;
+  /* 0x0020 */ struct IDropSource* _pDropSource;
+  /* 0x0028 */ struct IDropSourceQueryEx* _pDSQueryEx;
+  /* 0x0030 */ struct IDropSourceNotify* _pDSNotify;
+  /* 0x0038 */ struct IDropTarget* _pDropTarget;
+  /* 0x0040 */ struct IDropTarget* _pRealDropTarget;
+  /* 0x0048 */ void* _hFormats;
+  /* 0x0050 */ class CPoint _cpt;
+  /* 0x0058 */ unsigned long _dwOKEffects;
+  /* 0x005c */ unsigned long _dwEffect;
+  /* 0x0060 */ unsigned long* _pdwEffect;
+  /* 0x0068 */ int _fEscapePressed;
+  /* 0x0070 */ struct HICON__* _curOld;
+  /* 0x0078 */ struct HWND__* _hwndLast;
+  /* 0x0080 */ unsigned long _grfKeyState;
+  /* 0x0084 */ HRESULT _hrDragResult;
+  /* 0x0088 */ int _fMouseCaptured;
+  /* 0x0090 */ class CDragDefaultCursors* _pcddcDefault;
+  /* 0x0098 */ int _fUseWin31;
+  /* 0x009c */ unsigned long _dwFinalKeyState;
+  /* 0x00a0 */ class CPoint _cptFinalCursorPos;
+  /* 0x00a8 */ int _fWinRTDrag;
+  /* 0x00b0 */ void* _hDragInProgress;
+  /* 0x00b8 */ BOOL _fDropCompleted;
+  /* 0x00c0 */ void* _hDragSourceToken;
+  /* 0x00c8 */ int _fSourceIsAppContainer;
+  /* 0x00cc */ enum PROCESS_DPI_AWARENESS _sourceDpiAwareness;
+  /* 0x00d0 */ enum PROCESS_DPI_AWARENESS _targetDpiAwareness;
+  /* 0x00d4 */ BOOL _fConcurrentDrag;
+  union
+  {
+    /* 0x0000 */ BOOL s_fDoDragDropInFlight;
+    /* 0x0000 */ long s_wScrollInt;
+  }; /* size: 0x0004 */
+}; /* size: 0x00d8 */
+

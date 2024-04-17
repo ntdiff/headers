@@ -1,0 +1,6 @@
+enum tagGET_PROPERTY_STORE_TYPE
+{
+  GIPST_CACHED = 0,
+  GIPST_FALLBACK = 1,
+};
+

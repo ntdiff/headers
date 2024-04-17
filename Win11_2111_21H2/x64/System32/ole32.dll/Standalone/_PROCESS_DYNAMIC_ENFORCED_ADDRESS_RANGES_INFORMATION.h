@@ -1,0 +1,8 @@
+typedef struct _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION
+{
+  /* 0x0000 */ unsigned short NumberOfRanges;
+  /* 0x0002 */ unsigned short Reserved;
+  /* 0x0004 */ unsigned long Reserved2;
+  /* 0x0008 */ struct _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE* Ranges;
+} PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION, *PPROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION; /* size: 0x0010 */
+

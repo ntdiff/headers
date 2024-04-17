@@ -1,0 +1,7 @@
+typedef enum __MIDL___MIDL_itf_shpriv_0000_0368_0001
+{
+  SHARE_STATE_UNKNOWN = 0,
+  SHARE_STATE_NOT_SHAREABLE = 1,
+  SHARE_STATE_SHAREABLE = 2,
+} _MIDL___MIDL_itf_shpriv_0000_0368_0001, *P_MIDL___MIDL_itf_shpriv_0000_0368_0001;
+

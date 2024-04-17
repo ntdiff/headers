@@ -1,0 +1,6 @@
+typedef enum __MIDL___MIDL_itf_globalopt_0000_0001_0002
+{
+  COMGLB_EXCEPTION_HANDLE = 0,
+  COMGLB_EXCEPTION_DONOT_HANDLE = 1,
+} _MIDL___MIDL_itf_globalopt_0000_0001_0002, *P_MIDL___MIDL_itf_globalopt_0000_0001_0002;
+

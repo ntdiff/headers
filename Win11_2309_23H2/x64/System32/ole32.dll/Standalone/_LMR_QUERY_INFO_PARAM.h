@@ -1,0 +1,10 @@
+typedef enum _LMR_QUERY_INFO_CLASS
+{
+  LMRQuerySessionInfo = 1,
+} LMR_QUERY_INFO_CLASS, *PLMR_QUERY_INFO_CLASS;
+
+typedef struct _LMR_QUERY_INFO_PARAM
+{
+  /* 0x0000 */ enum _LMR_QUERY_INFO_CLASS Operation;
+} LMR_QUERY_INFO_PARAM, *PLMR_QUERY_INFO_PARAM; /* size: 0x0004 */
+

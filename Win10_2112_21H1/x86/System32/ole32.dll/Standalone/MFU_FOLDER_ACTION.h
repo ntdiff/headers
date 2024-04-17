@@ -1,0 +1,18 @@
+enum MFU_FOLDER_ACTION
+{
+  UNSPECIFIED = 0,
+  OPEN_FILE_IN = 1,
+  SAVE_FILE_IN = 2,
+  COPY_FROM = 3,
+  PASTE_TO = 4,
+  MOVE_TO = 5,
+  COPY_PASTE = 6,
+  SHARE = 7,
+  MOVE = 8,
+  CREATE = 9,
+  OPEN_FOLDER = 10,
+  OPEN_FOLDER_IN = 11,
+  CREATE_IN = 12,
+  ENUM_COUNT = 13,
+};
+

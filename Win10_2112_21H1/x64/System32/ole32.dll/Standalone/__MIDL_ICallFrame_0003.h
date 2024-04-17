@@ -1,0 +1,6 @@
+typedef enum __MIDL_ICallFrame_0003
+{
+  CALLFRAME_COPY_NESTED = 1,
+  CALLFRAME_COPY_INDEPENDENT = 2,
+} _MIDL_ICallFrame_0003, *P_MIDL_ICallFrame_0003;
+

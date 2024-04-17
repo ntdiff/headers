@@ -1,0 +1,5 @@
+typedef struct _JOBOBJECT_BASIC_UI_RESTRICTIONS
+{
+  /* 0x0000 */ unsigned long UIRestrictionsClass;
+} JOBOBJECT_BASIC_UI_RESTRICTIONS, *PJOBOBJECT_BASIC_UI_RESTRICTIONS; /* size: 0x0004 */
+

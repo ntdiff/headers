@@ -1,0 +1,9 @@
+typedef enum __MIDL_IMonikerProp_0001
+{
+  MIMETYPEPROP = 0,
+  USE_SRC_URL = 1,
+  CLASSIDPROP = 2,
+  TRUSTEDDOWNLOADPROP = 3,
+  POPUPLEVELPROP = 4,
+} _MIDL_IMonikerProp_0001, *P_MIDL_IMonikerProp_0001;
+

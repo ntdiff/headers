@@ -1,0 +1,2 @@
+struct _CONTRACT_DESCRIPTION;
+

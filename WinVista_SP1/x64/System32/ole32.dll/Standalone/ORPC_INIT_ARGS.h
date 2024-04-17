@@ -1,0 +1,8 @@
+struct ORPC_INIT_ARGS
+{
+  /* 0x0000 */ struct IOrpcDebugNotify* lpIntfOrpcDebug;
+  /* 0x0008 */ void* pvPSN;
+  /* 0x0010 */ unsigned long dwReserved1;
+  /* 0x0014 */ unsigned long dwReserved2;
+}; /* size: 0x0018 */
+

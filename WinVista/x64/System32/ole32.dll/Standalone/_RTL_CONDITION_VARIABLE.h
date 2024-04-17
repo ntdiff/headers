@@ -1,0 +1,5 @@
+typedef struct _RTL_CONDITION_VARIABLE
+{
+  /* 0x0000 */ void* Ptr;
+} RTL_CONDITION_VARIABLE, *PRTL_CONDITION_VARIABLE; /* size: 0x0008 */
+

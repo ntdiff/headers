@@ -1,0 +1,5 @@
+typedef struct _SYSTEM_FLAGS_INFORMATION
+{
+  /* 0x0000 */ unsigned long Flags;
+} SYSTEM_FLAGS_INFORMATION, *PSYSTEM_FLAGS_INFORMATION; /* size: 0x0004 */
+

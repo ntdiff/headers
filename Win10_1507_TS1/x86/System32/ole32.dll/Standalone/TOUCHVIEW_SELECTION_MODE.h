@@ -1,0 +1,6 @@
+enum TOUCHVIEW_SELECTION_MODE
+{
+  TSM_SINGLE = 0,
+  TSM_MULTIPLE = 1,
+};
+

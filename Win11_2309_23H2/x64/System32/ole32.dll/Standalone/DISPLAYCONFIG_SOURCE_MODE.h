@@ -1,0 +1,24 @@
+enum DISPLAYCONFIG_PIXELFORMAT
+{
+  DISPLAYCONFIG_PIXELFORMAT_8BPP = 1,
+  DISPLAYCONFIG_PIXELFORMAT_16BPP = 2,
+  DISPLAYCONFIG_PIXELFORMAT_24BPP = 3,
+  DISPLAYCONFIG_PIXELFORMAT_32BPP = 4,
+  DISPLAYCONFIG_PIXELFORMAT_NONGDI = 5,
+  DISPLAYCONFIG_PIXELFORMAT_FORCE_UINT32 = -1,
+};
+
+typedef struct _POINTL
+{
+  /* 0x0000 */ long x;
+  /* 0x0004 */ long y;
+} POINTL, *PPOINTL; /* size: 0x0008 */
+
+struct DISPLAYCONFIG_SOURCE_MODE
+{
+  /* 0x0000 */ unsigned int width;
+  /* 0x0004 */ unsigned int height;
+  /* 0x0008 */ enum DISPLAYCONFIG_PIXELFORMAT pixelFormat;
+  /* 0x000c */ struct _POINTL position;
+}; /* size: 0x0014 */
+

@@ -1,0 +1,7 @@
+typedef struct _CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE
+{
+  /* 0x0000 */ void* pValue;
+  /* 0x0008 */ unsigned long ValueLength;
+  /* 0x000c */ long __PADDING__[1];
+} CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE, *PCLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE; /* size: 0x0010 */
+

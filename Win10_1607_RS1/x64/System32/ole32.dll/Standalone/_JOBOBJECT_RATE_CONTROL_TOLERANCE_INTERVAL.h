@@ -1,0 +1,7 @@
+typedef enum _JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL
+{
+  ToleranceIntervalShort = 1,
+  ToleranceIntervalMedium = 2,
+  ToleranceIntervalLong = 3,
+} JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL, *PJOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL;
+

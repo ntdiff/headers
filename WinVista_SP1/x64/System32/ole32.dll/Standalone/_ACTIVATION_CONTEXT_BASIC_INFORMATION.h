@@ -1,0 +1,7 @@
+typedef struct _ACTIVATION_CONTEXT_BASIC_INFORMATION
+{
+  /* 0x0000 */ void* hActCtx;
+  /* 0x0008 */ unsigned long dwFlags;
+  /* 0x000c */ long __PADDING__[1];
+} ACTIVATION_CONTEXT_BASIC_INFORMATION, *PACTIVATION_CONTEXT_BASIC_INFORMATION; /* size: 0x0010 */
+

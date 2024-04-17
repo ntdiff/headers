@@ -1,0 +1,5 @@
+typedef struct _PROCESS_SESSION_INFORMATION
+{
+  /* 0x0000 */ unsigned long SessionId;
+} PROCESS_SESSION_INFORMATION, *PPROCESS_SESSION_INFORMATION; /* size: 0x0004 */
+

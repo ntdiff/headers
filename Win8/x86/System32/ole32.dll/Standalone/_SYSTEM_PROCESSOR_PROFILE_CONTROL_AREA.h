@@ -1,0 +1,7 @@
+typedef struct _SYSTEM_PROCESSOR_PROFILE_CONTROL_AREA
+{
+  /* 0x0000 */ struct _PROCESSOR_PROFILE_CONTROL_AREA* ProcessorProfileControlArea;
+  /* 0x0004 */ unsigned char Allocate;
+  /* 0x0005 */ char __PADDING__[3];
+} SYSTEM_PROCESSOR_PROFILE_CONTROL_AREA, *PSYSTEM_PROCESSOR_PROFILE_CONTROL_AREA; /* size: 0x0008 */
+

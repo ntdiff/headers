@@ -1,0 +1,8 @@
+enum tagDRAGOP
+{
+  DRAGOP_ENTER = 1,
+  DRAGOP_OVER = 2,
+  DRAGOP_LEAVE = 3,
+  DRAGOP_DROP = 4,
+};
+

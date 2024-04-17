@@ -1,0 +1,8 @@
+enum SEMRESULT
+{
+  SEMSUCCESS = 0,
+  SEMTIMEOUT = 1,
+  SEMNOBLOCK = 2,
+  SEMERROR = 3,
+};
+

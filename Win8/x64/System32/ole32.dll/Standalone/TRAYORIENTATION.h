@@ -1,0 +1,8 @@
+enum TRAYORIENTATION
+{
+  TO_BOTTOM = 0,
+  TO_RIGHT = 1,
+  TO_LEFT = 2,
+  TO_TOP = 3,
+};
+

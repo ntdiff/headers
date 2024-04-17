@@ -1,0 +1,8 @@
+typedef enum __MIDL___MIDL_itf_shpriv_0000_0199_0001
+{
+  SSBSS_DEFAULT = 0,
+  SSBSS_NEW_PROVIDERS = 1,
+  SSBSS_WEB = 2,
+  SSBSS_FOLDER = 3,
+} _MIDL___MIDL_itf_shpriv_0000_0199_0001, *P_MIDL___MIDL_itf_shpriv_0000_0199_0001;
+

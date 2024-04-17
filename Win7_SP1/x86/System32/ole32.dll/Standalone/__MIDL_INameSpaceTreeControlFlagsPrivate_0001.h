@@ -1,0 +1,5 @@
+typedef enum __MIDL_INameSpaceTreeControlFlagsPrivate_0001
+{
+  NTCFPF_SHBROWSEFORFOLDER_CLASS_NAME = 1,
+} _MIDL_INameSpaceTreeControlFlagsPrivate_0001, *P_MIDL_INameSpaceTreeControlFlagsPrivate_0001;
+

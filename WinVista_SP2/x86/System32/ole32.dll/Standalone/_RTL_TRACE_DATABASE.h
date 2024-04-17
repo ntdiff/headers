@@ -1,0 +1,2 @@
+struct _RTL_TRACE_DATABASE;
+

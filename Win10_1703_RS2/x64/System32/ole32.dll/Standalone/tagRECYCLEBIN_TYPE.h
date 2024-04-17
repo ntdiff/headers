@@ -1,0 +1,6 @@
+enum tagRECYCLEBIN_TYPE
+{
+  RBT_VOLUME = 0,
+  RBT_KNOWNFOLDER = 1,
+};
+

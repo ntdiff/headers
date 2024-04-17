@@ -1,0 +1,7 @@
+enum tagBPASCODE
+{
+  BPAS_START = 0,
+  BPAS_INDETERMINATE = 1,
+  BPAS_STOP = 2,
+};
+

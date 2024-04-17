@@ -1,0 +1,5 @@
+typedef struct _SYSTEM_NET_RATE_CONTROL_CALLBACK_TABLE
+{
+  /* 0x0000 */ void* NetRateControlDispatch /* function */;
+} SYSTEM_NET_RATE_CONTROL_CALLBACK_TABLE, *PSYSTEM_NET_RATE_CONTROL_CALLBACK_TABLE; /* size: 0x0004 */
+

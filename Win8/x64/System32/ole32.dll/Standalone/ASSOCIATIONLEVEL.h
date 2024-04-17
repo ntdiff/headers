@@ -1,0 +1,7 @@
+enum ASSOCIATIONLEVEL
+{
+  AL_MACHINE = 0,
+  AL_EFFECTIVE = 1,
+  AL_USER = 2,
+};
+

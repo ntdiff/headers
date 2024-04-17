@@ -1,0 +1,7 @@
+enum RESOLUTION_TYPE
+{
+  RT_REPLACE = 1,
+  RT_SKIP = 2,
+  RT_DECIDEFOREACH = 3,
+};
+

@@ -1,0 +1,6 @@
+typedef struct _SYSTEM_PROCESSOR_PERFORMANCE_DISTRIBUTION
+{
+  /* 0x0000 */ unsigned long ProcessorCount;
+  /* 0x0004 */ unsigned long Offsets[1];
+} SYSTEM_PROCESSOR_PERFORMANCE_DISTRIBUTION, *PSYSTEM_PROCESSOR_PERFORMANCE_DISTRIBUTION; /* size: 0x0008 */
+

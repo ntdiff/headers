@@ -1,0 +1,5 @@
+typedef struct _FILE_MAKE_COMPATIBLE_BUFFER
+{
+  /* 0x0000 */ unsigned char CloseDisc;
+} FILE_MAKE_COMPATIBLE_BUFFER, *PFILE_MAKE_COMPATIBLE_BUFFER; /* size: 0x0001 */
+

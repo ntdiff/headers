@@ -1,0 +1,2 @@
+struct _TPP_THREAD_DATA_CALLBACK;
+

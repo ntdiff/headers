@@ -1,0 +1,8 @@
+enum IMMERSIVELAUNCHERMODE
+{
+  ILM_APPS = 0,
+  ILM_FILES = 1,
+  ILM_SETTINGS = 2,
+  ILM_MAX = 3,
+};
+

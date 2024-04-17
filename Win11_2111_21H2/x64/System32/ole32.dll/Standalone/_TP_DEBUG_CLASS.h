@@ -1,0 +1,5 @@
+typedef enum _TP_DEBUG_CLASS
+{
+  TP_DEBUG_CLASS_POOL = 0,
+} TP_DEBUG_CLASS, *PTP_DEBUG_CLASS;
+

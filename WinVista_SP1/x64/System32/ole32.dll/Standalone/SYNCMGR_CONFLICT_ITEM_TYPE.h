@@ -1,0 +1,4 @@
+enum SYNCMGR_CONFLICT_ITEM_TYPE
+{
+};
+

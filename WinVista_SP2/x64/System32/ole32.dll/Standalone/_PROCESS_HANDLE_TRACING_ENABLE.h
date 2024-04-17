@@ -1,0 +1,5 @@
+typedef struct _PROCESS_HANDLE_TRACING_ENABLE
+{
+  /* 0x0000 */ unsigned long Flags;
+} PROCESS_HANDLE_TRACING_ENABLE, *PPROCESS_HANDLE_TRACING_ENABLE; /* size: 0x0004 */
+

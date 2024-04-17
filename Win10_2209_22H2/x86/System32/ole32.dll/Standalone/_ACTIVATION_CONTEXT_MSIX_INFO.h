@@ -1,0 +1,5 @@
+typedef struct _ACTIVATION_CONTEXT_MSIX_INFO
+{
+  /* 0x0000 */ wchar_t ApplicationUserModelId[130];
+} ACTIVATION_CONTEXT_MSIX_INFO, *PACTIVATION_CONTEXT_MSIX_INFO; /* size: 0x0104 */
+

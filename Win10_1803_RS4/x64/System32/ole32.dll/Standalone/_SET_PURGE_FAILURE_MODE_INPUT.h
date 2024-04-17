@@ -1,0 +1,5 @@
+typedef struct _SET_PURGE_FAILURE_MODE_INPUT
+{
+  /* 0x0000 */ unsigned long Flags;
+} SET_PURGE_FAILURE_MODE_INPUT, *PSET_PURGE_FAILURE_MODE_INPUT; /* size: 0x0004 */
+

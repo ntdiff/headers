@@ -1,0 +1,8 @@
+typedef enum __MIDL___MIDL_itf_shpriv_0000_0449_0001
+{
+  ICITF_DEFAULT = 0,
+  ICITF_RELOAD = 1,
+  ICITF_INTERACTIVE = 2,
+  ICITF_SNIFFFOLDERTYPE = 4,
+} _MIDL___MIDL_itf_shpriv_0000_0449_0001, *P_MIDL___MIDL_itf_shpriv_0000_0449_0001;
+

@@ -1,0 +1,5 @@
+enum tagGUIDKIND
+{
+  GUIDKIND_DEFAULT_SOURCE_DISP_IID = 1,
+};
+

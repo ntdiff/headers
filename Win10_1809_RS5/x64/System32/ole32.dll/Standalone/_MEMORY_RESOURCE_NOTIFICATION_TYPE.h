@@ -1,0 +1,6 @@
+typedef enum _MEMORY_RESOURCE_NOTIFICATION_TYPE
+{
+  LowMemoryResourceNotification = 0,
+  HighMemoryResourceNotification = 1,
+} MEMORY_RESOURCE_NOTIFICATION_TYPE, *PMEMORY_RESOURCE_NOTIFICATION_TYPE;
+

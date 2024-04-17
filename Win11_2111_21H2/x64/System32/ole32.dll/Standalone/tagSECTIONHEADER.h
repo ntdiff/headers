@@ -1,0 +1,6 @@
+struct tagSECTIONHEADER
+{
+  /* 0x0000 */ unsigned long cbSection;
+  /* 0x0004 */ unsigned long cProperties;
+}; /* size: 0x0008 */
+

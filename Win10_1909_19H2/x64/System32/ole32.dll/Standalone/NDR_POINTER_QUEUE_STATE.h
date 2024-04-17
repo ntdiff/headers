@@ -1,0 +1,2 @@
+struct NDR_POINTER_QUEUE_STATE;
+

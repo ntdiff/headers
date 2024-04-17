@@ -1,0 +1,59 @@
+enum DISPLAYCONFIG_DEVICE_INFO_TYPE
+{
+  DISPLAYCONFIG_DEVICE_INFO_GET_SOURCE_NAME = 1,
+  DISPLAYCONFIG_DEVICE_INFO_GET_TARGET_NAME = 2,
+  DISPLAYCONFIG_DEVICE_INFO_GET_TARGET_PREFERRED_MODE = 3,
+  DISPLAYCONFIG_DEVICE_INFO_GET_ADAPTER_NAME = 4,
+  DISPLAYCONFIG_DEVICE_INFO_SET_TARGET_PERSISTENCE = 5,
+  DISPLAYCONFIG_DEVICE_INFO_GET_TARGET_BASE_TYPE = 6,
+  DISPLAYCONFIG_DEVICE_INFO_GET_SUPPORT_VIRTUAL_RESOLUTION = 7,
+  DISPLAYCONFIG_DEVICE_INFO_SET_SUPPORT_VIRTUAL_RESOLUTION = 8,
+  DISPLAYCONFIG_DEVICE_INFO_GET_ADVANCED_COLOR_INFO = 9,
+  DISPLAYCONFIG_DEVICE_INFO_SET_ADVANCED_COLOR_STATE = 10,
+  DISPLAYCONFIG_DEVICE_INFO_GET_SDR_WHITE_LEVEL = 11,
+  DISPLAYCONFIG_DEVICE_INFO_FORCE_UINT32 = -1,
+};
+
+typedef struct _LUID
+{
+  /* 0x0000 */ unsigned long LowPart;
+  /* 0x0004 */ long HighPart;
+} LUID, *PLUID; /* size: 0x0008 */
+
+struct DISPLAYCONFIG_DEVICE_INFO_HEADER
+{
+  /* 0x0000 */ enum DISPLAYCONFIG_DEVICE_INFO_TYPE type;
+  /* 0x0004 */ unsigned int size;
+  /* 0x0008 */ struct _LUID adapterId;
+  /* 0x0010 */ unsigned int id;
+}; /* size: 0x0014 */
+
+typedef enum _DISPLAYCONFIG_COLOR_ENCODING
+{
+  DISPLAYCONFIG_COLOR_ENCODING_RGB = 0,
+  DISPLAYCONFIG_COLOR_ENCODING_YCBCR444 = 1,
+  DISPLAYCONFIG_COLOR_ENCODING_YCBCR422 = 2,
+  DISPLAYCONFIG_COLOR_ENCODING_YCBCR420 = 3,
+  DISPLAYCONFIG_COLOR_ENCODING_INTENSITY = 4,
+  DISPLAYCONFIG_COLOR_ENCODING_FORCE_UINT32 = -1,
+} DISPLAYCONFIG_COLOR_ENCODING, *PDISPLAYCONFIG_COLOR_ENCODING;
+
+typedef struct _DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO
+{
+  /* 0x0000 */ struct DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  union
+  {
+    struct /* bitfield */
+    {
+      /* 0x0014 */ unsigned int advancedColorSupported : 1; /* bit position: 0 */
+      /* 0x0014 */ unsigned int advancedColorEnabled : 1; /* bit position: 1 */
+      /* 0x0014 */ unsigned int wideColorEnforced : 1; /* bit position: 2 */
+      /* 0x0014 */ unsigned int advancedColorForceDisabled : 1; /* bit position: 3 */
+      /* 0x0014 */ unsigned int reserved : 28; /* bit position: 4 */
+    }; /* bitfield */
+    /* 0x0014 */ unsigned int value;
+  }; /* size: 0x0004 */
+  /* 0x0018 */ enum _DISPLAYCONFIG_COLOR_ENCODING colorEncoding;
+  /* 0x001c */ unsigned int bitsPerColorChannel;
+} DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO, *PDISPLAYCONFIG_GET_ADVANCED_COLOR_INFO; /* size: 0x0020 */
+

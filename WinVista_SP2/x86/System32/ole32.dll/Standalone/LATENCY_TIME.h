@@ -1,0 +1,6 @@
+enum LATENCY_TIME
+{
+  LT_DONT_CARE = 0,
+  LT_LOWEST_LATENCY = 1,
+};
+

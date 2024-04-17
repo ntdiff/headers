@@ -1,0 +1,2 @@
+struct _NDR_CORRELATION_INFO;
+

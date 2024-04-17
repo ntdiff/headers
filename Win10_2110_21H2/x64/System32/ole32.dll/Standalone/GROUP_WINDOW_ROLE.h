@@ -1,0 +1,8 @@
+enum GROUP_WINDOW_ROLE
+{
+  GWR_DEFAULT = 0,
+  GWR_APPLICATION = 1,
+  GWR_FALLBACK = 2,
+  GWR_MAX = 2,
+};
+

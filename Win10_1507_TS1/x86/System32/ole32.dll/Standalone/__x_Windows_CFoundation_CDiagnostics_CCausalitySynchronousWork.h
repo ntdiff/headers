@@ -1,0 +1,7 @@
+typedef enum __x_Windows_CFoundation_CDiagnostics_CCausalitySynchronousWork
+{
+  CausalitySynchronousWork_CompletionNotification = 0,
+  CausalitySynchronousWork_ProgressNotification = 1,
+  CausalitySynchronousWork_Execution = 2,
+} _x_Windows_CFoundation_CDiagnostics_CCausalitySynchronousWork, *P_x_Windows_CFoundation_CDiagnostics_CCausalitySynchronousWork;
+

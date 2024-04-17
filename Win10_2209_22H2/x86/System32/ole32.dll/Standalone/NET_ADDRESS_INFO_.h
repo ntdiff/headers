@@ -1,0 +1,2 @@
+struct NET_ADDRESS_INFO_;
+

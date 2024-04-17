@@ -1,0 +1,6 @@
+typedef enum __MIDL___MIDL_itf_objidl_0000_0047_0001
+{
+  COMGLB_EXCEPTION_HANDLING = 1,
+  COMGLB_APPID = 2,
+} _MIDL___MIDL_itf_objidl_0000_0047_0001, *P_MIDL___MIDL_itf_objidl_0000_0047_0001;
+

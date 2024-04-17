@@ -1,0 +1,2 @@
+class OLE_TYPEMGR;
+

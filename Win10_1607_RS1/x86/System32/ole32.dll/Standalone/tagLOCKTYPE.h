@@ -1,0 +1,7 @@
+enum tagLOCKTYPE
+{
+  LOCK_WRITE = 1,
+  LOCK_EXCLUSIVE = 2,
+  LOCK_ONLYONCE = 4,
+};
+

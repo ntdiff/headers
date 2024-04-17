@@ -1,0 +1,5 @@
+typedef struct _TOKEN_SID_INFORMATION
+{
+  /* 0x0000 */ void* Sid;
+} TOKEN_SID_INFORMATION, *PTOKEN_SID_INFORMATION; /* size: 0x0004 */
+

@@ -1,0 +1,2 @@
+class type_info;
+

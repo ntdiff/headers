@@ -1,0 +1,5 @@
+enum SYSNLS_FUNCTION
+{
+  COMPARE_STRING = 1,
+};
+

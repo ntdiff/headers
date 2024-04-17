@@ -1,0 +1,6 @@
+enum USER_INTERACTION_MODE
+{
+  UIM_MOUSE = 0,
+  UIM_TOUCH = 1,
+};
+

@@ -1,0 +1,14 @@
+typedef struct _UNICODE_STRING
+{
+  /* 0x0000 */ unsigned short Length;
+  /* 0x0002 */ unsigned short MaximumLength;
+  /* 0x0008 */ wchar_t* Buffer;
+} UNICODE_STRING, *PUNICODE_STRING; /* size: 0x0010 */
+
+typedef struct _PLUGPLAY_CONTROL_DEPTH_DATA
+{
+  /* 0x0000 */ struct _UNICODE_STRING DeviceInstance;
+  /* 0x0010 */ unsigned long DeviceDepth;
+  /* 0x0014 */ long __PADDING__[1];
+} PLUGPLAY_CONTROL_DEPTH_DATA, *PPLUGPLAY_CONTROL_DEPTH_DATA; /* size: 0x0018 */
+

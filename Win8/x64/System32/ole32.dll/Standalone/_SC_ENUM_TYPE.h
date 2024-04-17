@@ -1,0 +1,5 @@
+typedef enum _SC_ENUM_TYPE
+{
+  SC_ENUM_PROCESS_INFO = 0,
+} SC_ENUM_TYPE, *PSC_ENUM_TYPE;
+

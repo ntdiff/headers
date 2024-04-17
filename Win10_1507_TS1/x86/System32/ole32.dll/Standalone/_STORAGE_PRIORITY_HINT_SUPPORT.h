@@ -1,0 +1,5 @@
+typedef struct _STORAGE_PRIORITY_HINT_SUPPORT
+{
+  /* 0x0000 */ unsigned long SupportFlags;
+} STORAGE_PRIORITY_HINT_SUPPORT, *PSTORAGE_PRIORITY_HINT_SUPPORT; /* size: 0x0004 */
+

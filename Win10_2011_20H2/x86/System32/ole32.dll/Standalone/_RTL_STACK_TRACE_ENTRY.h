@@ -1,0 +1,2 @@
+struct _RTL_STACK_TRACE_ENTRY;
+

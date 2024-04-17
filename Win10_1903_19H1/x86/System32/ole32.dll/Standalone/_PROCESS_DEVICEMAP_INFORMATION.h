@@ -1,0 +1,16 @@
+typedef struct _PROCESS_DEVICEMAP_INFORMATION
+{
+  union
+  {
+    struct
+    {
+      /* 0x0000 */ void* DirectoryHandle;
+    } /* size: 0x0004 */ Set;
+    struct
+    {
+      /* 0x0000 */ unsigned long DriveMap;
+      /* 0x0004 */ unsigned char DriveType[32];
+    } /* size: 0x0024 */ Query;
+  }; /* size: 0x0024 */
+} PROCESS_DEVICEMAP_INFORMATION, *PPROCESS_DEVICEMAP_INFORMATION; /* size: 0x0024 */
+

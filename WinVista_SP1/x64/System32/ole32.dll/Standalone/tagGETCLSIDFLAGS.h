@@ -1,0 +1,6 @@
+enum tagGETCLSIDFLAGS
+{
+  USE_NORMAL_CLSID = 1,
+  USE_STANDARD_LINK = 2,
+};
+

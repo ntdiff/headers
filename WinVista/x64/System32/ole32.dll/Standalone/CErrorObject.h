@@ -1,0 +1,24 @@
+typedef struct _GUID
+{
+  /* 0x0000 */ unsigned long Data1;
+  /* 0x0004 */ unsigned short Data2;
+  /* 0x0006 */ unsigned short Data3;
+  /* 0x0008 */ unsigned char Data4[8];
+} GUID, *PGUID; /* size: 0x0010 */
+
+struct ErrorObjectData
+{
+  /* 0x0000 */ unsigned long dwVersion;
+  /* 0x0004 */ unsigned long dwHelpContext;
+  /* 0x0008 */ struct _GUID iid;
+}; /* size: 0x0018 */
+
+class CErrorObject
+{
+  /* 0x0018 */ long _refCount;
+  /* 0x001c */ struct ErrorObjectData _data;
+  /* 0x0038 */ wchar_t* _pszSource;
+  /* 0x0040 */ wchar_t* _pszDescription;
+  /* 0x0048 */ wchar_t* _pszHelpFile;
+}; /* size: 0x0050 */
+

@@ -1,0 +1,7 @@
+enum RegistrationState
+{
+  NOT_REGISTERED = 0,
+  PENDING_REGISTRATION = 1,
+  FULLY_REGISTERED = 2,
+};
+

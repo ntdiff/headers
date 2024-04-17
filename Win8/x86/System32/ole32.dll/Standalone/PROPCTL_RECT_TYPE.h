@@ -1,0 +1,6 @@
+enum PROPCTL_RECT_TYPE
+{
+  PCRT_MINIMUM = 0,
+  PCRT_IDEAL = 1,
+};
+

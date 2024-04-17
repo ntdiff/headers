@@ -1,0 +1,2 @@
+struct _WNF_USER_SUBSCRIPTION;
+

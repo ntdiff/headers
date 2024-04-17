@@ -1,0 +1,7 @@
+enum tagCS_COLUMN_SET
+{
+  COLSET_ALL = 0,
+  COLSET_VISIBLE = 1,
+  COLSET_COLUMNID = 2,
+};
+

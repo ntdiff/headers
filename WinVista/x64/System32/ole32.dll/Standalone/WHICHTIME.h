@@ -1,0 +1,7 @@
+enum WHICHTIME
+{
+  WT_CREATION = 0,
+  WT_MODIFICATION = 1,
+  WT_ACCESS = 2,
+};
+

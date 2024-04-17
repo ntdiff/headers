@@ -1,0 +1,6 @@
+enum CONFLICT_FILTER
+{
+  CF_NO_FILTER = 0,
+  CF_DIFFERENT_TIME_SIZE = 1,
+};
+

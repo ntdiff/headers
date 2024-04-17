@@ -1,0 +1,6 @@
+enum WPP_CTL_NAMES
+{
+  WPP_CTL_OLE32 = 0,
+  WPP_LAST_CTL = 1,
+};
+

@@ -1,0 +1,26 @@
+enum tagSystemFunction001Commands
+{
+  sf001cHttpSetInChannelTarget = 0,
+  sf001cHttpSetOutChannelTarget = 1,
+  sf001cSetRestrictRemoteClients = 2,
+  sf001cSetRestrictRemoteClientsLocal = 3,
+  sf001cQueryRestrictRemoteClients = 4,
+  sf001cResetWithNoAuthException = 5,
+  sf001cIgnoreCorruptionAsserts = 6,
+  sf001cQueryConnectionId = 7,
+  sf001cQuerySecCtxId = 8,
+  sf001cQueryInterface = 9,
+  sf001cQueryAssociationId = 10,
+  sf001cRegisterCorruptionCallback = 11,
+  sf001cRegisterNDRCorruptionCallback = 12,
+  sf001cEnableDGClientSupport = 13,
+  sf001cEnableDGServerSupport = 14,
+  sf001cEnableFwCliAsyncNotificationDelay = 15,
+  sf001cQueryAuthEpResolution = 16,
+  sf001cDisableLegacyClientAsserts = 17,
+  sf001cQueryClientSideDebugInfoEnabled = 18,
+  sf001cQueryServerSideDebugInfoEnabled = 19,
+  sf001cQuerySendEEInfo = 20,
+  sf001cQueryIgnoreDelegationFailure = 21,
+};
+

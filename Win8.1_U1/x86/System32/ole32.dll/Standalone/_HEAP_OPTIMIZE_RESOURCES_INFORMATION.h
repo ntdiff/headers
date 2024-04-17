@@ -1,0 +1,6 @@
+typedef struct _HEAP_OPTIMIZE_RESOURCES_INFORMATION
+{
+  /* 0x0000 */ unsigned long Version;
+  /* 0x0004 */ unsigned long Flags;
+} HEAP_OPTIMIZE_RESOURCES_INFORMATION, *PHEAP_OPTIMIZE_RESOURCES_INFORMATION; /* size: 0x0008 */
+

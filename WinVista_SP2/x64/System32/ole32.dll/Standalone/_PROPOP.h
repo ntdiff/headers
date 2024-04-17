@@ -1,0 +1,9 @@
+typedef enum _PROPOP
+{
+  PROPOP_IGNORE = 1,
+  PROPOP_DELETE = 2,
+  PROPOP_INSERT = 3,
+  PROPOP_MOVE = 4,
+  PROPOP_UPDATE = 5,
+} PROPOP, *PPROPOP;
+

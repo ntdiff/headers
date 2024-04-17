@@ -1,0 +1,19 @@
+struct tagFORMATETC
+{
+  /* 0x0000 */ unsigned short cfFormat;
+  /* 0x0008 */ struct tagDVTARGETDEVICE* ptd;
+  /* 0x0010 */ unsigned long dwAspect;
+  /* 0x0014 */ long lindex;
+  /* 0x0018 */ unsigned long tymed;
+  /* 0x001c */ long __PADDING__[1];
+}; /* size: 0x0020 */
+
+struct tagSTATDATA
+{
+  /* 0x0000 */ struct tagFORMATETC formatetc;
+  /* 0x0020 */ unsigned long advf;
+  /* 0x0028 */ struct IAdviseSink* pAdvSink;
+  /* 0x0030 */ unsigned long dwConnection;
+  /* 0x0034 */ long __PADDING__[1];
+}; /* size: 0x0038 */
+

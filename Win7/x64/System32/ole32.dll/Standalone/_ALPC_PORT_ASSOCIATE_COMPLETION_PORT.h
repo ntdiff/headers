@@ -1,0 +1,6 @@
+typedef struct _ALPC_PORT_ASSOCIATE_COMPLETION_PORT
+{
+  /* 0x0000 */ void* CompletionKey;
+  /* 0x0008 */ void* CompletionPort;
+} ALPC_PORT_ASSOCIATE_COMPLETION_PORT, *PALPC_PORT_ASSOCIATE_COMPLETION_PORT; /* size: 0x0010 */
+

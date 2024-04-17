@@ -1,0 +1,6 @@
+typedef enum __MIDL_IDLLHost_0001
+{
+  DLLHOST_IS_DPE = 1,
+  DLLHOST_IS_PFN = 2,
+} _MIDL_IDLLHost_0001, *P_MIDL_IDLLHost_0001;
+

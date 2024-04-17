@@ -1,0 +1,6 @@
+typedef enum __MIDL___MIDL_itf_shpriv_0000_0611_0004
+{
+  GSF_LOCKSCREENACTIVATION = 1,
+  GSF_ACTIVATION = 2,
+} _MIDL___MIDL_itf_shpriv_0000_0611_0004, *P_MIDL___MIDL_itf_shpriv_0000_0611_0004;
+

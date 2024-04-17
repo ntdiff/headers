@@ -1,0 +1,7 @@
+enum FormatMatchFlag
+{
+  FORMAT_NOTFOUND = 1,
+  FORMAT_BADMATCH = 2,
+  FORMAT_GOODMATCH = 4,
+};
+

@@ -1,0 +1,2 @@
+struct _SVC_SK_CALL_PARAMETERS;
+

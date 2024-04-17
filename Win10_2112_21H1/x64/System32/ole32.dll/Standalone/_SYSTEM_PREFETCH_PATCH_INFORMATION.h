@@ -1,0 +1,5 @@
+typedef struct _SYSTEM_PREFETCH_PATCH_INFORMATION
+{
+  /* 0x0000 */ unsigned long PrefetchPatchCount;
+} SYSTEM_PREFETCH_PATCH_INFORMATION, *PSYSTEM_PREFETCH_PATCH_INFORMATION; /* size: 0x0004 */
+

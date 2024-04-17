@@ -1,0 +1,6 @@
+typedef struct _CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA
+{
+  /* 0x0000 */ unsigned long cOID;
+  /* 0x0008 */ char** rgpszOID;
+} CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA, *PCRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA; /* size: 0x0010 */
+

@@ -1,0 +1,7 @@
+enum EDGE_GESTURE_KIND
+{
+  EGK_TOUCH = 0,
+  EGK_KEYBOARD = 1,
+  EGK_MOUSE = 2,
+};
+

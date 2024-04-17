@@ -1,0 +1,5 @@
+typedef struct _KEY_WOW64_FLAGS_INFORMATION
+{
+  /* 0x0000 */ unsigned long UserFlags;
+} KEY_WOW64_FLAGS_INFORMATION, *PKEY_WOW64_FLAGS_INFORMATION; /* size: 0x0004 */
+

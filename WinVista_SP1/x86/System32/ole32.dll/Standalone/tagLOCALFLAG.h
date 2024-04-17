@@ -1,0 +1,6 @@
+enum tagLOCALFLAG
+{
+  LOCALF_NONE = 0,
+  LOCALF_NONNDR = 2048,
+};
+

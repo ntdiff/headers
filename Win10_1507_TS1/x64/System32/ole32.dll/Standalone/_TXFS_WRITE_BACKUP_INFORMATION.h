@@ -1,0 +1,5 @@
+typedef struct _TXFS_WRITE_BACKUP_INFORMATION
+{
+  /* 0x0000 */ unsigned char Buffer[1];
+} TXFS_WRITE_BACKUP_INFORMATION, *PTXFS_WRITE_BACKUP_INFORMATION; /* size: 0x0001 */
+

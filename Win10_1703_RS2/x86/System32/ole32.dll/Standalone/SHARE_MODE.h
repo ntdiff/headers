@@ -1,0 +1,8 @@
+enum SHARE_MODE
+{
+  MODE_SMB = 0,
+  MODE_INPLACE = 1,
+  MODE_LIBRARY = 2,
+  MODE_CLASSIC = 3,
+};
+

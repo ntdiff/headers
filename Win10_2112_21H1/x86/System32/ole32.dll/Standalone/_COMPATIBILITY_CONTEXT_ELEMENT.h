@@ -1,0 +1,23 @@
+typedef struct _GUID
+{
+  /* 0x0000 */ unsigned long Data1;
+  /* 0x0004 */ unsigned short Data2;
+  /* 0x0006 */ unsigned short Data3;
+  /* 0x0008 */ unsigned char Data4[8];
+} GUID, *PGUID; /* size: 0x0010 */
+
+enum ACTCTX_COMPATIBILITY_ELEMENT_TYPE
+{
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_UNKNOWN = 0,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_OS = 1,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MITIGATION = 2,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MAXVERSIONTESTED = 3,
+};
+
+typedef struct _COMPATIBILITY_CONTEXT_ELEMENT
+{
+  /* 0x0000 */ struct _GUID Id;
+  /* 0x0010 */ enum ACTCTX_COMPATIBILITY_ELEMENT_TYPE Type;
+  /* 0x0018 */ unsigned __int64 MaxVersionTested;
+} COMPATIBILITY_CONTEXT_ELEMENT, *PCOMPATIBILITY_CONTEXT_ELEMENT; /* size: 0x0020 */
+

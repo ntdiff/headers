@@ -1,0 +1,7 @@
+enum tagACCOUNTSTATE
+{
+  ACS_NONE = 0,
+  ACS_CONNECTED = 1,
+  ACS_ERROR = 2,
+};
+

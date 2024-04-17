@@ -1,0 +1,6 @@
+enum tagSEARCHTEXTTYPE
+{
+  STTYPE_DEFAULT = 0,
+  STTYPE_INITIAL = 1,
+};
+

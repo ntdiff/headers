@@ -1,0 +1,5 @@
+typedef struct _DRIVE_LAYOUT_INFORMATION_MBR
+{
+  /* 0x0000 */ unsigned long Signature;
+} DRIVE_LAYOUT_INFORMATION_MBR, *PDRIVE_LAYOUT_INFORMATION_MBR; /* size: 0x0004 */
+

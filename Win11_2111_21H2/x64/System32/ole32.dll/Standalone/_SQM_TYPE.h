@@ -1,0 +1,8 @@
+typedef enum _SQM_TYPE
+{
+  SQM_TYPE_NONE = 0,
+  SQM_TYPE_DWORD = 1,
+  SQM_TYPE_STRING = 2,
+  SQM_TYPE_DWORD64 = 3,
+} SQM_TYPE, *PSQM_TYPE;
+
