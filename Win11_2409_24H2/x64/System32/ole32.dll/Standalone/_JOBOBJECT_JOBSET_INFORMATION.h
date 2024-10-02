@@ -1,0 +1,5 @@
+typedef struct _JOBOBJECT_JOBSET_INFORMATION
+{
+  /* 0x0000 */ unsigned long MemberLevel;
+} JOBOBJECT_JOBSET_INFORMATION, *PJOBOBJECT_JOBSET_INFORMATION; /* size: 0x0004 */
+

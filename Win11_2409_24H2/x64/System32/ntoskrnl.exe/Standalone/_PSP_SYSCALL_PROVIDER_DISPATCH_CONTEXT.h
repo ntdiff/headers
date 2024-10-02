@@ -1,0 +1,6 @@
+typedef struct _PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT
+{
+  /* 0x0000 */ unsigned long Level;
+  /* 0x0004 */ unsigned long Slot;
+} PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT, *PPSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT; /* size: 0x0008 */
+

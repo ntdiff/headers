@@ -1,0 +1,5 @@
+typedef struct _FILE_DISPOSITION_INFORMATION
+{
+  /* 0x0000 */ unsigned char DeleteFile;
+} FILE_DISPOSITION_INFORMATION, *PFILE_DISPOSITION_INFORMATION; /* size: 0x0001 */
+

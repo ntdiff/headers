@@ -1,0 +1,1 @@
+enum _HAL_PMU_COUNTER_TYPE

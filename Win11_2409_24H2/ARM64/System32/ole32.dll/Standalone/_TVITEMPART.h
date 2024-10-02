@@ -1,0 +1,5 @@
+typedef enum _TVITEMPART
+{
+  TVGIPR_BUTTON = 1,
+} TVITEMPART, *PTVITEMPART;
+

@@ -1,0 +1,5 @@
+typedef struct _KNODE_SUBNODE_SEARCH_RANKS
+{
+  /* 0x0000 */ unsigned char Ranks[32];
+} KNODE_SUBNODE_SEARCH_RANKS, *PKNODE_SUBNODE_SEARCH_RANKS; /* size: 0x0020 */
+

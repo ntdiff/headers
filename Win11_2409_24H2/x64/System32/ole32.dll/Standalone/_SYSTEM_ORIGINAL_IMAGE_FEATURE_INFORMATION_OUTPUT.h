@@ -1,0 +1,7 @@
+typedef struct _SYSTEM_ORIGINAL_IMAGE_FEATURE_INFORMATION_OUTPUT
+{
+  /* 0x0000 */ unsigned long Version;
+  /* 0x0004 */ unsigned char FeatureIsEnabled;
+  /* 0x0005 */ char __PADDING__[3];
+} SYSTEM_ORIGINAL_IMAGE_FEATURE_INFORMATION_OUTPUT, *PSYSTEM_ORIGINAL_IMAGE_FEATURE_INFORMATION_OUTPUT; /* size: 0x0008 */
+

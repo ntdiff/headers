@@ -1,0 +1,2 @@
+struct _RTL_IC_COMPLETION_CONTEXT;
+

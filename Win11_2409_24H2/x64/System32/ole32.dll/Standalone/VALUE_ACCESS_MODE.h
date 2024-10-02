@@ -1,0 +1,6 @@
+enum VALUE_ACCESS_MODE
+{
+  ACCESS_ASYNC = 0,
+  ACCESS_SYNC = 1,
+};
+

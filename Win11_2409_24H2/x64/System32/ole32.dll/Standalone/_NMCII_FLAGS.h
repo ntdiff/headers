@@ -1,0 +1,7 @@
+typedef enum _NMCII_FLAGS
+{
+  NMCII_NONE = 0,
+  NMCII_ITEMS = 1,
+  NMCII_FOLDERS = 2,
+} NMCII_FLAGS, *PNMCII_FLAGS;
+

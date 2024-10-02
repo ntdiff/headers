@@ -1,0 +1,6 @@
+typedef struct _FILE_STREAM_RESERVATION_INFORMATION
+{
+  /* 0x0000 */ __int64 TrackedReservation;
+  /* 0x0008 */ __int64 EnforcedReservation;
+} FILE_STREAM_RESERVATION_INFORMATION, *PFILE_STREAM_RESERVATION_INFORMATION; /* size: 0x0010 */
+

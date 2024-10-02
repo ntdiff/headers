@@ -1,0 +1,2 @@
+struct _DRIVER_PROXY_EXTENSION;
+

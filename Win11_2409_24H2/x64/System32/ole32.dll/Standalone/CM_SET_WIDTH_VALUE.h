@@ -1,0 +1,6 @@
+enum CM_SET_WIDTH_VALUE
+{
+  CM_WIDTH_USEDEFAULT = -1,
+  CM_WIDTH_AUTOSIZE = -2,
+};
+

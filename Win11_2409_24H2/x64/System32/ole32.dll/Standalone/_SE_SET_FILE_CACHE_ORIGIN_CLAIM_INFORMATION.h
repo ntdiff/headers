@@ -1,0 +1,6 @@
+typedef struct _SE_SET_FILE_CACHE_ORIGIN_CLAIM_INFORMATION
+{
+  /* 0x0000 */ unsigned __int64 OriginClaimSize;
+  /* 0x0008 */ void* OriginClaim;
+} SE_SET_FILE_CACHE_ORIGIN_CLAIM_INFORMATION, *PSE_SET_FILE_CACHE_ORIGIN_CLAIM_INFORMATION; /* size: 0x0010 */
+

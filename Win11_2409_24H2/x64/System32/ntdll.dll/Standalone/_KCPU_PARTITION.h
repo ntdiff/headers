@@ -1,0 +1,2 @@
+struct _KCPU_PARTITION;
+

@@ -1,0 +1,2 @@
+struct _KFORCE_PARK_DUTY_CYCLE_DATA;
+

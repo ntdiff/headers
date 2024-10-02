@@ -1,0 +1,9 @@
+enum tagCHUNK_BREAKTYPE
+{
+  CHUNK_NO_BREAK = 0,
+  CHUNK_EOW = 1,
+  CHUNK_EOS = 2,
+  CHUNK_EOP = 3,
+  CHUNK_EOC = 4,
+};
+

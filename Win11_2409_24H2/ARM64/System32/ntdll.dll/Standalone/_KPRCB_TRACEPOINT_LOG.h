@@ -1,0 +1,2 @@
+struct _KPRCB_TRACEPOINT_LOG;
+

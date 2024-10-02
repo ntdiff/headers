@@ -1,0 +1,6 @@
+enum DEF_SHARE_ID
+{
+  DEFSHAREID_USERS = 1,
+  DEFSHAREID_PUBLIC = 2,
+};
+

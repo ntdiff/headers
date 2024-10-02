@@ -1,0 +1,17 @@
+typedef union _KPRCBFLAG
+{
+  union
+  {
+    /* 0x0000 */ volatile long PrcbFlags;
+    struct /* bitfield */
+    {
+      /* 0x0000 */ unsigned long BamQosLevel : 8; /* bit position: 0 */
+      /* 0x0000 */ unsigned long PendingQosUpdate : 1; /* bit position: 8 */
+      /* 0x0000 */ unsigned long CacheIsolationEnabled : 1; /* bit position: 9 */
+      /* 0x0000 */ unsigned long TracepointActive : 1; /* bit position: 10 */
+      /* 0x0000 */ unsigned long LongDpcRunning : 1; /* bit position: 11 */
+      /* 0x0000 */ unsigned long PrcbFlagsReserved : 20; /* bit position: 12 */
+    }; /* bitfield */
+  }; /* size: 0x0004 */
+} KPRCBFLAG, *PKPRCBFLAG; /* size: 0x0004 */
+

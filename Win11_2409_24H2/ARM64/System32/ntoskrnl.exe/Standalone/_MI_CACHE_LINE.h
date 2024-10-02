@@ -1,0 +1,28 @@
+typedef struct _LIST_ENTRY
+{
+  /* 0x0000 */ struct _LIST_ENTRY* Flink;
+  /* 0x0008 */ struct _LIST_ENTRY* Blink;
+} LIST_ENTRY, *PLIST_ENTRY; /* size: 0x0010 */
+
+typedef struct _MI_CACHE_LINE
+{
+  union
+  {
+    struct
+    {
+      /* 0x0000 */ void* UniqueCacheLine[8];
+      /* 0x0040 */ long __PADDING__[16];
+    } /* size: 0x0080 */ u1;
+    struct
+    {
+      struct
+      {
+        /* 0x0000 */ struct _LIST_ENTRY Links;
+        /* 0x0010 */ volatile unsigned long Signaled;
+        /* 0x0014 */ long __PADDING__[1];
+      } /* size: 0x0018 */ u2;
+      /* 0x0018 */ long __PADDING__[26];
+    }; /* size: 0x0080 */
+  }; /* size: 0x0080 */
+} MI_CACHE_LINE, *PMI_CACHE_LINE; /* size: 0x0080 */
+

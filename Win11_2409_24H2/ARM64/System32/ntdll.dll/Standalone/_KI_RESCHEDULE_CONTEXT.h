@@ -1,0 +1,2 @@
+struct _KI_RESCHEDULE_CONTEXT;
+

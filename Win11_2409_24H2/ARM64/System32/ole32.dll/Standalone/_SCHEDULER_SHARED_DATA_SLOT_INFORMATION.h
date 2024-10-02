@@ -1,0 +1,14 @@
+typedef enum _SCHEDULER_SHARED_DATA_SLOT_ACTION
+{
+  SchedulerSharedSlotAssign = 0,
+  SchedulerSharedSlotFree = 1,
+  SchedulerSharedSlotQuery = 2,
+} SCHEDULER_SHARED_DATA_SLOT_ACTION, *PSCHEDULER_SHARED_DATA_SLOT_ACTION;
+
+typedef struct _SCHEDULER_SHARED_DATA_SLOT_INFORMATION
+{
+  /* 0x0000 */ enum _SCHEDULER_SHARED_DATA_SLOT_ACTION Action;
+  /* 0x0008 */ void* SchedulerSharedDataHandle;
+  /* 0x0010 */ void* Slot;
+} SCHEDULER_SHARED_DATA_SLOT_INFORMATION, *PSCHEDULER_SHARED_DATA_SLOT_INFORMATION; /* size: 0x0018 */
+

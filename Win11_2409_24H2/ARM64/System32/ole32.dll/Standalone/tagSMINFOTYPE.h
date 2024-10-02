@@ -1,0 +1,6 @@
+enum tagSMINFOTYPE
+{
+  SMIT_SEPARATOR = 1,
+  SMIT_STRING = 2,
+};
+

@@ -1,0 +1,7 @@
+typedef enum _IOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITY_EXPLICIT_ADDRESS
+{
+  LogicalAllocatorCapabilityExplicitNotSupported = 0,
+  LogicalAllocatorCapabilityExplicitReservedOnly = 1,
+  LogicalAllocatorCapabilityExplicitAnyAddress = 2,
+} IOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITY_EXPLICIT_ADDRESS, *PIOMMU_DMA_LOGICAL_ALLOCATOR_CAPABILITY_EXPLICIT_ADDRESS;
+

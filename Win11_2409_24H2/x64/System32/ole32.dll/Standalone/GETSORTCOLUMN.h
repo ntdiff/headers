@@ -1,0 +1,6 @@
+enum GETSORTCOLUMN
+{
+  GSC_ARRANGEBY = 0,
+  GSC_SORTBY = 1,
+};
+

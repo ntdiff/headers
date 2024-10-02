@@ -1,0 +1,5 @@
+typedef struct _MI_SLAB_IDENTITY_REFERENCE
+{
+  /* 0x0000 */ __int64 ReferenceCount;
+} MI_SLAB_IDENTITY_REFERENCE, *PMI_SLAB_IDENTITY_REFERENCE; /* size: 0x0008 */
+

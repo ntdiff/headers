@@ -1,0 +1,20 @@
+typedef enum _CMPCCX_ENUM
+{
+  _CMPCCX_O = 0,
+  _CMPCCX_NO = 1,
+  _CMPCCX_B = 2,
+  _CMPCCX_NB = 3,
+  _CMPCCX_Z = 4,
+  _CMPCCX_NZ = 5,
+  _CMPCCX_BE = 6,
+  _CMPCCX_NBE = 7,
+  _CMPCCX_S = 8,
+  _CMPCCX_NS = 9,
+  _CMPCCX_P = 10,
+  _CMPCCX_NP = 11,
+  _CMPCCX_L = 12,
+  _CMPCCX_NL = 13,
+  _CMPCCX_LE = 14,
+  _CMPCCX_NLE = 15,
+} CMPCCX_ENUM, *PCMPCCX_ENUM;
+

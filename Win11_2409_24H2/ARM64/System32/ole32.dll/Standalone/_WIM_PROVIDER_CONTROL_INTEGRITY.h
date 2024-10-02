@@ -1,0 +1,5 @@
+typedef struct _WIM_PROVIDER_CONTROL_INTEGRITY
+{
+  /* 0x0000 */ unsigned long ControlCode;
+} WIM_PROVIDER_CONTROL_INTEGRITY, *PWIM_PROVIDER_CONTROL_INTEGRITY; /* size: 0x0004 */
+

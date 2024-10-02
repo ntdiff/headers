@@ -1,0 +1,6 @@
+enum CATSORT_FLAGS
+{
+  CATSORT_DEFAULT = 0,
+  CATSORT_NAME = 1,
+};
+

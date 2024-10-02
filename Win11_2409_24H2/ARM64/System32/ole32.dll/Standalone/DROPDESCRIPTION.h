@@ -1,0 +1,19 @@
+enum DROPIMAGETYPE
+{
+  DROPIMAGE_INVALID = -1,
+  DROPIMAGE_NONE = 0,
+  DROPIMAGE_COPY = 1,
+  DROPIMAGE_MOVE = 2,
+  DROPIMAGE_LINK = 4,
+  DROPIMAGE_LABEL = 6,
+  DROPIMAGE_WARNING = 7,
+  DROPIMAGE_NOIMAGE = 8,
+};
+
+struct DROPDESCRIPTION
+{
+  /* 0x0000 */ enum DROPIMAGETYPE type;
+  /* 0x0004 */ wchar_t szMessage[260];
+  /* 0x020c */ wchar_t szInsert[260];
+}; /* size: 0x0414 */
+

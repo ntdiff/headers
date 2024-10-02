@@ -1,0 +1,2 @@
+struct _PSP_SESSION_SPACE;
+

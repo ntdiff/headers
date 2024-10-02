@@ -1,0 +1,46 @@
+enum ComLockOrder
+{
+  CDragDropBroker_s_registrationLock = 0,
+  CDllHost__mxs = 1,
+  g_MTAInitLock = 2,
+  g_mxsSingleThreadOle = 3,
+  gObjServerLock = 4,
+  gChannelInitLock = 5,
+  gIPIDLock = 6,
+  gComLock = 7,
+  gOXIDLock = 8,
+  gContextLock = 9,
+  gCallLock = 10,
+  gChnlCallLock = 11,
+  CGIPTable__mxs = 12,
+  CRIFTable__mxs = 13,
+  CRpcResolver__mxsResolver = 14,
+  CApartmentHashTable__mxsAptTblLock = 15,
+  gOleInitLock = 16,
+  g_RotSem = 17,
+  g_SpySem = 18,
+  Highest = 19,
+};
+
+typedef struct _RTL_CRITICAL_SECTION
+{
+  /* 0x0000 */ struct _RTL_CRITICAL_SECTION_DEBUG* DebugInfo;
+  /* 0x0008 */ long LockCount;
+  /* 0x000c */ long RecursionCount;
+  /* 0x0010 */ void* OwningThread;
+  /* 0x0018 */ void* LockSemaphore;
+  /* 0x0020 */ unsigned __int64 SpinCount;
+} RTL_CRITICAL_SECTION, *PRTL_CRITICAL_SECTION; /* size: 0x0028 */
+
+class COleStaticMutexSem
+{
+  /* 0x0000 */ enum ComLockOrder _lockOrder;
+  /* 0x0001 */ unsigned char _fInitialized;
+  /* 0x0002 */ unsigned char _fUseSpincount;
+  /* 0x0004 */ unsigned long _cLocks;
+  /* 0x0008 */ unsigned long _dwLine;
+  /* 0x0010 */ const char* _pszFile;
+  /* 0x0018 */ const char* _pszLockName;
+  /* 0x0020 */ struct _RTL_CRITICAL_SECTION _cs;
+}; /* size: 0x0048 */
+

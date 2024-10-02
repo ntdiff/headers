@@ -1,0 +1,5 @@
+typedef struct _ASYNC_LAZYWRITE_THREAD_STATS
+{
+  /* 0x0000 */ unsigned long* CurrentLoad;
+} ASYNC_LAZYWRITE_THREAD_STATS, *PASYNC_LAZYWRITE_THREAD_STATS; /* size: 0x0008 */
+

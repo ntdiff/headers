@@ -1,0 +1,8 @@
+enum PSC_STATE
+{
+  PSC_NORMAL = 0,
+  PSC_NOTINSOURCE = 1,
+  PSC_DIRTY = 2,
+  PSC_READONLY = 3,
+};
+

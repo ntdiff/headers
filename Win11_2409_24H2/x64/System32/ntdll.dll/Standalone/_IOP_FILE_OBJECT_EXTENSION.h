@@ -1,0 +1,2 @@
+struct _IOP_FILE_OBJECT_EXTENSION;
+

@@ -1,0 +1,6 @@
+enum tagSORTDIRECTION
+{
+  SORT_DESCENDING = -1,
+  SORT_ASCENDING = 1,
+};
+

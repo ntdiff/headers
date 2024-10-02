@@ -1,0 +1,6 @@
+enum REALIZE_MODE
+{
+  REALIZE_SYNC = 0,
+  REALIZE_ASYNC = 1,
+};
+

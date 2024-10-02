@@ -1,0 +1,25 @@
+typedef enum _MI_SYSTEM_VA_TYPE
+{
+  MiVaUnused = 0,
+  MiVaProcessSpace = 1,
+  MiVaBootLoaded = 2,
+  MiVaPfnDatabase = 3,
+  MiVaNonPagedPool = 4,
+  MiVaPagedPool = 5,
+  MiVaNonCachedMappings = 6,
+  MiVaSystemCache = 7,
+  MiVaSystemPtes = 8,
+  MiVaHal = 9,
+  MiVaNonCachedMappingsLarge = 10,
+  MiVaDriverImages = 11,
+  MiVaSystemPtesLarge = 12,
+  MiVaKernelStacks = 13,
+  MiVaSecureNonPagedPool = 14,
+  MiVaKernelShadowStacks = 15,
+  MiVaSoftWsles = 16,
+  MiVaSystemDataViews = 17,
+  MiVaKernelControlFlowGuard = 18,
+  MiVaKasan = 19,
+  MiVaMaximumType = 20,
+} MI_SYSTEM_VA_TYPE, *PMI_SYSTEM_VA_TYPE;
+

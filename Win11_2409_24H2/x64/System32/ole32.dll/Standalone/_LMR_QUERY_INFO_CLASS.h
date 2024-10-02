@@ -1,0 +1,5 @@
+typedef enum _LMR_QUERY_INFO_CLASS
+{
+  LMRQuerySessionInfo = 1,
+} LMR_QUERY_INFO_CLASS, *PLMR_QUERY_INFO_CLASS;
+

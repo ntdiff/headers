@@ -1,0 +1,25 @@
+enum MM_BOOT_MARK
+{
+  BuiltLoaderTree = 0,
+  AppliedMemoryLicense = 1,
+  RemovedLargeDescriptors = 2,
+  WalkedBootMappings = 3,
+  CreatedPfnDatabase = 4,
+  InitializedPfnsForValidMappings = 5,
+  CreateInitialPfnsForMemoryBlock = 6,
+  InitializedGapFrames = 7,
+  EmployedGapFrames = 8,
+  UnmappedSparseRanges = 9,
+  BuiltNodeStructures = 10,
+  CreatedPfnBitMaps = 11,
+  InitializedLargePageRuns = 12,
+  NotUsed = 13,
+  InitializedSpecialPurposeMemory = 14,
+  CreatedSlabs = 15,
+  InitializedDriverImages = 16,
+  InitializedHotPatching = 17,
+  InitializedRelocations = 18,
+  InitializedTbFlushing = 19,
+  MaximumBootMark = 20,
+};
+

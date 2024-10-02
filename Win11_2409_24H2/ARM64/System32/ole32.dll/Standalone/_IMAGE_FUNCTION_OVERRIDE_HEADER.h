@@ -1,0 +1,5 @@
+typedef struct _IMAGE_FUNCTION_OVERRIDE_HEADER
+{
+  /* 0x0000 */ unsigned long FuncOverrideSize;
+} IMAGE_FUNCTION_OVERRIDE_HEADER, *PIMAGE_FUNCTION_OVERRIDE_HEADER; /* size: 0x0004 */
+

@@ -1,0 +1,2 @@
+struct _PS_SYSCALL_PROVIDER;
+

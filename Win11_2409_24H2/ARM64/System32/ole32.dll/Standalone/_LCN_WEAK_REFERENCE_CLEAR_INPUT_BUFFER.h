@@ -1,0 +1,12 @@
+typedef struct _LCN_WEAK_REFERENCE_RANGE
+{
+  /* 0x0000 */ __int64 StartOfRange;
+  /* 0x0008 */ __int64 CountOfRange;
+} LCN_WEAK_REFERENCE_RANGE, *PLCN_WEAK_REFERENCE_RANGE; /* size: 0x0010 */
+
+typedef struct _LCN_WEAK_REFERENCE_CLEAR_INPUT_BUFFER
+{
+  /* 0x0000 */ unsigned long RangeCount;
+  /* 0x0008 */ struct _LCN_WEAK_REFERENCE_RANGE Ranges[1];
+} LCN_WEAK_REFERENCE_CLEAR_INPUT_BUFFER, *PLCN_WEAK_REFERENCE_CLEAR_INPUT_BUFFER; /* size: 0x0018 */
+

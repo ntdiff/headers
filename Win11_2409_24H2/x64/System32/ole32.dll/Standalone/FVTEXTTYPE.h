@@ -1,0 +1,5 @@
+enum FVTEXTTYPE
+{
+  FVST_EMPTYTEXT = 0,
+};
+

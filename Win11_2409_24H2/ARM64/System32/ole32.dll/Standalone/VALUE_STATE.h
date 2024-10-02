@@ -1,0 +1,6 @@
+enum VALUE_STATE
+{
+  VALUE_UNKNOWN = 0,
+  VALUE_REALIZED = 1,
+};
+

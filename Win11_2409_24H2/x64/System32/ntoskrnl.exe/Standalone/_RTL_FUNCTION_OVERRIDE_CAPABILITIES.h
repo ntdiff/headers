@@ -1,0 +1,6 @@
+typedef struct _RTL_FUNCTION_OVERRIDE_CAPABILITIES
+{
+  /* 0x0000 */ unsigned char AMD64Capabilities[41];
+  /* 0x0029 */ unsigned char AMD64KernelCapabilities[41];
+} RTL_FUNCTION_OVERRIDE_CAPABILITIES, *PRTL_FUNCTION_OVERRIDE_CAPABILITIES; /* size: 0x0052 */
+

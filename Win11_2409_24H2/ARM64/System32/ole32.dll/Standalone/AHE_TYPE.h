@@ -1,0 +1,6 @@
+enum AHE_TYPE
+{
+  AHE_DESKTOP = 0,
+  AHE_IMMERSIVE = 1,
+};
+

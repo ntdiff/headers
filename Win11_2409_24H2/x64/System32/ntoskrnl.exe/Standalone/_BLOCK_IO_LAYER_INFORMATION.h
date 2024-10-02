@@ -1,0 +1,5 @@
+typedef struct _BLOCK_IO_LAYER_INFORMATION
+{
+  /* 0x0000 */ char* ArcName;
+} BLOCK_IO_LAYER_INFORMATION, *PBLOCK_IO_LAYER_INFORMATION; /* size: 0x0008 */
+

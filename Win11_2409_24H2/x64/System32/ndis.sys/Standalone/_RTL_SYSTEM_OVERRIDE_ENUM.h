@@ -1,0 +1,28 @@
+typedef enum _RTL_SYSTEM_OVERRIDE_ENUM
+{
+  RtlSysOvrdUserAmd64First = 0,
+  RtlSysOvrdUserAmd64CfgDispatchRva = 0,
+  RtlSysOvrdUserAmd64CfgDispatchESRva = 1,
+  RtlSysOvrdUserAmd64CfgCheckRva = 2,
+  RtlSysOvrdUserAmd64CfgCheckESRva = 3,
+  RtlSysOvrdUserAmd64Last = 3,
+  RtlSysOvrdKernelAmd64First = 4,
+  RtlSysOvrdKernelAmd64CfgDispatchRva = 4,
+  RtlSysOvrdKernelAmd64CfgCheckRva = 5,
+  RtlSysOvrdKernelAmd64Last = 5,
+  RtlSysOvrdUserArm64First = 6,
+  RtlSysOvrdUserArm64CfgDispatchRva = 6,
+  RtlSysOvrdUserArm64CfgDispatchESRva = 7,
+  RtlSysOvrdUserArm64CfgCheckRva = 8,
+  RtlSysOvrdUserArm64CfgCheckESRva = 9,
+  RtlSysOvrdUserArm64EcCfgCheckRva = 10,
+  RtlSysOvrdUserArm64EcCfgCheckESRva = 11,
+  RtlSysOvrdUserArm64EcCallCheckRva = 12,
+  RtlSysOvrdUserArm64Last = 12,
+  RtlSysOvrdKernelArm64First = 13,
+  RtlSysOvrdKernelArm64CfgDispatchRva = 13,
+  RtlSysOvrdKernelArm64CfgCheckRva = 14,
+  RtlSysOvrdKernelArm64Last = 14,
+  RtlSysOvrdCount = 15,
+} RTL_SYSTEM_OVERRIDE_ENUM, *PRTL_SYSTEM_OVERRIDE_ENUM;
+
